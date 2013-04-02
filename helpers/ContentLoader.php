@@ -11,7 +11,7 @@ namespace helpers;
  * @author     Tobias Zeising <tobias.zeising@aditu.de>
  */
 class ContentLoader {
-    
+
     /**
      * ctor
      */
@@ -19,13 +19,8 @@ class ContentLoader {
         // include htmLawed
         if(!function_exists('htmLawed'))
             require('libs/htmLawed.php');
-        $this->age = 0;
     }
-    
-    
-    public function setage($age) {
-        $this->age = $age;
-    }
+
 
     /**
      * updates all sources
@@ -39,8 +34,8 @@ class ContentLoader {
         }
         $this->cleanup();
     }
-    
-    
+
+
     /**
      * updates a given source
      * returns an error or true on success
@@ -49,14 +44,14 @@ class ContentLoader {
      * @param mixed $source the current source
      */
     public function fetch($source) {
-        
+
         @set_time_limit(5000);
         @error_reporting(E_ERROR);
-        
+
         // logging
         \F3::get('logger')->log('---', \DEBUG);
         \F3::get('logger')->log('start fetching source "'. $source['title'] . ' (id: '.$source['id'].') ', \DEBUG);
-        
+
         // get spout
         $spoutLoader = new \helpers\SpoutLoader();
         $spout = $spoutLoader->get($source['spout']);
@@ -65,7 +60,7 @@ class ContentLoader {
             return;
         }
         \F3::get('logger')->log('spout successfully loaded: ' . $source['spout'], \DEBUG);
-        
+
         // receive content
         \F3::get('logger')->log('fetch content', \DEBUG);
         try {
@@ -78,40 +73,40 @@ class ContentLoader {
             $sourceDao->error($source['id'], date('Y-m-d H:i:s') . 'error loading feed content: ' . $e->getMessage());
             return;
         }
-        
+
         // current date
         $minDate = new \DateTime();
         $minDate->sub(new \DateInterval('P'.\F3::get('items_lifetime').'D'));
         \F3::get('logger')->log('minimum date: ' . $minDate->format('Y-m-d H:i:s'), \DEBUG);
-        
+
         // insert new items in database
         \F3::get('logger')->log('start item fetching', \DEBUG);
         $itemsDao = new \daos\Items();
         $imageHelper = new \helpers\Image();
         $lasticon = false;
         foreach ($spout as $item) {
+            // item already in database?
+            if($itemsDao->exists($item->getId())===true)
+                continue;
+            
             // test date: continue with next if item too old
             $itemDate = new \DateTime($item->getDate());
             if($itemDate < $minDate) {
                 \F3::get('logger')->log('item "' . $item->getTitle() . '" (' . $item->getDate() . ') older than '.\F3::get('items_lifetime').' days', \DEBUG);
                 continue;
             }
-            
+
             // date in future? Set current date
             $now = new \DateTime();
             if($itemDate > $now)
                 $itemDate = $now;
-            
-            // item already in database?
-            if($itemsDao->exists($item->getId())===true)
-                continue;
-            
+
             // insert new item
             \F3::get('logger')->log('start insertion of new item "'.$item->getTitle().'"', \DEBUG);
-            
+
             // sanitize content html
             $content = htmLawed(
-                $item->getContent(), 
+                $item->getContent(),
                 array(
                     "safe"           => 1,
                     "deny_attribute" => '* -alt -title -src -href',
@@ -123,7 +118,7 @@ class ContentLoader {
             );
             $title = htmLawed($item->getTitle(), array("deny_attribute" => "*", "elements" => "-*"));
             \F3::get('logger')->log('item content sanitized', \DEBUG);
-            
+
             $icon = $item->getIcon();
             $newItem = array(
                     'title'        => $title,
@@ -135,13 +130,13 @@ class ContentLoader {
                     'icon'         => $icon!==false ? $icon : "",
                     'link'         => htmLawed($item->getLink(), array("deny_attribute" => "*", "elements" => "-*"))
             );
-            
+
             // save thumbnail
             if(strlen($thumbnail = $item->getThumbnail())!=0) {
                 $thumbnailAsPng = $imageHelper->loadImage($thumbnail, 150, 150);
                 if($thumbnailAsPng!==false) {
                     file_put_contents(
-                        'data/thumbnails/' . md5($thumbnail) . '.png', 
+                        'data/thumbnails/' . md5($thumbnail) . '.png',
                         $thumbnailAsPng
                     );
                     $newItem['thumbnail'] = md5($thumbnail) . '.png';
@@ -151,7 +146,7 @@ class ContentLoader {
                     \F3::get('logger')->log('thumbnail generation error: '.$thumbnail, \ERROR);
                 }
             }
-            
+
             // save icon
             if(strlen($icon = $item->getIcon())!=0) {
                 if($icon==$lasticon) {
@@ -161,7 +156,7 @@ class ContentLoader {
                     $iconAsPng = $imageHelper->loadImage($icon, 30, 30);
                     if($iconAsPng!==false) {
                         file_put_contents(
-                            'data/favicons/' . md5($icon) . '.png', 
+                            'data/favicons/' . md5($icon) . '.png',
                             $iconAsPng
                         );
                         $newItem['icon'] = md5($icon) . '.png';
@@ -173,15 +168,15 @@ class ContentLoader {
                     }
                 }
             }
-            
+
             // insert new item
             $itemsDao->add($newItem);
             \F3::get('logger')->log('item inserted', \DEBUG);
-            
+
             \F3::get('logger')->log('Memory usage: '.memory_get_usage(), \DEBUG);
             \F3::get('logger')->log('Memory peak usage: '.memory_get_peak_usage(), \DEBUG);
         }
-    
+
         // destroy feed object (prevent memory issues)
         \F3::get('logger')->log('destroy spout object', \DEBUG);
         $spout->destroy();
@@ -194,8 +189,8 @@ class ContentLoader {
         // save last update
         $sourceDao->saveLastUpdate($source['id']);
     }
-    
-    
+
+
     /**
      * clean up messages, thumbnails etc.
      *
@@ -209,25 +204,25 @@ class ContentLoader {
             $itemsDao->cleanup(\F3::get('items_lifetime'));
             \F3::get('logger')->log('cleanup old items finished', \DEBUG);
         }
-        
+
         // delete orphaned thumbnails
         \F3::get('logger')->log('delete orphaned thumbnails', \DEBUG);
         $this->cleanupFiles('thumbnails');
         \F3::get('logger')->log('delete orphaned thumbnails finished', \DEBUG);
-        
+
         // delete orphaned icons
         \F3::get('logger')->log('delete orphaned icons', \DEBUG);
         $this->cleanupFiles('icons');
         \F3::get('logger')->log('delete orphaned icons finished', \DEBUG);
-        
+
         // optimize database
         \F3::get('logger')->log('optimize database', \DEBUG);
         $database = new \daos\Database();
         $database->optimize();
         \F3::get('logger')->log('optimize database finished', \DEBUG);
     }
-    
-    
+
+
     /**
      * clean up orphaned thumbnails or icons
      *
@@ -244,7 +239,7 @@ class ContentLoader {
             $checker = function($file) { return \F3::get('im')->hasIcon($file);};
             $itemPath = 'data/favicons/';
         }
-        
+
         foreach(scandir($itemPath) as $file) {
             if(is_file($itemPath . $file) && $file!=".htaccess") {
                 $inUsage = $checker($file);
@@ -254,5 +249,5 @@ class ContentLoader {
             }
         }
     }
-    
+
 }

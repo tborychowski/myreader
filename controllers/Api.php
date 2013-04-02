@@ -21,16 +21,16 @@ class Api extends BaseController {
         $view = new \helpers\View();
         if(\F3::get('auth')->isLoggedin()==true)
             $view->jsonSuccess(array('success' => true));
-        
+
         $username = isset($_POST["username"]) ? $_POST["username"] : '';
         $password = isset($_POST["password"]) ? $_POST["password"] : '';
-        
+
         if(\F3::get('auth')->login($username,$password)==true)
             $view->jsonSuccess(array('success' => true));
-        
+
         $view->jsonSuccess(array('success' => false));
     }
-    
+
 
     /**
      * logout for api json access
@@ -44,39 +44,4 @@ class Api extends BaseController {
     }
 
 
-    /**
-     * returns items as json string
-     *
-     * @return void
-     */
-    public function items() {
-        $options = array();
-        if(count($_REQUEST)>0)
-            $options = $_REQUEST;
-        $options['starred'] = isset($options['starred']) ? $options['starred']=="true" : false;
-        $options['offset'] = isset($options['offset']) ? (int)($options['offset']) : 0;
-        $options['items'] = isset($options['items']) ? (int)($options['items']) : \F3::get('items_perpage');
-        
-        $itemDao = new \daos\Items();
-        $items = $itemDao->get($options);
-        
-        if(isset($options['ids']) && is_array($options['ids'])) {
-            $itemsWithoutIds = array();
-            
-            for($i=0; $i<count($options['ids']); $i++)
-                $options['ids'][$i] = (int)$options['ids'][$i];
-            
-            foreach($items as $item) {
-                if(in_array($item['id'], $options['ids'])===false) {
-                    $itemsWithoutIds[] = $item;
-                }
-            }
-            
-            $items = $itemsWithoutIds;
-        }
-        
-        $this->view->jsonSuccess($items);
-    }
-    
- 
 }

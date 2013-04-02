@@ -1,110 +1,90 @@
 <!doctype html>
 <head>
-    <base href="<?PHP echo $this->base; ?>" />
-    <meta charset="utf-8">
-    <title>RSS Reader</title>
+	<base href="<?PHP echo $this->base; ?>" />
+	<meta charset="utf-8">
+	<title>RSS Reader</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed" />
 
-    <meta name="description" content="selfoss">
-    <meta name="version" content="<?PHP echo \F3::get('version'); ?>">
-
-    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-
-    <!--  RSS Feed -->
-    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed" />
-
-    <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <!-- all css definitions -->
-    <link rel="stylesheet" href="all.css">
-
+	<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="
-    <?PHP echo $this->publicMode===true ? "publicmode" : ""; ?>
-    <?PHP echo $this->loggedin===true ? "loggedin" : "notloggedin"; ?>
-    <?PHP echo \F3::get('initial_open')==1 ? "initial_open" : ""; ?>
-    <?PHP echo \F3::get('auto_mark_as_read')==1 ? "auto_mark_as_read" : ""; ?>
-">
+<body class="<?php
+		echo $this->publicMode===true ? "publicmode" : "";
+		echo $this->loggedin===true ? "loggedin" : "notloggedin";
+		echo \F3::get('initial_open')==1 ? "initial_open" : "";
+		echo \F3::get('auto_mark_as_read')==1 ? "auto_mark_as_read" : "";
+	?>">
 
-    <!-- menue open for smartphone -->
-    <div id="nav-mobile"><div id="nav-mobile-logo"></div><div id="nav-mobile-settings"></div></div>
+	<div id="toolbar" class="navbar navbar-fixed-top"><div class="navbar-inner"><div class="container">
+		<form class="navbar-search"><input type="text" class="search-query" placeholder="Search"></form>
+		<ul class="nav"><li class="divider-vertical"></li></ul>
 
-    <!-- navigation -->
-    <div id="nav">
-        <div id="nav-mark" class="nav-btn">mark all as read</div>
-        <div id="nav-next" class="nav-btn">next item</div>
+		<button class="btn btn-small pull-left" data-action="all-read">mark all as read</button>
 
-        <?PHP $active = (\F3::get('homepage')) ? \F3::get('homepage') : 'unread' ?>
-        <ul id="nav-filter">
-            <li id="nav-filter-unread" class="nav-filter-unread<?PHP if($active=='unread') : ?> active<?PHP endif; ?>">
-                <span <?PHP echo $this->statsUnread>0 ? 'class="unread"' : ''; ?>><?PHP echo $this->statsUnread; ?></span>
-                unread
-            </li>
-            <li id="nav-filter-newest" class="nav-filter-newest<?PHP if($active=='newest') : ?> active<?PHP endif; ?>">
-                <span><?PHP echo $this->statsAll; ?></span>
-                newest
-            </li>
-            <li id="nav-filter-starred" class="nav-filter-starred<?PHP if($active=='starred') : ?> active<?PHP endif; ?>">
-                <span><?PHP echo $this->statsStarred; ?></span>
-                starred
-            </li>
-        </ul>
+		<div class="btn-group pull-left">
+			<button class="btn btn-small pull-left" data-action="refresh"><i class="icon-repeat"></i></button>
+			<button class="btn btn-small" data-action="prev"><i class="icon-chevron-up"></i></button>
+			<button class="btn btn-small" data-action="next"><i class="icon-chevron-down"></i></button>
+		</div>
 
-        <hr>
+		<div class="pull-right">
+			<div class="btn-group">
+				<button class="btn btn-small active" data-action="view-expanded"><i class="icon-th-list"></i></button>
+				<button class="btn btn-small" data-action="view-collapsed"><i class="icon-list"></i></button>
+			</div>
+			<?php
+				if ($this->loggedin === true) {
+					echo '<button class="btn btn-small"><i class="icon-cog"></i></button>';
+					if (\F3::get('auth')->enabled() === true) echo '<button class="btn btn-small">logout</button>';
+				}
+				else echo '<button class="btn btn-small"login</button>';
+			?>
+		</div>
+	</div></div></div>
 
-        <div id="nav-tags-wrapper">
-            <h2 id="nav-tags-title">Tags</h2>
-            <ul id="nav-tags">
-                <li class="active nav-tags-all">all tags</li>
-                <?PHP echo $this->tags; ?>
-            </ul>
 
-            <h2 id="nav-sources-title">Sources</h2>
-            <ul id="nav-sources"><?PHP echo $this->sources; ?>
-        </div>
+	<div id="sidebar">
+		<?PHP $active = (\F3::get('homepage')) ? \F3::get('homepage') : 'unread' ?>
+		<ul class="nav nav-list sidebar-list-stats">
+			<li class="nav-header">RSS</li>
+			<li class="nav-btn nav-type nav-unread" data-nav-type="type" data-action="unread">
+				<a href="#" class="row-fluid">
+					<span class="span9">unread</span>
+					<span class="span3 stats-unread"></span>
+				</a>
+			</li>
+			<li class="nav-btn nav-type nav-starred" data-nav-type="type" data-action="starred">
+				<a href="#" class="row-fluid">
+					<span class="span9">starred</span>
+					<span class="span3 stats-starred"><span class="no-badge"></span></span>
+				</a>
+			</li>
+			<li class="nav-btn nav-type nav-all" data-nav-type="type" data-action="all">
+				<a href="#" class="row-fluid">
+					<span class="span9">all</span>
+					<span class="span3 stats-all"><span class="no-badge"></span></span>
+				</a>
+			</li>
+		</ul>
+		<hr>
 
-        <hr>
+		<div class="sidebar-wrapper">
+			<ul class="nav nav-list sidebar-list-tags"><li class="nav-header">Tags</li></ul>
+			<hr>
+			<ul class="nav nav-list sidebar-list-sources"><li class="nav-header">Sources</li></ul>
+		</div>
+	</div>
 
-        <!-- navigation search input just for smartphone version -->
-        <div id="nav-search">
-            <input type="text" id="nav-search-term"></input> <input type="button" id="nav-search-button" value="search" />
-            <hr>
-        </div>
+	<div id="content"></div>
 
-        <?PHP if($this->loggedin===true) : ?>
-        <div id="nav-settings" <?PHP if(\F3::get('auth')->enabled()===false) : ?>class="nologin"<?PHP endif; ?>></div>
-        <?PHP endif; ?>
-
-        <?PHP if($this->loggedin===true && \F3::get('auth')->enabled()===true) : ?>
-        <div id="nav-logout"></div>
-        <?PHP endif; ?>
-
-        <?PHP if($this->loggedin===false) : ?>
-        <div id="nav-login"></div>
-        <?PHP endif; ?>
-    </div>
-
-    <!-- search -->
-    <div id="search">
-        <input type="text" id="search-term"></input>
-        <div id="search-remove"></div>
-        <div id="search-button"></div>
-        <div id="search-shownav"></div>
-    </div>
-
-    <ul id="search-list">
-    </ul>
-
-    <!-- content -->
-    <div id="content">
-        <?PHP echo $this->content; ?>
-    </div>
-
-    <!-- fullscreen popup -->
-    <div id="fullscreen-entry"></div>
-
-    <script src="all.js"></script>
+	<script>var App = App || {}; App.rootPath = "<?PHP echo $this->base; ?>"</script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/widgets.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/modules.js"></script>
 </body>
 </html>

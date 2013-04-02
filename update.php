@@ -11,12 +11,15 @@ $f3->set('BASEDIR',__dir__);
 
 // read config
 $f3->config('defaults.ini');
-if (file_exists('config.ini')) $f3->config('config.ini');
-
+if(file_exists('config.ini')){
+    $f3->config('config.ini');
+}
 
 // init logger
-$f3->set('logger', new \helpers\Logger( __dir__.'/data/logs/default.log', $f3->get('logger_level')));
+$f3->set(
+    'logger', 
+    new \helpers\Logger( __dir__.'/data/logs/default.log', $f3->get('logger_level') )
+);
 
 $loader = new \helpers\ContentLoader();
-$loader->setage($argv[1]);
 $loader->update();

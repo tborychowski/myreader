@@ -17,42 +17,42 @@ class Authentication {
      * @var bool
      */
     private $loggedin = false;
-    
-    
+
+
     /**
      * enabled
      * @var bool
      */
     private $enabled = false;
-    
-    
+
+
     /**
      * start session and check login
      */
     public function __construct() {
         // session cookie will be valid for one month
         session_set_cookie_params(time()+(3600*24*30), "/");
-        
+
         // session will be valid for this day
         @ini_set('session.gc_maxlifetime', time()+(3600*24));
-        
+
         session_name();
         if(session_id()=="")
             session_start();
         if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']===true)
             $this->loggedin = true;
         $this->enabled = strlen(trim(\F3::get('username')))!=0 && strlen(trim(\F3::get('password')))!=0;
-        
+
         // autologin if request contains unsername and password
-        if( $this->enabled===true 
+        if( $this->enabled===true
             && $this->loggedin===false
             && isset($_REQUEST['username'])
             && isset($_REQUEST['password'])) {
             $this->login($_REQUEST['username'], $_REQUEST['password']);
         }
     }
-    
-    
+
+
     /**
      * login enabled
      *
@@ -63,8 +63,8 @@ class Authentication {
     public function enabled() {
         return $this->enabled;
     }
-    
-    
+
+
     /**
      * login user
      *
@@ -75,8 +75,8 @@ class Authentication {
     public function loginWithoutUser() {
         $this->loggedin = true;
     }
-    
-    
+
+
     /**
      * login user
      *
@@ -96,8 +96,8 @@ class Authentication {
         }
         return false;
     }
-    
-    
+
+
     /**
      * isloggedin
      *
@@ -108,8 +108,8 @@ class Authentication {
             return true;
         return $this->loggedin;
     }
-    
-    
+
+
     /**
      * logout
      *

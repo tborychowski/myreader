@@ -22,18 +22,18 @@ class ViewHelper {
     public function highlight($content, $searchWords) {
         if(strlen(trim($searchWords))==0)
             return $content;
-        
+
         if(!is_array($searchWords))
             $searchWords = explode(" ", $searchWords);
-        
+
         foreach($searchWords as $word)
             $content = preg_replace('/(?!<[^<>])('.$word.')(?![^<>]*>)/i','<span class=found>$0</span>',$content);
-            
+
         return $content;
     }
-    
-    
-    /** 
+
+
+    /**
      * removes img src attribute and saves the value in ref for
      * loading it later
      *
@@ -43,13 +43,13 @@ class ViewHelper {
     public function lazyimg($content) {
         return preg_replace("/<img([^<]+)src=(['\"])([^\"']*)(['\"])([^<]*)>/i","<img$1ref='$3'$5>",$content);
     }
-    
-    
-    /** 
+
+
+    /**
      * format given date as "x days ago"
      *
      * @return string with replaced formateddate
-     * @param 
+     * @param
      */
     public function dateago($datestr) {
         $date = new \DateTime($datestr);
@@ -58,14 +58,12 @@ class ViewHelper {
         $ageInMinutes = $ageInSeconds / 60;
         $ageInHours = $ageInMinutes / 60;
         $ageInDays = $ageInHours / 24;
-        
-        if($ageInMinutes<1)
-            return round($ageInSeconds, 0) . " seconds ago";
-        if($ageInHours<1)
-            return round($ageInMinutes, 0) . " minutes ago";
-        if($ageInDays<1)
-            return round($ageInHours, 0) . " hours ago";
-        
+
+        if ($ageInMinutes < 1) return round($ageInSeconds, 0) . " seconds ago";
+        if ($ageInHours < 1) return round($ageInMinutes, 0) . " minutes ago";
+        if (round($ageInHours) < 24) return round($ageInHours) . " hours ago";
+        if (round($ageInDays) < 2) return "yesterday";
+
         return $datestr;
     }
 }

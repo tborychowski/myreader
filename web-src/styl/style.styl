@@ -1,0 +1,115 @@
+@import "_lib";
+
+
+sidebar-width = 200px
+toolbar-height = 36px
+
+
+#toolbar.navbar
+	.navbar-inner
+		border-bottom #444; shadow 0 1 0 #f6f6f6 inset, 0 5 5 #000 .4; gradient #f0f0f0 #e0e0e0; min-height toolbar-height;
+	.divider-vertical
+		border none; mar 0; size 32;
+	.btn-group
+		margin-left 15px;
+	.container
+		width 98%;
+	.search-query
+		width 147px; pad 3 12 2; font 12;
+
+#sidebar
+	pos toolbar-height,,0,0; width sidebar-width; bg #F5F5F5; pad 0 15; border-box(); shadow 5 5 5 #000 .4; z 1031;
+	border-top #bbb;
+	hr
+		margin 20px -15px;
+	.sidebar-wrapper
+		pos 132 0 0 0; overflow hidden; overflow-y auto; pad 15; font 12px;
+	.badge
+	.no-badge
+		font 11px; padding 2px 6px 1px; radius 2;
+	.no-badge
+		color #999; padding-right 5px;
+
+.nav-list
+	pad 0
+	.span3, .span2
+		text right;
+		img
+			float left; margin 2px 0 0 0; size 16;
+	.row-fluid [class*="span"]
+		min-height 20px;
+	.color
+		float: left; size 14; mar 3 0 0 0
+
+
+
+#content
+	pos toolbar-height 0 0 sidebar-width; overflow auto; border-box(); pad 20; bg #000 'osx-linen.png' 0 0 repeat;
+	shadow -5 -5 5 #000 .4 inset; color #999; text center; z 1;
+
+	.entry
+		position relative; mar 0 10 20; radius 0; top auto; left auto; width auto; opacity .9; transition opacity .5s;
+		text left; border none; shadow 0 0 10 2 #000 .5;
+		&:last-child
+			margin-bottom 70%;
+		&.active
+			shadow -3 0 0 #FFA500 1, 0 0 10 2 #000 .5;
+		.btn
+			line-height 21px;
+		.btn-read
+			show 1; radius 0 4 4 0; margin-right 0;
+		.btn-unread
+			show 0; radius 0 4 4 0; margin-right 0;
+		.btn-star
+			show 1; radius 4 0 0 4; margin-left 0;
+		.btn-unstar
+			show 0; radius 4 0 0 4; margin-left 0;
+
+	.unread
+		opacity 1
+		.btn-read
+			show 0
+		.btn-unread
+			show 1
+	.starred
+		.btn-star
+			show 0
+		.btn-unstar
+			show 1
+
+
+	.modal-body
+		font 12; pad 10 15 5;
+		p
+			margin-bottom 5px
+
+		p>img,
+		div>div>a>img
+			float right; max-width 250px; max-height 200px; margin 3px 0 10px 20px
+	.modal-header
+		overflow hidden; pad 12 15 10; height 45
+		h3
+			font 18/28px
+			b 0;
+		img
+			size 16;
+		.entry-tags
+			show 1; mar 0 10 0;
+		.label
+			pad 2 4; font 9/1; text-shadow none;
+		.entry-source
+			color #999; font 12; margin-left 2px
+		a.entry-source
+			color #666; u 1; margin-left 4px;
+			&:hover
+				u 0;
+
+		.entry-time
+			float right; mar 1 0 0 5; color #666; font 12;
+		.entry-icon
+			float right; margin-left 10px;
+	.modal-footer
+		pad 6 10;
+
+
+@import "_mobile";
