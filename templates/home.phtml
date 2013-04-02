@@ -1,0 +1,110 @@
+<!doctype html>
+<head>
+    <base href="<?PHP echo $this->base; ?>" />
+    <meta charset="utf-8">
+    <title>RSS Reader</title>
+
+    <meta name="description" content="selfoss">
+    <meta name="version" content="<?PHP echo \F3::get('version'); ?>">
+
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+    <!--  RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed" />
+
+    <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- all css definitions -->
+    <link rel="stylesheet" href="all.css">
+
+</head>
+<body class="
+    <?PHP echo $this->publicMode===true ? "publicmode" : ""; ?>
+    <?PHP echo $this->loggedin===true ? "loggedin" : "notloggedin"; ?>
+    <?PHP echo \F3::get('initial_open')==1 ? "initial_open" : ""; ?>
+    <?PHP echo \F3::get('auto_mark_as_read')==1 ? "auto_mark_as_read" : ""; ?>
+">
+
+    <!-- menue open for smartphone -->
+    <div id="nav-mobile"><div id="nav-mobile-logo"></div><div id="nav-mobile-settings"></div></div>
+
+    <!-- navigation -->
+    <div id="nav">
+        <div id="nav-mark" class="nav-btn">mark all as read</div>
+        <div id="nav-next" class="nav-btn">next item</div>
+
+        <?PHP $active = (\F3::get('homepage')) ? \F3::get('homepage') : 'unread' ?>
+        <ul id="nav-filter">
+            <li id="nav-filter-unread" class="nav-filter-unread<?PHP if($active=='unread') : ?> active<?PHP endif; ?>">
+                <span <?PHP echo $this->statsUnread>0 ? 'class="unread"' : ''; ?>><?PHP echo $this->statsUnread; ?></span>
+                unread
+            </li>
+            <li id="nav-filter-newest" class="nav-filter-newest<?PHP if($active=='newest') : ?> active<?PHP endif; ?>">
+                <span><?PHP echo $this->statsAll; ?></span>
+                newest
+            </li>
+            <li id="nav-filter-starred" class="nav-filter-starred<?PHP if($active=='starred') : ?> active<?PHP endif; ?>">
+                <span><?PHP echo $this->statsStarred; ?></span>
+                starred
+            </li>
+        </ul>
+
+        <hr>
+
+        <div id="nav-tags-wrapper">
+            <h2 id="nav-tags-title">Tags</h2>
+            <ul id="nav-tags">
+                <li class="active nav-tags-all">all tags</li>
+                <?PHP echo $this->tags; ?>
+            </ul>
+
+            <h2 id="nav-sources-title">Sources</h2>
+            <ul id="nav-sources"><?PHP echo $this->sources; ?>
+        </div>
+
+        <hr>
+
+        <!-- navigation search input just for smartphone version -->
+        <div id="nav-search">
+            <input type="text" id="nav-search-term"></input> <input type="button" id="nav-search-button" value="search" />
+            <hr>
+        </div>
+
+        <?PHP if($this->loggedin===true) : ?>
+        <div id="nav-settings" <?PHP if(\F3::get('auth')->enabled()===false) : ?>class="nologin"<?PHP endif; ?>></div>
+        <?PHP endif; ?>
+
+        <?PHP if($this->loggedin===true && \F3::get('auth')->enabled()===true) : ?>
+        <div id="nav-logout"></div>
+        <?PHP endif; ?>
+
+        <?PHP if($this->loggedin===false) : ?>
+        <div id="nav-login"></div>
+        <?PHP endif; ?>
+    </div>
+
+    <!-- search -->
+    <div id="search">
+        <input type="text" id="search-term"></input>
+        <div id="search-remove"></div>
+        <div id="search-button"></div>
+        <div id="search-shownav"></div>
+    </div>
+
+    <ul id="search-list">
+    </ul>
+
+    <!-- content -->
+    <div id="content">
+        <?PHP echo $this->content; ?>
+    </div>
+
+    <!-- fullscreen popup -->
+    <div id="fullscreen-entry"></div>
+
+    <script src="all.js"></script>
+</body>
+</html>

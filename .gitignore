@@ -1,0 +1,11 @@
+data/favicons/*.png
+data/favicons/*.jpg
+data/thumbnails/*.png
+data/thumbnails/*.jpg
+data/cache/*.spc
+data/logs/*.log
+data/sqlite/*.db
+public/all.*
+config*.ini
+*.sublime-*
+node_modules
