@@ -89,7 +89,7 @@
 			animSpeed = 0;
 			entry = entry || _container.find('.entry').first();
 		}
-		dist = entry[0].offsetTop - 20;
+		dist = entry[0].offsetTop;
 		_container.animate({ scrollTop: dist }, animSpeed, cb || function () {});
 	},
 
