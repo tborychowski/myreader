@@ -19,23 +19,21 @@
 		echo \F3::get('auto_mark_as_read')==1 ? "auto_mark_as_read" : "";
 	?>">
 
-	<div id="toolbar" class="navbar navbar-fixed-top"><div class="navbar-inner"><div class="container">
+	<div id="toolbar" class="navbar navbar-fixed-top navbar-inverse"><div class="navbar-inner"><div class="container">
 		<form class="navbar-search"><input type="text" class="search-query" placeholder="Search"></form>
 		<ul class="nav"><li class="divider-vertical"></li></ul>
 
 		<button class="btn btn-small pull-left" data-action="all-read">mark all as read</button>
 
-		<div class="btn-group pull-left">
+		<div class="pull-left">
 			<button class="btn btn-small pull-left" data-action="refresh"><i class="icon-repeat"></i></button>
 			<button class="btn btn-small" data-action="prev"><i class="icon-chevron-up"></i></button>
 			<button class="btn btn-small" data-action="next"><i class="icon-chevron-down"></i></button>
 		</div>
 
 		<div class="pull-right">
-			<div class="btn-group">
-				<button class="btn btn-small active" data-action="view-expanded"><i class="icon-th-list"></i></button>
-				<button class="btn btn-small" data-action="view-collapsed"><i class="icon-list"></i></button>
-			</div>
+			<button class="btn btn-small active" data-action="view-expanded"><i class="icon-th-list"></i></button>
+			<button class="btn btn-small" data-action="view-collapsed"><i class="icon-list"></i></button>
 			<?php
 				if ($this->loggedin === true) {
 					echo '<button class="btn btn-small"><i class="icon-cog"></i></button>';

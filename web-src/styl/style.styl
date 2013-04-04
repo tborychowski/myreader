@@ -4,10 +4,13 @@
 sidebar-width = 200px
 toolbar-height = 36px
 
+.btn
+	bg none; border none; shadow none; text-shadow none; color #999;
 
 #toolbar.navbar
+	z 1;
 	.navbar-inner
-		border-bottom #444; shadow 0 1 0 #f6f6f6 inset, 0 5 5 #000 .4; gradient #f0f0f0 #e0e0e0; min-height toolbar-height;
+		min-height toolbar-height; bg #444 'dark-noise.png' 0 0 repeat; shadow none; border none;
 	.divider-vertical
 		border none; mar 0; size 32;
 	.btn-group
@@ -18,12 +21,23 @@ toolbar-height = 36px
 		width 147px; pad 3 12 2; font 12;
 
 #sidebar
-	pos toolbar-height,,0,0; width sidebar-width; bg #F5F5F5; pad 0 15; border-box(); shadow 5 5 5 #000 .4; z 1031;
-	border-top #bbb;
+	pos toolbar-height,,0,0; width sidebar-width; pad 0 15; border-box(); bg #444 'dark-noise.png' 0 0 repeat;
+	.nav>li>a
+		text-shadow 0 -1px 0 rgba(#000, .4); color #A4A4A4;
+		&:hover
+		&:focus
+			background none; color #ccc;
+	.nav-list>.active>a
+	.nav-list>.active>a:hover
+	.nav-list>.active>a:focus
+		gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D; shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F;
+		color #C8BCBE;
+
 	hr
-		margin 20px -15px;
+		margin 20px -15px; border none; border-top #333; border-bottom #666;
+
 	.sidebar-wrapper
-		pos 132 0 0 0; overflow hidden; overflow-y auto; pad 15; font 12px;
+		pos 132 0 0 0; pad 15; font 12px; overflow hidden; //overflow-y auto;
 	.badge
 	.no-badge
 		font 11px; padding 2px 6px 1px; radius 2;
@@ -32,6 +46,8 @@ toolbar-height = 36px
 
 .nav-list
 	pad 0
+	.nav-header
+		color #999; text-shadow 0 -1px 0 rgba(#000, .4); cursor default;
 	.span3, .span2
 		text right;
 		img
@@ -44,18 +60,18 @@ toolbar-height = 36px
 
 
 #content
-	pos toolbar-height 0 0 sidebar-width; overflow auto; border-box(); pad 20; bg #000 'osx-linen.png' 0 0 repeat;
-	shadow -5 -5 5 #000 .4 inset; color #999; text center; z 1;
+	pos toolbar-height 0 0 sidebar-width; overflow auto; border-box(); bg #f0f0f0; color #999; text center; z 1;
+	shadow -5 -5 5 #000 .4;
 
 	.entry
-		position relative; mar 0 10 20; radius 0; top auto; left auto; width auto; opacity .9; transition opacity .5s;
-		text left; border none; shadow 0 0 10 2 #000 .5;
+		position relative; mar 0; radius 0; top auto; left auto; width auto; transition all .5s;
+		text left; background-color #f5f5f5; opacity .95; shadow none; border none; border-bottom #999;
+		a
+			color #666; transition color .5s;
 		&:last-child
 			margin-bottom 70%;
 		&.active
-			shadow -3 0 0 #FFA500 1, 0 0 10 2 #000 .5;
-		.btn
-			line-height 21px;
+			//border #FFA500;
 		.btn-read
 			show 1; radius 0 4 4 0; margin-right 0;
 		.btn-unread
@@ -66,7 +82,9 @@ toolbar-height = 36px
 			show 0; radius 4 0 0 4; margin-left 0;
 
 	.unread
-		opacity 1
+		background-color #fff; opacity 1
+		a
+			color #0088CC
 		.btn-read
 			show 0
 		.btn-unread
@@ -109,7 +127,7 @@ toolbar-height = 36px
 		.entry-icon
 			float right; margin-left 10px;
 	.modal-footer
-		pad 6 10;
+		pad 6 10;  bg #eee 'dark-noise.png' 0 0 repeat; radius 0;
 
 
-@import "_mobile";
+//@import "_mobile";
