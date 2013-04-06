@@ -40,9 +40,10 @@
 
 	/*** HTML *******************************************************************************************************************/
 	_getSourceHtml = function (src) {
+		var icon = (src.icon ? '<img src="favicons/' + src.icon + '"">' : '<i class="icon-rss"></i>');
 		return '<li class="nav-source nav-btn nav-' + src.id + '" data-nav-type="source" data-action="' + src.id + '">' +
 			'<a href="#" class="row-fluid">' +
-				'<span class="span2">' + (src.icon ? '<img src="favicons/' + src.icon + '">' : '') + '</span>' +
+				'<span class="span2">' + icon + '</span>' +
 				'<span class="span7">' + src.title + '</span>' +
 				'<span class="span3">' + (src.unread ? '<span class="badge">' + src.unread + '</span>' : '') + '</span>' +
 			'</a>' +

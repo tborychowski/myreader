@@ -4,26 +4,27 @@
 sidebar-width = 200px
 toolbar-height = 36px
 
+body
+	bg #333 'noise.png' 0 0 repeat
+
 .btn
 	bg none; border none; shadow none; text-shadow none; color #999;
 
-#toolbar.navbar
-	z 1;
-	.navbar-inner
-		min-height toolbar-height; bg #444 'dark-noise.png' 0 0 repeat; shadow none; border none;
-	.divider-vertical
-		border none; mar 0; size 32;
-	.btn-group
-		margin-left 15px;
-	.container
-		width 98%;
-	.search-query
-		width 147px; pad 3 12 2; font 12;
+.pull-right
+	float right
+
+#toolbar
+	z 1; pos 0 0; left (sidebar-width - 10); pad 4 15; height toolbar-height;
+
 
 #sidebar
-	pos toolbar-height,,0,0; width sidebar-width; pad 0 15; border-box(); bg #444 'dark-noise.png' 0 0 repeat;
+	pos toolbar-height,,0,0; width sidebar-width; pad 25 15 0; border-box(); font 12px;
+	.nav
+		width 170
 	.nav>li>a
 		text-shadow 0 -1px 0 rgba(#000, .4); color #A4A4A4;
+		border-top 1px solid transparent; border-bottom 1px solid transparent;
+
 		&:hover
 		&:focus
 			background none; color #ccc;
@@ -33,11 +34,15 @@ toolbar-height = 36px
 		gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D; shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F;
 		color #C8BCBE;
 
+	.nav-list:last-child
+		margin-bottom 10px;
+
 	hr
-		margin 20px -15px; border none; border-top #333; border-bottom #666;
+		margin 20px -15px; border none; border-top #2a2a2a; border-bottom #454545;
 
 	.sidebar-wrapper
-		pos 132 0 0 0; pad 15; font 12px; overflow hidden; //overflow-y auto;
+		pos 132 0 0 0; pad 15 20 15 15; margin-right -20px; overflow hidden; overflow-y auto;
+
 	.badge
 	.no-badge
 		font 11px; padding 2px 6px 1px; radius 2;
@@ -53,81 +58,80 @@ toolbar-height = 36px
 		img
 			float left; margin 2px 0 0 0; size 16;
 	.row-fluid [class*="span"]
-		min-height 20px;
+		min-height 20px; white-space nowrap; max-width 130px; overflow hidden; text-overflow ellipsis;
 	.color
 		float: left; size 14; mar 3 0 0 0
+	.icon-rss
+		font 16; float left; margin 2 0 0; color #888; opacity .3;
 
 
 
 #content
-	pos toolbar-height 0 0 sidebar-width; overflow auto; border-box(); bg #f0f0f0; color #999; text center; z 1;
-	shadow -5 -5 5 #000 .4;
+	pos toolbar-height 0 0 sidebar-width; overflow auto; border-box(); color #999; text center; z 1;
+	shadow -5 -5 5 #000 .4; radius 15 0 0 0; bg #ddd 'noise.png' 0 0 repeat;
 
 	.entry
-		position relative; mar 0; radius 0; top auto; left auto; width auto; transition all .5s;
-		text left; background-color #f5f5f5; opacity .95; shadow none; border none; border-bottom #999;
-		a
-			color #666; transition color .5s;
+		position relative; transition all .5s; text left; background-color #f5f5f5; opacity .95; border-bottom #d5d5d5;
+		shadow 0 2 3 #000 .5
 		&:last-child
 			margin-bottom 70%;
-		&.active
-			//border #FFA500;
-		.btn-read
-			show 1; radius 0 4 4 0; margin-right 0;
-		.btn-unread
-			show 0; radius 0 4 4 0; margin-right 0;
-		.btn-star
-			show 1; radius 4 0 0 4; margin-left 0;
-		.btn-unstar
-			show 0; radius 4 0 0 4; margin-left 0;
+		a
+			color #666; transition color .5s;
+		i
+			margin-right 7px; font 14;
+		.tb-btn
+			margin-right 15px; cursor default; font 13; text-shadow 0 1px 0 #fff; b 1; color #aaa;
+			&:hover
+				color #666;
+		.pull-right .tb-btn
+			margin-left 15px; margin-right 0;
+		.mark-unread
+		.addstar
+			show 1;
+		.mark-read
+		.unstar
+			show 0;
 
 	.unread
 		background-color #fff; opacity 1
 		a
 			color #0088CC
-		.btn-read
-			show 0
-		.btn-unread
-			show 1
-	.starred
-		.btn-star
-			show 0
-		.btn-unstar
-			show 1
+	.unread .mark-unread
+	.starred .addstar
+		show 0
+	.unread .mark-read
+	.starred .unstar
+		show 1
 
-
-	.modal-body
-		font 12; pad 10 15 5;
+	.entry-body
+		font 12; pad 10 15 5; overflow hidden; clear both;
 		p
 			margin-bottom 5px
-
 		p>img,
 		div>div>a>img
 			float right; max-width 250px; max-height 200px; margin 3px 0 10px 20px
-	.modal-header
-		overflow hidden; pad 12 15 10; height 45
+
+	.entry-header
+		overflow hidden; pad 12 15 10; border-bottom #eee;
 		h3
-			font 18/28px
+			font 18/28px; margin 0;
 			b 0;
-		img
-			size 16;
-		.entry-tags
-			show 1; mar 0 10 0;
-		.label
-			pad 2 4; font 9/1; text-shadow none;
 		.entry-source
 			color #999; font 12; margin-left 2px
 		a.entry-source
 			color #666; u 1; margin-left 4px;
 			&:hover
 				u 0;
-
 		.entry-time
 			float right; mar 1 0 0 5; color #666; font 12;
-		.entry-icon
-			float right; margin-left 10px;
-	.modal-footer
-		pad 6 10;  bg #eee 'dark-noise.png' 0 0 repeat; radius 0;
+
+	.entry-footer
+		pad 5 15 4; bg #ddd 'leather.png' 0 0 repeat; border-top #d5d5d5; shadow 0 1 0 #fff 1 inset;
+
+	.no-items
+		font 270; margin 33% auto; color #ccc; text-shadow 0 1px 0 #fff, 1px -1px 0 #aaa; opacity .4; cursor default;
+
+
 
 
 //@import "_mobile";

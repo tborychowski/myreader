@@ -70,7 +70,7 @@ module.exports = function (grunt) {
 			dev: {
 				options: { compress: true, paths: [ '<%= cfg.stylus %>' ] },
 				files: {
-					'<%= cfg.css %>/style.css' : [ '<%= cfg.stylus %>/style.styl', '<%= cfg.stylus %>/widgets/*.styl' ],
+					'<%= cfg.css %>/style.css' : [ '<%= cfg.stylus %>/style.styl', '<%= cfg.stylus %>/widgets/*.styl' ]
 				}
 			},
 			prod: {
@@ -82,13 +82,11 @@ module.exports = function (grunt) {
 		watch: {
 			js:   {
 				files: '<%= cfg.jssrc %>/**/*.js',
-				tasks: ['jshint', 'concat' ],
-				options: { nospawn: true, interrupt: true }
+				tasks: ['jshint', 'concat' ]
 			},
 			css: {
 				files: '<%= cfg.stylus %>/**/*.styl',
-				tasks: [ 'stylus:dev' ],
-				options: { nospawn: true, interrupt: true }
+				tasks: [ 'stylus:dev' ]
 			}
 		}
 	});

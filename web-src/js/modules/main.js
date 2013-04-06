@@ -100,52 +100,34 @@
 	},
 	/*** HANDLERS ***************************************************************************************************************/
 
-	// _getTagsHtml = function (tags) {
-	// 	var tag, tagsHtml = [];
-	// 	for (tag in tags) {
-	// 		if (!tags.hasOwnProperty(tag)) continue;
-	// 		tagsHtml.push('<div class="label entry-tags-tag" style="background-color:' + tags[tag] + '">' + tag + '</div>');
-	// 	}
-	// 	return tagsHtml.join('');
-	// },
-
 	_getItemHtml = function (item) {
-		var cls = [ 'modal', 'entry' ];
+		var cls = [ 'entry' ];
 		if (item.unread === 1) cls.push('unread');
 		if (item.starred === 1) cls.push('starred');
 
 		return '<div id="entry' + item.id + '" class="' + cls.join(' ') + '" data-id="' + item.id + '">' +
-		'<div class="modal-header">' +
-		// '<a href="' + item.link + '" class="entry-icon">' +
-		// 	(item.icon ? '<img src="favicons/' + item.icon + '" alt="' + item.title + '" />' : '') +
-		// '</a>' +
-		'<span class="entry-time">' + item.date + '</span>' +
-		'<h3><a href="' + item.link + '" target="_blank">' + item.title + '</a></h3>' +
-		'<span class="entry-source">from <a href="#" class="entry-source entry-source' + item.source + '">' +
-			item.sourcetitle + '</a></span>' +
-		//'<div class="entry-tags">' + _getTagsHtml(item.tags) + '</div>' +
+		'<div class="entry-header">' +
+			'<h3><a href="' + item.link + '" target="_blank">' + item.title + '</a></h3>' +
+			'<span class="entry-time">' + item.date + '</span>' +
+			'<span class="entry-source">from ' +
+				'<a href="#" class="entry-source entry-source' + item.source + '">' + item.sourcetitle + '</a>' +
+			'</span>' +
 		'</div>' +
-		'<div class="modal-body entry-content">' + item.content + '</div>' +
-		'<div class="modal-footer">' +
-		// '<a href="' + item.link + '" target="_blank" class="btn btn-mini entry-newwindow pull-right">' +
-		// 	'<i class="icon-share-alt"></i>open</a>' +
-		'<div class="btn-group pull-left">' +
-		'<button class="btn btn-mini btn-star" data-action="toggle-star"><i class="icon-star-empty"></i> star</button>' +
-		'<button class="btn btn-mini btn-unstar" data-action="toggle-star"><i class="icon-star"></i> unstar</button>' +
-		'<button class="btn btn-mini btn-read" data-action="toggle-unread"><i class="icon-ok-circle"></i> mark as unread' +
-			'</button>' +
-		'<button class="btn btn-mini btn-unread" data-action="toggle-unread"><i class="icon-ok-circle"></i> mark as read' +
-			'</button>' +
-		'</div>' +
-		'<div class="btn-group pull-right">' +
-			'<button class="btn btn-mini" data-action="readability"><i class="icon-bookmark"></i> readability</button>' +
-			'<button class="btn btn-mini" data-action="email"><i class="icon-envelope"></i> email</button>' +
-		'</div>' +
+		'<div class="entry-body">' + item.content + '</div>' +
+		'<div class="entry-footer">' +
+			'<div class="pull-right">' +
+				'<span class="tb-btn" data-action="readability"><i class="icon-bookmark"></i>readability</span>' +
+				'<span class="tb-btn" data-action="email"><i class="icon-envelope"></i>email</span>' +
+			'</div>' +
+			'<span class="tb-btn addstar" data-action="toggle-star"><i class="icon-star-empty"></i></span>' +
+			'<span class="tb-btn unstar" data-action="toggle-star"><i class="icon-star"></i></span>' +
+			'<span class="tb-btn mark-unread" data-action="toggle-unread"><i class="icon-ok-sign"></i>mark as unread</span>' +
+			'<span class="tb-btn mark-read" data-action="toggle-unread"><i class="icon-ok-circle"></i>mark as read</span>' +
 		'</div>' +
 		'</div>';
 	},
 
-	_getNoItemsHtml = function () { return 'No items found'; },
+	_getNoItemsHtml = function () { return '<div class="no-items"><i class="icon-rss"></i></div>'; },
 
 	_populate = function (items) {
 		if (!items || !items.length) return _container.html(_getNoItemsHtml());
@@ -174,7 +156,7 @@
 		if (!_container.length) return;
 
 		_container.on('click', '.entry', _entryClickHandler);
-		_container.on('click', 'button.btn', _btnClickHandler);
+		_container.on('click', '.tb-btn', _btnClickHandler);
 		$(document).on('keydown', _onKeyDown);
 
 		//_load();
