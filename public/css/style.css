@@ -1,7 +1,7 @@
 body{background:#333 url(../img/noise.png) 0 0 repeat}
 a:focus{outline:none}
 button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transparent}
-.btn{background:none;border:none;color:#999;width:32px;height:26px;margin-right:5px;-webkit-transition:color .2s ease-out;-moz-transition:color .2s ease-out;-o-transition:color .2s ease-out;-ms-transition:color .2s ease-out;transition:color .2s ease-out;padding:0 6px;}
+.btn{background:none;border:none;color:#999;height:26px;min-width:32px;margin-right:5px;-webkit-transition:color .2s ease-out;-moz-transition:color .2s ease-out;-o-transition:color .2s ease-out;-ms-transition:color .2s ease-out;transition:color .2s ease-out;padding:0 6px;}
 .btn:hover{color:#ccc}
 .pull-right{float:right}
 .logo{font-size:24px;color:#999;padding:5px 0 0 15px;float:left;opacity:.3;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;}
