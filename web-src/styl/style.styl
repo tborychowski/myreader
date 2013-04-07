@@ -49,7 +49,7 @@ input::-moz-focus-inner
 	.badge
 	.no-badge
 	.btn-settings
-		float right
+		float right; margin-left -100%; position relative;
 
 	.badge
 	.no-badge
@@ -66,7 +66,7 @@ input::-moz-focus-inner
 		img
 			float left; size 16;
 	.nav-name
-		float left; height 16; line-height 16px; vertical-align middle; white-space nowrap; max-width 130px; overflow hidden;
+		float left; height 16; line-height 16px; vertical-align middle; white-space nowrap; max-width 120px; overflow hidden;
 		text-overflow ellipsis;
 
 	li.nav-tag
@@ -115,7 +115,9 @@ input::-moz-focus-inner
 	.entry
 		text left; background-color #f5f5f5; opacity .95; border-bottom #d5d5d5; transition background-color .5s;
 		a
-			color #666; transition color .5s;
+			color #666; transition color .5s; u 0;
+			&:hover
+				u 1;
 		i
 			margin-right 7px; font 14;
 		.tb-btn
@@ -162,9 +164,7 @@ input::-moz-focus-inner
 		.entry-source
 			color #999; font 12; margin-left 2px
 		a.entry-source
-			color #666; u 1; margin-left 4px;
-			&:hover
-				u 0;
+			color #666; margin-left 4px;
 		.entry-time
 			float right; mar 1 0 0 5; color #666; font 12;
 
