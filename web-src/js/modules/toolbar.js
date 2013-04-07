@@ -7,6 +7,19 @@
 
 
 	/*** HANDLERS ***************************************************************************************************************/
+	_onKeyDown = function (e) {
+		var key = e.keyCode;
+
+		if (key === 82) App.Publish('app/refresh');					// r - refresh
+		else if (key === 83) App.Publish('entry/toggleStar');		// s - toggle unread
+		else if (key === 85) App.Publish('entry/toggleUnread');		// u - toggle unread
+		else if (key === 32) App.Publish('entry/next');				// space - next
+		else if (key === 33) App.Publish('entry/prev');				// pgup - prev
+		else if (key === 34) App.Publish('entry/next');				// pgdown - next
+		else window.log(key);
+	},
+
+
 	_btnClickHandler = function () {
 		var btn = $(this), action = btn.data('action');
 
@@ -24,6 +37,7 @@
 		if (!_container.length) return;
 
 		_container.on('click', '.btn', _btnClickHandler);
+		$(document).on('keydown', _onKeyDown);
 
 		_isReady = true;
 	};
