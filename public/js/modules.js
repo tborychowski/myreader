@@ -64,9 +64,9 @@
 		if (entry && entry.length) next = entry.next('.entry');				// active item present - scroll to next
 		else next = _container.find('.entry').first();						// no active item - mark first active
 		if (next.length) {
-			if (entry.length) entry.removeClass('active');
-			next.addClass('active');
 			_scrollEntryToView(next, function () {
+				if (entry.length) entry.removeClass('active');
+				next.addClass('active');
 				item = _getById(next.data('id'));
 				item.unread = true;
 				_toggleUnread(item, next);
