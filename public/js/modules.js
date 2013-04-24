@@ -1,7 +1,8 @@
 (function ($, App) {
 	'use strict';
 
-	var _container = null,
+	var _body = null,
+		_container = null,
 		_isReady = false,
 		_items = [],
 		_btnRefresh = null,		// loading swirl
@@ -117,7 +118,7 @@
 			entry = entry || _container.find('.entry').first();
 		}
 		dist = entry[0].offsetTop;
-		_container.animate({ scrollTop: dist }, animSpeed, callback || function () {});
+		_body.animate({ scrollTop: dist }, animSpeed, callback || function () {});
 	},
 
 	_getById = function (id) {
@@ -196,6 +197,7 @@
 		if (_isReady) return;
 		_container = $('#content');
 		if (!_container.length) return;
+		_body = $('html');
 		_btnRefresh = $('#toolbar .icon-repeat');
 		_container.on('click', '.entry', _entryClickHandler);
 		_container.on('click', '.tb-btn', _btnClickHandler);

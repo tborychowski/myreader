@@ -15,7 +15,7 @@ input::-moz-focus-inner
 	padding 0; border 0;
 
 .logo
-	font 24; color #999; pad 5 0 0 15; float left; opacity .3; non-selectable();
+	font 24; color #999; pad 5 0 0 15; float left; opacity .3; non-selectable(); position fixed;
 	.icon-rss
 		font 34; vertical-align bottom; margin-right -4px;
 		&:before
@@ -23,9 +23,9 @@ input::-moz-focus-inner
 
 
 #toolbar
-	z 1; pos 0 0; left sidebar-width; pad 0 15; height toolbar-height; border-box();
+	z 1; position fixed; left 0; bottom 0; pad 0 5; height toolbar-height; border-box();
 	.btn
-		color #999; font 20; height 40; min-width 40px; margin-right 20px; padding 0 6px; bg none; border none;
+		color #999; font 20; height 40; min-width 40px; margin-right 18px; padding 0 6px; bg none; border none;
 		transition color .2s;
 		&:hover
 			color #ccc;
@@ -41,7 +41,7 @@ input::-moz-focus-inner
 
 /*** SIDEBAR ********************************************************************************************************************/
 #sidebar
-	pos toolbar-height,,0,0; width sidebar-width; pad 5 0 0; border-box(); font 13;
+	position fixed; top toolbar-height; left 0; bottom 0; width sidebar-width; pad 5 0 0; border-box(); font 13;
 	hr
 		margin 20 0; border none; border-top #2a2a2a; border-bottom #454545;
 
@@ -117,7 +117,7 @@ input::-moz-focus-inner
 
 /*** MAIN CONTENT ***************************************************************************************************************/
 #content
-	pos toolbar-height 0 0 sidebar-width; overflow auto; border-box(); color #999; text center; z 100;
+	position relative; mar 0 0 0 sidebar-width; border-box(); color #999; text center; z 100;
 	shadow -5 -5 5 #000 .4; radius 15 0 0 0; bg #ddd 'noise.png' 0 0 repeat; min-width 800px;
 
 	.entry
