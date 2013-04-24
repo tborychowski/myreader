@@ -197,7 +197,7 @@
 		if (_isReady) return;
 		_container = $('#content');
 		if (!_container.length) return;
-		_body = $('html');
+		_body = $('html,body');
 		_btnRefresh = $('#toolbar .icon-repeat');
 		_container.on('click', '.entry', _entryClickHandler);
 		_container.on('click', '.tb-btn', _btnClickHandler);
