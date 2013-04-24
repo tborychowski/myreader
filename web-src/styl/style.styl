@@ -5,7 +5,7 @@ sidebar-width = 180px
 toolbar-height = 40px
 
 body
-	bg #333 'noise.png' 0 0 repeat;
+	bg #ddd 'noise.png' 0 0 repeat;
 
 a:focus
 	outline none;
@@ -15,7 +15,7 @@ input::-moz-focus-inner
 	padding 0; border 0;
 
 .logo
-	font 24; color #999; pad 5 0 0 15; float left; opacity .3; non-selectable(); position fixed;
+	font 24; color #999; pad 5 0 0 15; float left; opacity .3; non-selectable(); position fixed; z 10;
 	.icon-rss
 		font 34; vertical-align bottom; margin-right -4px;
 		&:before
@@ -41,12 +41,14 @@ input::-moz-focus-inner
 
 /*** SIDEBAR ********************************************************************************************************************/
 #sidebar
-	position fixed; top toolbar-height; left 0; bottom 0; width sidebar-width; pad 5 0 0; border-box(); font 13;
+	position fixed; top 0; left 0; bottom 0; width sidebar-width; pad 45 0 0; border-box(); font 13;
+	bg #333 'noise.png' 0 0 repeat; shadow -5 0 5 #000 .4 inset; overflow hidden; overflow-y auto;
+
 	hr
 		margin 20 0; border none; border-top #2a2a2a; border-bottom #454545;
 
 	.sidebar-wrapper
-		pos 140 0 0 0; pad 0; margin-right -20px; overflow hidden; overflow-y auto;
+		pos 180 0 0 0; pad 0; margin-right -20px; overflow hidden; overflow-y auto;
 
 	.nav-list
 		pad 0; list-style none; width 180;
@@ -117,8 +119,7 @@ input::-moz-focus-inner
 
 /*** MAIN CONTENT ***************************************************************************************************************/
 #content
-	position relative; mar 0 0 0 sidebar-width; border-box(); color #999; text center; z 100;
-	shadow -5 -5 5 #000 .4; radius 15 0 0 0; bg #ddd 'noise.png' 0 0 repeat; min-width 800px;
+	position relative; mar 0 0 0 sidebar-width; border-box(); color #999; text center; z 100; min-width 768px;
 
 	.entry
 		text left; background-color #f9f9f9; border-bottom #d5d5d5; transition background-color .5s;
@@ -183,8 +184,8 @@ input::-moz-focus-inner
 		pad 5 15 4; bg #ddd 'leather.png' 0 0 repeat; border-top #d5d5d5; shadow 0 1 0 #fff 1 inset; position relative;
 
 	.no-items
-		font 270; margin -155 0 0 -106; color #ccc; text-shadow 0 1px 0 #fff, 1px -1px 0 #aaa; opacity .4; cursor default;
-		position absolute; top 48%; left 50%;
+		font 270; margin -155 0 0 0; color #ccc; text-shadow 0 1px 0 #fff, 1px -1px 0 #aaa; opacity .4; cursor default;
+		position fixed; top 48%; left 50%;
 
 
 /*** MAIN CONTENT ***************************************************************************************************************/
