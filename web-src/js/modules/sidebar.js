@@ -30,10 +30,24 @@
 	_onNavChange = function (cfg) {
 		_params = $.extend(_params, cfg);
 		_populateSources();
-		_container
-			.find('.nav-' + cfg.linkType)
-			.filter('.nav-' + cfg.linkId)
-			.addClass('active').siblings().removeClass('active');
+	},
+
+	_toggleSelection = function (el) {
+		if (!el) el = _container.find('.nav-' + _params.linkType).filter('.nav-' + _params.linkId);
+		if (!el || !el.length) return;
+
+		el.addClass('active').siblings().removeClass('active');
+
+		if (_params.linkType === 'tag') {
+			el.nextUntil('.nav-tag', '.nav-source').show();
+			el.find('.no-badge').hide();
+		}
+		else if (_params.linkType === 'source') {
+			el.show();
+			el.prevUntil('.nav-tag', '.nav-source').show();
+			el.nextUntil('.nav-tag', '.nav-source').show();
+			el.prev('.nav-tag').find('.no-badge').hide();
+		}
 	},
 	/*** NAVIGATION *************************************************************************************************************/
 
@@ -44,7 +58,7 @@
 		var icon = (src.icon ? '<img src="favicons/' + src.icon + '"">' : '<i class="icon-rss"></i>');
 		return '<li class="nav-source nav-btn nav-' + src.id + '" data-nav-type="source" data-action="' + src.id + '">' +
 			'<a href="#" class="nav-row">' +
-				(src.unread ? '<span class="badge">' + src.unread + '</span>' : '') +
+				(src.unread ? '<span class="no-badge">' + src.unread + '</span>' : '') +
 				'<span class="nav-icon">' + icon + '</span>' +
 				'<span class="nav-name">' + src.title + '</span>' +
 			'</a>' +
@@ -54,7 +68,7 @@
 	_getTagHtml = function (tag, unread) {
 		return '<li class="nav-tag nav-btn nav-' + tag + '" data-nav-type="tag" data-action="' + tag + '">' +
 			'<a href="#" class="nav-row">' +
-				(unread ? '<span class="badge">' + unread + '</span>' : '') +
+				(unread ? '<span class="no-badge">' + unread + '</span>' : '') +
 				'<span class="nav-name">' + tag + '</span>' +
 			'</a>' +
 		'</li>';
@@ -69,7 +83,7 @@
 		_showZeroSources = (_params.type !== 'unread');
 
 		srcAr.push('<li class="nav-header"><i class="btn-settings icon-cog"></i>' +
-			'<span class="nav-name nav-tag nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
+			'<span class="nav-name nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
 
 		for (; src = _sources[i++] ;) {
 			tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.unread : src.unread;
@@ -83,6 +97,7 @@
 			srcAr.push(tags[tag].join(''));
 		}
 		_sourcesContainer.html(srcAr);
+		_toggleSelection();
 	},
 
 	_updateStats = function (stats) {
@@ -99,6 +114,7 @@
 
 	/*** LOAD DATA **************************************************************************************************************/
 	_loadStats = function () { App.Get('stats', _updateStats); },
+
 	_loadSources = function () { App.Get('sources', _populateSources); },
 
 	_reload = function () {
@@ -119,22 +135,18 @@
 
 		_statsContainer = _container.find('.sidebar-list-stats');
 		_sourcesContainer = _container.find('.sidebar-list-sources');
-
-
 		_container.on('click', '.nav-btn', _navigate);
 
-		_loadStats();
-		_loadSources();
+		_reload();
 
 		App.Publish('nav/changed', [ _params ]);
-
 		_isReady = true;
 	};
 
 
 	App.Subscribe('app/ready', _init);
 	App.Subscribe('app/refresh', _reload);
-	App.Subscribe('entry/changed', _reload);
 	App.Subscribe('nav/changed', _onNavChange);
+	App.Subscribe('entry/changed', _reload);
 
 }(jQuery, window.App, this));

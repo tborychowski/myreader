@@ -29,14 +29,14 @@
  -->			<?php
 				if (\F3::get('auth')->enabled() === true) {
 					if ($this->loggedin === true) echo '<button class="btn btn-small">logout</button>';
-					else echo '<button class="btn btn-small"login</button>';
+					//else echo '<button class="btn"login</button>';
 				}
 			?>
 		</div>
 
-		<button class="btn pull-left" data-action="refresh" title="Refresh (r)"><i class="icon-repeat"></i></button>
-		<button class="btn" data-action="prev" title="Previous Item (Page Up)"><i class="icon-chevron-up"></i></button>
-		<button class="btn" data-action="next" title="Next Item (Page Down)"><i class="icon-chevron-down"></i></button>
+		<button class="btn pull-left" data-action="refresh"><i class="icon-repeat"></i></button>
+		<button class="btn" data-action="prev"><i class="icon-chevron-up"></i></button>
+		<button class="btn" data-action="next"><i class="icon-chevron-down"></i></button>
 	</div>
 
 

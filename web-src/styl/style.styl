@@ -2,7 +2,7 @@
 
 
 sidebar-width = 180px
-toolbar-height = 44px
+toolbar-height = 40px
 
 body
 	bg #333 'noise.png' 0 0 repeat
@@ -14,16 +14,6 @@ button::-moz-focus-inner
 input::-moz-focus-inner
 	padding 0; border 0;
 
-
-.btn
-	bg none; border none; color #999; height 40; min-width 40px; margin-right 20px; transition color .2s; padding 0 6px; font 20;
-	&:hover
-		color #ccc;
-
-
-.pull-right
-	float right
-
 .logo
 	font 24; color #999; pad 5 0 0 15; float left; opacity .3; non-selectable();
 	.icon-rss
@@ -33,7 +23,19 @@ input::-moz-focus-inner
 
 
 #toolbar
-	z 1; pos 0 0; left sidebar-width; pad 4 15; height toolbar-height; border-box();
+	z 1; pos 0 0; left sidebar-width; pad 0 15; height toolbar-height; border-box();
+	.btn
+		color #999; font 20; height 40; min-width 40px; margin-right 20px; padding 0 6px; bg none; border none;
+		transition color .2s;
+		&:hover
+			color #ccc;
+	.btn-small
+		font 16;
+
+	.pull-right
+		float right
+		.btn
+			margin-right 0; margin-left 20px;
 
 
 
@@ -41,10 +43,36 @@ input::-moz-focus-inner
 #sidebar
 	pos toolbar-height,,0,0; width sidebar-width; pad 5 0 0; border-box(); font 13;
 	hr
-		margin 20px 0; border none; border-top #2a2a2a; border-bottom #454545;
+		margin 20 0; border none; border-top #2a2a2a; border-bottom #454545;
 
 	.sidebar-wrapper
 		pos 140 0 0 0; pad 0; margin-right -20px; overflow hidden; overflow-y auto;
+
+	.nav-list
+		pad 0; list-style none; width 180;
+		&:last-child
+			margin-bottom 10px;
+
+	.nav-header
+		color #999; text-shadow 0 -1px 0 rgba(#000, .4); cursor default; show 2; font 13/20px; b 1; pad 3 13;
+		text-transform uppercase; overflow hidden;
+		.nav-name:hover
+			color #eee;
+
+	.nav-row
+		text-shadow 0 -1px 0 rgba(#000, .4); color #A4A4A4; overflow hidden; pad 6 15; margin-bottom 3px; show 2;
+		border-top 1px solid transparent; border-bottom 1px solid transparent;
+
+	.btn-settings
+		font 16; margin 0;
+
+	.btn-settings:hover
+	.nav-row:hover
+		color #eee;
+
+	.active .nav-row
+	.nav-row:focus
+		color #C8BCBE; gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D; shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F
 
 	.badge
 	.no-badge
@@ -53,18 +81,19 @@ input::-moz-focus-inner
 
 	.badge
 	.no-badge
-		vertical-align middle; font 12px/15px; padding 2px 6px 1px; radius 2; show 1; white-space nowrap;
-	.no-badge
-		color #999; padding 0 2 0 0; line-height 15px;
+		vertical-align middle; font 12px/15px; padding 0 2 0 0; radius 2; show 1; white-space nowrap;
 	.badge
-		background-color #999; color #FFF; b 1; text-shadow 0 -1px 0 rgba(#000, .25);
+		background-color #999; color #FFF; b 1; text-shadow 0 -1px 0 rgba(#000, .25); padding 2 6 1;
 
 	.icon-rss
-		float left; size 16; font 16; color #888; opacity .3;
 	.nav-icon
-		float left; size 16; margin-right 8px;
-		img
-			float left; size 16;
+	.nav-icon img
+		float left; size 16;
+	.icon-rss
+		font 16; color #888; opacity .3;
+	.nav-icon
+		margin-right 8px;
+
 	.nav-name
 		float left; height 16; line-height 16px; vertical-align middle; white-space nowrap; max-width 120px; overflow hidden;
 		text-overflow ellipsis;
@@ -74,38 +103,12 @@ input::-moz-focus-inner
 		&.nav-type
 			font 16;
 
-	li.nav-tag
+	.nav-source
+		show 0;
+	.nav-tag
 		margin-top 15px;
 		.nav-name
 			b 1; text-transform uppercase;
-
-	.nav-header
-		color #999; text-shadow 0 -1px 0 rgba(#000, .4); cursor default; display: block; font 13/20px; b 1; pad 3 13;
-		text-transform uppercase; overflow hidden;
-
-		.nav-name:hover
-			color #eee;
-		.btn-settings
-			font 14; margin 0;
-			&:hover
-				color #eee;
-
-	.nav-row
-		text-shadow 0 -1px 0 rgba(#000, .4); color #A4A4A4; overflow hidden; pad 6 15; margin-bottom 3px; show 2;
-		border-top 1px solid transparent; border-bottom 1px solid transparent;
-
-	.nav-row:hover
-		color #eee;
-
-	.active .nav-row
-	.nav-row:focus
-		gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D; shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F;
-		color #C8BCBE;
-
-	.nav-list
-		pad 0; list-style none; width 180;
-		&:last-child
-			margin-bottom 10px;
 
 /*** SIDEBAR ********************************************************************************************************************/
 
@@ -118,9 +121,9 @@ input::-moz-focus-inner
 	shadow -5 -5 5 #000 .4; radius 15 0 0 0; bg #ddd 'noise.png' 0 0 repeat; min-width 800px;
 
 	.entry
-		text left; background-color #f5f5f5; opacity .95; border-bottom #d5d5d5; transition background-color .5s;
+		text left; background-color #f9f9f9; border-bottom #d5d5d5; transition background-color .5s;
 		a
-			color #666; transition color .5s; u 0;
+			color #888; transition color .5s; u 0;
 			&:hover
 				u 1;
 		i
@@ -133,33 +136,36 @@ input::-moz-focus-inner
 			margin-left 15px; margin-right 0;
 		.mark-unread
 		.addstar
+		.expand
 			show 1;
 		.mark-read
 		.unstar
+		.collapse
 			show 0;
 		&:last-child
 			margin-bottom 70%; shadow 0 2 3 #000 .5;
 		&.active
-			background-color #fff; opacity 1
 		&.unread
-			background-color #fff; opacity 1
-			a
-				color #0088CC
+			background-color #fff;
+		&.unread a
+			color #0088CC
 
 	.unread .mark-unread
 	.starred .addstar
+	.expanded .expand
 		show 0
 	.unread .mark-read
 	.starred .unstar
+	.expanded .collapse
 		show 1
 
 	.entry-body
-		font 12; pad 10 15 5; clear both; max-height 300px; overflow hidden; //overflow-y auto;
+		font 13/1.5; pad 10 15 5; clear both; max-height 200px; overflow hidden; //overflow-y auto;
 		p
 			margin-bottom 5px
 		p>img,
 		div>div>a>img
-			float right; max-width 250px; max-height 200px; margin 3px 0 10px 20px
+			float right; clear right; max-width 250px; max-height 200px; margin 3px 0 10px 20px
 
 	.entry-header
 		overflow hidden; pad 12 15 10; border-bottom #eee;
@@ -174,11 +180,12 @@ input::-moz-focus-inner
 			float right; mar 5 0 0 5; color #666; font 12;
 
 	.entry-footer
-		pad 5 15 4; bg #ddd 'leather.png' 0 0 repeat; border-top #d5d5d5; shadow 0 1 0 #fff 1 inset;
+		pad 5 15 4; bg #ddd 'leather.png' 0 0 repeat; border-top #d5d5d5; shadow 0 1 0 #fff 1 inset; position relative;
 
 	.no-items
-		font 270; margin 0 auto; color #ccc; text-shadow 0 1px 0 #fff, 1px -1px 0 #aaa; opacity .4; cursor default;
-		position relative; top 33%;
+		font 270; margin -155 0 0 -106; color #ccc; text-shadow 0 1px 0 #fff, 1px -1px 0 #aaa; opacity .4; cursor default;
+		position absolute; top 48%; left 50%;
+
 
 /*** MAIN CONTENT ***************************************************************************************************************/
 

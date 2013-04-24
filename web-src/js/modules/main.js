@@ -6,6 +6,7 @@
 		_items = [],
 		_btnRefresh = null,		// loading swirl
 		_itemsPerPage = 20,
+		_maxBodyHeight = 200,
 
 
 
@@ -17,6 +18,7 @@
 			item = _getById(entry.data('id'));
 
 		if (action === 'toggle-star') _toggleStar(item, entry);
+		if (action === 'toggle-expand') _toggleExpand(item, entry);
 		if (action === 'toggle-unread') _toggleUnread(item, entry);
 		else {
 			item.unread = true;
@@ -47,6 +49,30 @@
 		item.unread = !item.unread;
 		el.toggleClass('unread', item.unread);
 		App.Post((item.unread ? 'un' : '') + 'mark/' + item.id, function () { App.Publish('entry/changed'); });
+	},
+
+	_toggleExpand = function (item, el) {
+		var body = el.find('.entry-body'), isExpanded = el.hasClass('expanded'), bodyH;
+		if (isExpanded) {
+			bodyH = body.height();
+			if (bodyH > _maxBodyHeight) {
+				body.animate({ height: _maxBodyHeight }, function () {
+					body.css({ maxHeight: _maxBodyHeight, height: 'auto' });
+					el.removeClass('expanded');
+				});
+				_scrollEntryToView(el);
+			}
+			else body.css({ maxHeight: _maxBodyHeight });
+		}
+		else {
+			body.css('max-height', 'inherit');
+			bodyH = body.height();
+			if (bodyH > _maxBodyHeight) {
+				body.height(_maxBodyHeight).animate({ height: bodyH }, function () {
+					el.addClass('expanded');
+				});
+			}
+		}
 	},
 
 	_previousItem = function () {
@@ -81,16 +107,17 @@
 			entry.prev().addClass('active');
 			App.Publish('entry/next');
 		}
+		else if (entry.hasClass('unread')) _toggleUnread();
 	},
 
-	_scrollEntryToView = function (entry, cb) {
+	_scrollEntryToView = function (entry, callback) {
 		var dist, animSpeed = 'fast';
-		if (!entry) {
+		if (!entry || !entry.length) {
 			animSpeed = 0;
 			entry = entry || _container.find('.entry').first();
 		}
 		dist = entry[0].offsetTop;
-		_container.animate({ scrollTop: dist }, animSpeed, cb || function () {});
+		_container.animate({ scrollTop: dist }, animSpeed, callback || function () {});
 	},
 
 	_getById = function (id) {
@@ -115,10 +142,17 @@
 		'</div>' +
 		'<div class="entry-body">' + item.content + '</div>' +
 		'<div class="entry-footer">' +
+
 			'<div class="pull-right">' +
-				'<span class="tb-btn" data-action="readability"><i class="icon-bookmark"></i>readability</span>' +
-				'<span class="tb-btn" data-action="email"><i class="icon-envelope"></i>email</span>' +
+			// 	'<span class="tb-btn" data-action="readability"><i class="icon-bookmark"></i>readability</span>' +
+			// 	'<span class="tb-btn" data-action="email"><i class="icon-envelope"></i>email</span>' +
+
+				'<span class="tb-btn btn-expand expand" data-action="toggle-expand" title="Expand">' +
+					'<i class="icon-double-angle-down"></i></span>' +
+				'<span class="tb-btn btn-expand collapse" data-action="toggle-expand" title="Collapse">' +
+					'<i class="icon-double-angle-up"></i></span>' +
 			'</div>' +
+
 			'<span class="tb-btn addstar" data-action="toggle-star" title="Star Item (s)">' +
 				'<i class="icon-star-empty"></i></span>' +
 			'<span class="tb-btn unstar" data-action="toggle-star" title="Unstar Item (s)">' +
@@ -127,6 +161,7 @@
 				'<i class="icon-ok-sign"></i>mark as unread</span>' +
 			'<span class="tb-btn mark-read" data-action="toggle-unread" title="Mark as Read (u)">' +
 				'<i class="icon-ok-circle"></i>mark as read</span>' +
+
 		'</div>' +
 		'</div>';
 	},
@@ -144,6 +179,7 @@
 		_container.html(itemAr);
 		_scrollEntryToView();
 		_btnRefresh.removeClass('icon-spin');
+		_maxBodyHeight = parseInt(_container.find('.entry .entry-body').first().css('max-height'), 10);
 	},
 
 
@@ -151,7 +187,7 @@
 		_btnRefresh.addClass('icon-spin');
 		cfg = $.extend({ type: 'unread', items: _itemsPerPage }, cfg);
 		App.Get('items?' + $.param(cfg), _populate);
-		//http://herhor.info/rss/?itemsPerPage=3&type=unread&tag=filmy&source=&ajax=true
+		//http://domain.com?itemsPerPage=3&type=unread&tag=filmy&source=&ajax=true
 	},
 
 

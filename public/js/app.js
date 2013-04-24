@@ -132,7 +132,7 @@ window.App = (function ($, App) {
 			window.console.dir.bind(window.console) : function (e) { window.alert(JSON.stringify(e)); };
 
 }(this));
-var App = (function (App) {
+window.App = (function (App) {
 	'use strict';
 
 	var cache = {};
@@ -177,7 +177,7 @@ var App = (function (App) {
 
 
 	return App;
-}(App || {}));
+}(window.App || {}));
 
 window.App = (function (App, window) {
 	'use strict';
@@ -221,7 +221,7 @@ window.App = (function (App, window) {
 	return App;
 }(window.App || {}, this));
 
-var App = (function (App, window) {
+window.App = (function (App, window) {
 	'use strict';
 	/*jshint maxlen: 500, undef:false, onevar: false */
 

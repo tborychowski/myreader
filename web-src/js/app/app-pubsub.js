@@ -1,4 +1,4 @@
-var App = (function (App) {
+window.App = (function (App) {
 	'use strict';
 
 	var cache = {};
@@ -43,4 +43,4 @@ var App = (function (App) {
 
 
 	return App;
-}(App || {}));
+}(window.App || {}));

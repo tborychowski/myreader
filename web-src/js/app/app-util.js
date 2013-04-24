@@ -1,4 +1,4 @@
-var App = (function (App, window) {
+window.App = (function (App, window) {
 	'use strict';
 	/*jshint maxlen: 500, undef:false, onevar: false */
 

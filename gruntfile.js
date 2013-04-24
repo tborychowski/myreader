@@ -10,31 +10,7 @@ module.exports = function (grunt) {
 		},
 
 		jshint: {
-			options: {
-				browser   : true,
-				jquery    : true,
-
-				bitwise   : true,
-				boss      : true,
-				//camelcase : true,
-				eqeqeq    : true,
-				immed     : true,
-				indent    : 4,
-				latedef   : true,
-				maxlen    : 130,
-				newcap    : true,
-				noarg     : true,
-				noempty   : true,
-				nonew     : true,
-				onevar    : true,
-				quotmark  : true,
-				smarttabs : true,
-				//strict    : true,
-				trailing  : true,
-				//undef     : true,
-				//unused    : true,
-				white     : true
-			},
+			options: { jshintrc: '<%= cfg.jssrc %>/.jshintrc' },
 			files: [
 				'<%= cfg.jssrc %>/**/*.js',
 				'!<%= cfg.jssrc %>/jquery/*.js',
