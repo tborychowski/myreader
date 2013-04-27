@@ -49,7 +49,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transp
 #toolbar .pull-right .btn{margin-right:0;margin-left:20px}
 #sidebar{position:fixed;top:0;left:0;bottom:0;width:180px;padding:45px 0 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-size:13px;background:#333 url(../img/noise.png) 0 0 repeat;-webkit-box-shadow:-5px 0 5px rgba(0,0,0,0.4) inset;-moz-box-shadow:-5px 0 5px rgba(0,0,0,0.4) inset;box-shadow:-5px 0 5px rgba(0,0,0,0.4) inset;overflow:hidden;overflow-y:auto;}
 #sidebar hr{margin:20px 0;border:none;border-top:1px solid #2a2a2a;border-bottom:1px solid #454545}
-#sidebar .sidebar-wrapper{position:absolute;top:180px;right:0;bottom:0;left:0;padding:0;margin-right:-20px;overflow:hidden;overflow-y:auto}
+#sidebar .sidebar-wrapper{position:absolute;top:180px;right:0;bottom:40px;left:0;padding:0;margin-right:-20px;overflow:hidden;overflow-y:auto}
 #sidebar .nav-list{padding:0;list-style:none;width:180px;}
 #sidebar .nav-list:last-child{margin-bottom:10px}
 #sidebar .nav-header{color:#999;text-shadow:0 -1px 0 rgba(0,0,0,0.4);cursor:default;display:block;font-size:13px;line-height:20px;font-weight:bold;padding:3px 13px;text-transform:uppercase;overflow:hidden;}
