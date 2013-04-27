@@ -11,42 +11,30 @@ module.exports = function (grunt) {
 
 		jshint: {
 			options: { jshintrc: '<%= cfg.jssrc %>/.jshintrc' },
-			files: [
-				'<%= cfg.jssrc %>/**/*.js',
-				'!<%= cfg.jssrc %>/jquery/*.js',
-				'!<%= cfg.jssrc %>/selfoss/*.js',
-				'!<%= cfg.jssrc %>/widgets/*.js'
-			]
+			files: [ '<%= cfg.jssrc %>/**/*.js', '!<%= cfg.jssrc %>/jquery/*.js' ]
 		},
 
 		concat: {
-			jquery:  { src: [ '<%= cfg.jssrc %>/jquery/*.js' ], dest: '<%= cfg.jsdest %>/jquery.min.js' },
-
-			widgets: {
-				src: ['<%= cfg.jssrc %>/widgets/*.js'],
-				dest: '<%= cfg.jsdest %>/widgets.js'
+			lib: { 
+				src: [ '<%= cfg.jssrc %>/jquery/*.js' ], 
+				dest: '<%= cfg.jsdest %>/lib.js' 
 			},
-			modules: {
-				src: ['<%= cfg.jssrc %>/modules/*.js'],
-				dest: '<%= cfg.jsdest %>/modules.js'
-			},
-			app:     {
-				src: ['<%= cfg.jssrc %>/app/*.js'],
+			app: {
+				src: ['<%= cfg.jssrc %>/app/*.js', '<%= cfg.jssrc %>/modules/*.js' ],
 				dest: '<%= cfg.jsdest %>/app.js'
 			}
 		},
 
-		uglify: {
-			widgets : '<%= concat.widgets %>',
-			modules : '<%= concat.modules %>',
-			app     : '<%= concat.app %>'
-		},
+		uglify: { app : '<%= concat.app %>' },
 
 		stylus: {
 			dev: {
 				options: { compress: true, paths: [ '<%= cfg.stylus %>' ] },
 				files: {
-					'<%= cfg.css %>/style.css' : [ '<%= cfg.stylus %>/style.styl', '<%= cfg.stylus %>/widgets/*.styl' ]
+					'<%= cfg.css %>/style.css' : [ 
+						'<%= cfg.stylus %>/style.styl', 
+						'<%= cfg.stylus %>/widgets/*.styl' 
+					]
 				}
 			},
 			prod: {

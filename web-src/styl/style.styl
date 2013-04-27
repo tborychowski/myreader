@@ -1,3 +1,4 @@
+@import "reset";
 @import "_lib";
 
 
@@ -23,7 +24,7 @@ input::-moz-focus-inner
 
 
 #toolbar
-	z 1; position fixed; left 0; bottom 0; pad 0 5; height toolbar-height; border-box();
+	z 1; position fixed; left 0; bottom 0; pad 0 5; height toolbar-height; border-box(); width 300
 	.btn
 		color #999; font 20; height 40; min-width 40px; margin-right 18px; padding 0 6px; bg none; border none;
 		transition color .2s;
@@ -119,7 +120,7 @@ input::-moz-focus-inner
 
 /*** MAIN CONTENT ***************************************************************************************************************/
 #content
-	position relative; mar 0 0 0 sidebar-width; border-box(); color #999; text center; z 100; min-width 768px;
+	position relative; mar 0 0 0 sidebar-width; border-box(); color #999; text center; min-width 768px;
 
 	.entry
 		text left; background-color #f9f9f9; border-bottom #d5d5d5; transition background-color .5s;

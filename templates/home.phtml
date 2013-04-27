@@ -9,9 +9,8 @@
 	<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body class="<?php
 		echo $this->publicMode===true ? "publicmode" : "";
@@ -72,9 +71,7 @@
 	<div id="content"></div>
 
 	<script>var App = App || {}; App.rootPath = "<?php echo $this->base; ?>"</script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/widgets.js"></script>
+	<script src="js/lib.js"></script>
 	<script src="js/app.js"></script>
-	<script src="js/modules.js"></script>
 </body>
 </html>
