@@ -15,16 +15,16 @@ class Opml extends BaseController {
      * Passed to opml.phtml
      * @var String
      */
-    var $msgclass = 'error'; 
-    
+    var $msgclass = 'error';
+
     /**
      * Passed to opml.phtml
      * @var String
      */
     var $msg;
-    
-    
-    /** 
+
+
+    /**
      * Shows a simple html form
     */
     function show(){
@@ -33,8 +33,8 @@ class Opml extends BaseController {
         $this->view->msgclass = $this->msgclass;
         echo $this->view->render('templates/opml.phtml');
     }
-    
-    
+
+
     /**
      * Add an Opml to the user's subscriptions
      * @note Borrows from controllers/Sources.php:write
@@ -56,13 +56,13 @@ class Opml extends BaseController {
             $subs = simplexml_load_file($opml['tmp_name']);
             $subs = $subs->body;
             $errors = $this->processGroup($subs);
-            
+
             // show errors
             if(count($errors) > 1){
                 $this->msg = "The following feeds were not added:<br>";
                 $this->msg .= implode("<br>",$errors);
                 $this->show();
-                
+
             // On success bring them back to their subscription list
             } else {
                 $this->msg = "Success! You might want to <a href='update'>Update now</a> or <a href='./'>view your feeds</a>.";
@@ -75,8 +75,8 @@ class Opml extends BaseController {
             $this->show();
         }
     }
-    
-    
+
+
     /**
      * Process a group of outlines
      * @param $xml (SimpleXML) A SimpleXML object with <outline> children
@@ -86,12 +86,12 @@ class Opml extends BaseController {
      */
     function processGroup($xml,$tags = Array()){
         $errors = Array();
-        
+
         // tags are the words of the outline parent
         if((string)$xml['title'] && $xml['title']!='/'){
             $tags[] = (string)$xml['title'];
         }
-        
+
         // parse every outline item
         foreach($xml->outline as $outline){
             if((string)$outline['type']) {
@@ -112,8 +112,8 @@ class Opml extends BaseController {
         }
         return $errors;
     }
-    
-    
+
+
     /**
      * Add new feed subscription
      * @return true on success or item title on error
@@ -121,12 +121,12 @@ class Opml extends BaseController {
      * @param $tags of the entry
      */
     function addSubscription($xml, $tags){
-        // OPML Required attributes: text,xmlUrl,type 
+        // OPML Required attributes: text,xmlUrl,type
         // Optional attributes: title, htmlUrl, language, title, version
-        
+
         // description
         $title = (string)$xml['text'];
-        
+
         // RSS URL
         $data['url'] = (string)$xml['xmlUrl'];
 
@@ -136,7 +136,7 @@ class Opml extends BaseController {
             \F3::get('logger')->log('opml import: invalid type (only rss supported) ' . $title, \DEBUG);
             return $title;
         }
-        
+
         // validate new item
         $validation = $this->sourcesDao->validate($title, 'spouts\rss\feed', $data);
         if($validation!==true) {
@@ -149,8 +149,8 @@ class Opml extends BaseController {
         $id = $this->sourcesDao->add($title, $tags, $spout, $data);
         $tags = explode(",",$tags);
         foreach($tags as $tag)
-            $this->tagsDao->autocolorTag(trim($tag)); 
-        
+            $this->tagsDao->autocolorTag(trim($tag));
+
         // cleanup tags
         $this->tagsDao->cleanup($this->sourcesDao->getAllTags());
 
