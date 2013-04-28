@@ -16,7 +16,7 @@
 		else if (key === 32) App.Publish('entry/next');				// space - next
 		else if (key === 33) App.Publish('entry/prev');				// pgup - prev
 		else if (key === 34) App.Publish('entry/next');				// pgdown - next
-		else window.log(key);
+		// else window.log(key);
 	},
 
 

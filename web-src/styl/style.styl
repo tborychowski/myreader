@@ -5,7 +5,7 @@
 sidebar-width = 180px
 toolbar-height = 40px
 
-body
+html
 	bg #ddd 'noise.png' 0 0 repeat;
 
 a:focus
@@ -21,6 +21,10 @@ input::-moz-focus-inner
 		font 34; vertical-align bottom; margin-right -4px;
 		&:before
 			rotate 270
+
+.main-logo
+	font 270; margin -155 0 0 0; color #ccc; text-shadow 0 1px 0 #fff, 1px -1px 0 #aaa; opacity .4; cursor default;
+	position fixed; top 48%; left 50%;
 
 
 #toolbar
@@ -184,9 +188,6 @@ input::-moz-focus-inner
 	.entry-footer
 		pad 5 15 4; bg #ddd 'leather.png' 0 0 repeat; border-top #d5d5d5; shadow 0 1 0 #fff 1 inset; position relative;
 
-	.no-items
-		font 270; margin -155 0 0 0; color #ccc; text-shadow 0 1px 0 #fff, 1px -1px 0 #aaa; opacity .4; cursor default;
-		position fixed; top 48%; left 50%;
 
 
 /*** MAIN CONTENT ***************************************************************************************************************/

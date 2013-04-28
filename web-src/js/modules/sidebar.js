@@ -60,7 +60,7 @@
 			'<a href="#" class="nav-row">' +
 				(src.unread ? '<span class="no-badge">' + src.unread + '</span>' : '') +
 				'<span class="nav-icon">' + icon + '</span>' +
-				'<span class="nav-name">' + src.title + '</span>' +
+				'<span class="nav-name">' + src.name + '</span>' +
 			'</a>' +
 		'</li>';
 	},
@@ -86,6 +86,7 @@
 			'<span class="nav-name nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
 
 		for (; src = _sources[i++] ;) {
+			src.tag = src.tag || 'all';
 			tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.unread : src.unread;
 			tags[src.tag] = tags[src.tag] || [];
 			if (src.unread || _showZeroSources) tags[src.tag].push(_getSourceHtml(src));

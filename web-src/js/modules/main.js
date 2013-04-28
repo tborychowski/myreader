@@ -22,7 +22,7 @@
 		if (action === 'toggle-expand') _toggleExpand(item, entry);
 		if (action === 'toggle-unread') _toggleUnread(item, entry);
 		else {
-			item.unread = true;
+			item.is_unread = true;
 			_toggleUnread(item, entry);
 		}
 		e.stopPropagation();
@@ -35,9 +35,11 @@
 			if (el.length) item = _getById(el.data('id'));
 		}
 		if (!item || !el.length) return;
-		item.starred = !item.starred;
-		el.toggleClass('starred', item.starred);
-		App.Post((item.starred ? '' : 'un') + 'starr/' + item.id, function () { App.Publish('entry/changed'); });
+		item.is_starred = !item.is_starred;
+		el.toggleClass('starred', item.is_starred);
+		App.Get('items/' + item.id + '/' + (item.is_starred ? '' : 'un') + 'star', function () {
+			App.Publish('entry/changed');
+		});
 	},
 
 	_toggleUnread = function (item, el) {
@@ -47,9 +49,11 @@
 			if (el.length) item = _getById(el.data('id'));
 		}
 		if (!item || !el.length) return;
-		item.unread = !item.unread;
-		el.toggleClass('unread', item.unread);
-		App.Post((item.unread ? 'un' : '') + 'mark/' + item.id, function () { App.Publish('entry/changed'); });
+		item.is_unread = !item.is_unread;
+		el.toggleClass('unread', item.is_unread);
+		App.Get('items/' + item.id + '/' + (item.is_unread ? 'un' : '') + 'read', function () {
+			App.Publish('entry/changed');
+		});
 	},
 
 	_toggleExpand = function (item, el) {
@@ -95,7 +99,7 @@
 				if (entry.length) entry.removeClass('active');
 				next.addClass('active');
 				item = _getById(next.data('id'));
-				item.unread = true;
+				item.is_unread = true;
 				_toggleUnread(item, next);
 			});
 		}
@@ -130,24 +134,20 @@
 
 	_getItemHtml = function (item) {
 		var cls = [ 'entry' ];
-		if (item.unread === 1) cls.push('unread');
-		if (item.starred === 1) cls.push('starred');
+		if (item.is_unread === 1) cls.push('unread');
+		if (item.is_starred === 1) cls.push('starred');
 
 		return '<div id="entry' + item.id + '" class="' + cls.join(' ') + '" data-id="' + item.id + '">' +
 		'<div class="entry-header">' +
 			'<h3><a href="' + item.link + '" target="_blank">' + item.title + '</a></h3>' +
-			'<span class="entry-time">' + item.date + '</span>' +
+			'<span class="entry-time">' + item.datetime + '</span>' +
 			'<span class="entry-source">from ' +
-				'<a href="#" class="entry-source entry-source' + item.source + '">' + item.sourcetitle + '</a>' +
+				'<a href="#" class="entry-source entry-source-' + item.source_id + '">' + item.source_name + '</a>' +
 			'</span>' +
 		'</div>' +
 		'<div class="entry-body">' + item.content + '</div>' +
 		'<div class="entry-footer">' +
-
 			'<div class="pull-right">' +
-			// 	'<span class="tb-btn" data-action="readability"><i class="icon-bookmark"></i>readability</span>' +
-			// 	'<span class="tb-btn" data-action="email"><i class="icon-envelope"></i>email</span>' +
-
 				'<span class="tb-btn btn-expand expand" data-action="toggle-expand" title="Expand">' +
 					'<i class="icon-double-angle-down"></i></span>' +
 				'<span class="tb-btn btn-expand collapse" data-action="toggle-expand" title="Collapse">' +
@@ -162,12 +162,11 @@
 				'<i class="icon-ok-sign"></i>mark as unread</span>' +
 			'<span class="tb-btn mark-read" data-action="toggle-unread" title="Mark as Read (u)">' +
 				'<i class="icon-ok-circle"></i>mark as read</span>' +
-
 		'</div>' +
 		'</div>';
 	},
 
-	_getNoItemsHtml = function () { return '<div class="no-items"><i class="icon-rss"></i></div>'; },
+	_getNoItemsHtml = function () { return ''; },
 
 	_populate = function (items) {
 		if (!items || !items.length) {
@@ -187,8 +186,7 @@
 	_load = function (cfg) {
 		_btnRefresh.addClass('icon-spin');
 		cfg = $.extend({ type: 'unread', items: _itemsPerPage }, cfg);
-		App.Get('items?' + $.param(cfg), _populate);
-		//http://domain.com?itemsPerPage=3&type=unread&tag=filmy&source=&ajax=true
+		App.Get('items', _populate);
 	},
 
 

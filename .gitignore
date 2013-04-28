@@ -1,11 +1,10 @@
-data/favicons/*.png
-data/favicons/*.jpg
-data/thumbnails/*.png
-data/thumbnails/*.jpg
-data/cache/*.spc
-data/logs/*.log
-data/sqlite/*.db
-public/all.*
-config*.ini
-*.sublime-*
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.log
+.cache
 node_modules
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.sublime-*

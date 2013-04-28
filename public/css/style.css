@@ -35,12 +35,13 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
-body{background:#ddd url(../img/noise.png) 0 0 repeat}
+html{background:#ddd url(../img/noise.png) 0 0 repeat}
 a:focus{outline:none}
 button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transparent}
 .logo{font-size:24px;color:#999;padding:5px 0 0 15px;float:left;opacity:.3;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;position:fixed;z-index:10;}
 .logo .icon-rss{font-size:34px;vertical-align:bottom;margin-right:-4px;}
 .logo .icon-rss:before{-webkit-transform:rotate(270deg) translateZ(1px);-moz-transform:rotate(270deg) translateZ(1px);-o-transform:rotate(270deg) translateZ(1px);-ms-transform:rotate(270deg) translateZ(1px);transform:rotate(270deg) translateZ(1px)}
+.main-logo{font-size:270px;margin:-155px 0 0 0;color:#ccc;text-shadow:0 1px 0 #fff,1px -1px 0 #aaa;opacity:.4;cursor:default;position:fixed;top:48%;left:50%}
 #toolbar{z-index:1;position:fixed;left:0;bottom:0;padding:0 5px;height:40px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:300px;}
 #toolbar .btn{color:#999;font-size:20px;height:40px;min-width:40px;margin-right:18px;padding:0 6px;background:none;border:none;-webkit-transition:color .2s ease-out;-moz-transition:color .2s ease-out;-o-transition:color .2s ease-out;-ms-transition:color .2s ease-out;transition:color .2s ease-out;}
 #toolbar .btn:hover{color:#ccc}
@@ -94,4 +95,3 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transp
 #content .entry-header a.entry-source{color:#666;margin-left:4px}
 #content .entry-header .entry-time{float:right;margin:5px 0 0 5px;color:#666;font-size:12px}
 #content .entry-footer{padding:5px 15px 4px;background:#ddd url(../img/leather.png) 0 0 repeat;border-top:1px solid #d5d5d5;-webkit-box-shadow:0 1px 0 #fff inset;-moz-box-shadow:0 1px 0 #fff inset;box-shadow:0 1px 0 #fff inset;position:relative}
-#content .no-items{font-size:270px;margin:-155px 0 0 0;color:#ccc;text-shadow:0 1px 0 #fff,1px -1px 0 #aaa;opacity:.4;cursor:default;position:fixed;top:48%;left:50%}

@@ -7,7 +7,7 @@ window.App = (function ($, App, window) {
 	 * @param msg		text message to show
 	 * @param type		type of the message [success, info | error | warning,alert]; (defaults to: success)
 	 */
-	App.Msg = function (conf, type) { window.Toaster(conf, type); };
+	App.Msg = function (conf, type) { window.log(conf, type); };
 
 
 

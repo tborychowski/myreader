@@ -2,56 +2,31 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		cfg: {
-			jssrc  : 'web-src/js',
-			jsdest : 'public/js',
-			stylus : 'web-src/styl',
-			css    : 'public/css'
-		},
-
+		cfg: { src  : 'web-src', dest : 'public' },
 		jshint: {
-			options: { jshintrc: '<%= cfg.jssrc %>/.jshintrc' },
-			files: [ '<%= cfg.jssrc %>/**/*.js', '!<%= cfg.jssrc %>/jquery/*.js' ]
+			options: { jshintrc: '<%= cfg.src %>/js/.jshintrc' },
+			files: [ '<%= cfg.src %>/js/**/*.js', '!<%= cfg.src %>/js/jquery/*.js' ]
 		},
-
 		concat: {
-			lib: { 
-				src: [ '<%= cfg.jssrc %>/jquery/*.js' ], 
-				dest: '<%= cfg.jsdest %>/lib.js' 
-			},
-			app: {
-				src: ['<%= cfg.jssrc %>/app/*.js', '<%= cfg.jssrc %>/modules/*.js' ],
-				dest: '<%= cfg.jsdest %>/app.js'
-			}
+			lib: { src: [ '<%= cfg.src %>/js/jquery/*.js' ], dest: '<%= cfg.dest %>/js/lib.js' },
+			app: { src: ['<%= cfg.src %>/js/app/*.js',
+				'<%= cfg.src %>/js/modules/*.js' ],          dest: '<%= cfg.dest %>/js/app.js' }
 		},
-
 		uglify: { app : '<%= concat.app %>' },
-
 		stylus: {
 			dev: {
 				options: { compress: true, paths: [ '<%= cfg.stylus %>' ] },
-				files: {
-					'<%= cfg.css %>/style.css' : [ 
-						'<%= cfg.stylus %>/style.styl', 
-						'<%= cfg.stylus %>/widgets/*.styl' 
-					]
-				}
+				files: { '<%= cfg.dest %>/css/style.css' : [ '<%= cfg.src %>/styl/style.styl',
+					'<%= cfg.src %>/styl/widgets/*.styl' ]}
 			},
 			prod: {
 				options: { yuicompress: true, paths: '<%= stylus.dev.options.paths %>' },
 				files: '<%= stylus.dev.files %>'
 			}
 		},
-
 		watch: {
-			js:   {
-				files: '<%= cfg.jssrc %>/**/*.js',
-				tasks: ['jshint', 'concat' ]
-			},
-			css: {
-				files: '<%= cfg.stylus %>/**/*.styl',
-				tasks: [ 'stylus:dev' ]
-			}
+			js:  { files: '<%= cfg.src %>/js/**/*.js',     tasks: [ 'jshint', 'concat' ] },
+			css: { files: '<%= cfg.src %>/styl/**/*.styl', tasks: [ 'stylus:dev' ] }
 		}
 	});
 
@@ -61,6 +36,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 
-	grunt.registerTask('default', [ 'jshint', 'concat', 'stylus:dev' ]);		// Default task.
+	grunt.registerTask('default', [ 'jshint', 'concat', 'stylus:dev' ]);
 	grunt.registerTask('prod', [ 'jshint', 'concat', 'uglify', 'stylus:prod' ]);
 };

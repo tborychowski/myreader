@@ -1,7 +1,7 @@
 window.App = (function ($, App) {
 	'use strict';
 
-	var rootPath = (App.rootPath || '/'),
+	var rootPath = (App.rootPath || '/') + '/json/',
 
 	requestCompleted = function (data, callback) {
 		// response can be {}, [] or null
