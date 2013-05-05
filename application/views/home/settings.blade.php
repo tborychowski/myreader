@@ -5,11 +5,11 @@
 <div class="main-logo"><i class="icon-rss"></i></div>
 
 <div id="toolbar">
-	<button class="btn" data-action="add"><i class="icon-plus"></i> Add Source</button><br>
-	<button class="btn" data-action="back"><i class="icon-arrow-left"></i> Back</button>
+	<button class="btn pull-left" data-action="back"><i class="icon-arrow-left"></i> Back</button>
+	<button class="btn" data-action="add"><i class="icon-plus"></i> Add Source</button>
 </div>
 
-<div id="sidebar">here be settings</div>
+<div id="sidebar"></div>
 
 <div id="content" class="main-content settings"></div>
 

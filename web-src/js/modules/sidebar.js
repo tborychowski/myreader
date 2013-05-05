@@ -6,7 +6,6 @@
 		_statsContainer = null,
 		_sourcesContainer = null,
 		_params = { linkType: 'type', linkId: 'unread', tag: '', source: '', type: 'unread' },
-		_showZeroSources = false,
 		_sources = null,
 
 
@@ -58,7 +57,7 @@
 		var icon = (src.icon ? '<img src="favicons/' + src.icon + '"">' : '<i class="icon-rss"></i>');
 		return '<li class="nav-source nav-btn nav-' + src.id + '" data-nav-type="source" data-action="' + src.id + '">' +
 			'<a href="#" class="nav-row">' +
-				(src.unread ? '<span class="no-badge">' + src.unread + '</span>' : '') +
+				(src.items ? '<span class="no-badge">' + src.items + '</span>' : '') +
 				'<span class="nav-icon">' + icon + '</span>' +
 				'<span class="nav-name">' + src.name + '</span>' +
 			'</a>' +
@@ -81,20 +80,18 @@
 		var i = 0, src, tags = {}, tagCounts = {}, tag, srcAr = [];
 
 		if (_sources && _sources.length) {
-			_showZeroSources = (_params.type !== 'unread');
-
 			srcAr.push('<li class="nav-header"><i class="btn-settings icon-cog"></i>' +
 				'<span class="nav-name nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
 
 			for (; src = _sources[i++] ;) {
 				src.tag = src.tag || 'all';
-				tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.unread : src.unread;
+				tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.items : src.items;
 				tags[src.tag] = tags[src.tag] || [];
-				if (src.unread || _showZeroSources) tags[src.tag].push(_getSourceHtml(src));
+				if (src.items) tags[src.tag].push(_getSourceHtml(src));
 			}
 			for (tag in tags) {
 				if (!tags.hasOwnProperty(tag)) continue;
-				if (!tagCounts[tag] && ! _showZeroSources) continue;
+				if (!tagCounts[tag]) continue;
 				srcAr.push(_getTagHtml(tag, tagCounts[tag]));
 				srcAr.push(tags[tag].join(''));
 			}
@@ -106,7 +103,7 @@
 	_updateStats = function (stats) {
 		_statsContainer.find('.stats-unread .badge').html(stats.unread ? stats.unread : '0');
 		_statsContainer.find('.stats-starred .no-badge').html(stats.starred ? stats.starred : '');
-		_statsContainer.find('.stats-all .no-badge').html(stats.all ? stats.all : '');
+		_statsContainer.find('.stats-items .no-badge').html(stats.all ? stats.all : '');
 	},
 	/*** HTML *******************************************************************************************************************/
 
@@ -116,13 +113,9 @@
 
 
 	/*** LOAD DATA **************************************************************************************************************/
-	_loadStats = function () { App.Get('stats', _updateStats); },
-
-	_loadSources = function () { App.Get('unreads', _populateSources); },
-
 	_reload = function () {
-		if (_statsContainer.length) _loadStats();
-		if (_sourcesContainer.length) _loadSources();
+		if (_statsContainer.length) App.Get('stats', _updateStats);
+		if (_sourcesContainer.length) App.Get('sourcesfull', _populateSources);
 	},
 	/*** LOAD DATA **************************************************************************************************************/
 

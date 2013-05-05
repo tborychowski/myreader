@@ -10,25 +10,32 @@ class Item_Controller extends Base_Controller {
 	public function get_stats () { return Item::stats(); }
 
 
+	public function get_unread_tag ($tag) {
+		return Item::get_unread();
+	}
+	public function get_unread_src ($id) {
+		return Item::get_unread();
+	}
+	public function get_unread_all () {
+		return Item::get_unread();
+	}
+
+
+
+	public function get_starred () {
+		return Item::get_starred();
+	}
+
+	public function get_all () {
+		return Item::get();
+	}
+
 
 	/**
 	 * Retrieve a list of items or a single item
-	 * or: mark item as read/unread/starred/unstarred
 	 * @param  int $id
 	 */
-	public function get_index ($id = null, $type = null) {
-		if (isset($type)) {
-			$item = [];
-			if ($type === 'read') $item['is_unread'] = 0;
-			elseif ($type === 'unread') $item['is_unread'] = 1;
-			elseif ($type === 'unstar') $item['is_starred'] = 0;
-			elseif ($type === 'star') $item['is_starred'] = 1;
-			else return JSON::error('Incorrect URI');
-
-			return Item::update($id, (object) $item);
-		}
-		else return Item::get($id);
-	}
+	public function get_index ($id = null) { return Item::get($id); }
 
 	/**
 	 * Can't create new items

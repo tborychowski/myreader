@@ -15,11 +15,10 @@ class Source extends Eloquent {
 
 	public static function get_unread () {
 		// retreieve all items with unread counters
-		$items = Item::where_is_unread(1)
-			->left_join('sources', 'sources.id', '=', 'items.source_id')
-			->group_by('source_id')
-			->get([ 'sources.*', DB::raw('count(items.id) AS unread') ]);
-		return $items;
+		$sources = Source::all();
+		$unreads = Item::get_unread_counts();
+		foreach ($sources as $src) $src->items = $unreads[$src->id];
+		return $sources;
 	}
 
 	public static function get ($id = null) {

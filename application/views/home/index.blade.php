@@ -3,12 +3,10 @@
 
 
 <div id="toolbar">
-	<div class="pull-right">
-	</div>
-	<button class="btn pull-left" data-action="refresh"><i class="icon-repeat"></i></button>
+	<button class="btn pull-left" data-action="settings"><i class="icon-cog"></i></button>
+	<button class="btn" data-action="refresh"><i class="icon-repeat"></i></button>
 	<button class="btn" data-action="prev"><i class="icon-chevron-up"></i></button>
 	<button class="btn" data-action="next"><i class="icon-chevron-down"></i></button>
-	<button class="btn" data-action="settings"><i class="icon-cog"></i></button>
 </div>
 
 <div id="sidebar">
@@ -25,8 +23,8 @@
 				<span class="nav-name">starred</span>
 			</a>
 		</li>
-		<li class="nav-btn nav-type nav-all" data-nav-type="type" data-action="all">
-			<a href="#" class="nav-row stats-all">
+		<li class="nav-btn nav-type nav-items" data-nav-type="type" data-action="items">
+			<a href="#" class="nav-row stats-items">
 				<span class="no-badge"></span>
 				<span class="nav-name">all</span>
 			</a>

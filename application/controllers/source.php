@@ -6,10 +6,7 @@ class Source_Controller extends Base_Controller {
 	/**
 	 * Update all sources
 	 */
-	public function get_update () {
-		return RSS::update();
-	}
-
+	public function get_update () { return RSS::update(); }
 
 	/**
 	 * Retrieve a list of items or a single item

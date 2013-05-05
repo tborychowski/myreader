@@ -6,8 +6,8 @@
 		_isReady = false,
 		_items = [],
 		_btnRefresh = null,		// loading swirl
-		_itemsPerPage = 20,
 		_maxBodyHeight = 200,
+		_feedType = 'unread',
 
 
 
@@ -37,7 +37,7 @@
 		if (!item || !el.length) return;
 		item.is_starred = !item.is_starred;
 		el.toggleClass('starred', item.is_starred);
-		App.Get('items/' + item.id + '/' + (item.is_starred ? '' : 'un') + 'star', function () {
+		App.Put('items/' + item.id, { is_starred: item.is_starred }, function () {
 			App.Publish('entry/changed');
 		});
 	},
@@ -51,7 +51,8 @@
 		if (!item || !el.length) return;
 		item.is_unread = !item.is_unread;
 		el.toggleClass('unread', item.is_unread);
-		App.Get('items/' + item.id + '/' + (item.is_unread ? 'un' : '') + 'read', function () {
+
+		App.Put('items/' + item.id, { is_unread: item.is_unread }, function () {
 			App.Publish('entry/changed');
 		});
 	},
@@ -142,7 +143,7 @@
 			'<h3><a href="' + item.link + '" target="_blank">' + item.title + '</a></h3>' +
 			'<span class="entry-time">' + item.datetime + '</span>' +
 			'<span class="entry-source">from ' +
-				'<a href="#" class="entry-source entry-source-' + item.source_id + '">' + item.source_name + '</a>' +
+				'<a href="#" class="entry-source entry-source-' + item.source.id + '">' + item.source.name + '</a>' +
 			'</span>' +
 		'</div>' +
 		'<div class="entry-body">' + item.content + '</div>' +
@@ -166,12 +167,10 @@
 		'</div>';
 	},
 
-	_getNoItemsHtml = function () { return ''; },
-
 	_populate = function (items) {
 		if (!items || !items.length) {
 			_btnRefresh.removeClass('icon-spin');
-			return _container.html(_getNoItemsHtml());
+			return _container.html('');
 		}
 		_items = items;
 		var i = 0, item, itemAr = [];
@@ -186,8 +185,9 @@
 	_load = function (cfg) {
 		if (!_isReady) return;
 		_btnRefresh.addClass('icon-spin');
-		cfg = $.extend({ type: 'unread', items: _itemsPerPage }, cfg);
-		App.Get('items', _populate);
+		console.log(cfg);
+		if (cfg && cfg.type) _feedType = cfg.type;
+		App.Get(_feedType, _populate);
 	},
 
 
@@ -200,8 +200,6 @@
 		_btnRefresh = $('#toolbar .icon-repeat');
 		_container.on('click', '.entry', _entryClickHandler);
 		_container.on('click', '.tb-btn', _btnClickHandler);
-
-		//_load();
 
 		_isReady = true;
 	};

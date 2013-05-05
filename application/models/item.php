@@ -2,14 +2,11 @@
 
 class Item extends Eloquent {
 
+	public static $rules = array( 'item_id'  => 'required|unique:items'	);
 
-	public static $rules = array(
-		'item_id'  => 'required|unique:items'
-	);
+	public function source () {	return $this->belongs_to('Source');	}
 
-	public function source () {
-		return $this->belongs_to('Source');
-	}
+
 
 	public static function stats () {
 		return [
@@ -19,6 +16,41 @@ class Item extends Eloquent {
 		];
 	}
 
+	/**
+	 * Retrieve unread counts in an object format
+	 * @return object  { id: unreadNumber }
+	 */
+	public static function get_unread_counts () {
+		$items = Item::group_by('source_id')->get([ 'source_id AS id', DB::raw('count(items.id) AS unread') ]);
+		$unreads = [];
+		foreach ($items as $item) {
+			if (!isset($unreads[$item->id])) $unreads[$item->id] = 1;
+			else $unreads[$item->id]++;
+		}
+		return $unreads;
+	}
+
+
+
+	public static function get_unread () {
+		$items = Item::with('source')->where_is_unread(1)->get();
+
+		return array_map(function($item) {
+			$item2 = $item->to_array();
+			unset($item2['source']['user_id'], $item2['source']['created_at'], $item2['source']['updated_at']);
+			return $item2;
+		}, $items);
+	}
+
+	public static function get_starred () {
+		$items = Item::with('source')->where_is_starred(1)->get();
+
+		return array_map(function($item) {
+			$item2 = $item->to_array();
+			$item2['source_name'] = $item->source->name;
+			return $item2;
+		}, $items);
+	}
 
 	public static function get ($id = null) {
 		if (isset($id)) return Item::find($id);
@@ -32,6 +64,11 @@ class Item extends Eloquent {
 	}
 
 
+	/**
+	 * Add items from "update" route
+	 * @param array $item item data
+	 * @return int 1 if success, 0 if error
+	 */
 	public static function add ($item) {
 		if (!$item) return;
 		$validation = Validator::make($item, static::$rules);

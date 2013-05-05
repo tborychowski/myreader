@@ -82,7 +82,7 @@ window.App = (function ($, App) {
 /**
  * JS OVERRIDES
  */
-(function (window) {
+(function () {
 	'use strict';
 	//jshint camelcase: false
 
@@ -125,11 +125,11 @@ window.App = (function ($, App) {
 	}
 
 	// firebug short-cuts
-	window.log = (Function.bind && window.console && typeof window.console.log === 'function') ?
-			window.console.log.bind(window.console) : function (e) { window.alert(JSON.stringify(e)); };
+	// window.log = (Function.bind && window.console && typeof window.console.log === 'function') ?
+	// 		window.console.log.bind(window.console) : function (e) { window.alert(JSON.stringify(e)); };
 
-	window.dir = (Function.bind && window.console && typeof window.console.dir === 'function') ?
-			window.console.dir.bind(window.console) : function (e) { window.alert(JSON.stringify(e)); };
+	// window.dir = (Function.bind && window.console && typeof window.console.dir === 'function') ?
+	// 		window.console.dir.bind(window.console) : function (e) { window.alert(JSON.stringify(e)); };
 
 }(this));
 window.App = (function (App) {
@@ -511,8 +511,8 @@ window.App = (function ($, App, window) {
 		_isReady = false,
 		_items = [],
 		_btnRefresh = null,		// loading swirl
-		_itemsPerPage = 20,
 		_maxBodyHeight = 200,
+		_feedType = 'unread',
 
 
 
@@ -542,7 +542,7 @@ window.App = (function ($, App, window) {
 		if (!item || !el.length) return;
 		item.is_starred = !item.is_starred;
 		el.toggleClass('starred', item.is_starred);
-		App.Get('items/' + item.id + '/' + (item.is_starred ? '' : 'un') + 'star', function () {
+		App.Put('items/' + item.id, { is_starred: item.is_starred }, function () {
 			App.Publish('entry/changed');
 		});
 	},
@@ -556,7 +556,8 @@ window.App = (function ($, App, window) {
 		if (!item || !el.length) return;
 		item.is_unread = !item.is_unread;
 		el.toggleClass('unread', item.is_unread);
-		App.Get('items/' + item.id + '/' + (item.is_unread ? 'un' : '') + 'read', function () {
+
+		App.Put('items/' + item.id, { is_unread: item.is_unread }, function () {
 			App.Publish('entry/changed');
 		});
 	},
@@ -647,7 +648,7 @@ window.App = (function ($, App, window) {
 			'<h3><a href="' + item.link + '" target="_blank">' + item.title + '</a></h3>' +
 			'<span class="entry-time">' + item.datetime + '</span>' +
 			'<span class="entry-source">from ' +
-				'<a href="#" class="entry-source entry-source-' + item.source_id + '">' + item.source_name + '</a>' +
+				'<a href="#" class="entry-source entry-source-' + item.source.id + '">' + item.source.name + '</a>' +
 			'</span>' +
 		'</div>' +
 		'<div class="entry-body">' + item.content + '</div>' +
@@ -671,12 +672,10 @@ window.App = (function ($, App, window) {
 		'</div>';
 	},
 
-	_getNoItemsHtml = function () { return ''; },
-
 	_populate = function (items) {
 		if (!items || !items.length) {
 			_btnRefresh.removeClass('icon-spin');
-			return _container.html(_getNoItemsHtml());
+			return _container.html('');
 		}
 		_items = items;
 		var i = 0, item, itemAr = [];
@@ -691,8 +690,9 @@ window.App = (function ($, App, window) {
 	_load = function (cfg) {
 		if (!_isReady) return;
 		_btnRefresh.addClass('icon-spin');
-		cfg = $.extend({ type: 'unread', items: _itemsPerPage }, cfg);
-		App.Get('items', _populate);
+		console.log(cfg);
+		if (cfg && cfg.type) _feedType = cfg.type;
+		App.Get(_feedType, _populate);
 	},
 
 
@@ -705,8 +705,6 @@ window.App = (function ($, App, window) {
 		_btnRefresh = $('#toolbar .icon-repeat');
 		_container.on('click', '.entry', _entryClickHandler);
 		_container.on('click', '.tb-btn', _btnClickHandler);
-
-		//_load();
 
 		_isReady = true;
 	};
@@ -889,7 +887,6 @@ window.App = (function ($, App, window) {
 		_statsContainer = null,
 		_sourcesContainer = null,
 		_params = { linkType: 'type', linkId: 'unread', tag: '', source: '', type: 'unread' },
-		_showZeroSources = false,
 		_sources = null,
 
 
@@ -941,7 +938,7 @@ window.App = (function ($, App, window) {
 		var icon = (src.icon ? '<img src="favicons/' + src.icon + '"">' : '<i class="icon-rss"></i>');
 		return '<li class="nav-source nav-btn nav-' + src.id + '" data-nav-type="source" data-action="' + src.id + '">' +
 			'<a href="#" class="nav-row">' +
-				(src.unread ? '<span class="no-badge">' + src.unread + '</span>' : '') +
+				(src.items ? '<span class="no-badge">' + src.items + '</span>' : '') +
 				'<span class="nav-icon">' + icon + '</span>' +
 				'<span class="nav-name">' + src.name + '</span>' +
 			'</a>' +
@@ -964,20 +961,18 @@ window.App = (function ($, App, window) {
 		var i = 0, src, tags = {}, tagCounts = {}, tag, srcAr = [];
 
 		if (_sources && _sources.length) {
-			_showZeroSources = (_params.type !== 'unread');
-
 			srcAr.push('<li class="nav-header"><i class="btn-settings icon-cog"></i>' +
 				'<span class="nav-name nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
 
 			for (; src = _sources[i++] ;) {
 				src.tag = src.tag || 'all';
-				tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.unread : src.unread;
+				tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.items : src.items;
 				tags[src.tag] = tags[src.tag] || [];
-				if (src.unread || _showZeroSources) tags[src.tag].push(_getSourceHtml(src));
+				if (src.items) tags[src.tag].push(_getSourceHtml(src));
 			}
 			for (tag in tags) {
 				if (!tags.hasOwnProperty(tag)) continue;
-				if (!tagCounts[tag] && ! _showZeroSources) continue;
+				if (!tagCounts[tag]) continue;
 				srcAr.push(_getTagHtml(tag, tagCounts[tag]));
 				srcAr.push(tags[tag].join(''));
 			}
@@ -989,7 +984,7 @@ window.App = (function ($, App, window) {
 	_updateStats = function (stats) {
 		_statsContainer.find('.stats-unread .badge').html(stats.unread ? stats.unread : '0');
 		_statsContainer.find('.stats-starred .no-badge').html(stats.starred ? stats.starred : '');
-		_statsContainer.find('.stats-all .no-badge').html(stats.all ? stats.all : '');
+		_statsContainer.find('.stats-items .no-badge').html(stats.all ? stats.all : '');
 	},
 	/*** HTML *******************************************************************************************************************/
 
@@ -999,13 +994,9 @@ window.App = (function ($, App, window) {
 
 
 	/*** LOAD DATA **************************************************************************************************************/
-	_loadStats = function () { App.Get('stats', _updateStats); },
-
-	_loadSources = function () { App.Get('unreads', _populateSources); },
-
 	_reload = function () {
-		if (_statsContainer.length) _loadStats();
-		if (_sourcesContainer.length) _loadSources();
+		if (_statsContainer.length) App.Get('stats', _updateStats);
+		if (_sourcesContainer.length) App.Get('sourcesfull', _populateSources);
 	},
 	/*** LOAD DATA **************************************************************************************************************/
 

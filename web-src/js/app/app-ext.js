@@ -1,7 +1,7 @@
 /**
  * JS OVERRIDES
  */
-(function (window) {
+(function () {
 	'use strict';
 	//jshint camelcase: false
 
@@ -44,10 +44,10 @@
 	}
 
 	// firebug short-cuts
-	window.log = (Function.bind && window.console && typeof window.console.log === 'function') ?
-			window.console.log.bind(window.console) : function (e) { window.alert(JSON.stringify(e)); };
+	// window.log = (Function.bind && window.console && typeof window.console.log === 'function') ?
+	// 		window.console.log.bind(window.console) : function (e) { window.alert(JSON.stringify(e)); };
 
-	window.dir = (Function.bind && window.console && typeof window.console.dir === 'function') ?
-			window.console.dir.bind(window.console) : function (e) { window.alert(JSON.stringify(e)); };
+	// window.dir = (Function.bind && window.console && typeof window.console.dir === 'function') ?
+	// 		window.console.dir.bind(window.console) : function (e) { window.alert(JSON.stringify(e)); };
 
 }(this));
