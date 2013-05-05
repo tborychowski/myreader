@@ -189,6 +189,12 @@ window.App = (function (App, window) {
 			return -1;
 		},
 
+		/**
+		 * Remove item from array
+		 * @param  {array} a   old array
+		 * @param  {mixed} v   item to remove
+		 * @return {array}     new array without the item
+		 */
 		removeFromArray : function (a, v) {
 			var nA = [], i = 0, el;
 			if (typeof v === 'object') { for (; el = a[i++] ;) if (!this.areObjectsEqual(el, v)) nA.push(el); }

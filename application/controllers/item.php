@@ -3,16 +3,13 @@
 class Item_Controller extends Base_Controller {
 	public $restful = true;
 
+
 	/**
 	 * Retrieve counters: unread, starred, all
 	 */
 	public function get_stats () { return Item::stats(); }
 
-	/**
-	 *
-	 */
-	public function mark ($id = null, $type = '') {
-	}
+
 
 	/**
 	 * Retrieve a list of items or a single item
@@ -30,15 +27,13 @@ class Item_Controller extends Base_Controller {
 
 			return Item::update($id, (object) $item);
 		}
-		else {
-			return Item::get($id);
-		}
+		else return Item::get($id);
 	}
 
 	/**
-	 * Create a new item
+	 * Can't create new items
 	 */
-	public function post_index () { return Item::add(Input::json(true)); }
+	public function post_index () { return JSON::error('You cannot create new items'); }
 
 	/**
 	 * Update item

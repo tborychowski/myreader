@@ -184,6 +184,7 @@
 
 
 	_load = function (cfg) {
+		if (!_isReady) return;
 		_btnRefresh.addClass('icon-spin');
 		cfg = $.extend({ type: 'unread', items: _itemsPerPage }, cfg);
 		App.Get('items', _populate);
@@ -193,7 +194,7 @@
 
 	_init = function () {
 		if (_isReady) return;
-		_container = $('#content');
+		_container = $('#content.unreaditems');
 		if (!_container.length) return;
 		_body = $('html,body');
 		_btnRefresh = $('#toolbar .icon-repeat');

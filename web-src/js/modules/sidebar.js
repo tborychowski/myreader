@@ -76,28 +76,30 @@
 
 
 	_populateSources = function (sources) {
-		if (sources && sources.length) _sources = sources;
-		if (!_sources || !_sources.length) return;
+		if (typeof sources !== 'undefined') _sources = sources;
 
 		var i = 0, src, tags = {}, tagCounts = {}, tag, srcAr = [];
-		_showZeroSources = (_params.type !== 'unread');
 
-		srcAr.push('<li class="nav-header"><i class="btn-settings icon-cog"></i>' +
-			'<span class="nav-name nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
+		if (_sources && _sources.length) {
+			_showZeroSources = (_params.type !== 'unread');
 
-		for (; src = _sources[i++] ;) {
-			src.tag = src.tag || 'all';
-			tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.unread : src.unread;
-			tags[src.tag] = tags[src.tag] || [];
-			if (src.unread || _showZeroSources) tags[src.tag].push(_getSourceHtml(src));
+			srcAr.push('<li class="nav-header"><i class="btn-settings icon-cog"></i>' +
+				'<span class="nav-name nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
+
+			for (; src = _sources[i++] ;) {
+				src.tag = src.tag || 'all';
+				tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.unread : src.unread;
+				tags[src.tag] = tags[src.tag] || [];
+				if (src.unread || _showZeroSources) tags[src.tag].push(_getSourceHtml(src));
+			}
+			for (tag in tags) {
+				if (!tags.hasOwnProperty(tag)) continue;
+				if (!tagCounts[tag] && ! _showZeroSources) continue;
+				srcAr.push(_getTagHtml(tag, tagCounts[tag]));
+				srcAr.push(tags[tag].join(''));
+			}
 		}
-		for (tag in tags) {
-			if (!tags.hasOwnProperty(tag)) continue;
-			if (!tagCounts[tag] && ! _showZeroSources) continue;
-			srcAr.push(_getTagHtml(tag, tagCounts[tag]));
-			srcAr.push(tags[tag].join(''));
-		}
-		_sourcesContainer.html(srcAr);
+		_sourcesContainer.html(srcAr.join(''));
 		_toggleSelection();
 	},
 
@@ -116,11 +118,11 @@
 	/*** LOAD DATA **************************************************************************************************************/
 	_loadStats = function () { App.Get('stats', _updateStats); },
 
-	_loadSources = function () { App.Get('sources', _populateSources); },
+	_loadSources = function () { App.Get('unreads', _populateSources); },
 
 	_reload = function () {
-		_loadStats();
-		_loadSources();
+		if (_statsContainer.length) _loadStats();
+		if (_sourcesContainer.length) _loadSources();
 	},
 	/*** LOAD DATA **************************************************************************************************************/
 

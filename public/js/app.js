@@ -94,7 +94,7 @@ window.App = (function ($, App) {
 	};
 	String.prototype.stripTags = function () {
 		var reg = new RegExp('<\\/?\\w+(\\s*[^>])*>'), str = this;
-		while (reg.test(this)) str = str.replace(reg, '');
+		while (reg.test(str)) str = str.replace(reg, '');
 		return str;
 	};
 
@@ -412,6 +412,12 @@ window.App = (function (App, window) {
 			return -1;
 		},
 
+		/**
+		 * Remove item from array
+		 * @param  {array} a   old array
+		 * @param  {mixed} v   item to remove
+		 * @return {array}     new array without the item
+		 */
 		removeFromArray : function (a, v) {
 			var nA = [], i = 0, el;
 			if (typeof v === 'object') { for (; el = a[i++] ;) if (!this.areObjectsEqual(el, v)) nA.push(el); }
@@ -459,7 +465,10 @@ window.App = (function ($, App, window) {
 	 * @param msg		text message to show
 	 * @param type		type of the message [success, info | error | warning,alert]; (defaults to: success)
 	 */
-	App.Msg = function (conf, type) { window.log(conf, type); };
+	App.Msg = function (conf, type) {
+		window.log(conf, type);
+		if (conf && conf.type === 'error') window.alert(conf.text);
+	};
 
 
 
@@ -680,6 +689,7 @@ window.App = (function ($, App, window) {
 
 
 	_load = function (cfg) {
+		if (!_isReady) return;
 		_btnRefresh.addClass('icon-spin');
 		cfg = $.extend({ type: 'unread', items: _itemsPerPage }, cfg);
 		App.Get('items', _populate);
@@ -689,7 +699,7 @@ window.App = (function ($, App, window) {
 
 	_init = function () {
 		if (_isReady) return;
-		_container = $('#content');
+		_container = $('#content.unreaditems');
 		if (!_container.length) return;
 		_body = $('html,body');
 		_btnRefresh = $('#toolbar .icon-repeat');
@@ -708,6 +718,166 @@ window.App = (function ($, App, window) {
 
 	App.Subscribe('nav/changed', _load);
 	App.Subscribe('app/refresh', _load);
+	App.Subscribe('app/ready', _init);
+
+}(jQuery, window.App, this));
+(function ($, App) {
+	'use strict';
+
+	var _container = null,
+		_isReady = false,
+		_items = [],
+
+
+
+	/*** EVENT LISTENERS ********************************************************************************************************/
+	_entryDoubleClick = function () {
+		var entry = $(this).closest('.entry'), item = _getById(entry.data('id'));
+		_editStart(entry, item);
+	},
+
+	_btnClickHandler = function (e) {
+		var btn = $(this),
+			action = btn.data('action'),
+			entry = btn.closest('.entry'),
+			item = _getById(entry.data('id'));
+
+		if (action === 'edit') _editStart(entry, item);
+		else if (action === 'remove') _removeSource(entry, item);
+		else if (action === 'cancel') _editStop(entry, item);
+		else if (action === 'save') _editSave(entry, item);
+		e.stopPropagation();
+	},
+
+	_onKeyUp = function (e) {
+		var key = e.keyCode, entry = _container.find('.entry.in-edit').first(), item = _getById(entry.data('id'));
+
+		if (key === 27) _editStop(entry, item);
+		else if (key === 13) _editSave(entry, item);
+	},
+	/*** EVENT LISTENERS ********************************************************************************************************/
+
+
+
+	/*** HANDLERS ***************************************************************************************************************/
+	_addSource = function () {
+		if (!_container.find('.new-item').length) _container.prepend(_getSourceEditHtml());
+		_container.find('.in-edit input[name="name"]').focus();
+	},
+
+	_editStart = function (entry, item) {
+		entry.replaceWith(_getSourceEditHtml(item));
+		_container.find('.in-edit input[name="name"]').focus();
+	},
+
+	_editStop = function (entry, item) {
+		if (item) entry.replaceWith(_getSourceHtml(item));
+		else entry.remove();
+	},
+
+	_editSave = function (entry, item) {
+		var form = entry.find('form'), newItem = form.formParams(true);
+
+		// if (!newItem.name) return window.alert('Please enter Source Name');
+		// if (!newItem.url) return window.alert('Please enter Source URL');
+
+		item = $.extend({}, item, newItem);
+		if (item.id) App.Put('sources/' + item.id, newItem, function () { _editStop(entry, item); });
+		else {
+			App.Post('sources', newItem, function (resp) {
+				item = $.extend({}, item, resp);
+				_items.push(item);
+				_editStop(entry, item);
+			});
+		}
+	},
+
+	_removeSource = function (entry, item) {
+		if (!window.confirm('Are you sure you want to remove: ' + item.name)) return;
+		App.Delete('sources/' + item.id, function (resp) {
+			if (resp.result !== 'success') return;
+			entry.remove();
+			_items = App.UTIL.removeFromArray(_items, item);
+			console.log(_items);
+		});
+	},
+	/*** HANDLERS ***************************************************************************************************************/
+
+
+
+
+	_getSourceHtml = function (src) {
+		src = src || {};
+		if (src.created_at && src.created_at.date) src.created_at = src.created_at.date;
+		return '<div class="entry" data-id="' + (src.id || '') + '">' +
+			'<div class="entry-header">' +
+				'<h3>' +
+					(src.icon ? '<img src="' + src.icon + '">' : '') +
+					(src.name || '') +
+					(src.tag ? ' &lt;' + src.tag + '&gt;' : '') +
+				'</h3>' +
+				'<span class="entry-time">' + (src.created_at || '') + '</span>' +
+				'<span class="entry-source">' + (src.url || '') + '</span>' +
+			'</div>' +
+			'<div class="entry-footer">' +
+				'<span class="tb-btn btn-remove" data-action="remove"><i class="icon-trash"></i> Remove</span>' +
+				'<span class="tb-btn btn-edit"   data-action="edit"><i class="icon-pencil"></i> Edit</span>' +
+			'</div>' +
+		'</div>';
+	},
+
+	_getSourceEditHtml = function (src) {
+		src = src || {};
+		return '<div class="entry in-edit ' + (src.id ? '' : 'new-item') + '" data-id="' + (src.id || '') + '"><form>' +
+			'<div class="entry-header">' +
+				'<h3>' +
+					'<input name="name" value="' + (src.name || '') + '" placeholder="name">' +
+					'<input name="tag" value="' + (src.tag || '') + '" placeholder="tag">' +
+				'</h3>' +
+				'<span class="entry-time">' + (src.created_at || '') + '</span>' +
+				'<span class="entry-source"><input name="url" value="' + (src.url || '') + '" placeholder="url"></span>' +
+			'</div>' +
+			'<div class="entry-footer">' +
+				'<span class="tb-btn btn-save"   data-action="save"><i class="icon-save"></i> Save</span>' +
+				'<span class="tb-btn btn-cancel" data-action="cancel"><i class="icon-remove"></i> Cancel</span>' +
+			'</div>' +
+		'</form></div>';
+	},
+
+	_getById = function (id) {
+		var i = 0, item;
+		for (; item = _items[i++] ;) if (item.id === id) return item;
+		return null;
+	},
+
+
+	_populate = function (data) {
+		if (!data || !data.length) return;
+		_items = data;
+		var i = 0, item, html = [];
+		for (; item = _items[i++] ;) html.push(_getSourceHtml(item));
+		_container.html(html.join(''));
+	},
+
+	_load = function () { App.Get('sources', _populate);	},
+
+
+
+	_init = function () {
+		if (_isReady) return;
+		_container = $('#content.settings');
+		if (!_container.length) return;
+
+		_container.on('click', '.tb-btn', _btnClickHandler);
+		_container.on('dblclick', '.entry', _entryDoubleClick);
+
+		$(document).on('keydown', _onKeyUp);
+
+		_load();
+		_isReady = true;
+	};
+
+	App.Subscribe('source/add', _addSource);
 	App.Subscribe('app/ready', _init);
 
 }(jQuery, window.App, this));
@@ -789,28 +959,30 @@ window.App = (function ($, App, window) {
 
 
 	_populateSources = function (sources) {
-		if (sources && sources.length) _sources = sources;
-		if (!_sources || !_sources.length) return;
+		if (typeof sources !== 'undefined') _sources = sources;
 
 		var i = 0, src, tags = {}, tagCounts = {}, tag, srcAr = [];
-		_showZeroSources = (_params.type !== 'unread');
 
-		srcAr.push('<li class="nav-header"><i class="btn-settings icon-cog"></i>' +
-			'<span class="nav-name nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
+		if (_sources && _sources.length) {
+			_showZeroSources = (_params.type !== 'unread');
 
-		for (; src = _sources[i++] ;) {
-			src.tag = src.tag || 'all';
-			tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.unread : src.unread;
-			tags[src.tag] = tags[src.tag] || [];
-			if (src.unread || _showZeroSources) tags[src.tag].push(_getSourceHtml(src));
+			srcAr.push('<li class="nav-header"><i class="btn-settings icon-cog"></i>' +
+				'<span class="nav-name nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
+
+			for (; src = _sources[i++] ;) {
+				src.tag = src.tag || 'all';
+				tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.unread : src.unread;
+				tags[src.tag] = tags[src.tag] || [];
+				if (src.unread || _showZeroSources) tags[src.tag].push(_getSourceHtml(src));
+			}
+			for (tag in tags) {
+				if (!tags.hasOwnProperty(tag)) continue;
+				if (!tagCounts[tag] && ! _showZeroSources) continue;
+				srcAr.push(_getTagHtml(tag, tagCounts[tag]));
+				srcAr.push(tags[tag].join(''));
+			}
 		}
-		for (tag in tags) {
-			if (!tags.hasOwnProperty(tag)) continue;
-			if (!tagCounts[tag] && ! _showZeroSources) continue;
-			srcAr.push(_getTagHtml(tag, tagCounts[tag]));
-			srcAr.push(tags[tag].join(''));
-		}
-		_sourcesContainer.html(srcAr);
+		_sourcesContainer.html(srcAr.join(''));
 		_toggleSelection();
 	},
 
@@ -829,11 +1001,11 @@ window.App = (function ($, App, window) {
 	/*** LOAD DATA **************************************************************************************************************/
 	_loadStats = function () { App.Get('stats', _updateStats); },
 
-	_loadSources = function () { App.Get('sources', _populateSources); },
+	_loadSources = function () { App.Get('unreads', _populateSources); },
 
 	_reload = function () {
-		_loadStats();
-		_loadSources();
+		if (_statsContainer.length) _loadStats();
+		if (_sourcesContainer.length) _loadSources();
 	},
 	/*** LOAD DATA **************************************************************************************************************/
 
@@ -892,6 +1064,9 @@ window.App = (function ($, App, window) {
 		if (action === 'next') App.Publish('entry/next');
 		if (action === 'prev') App.Publish('entry/prev');
 		if (action === 'refresh') App.Publish('app/refresh');
+		if (action === 'settings') window.location.href = App.rootPath + '/settings';
+		if (action === 'back') window.location.href = App.rootPath;
+		if (action === 'add') App.Publish('source/add');
 	},
 	/*** HANDLERS ***************************************************************************************************************/
 

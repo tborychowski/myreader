@@ -13,7 +13,7 @@
 	};
 	String.prototype.stripTags = function () {
 		var reg = new RegExp('<\\/?\\w+(\\s*[^>])*>'), str = this;
-		while (reg.test(this)) str = str.replace(reg, '');
+		while (reg.test(str)) str = str.replace(reg, '');
 		return str;
 	};
 

@@ -1,6 +1,6 @@
 <?php
 
-class Create_Feeds_Table {
+class Create_Sources_Table {
 
 	/**
 	 * Make changes to the database.

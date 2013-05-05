@@ -26,6 +26,9 @@
 		if (action === 'next') App.Publish('entry/next');
 		if (action === 'prev') App.Publish('entry/prev');
 		if (action === 'refresh') App.Publish('app/refresh');
+		if (action === 'settings') window.location.href = App.rootPath + '/settings';
+		if (action === 'back') window.location.href = App.rootPath;
+		if (action === 'add') App.Publish('source/add');
 	},
 	/*** HANDLERS ***************************************************************************************************************/
 

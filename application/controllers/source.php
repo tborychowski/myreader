@@ -4,6 +4,19 @@ class Source_Controller extends Base_Controller {
 	public $restful = true;
 
 	/**
+	 * Update all sources
+	 */
+	public function get_update () {
+		return RSS::update();
+	}
+
+
+	/**
+	 * Retrieve a list of items or a single item
+	 */
+	public function get_unreads () { return Source::get_unread(); }
+
+	/**
 	 * Retrieve a list of items or a single item
 	 */
 	public function get_index ($id = null) { return Source::get($id); }

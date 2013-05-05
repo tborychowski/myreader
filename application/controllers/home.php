@@ -10,17 +10,7 @@ class Home_Controller extends Base_Controller {
 		parent::__construct();
 	}
 
-
-	public function action_index () {
-		return View::make('home/index');
-	}
-
-	public function action_login () {
-		return View::make('home/login');
-	}
-
-	public function action_settings () {
-		return View::make('home/settings');
-	}
-
+	public function action_index () { return View::make('home/index'); }
+	public function action_login () { return View::make('home/login'); }
+	public function action_settings () { return View::make('home/settings'); }
 }

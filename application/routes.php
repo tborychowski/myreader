@@ -1,18 +1,22 @@
 <?php
 
-Route::get('/', ['as' => 'home', 'uses' => 'home@index' ]);
-
-Route::get('json/stats', 'item@stats');
-
-
-Route::any('json/items/(:num?)/(:any?)', 'item@index');	// get item(s) or mark as read/starred/unread/unstarred
-
-
-Route::any('json/sources/(:num?)', 'source@index');
+// landing page
+Route::get('/',         [ 'as' => 'home',     'uses' => 'home@index'    ]);
+Route::get('/settings', [ 'as' => 'settings', 'uses' => 'home@settings' ]);
+Route::get('/update',   [ 'as' => 'update',   'uses' => 'source@update' ]);
+Route::get('/login',    [ 'as' => 'login',    'uses' => 'home@login'    ]);
 
 
+/*** API ***/
+Route::get('json/stats', 'item@stats');						// stats
+Route::any('json/items/(:num?)/(:any?)', 'item@index');		// get item(s), read/star
+Route::get('json/unreads', 'source@unreads');				// get unread sources with counter
+Route::any('json/sources/(:num?)', 'source@index');			// manage sources
 
 
+
+
+Route::get('/logout',   [ 'as' => 'logout', function () { Auth::logout(); return Redirect::to('login'); }]);
 
 
 

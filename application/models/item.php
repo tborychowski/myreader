@@ -4,14 +4,14 @@ class Item extends Eloquent {
 
 
 	public static $rules = array(
-		'name'  => 'required|unique:projects'
+		'item_id'  => 'required|unique:items'
 	);
 
 	public function source () {
 		return $this->belongs_to('Source');
 	}
 
-	public static function stats() {
+	public static function stats () {
 		return [
 			'unread' => Item::where_is_unread(1)->count(),
 			'starred' => Item::where_is_starred(1)->count(),
@@ -20,7 +20,7 @@ class Item extends Eloquent {
 	}
 
 
-	public static function get($id = null) {
+	public static function get ($id = null) {
 		if (isset($id)) return Item::find($id);
 		$items = Item::with('source')->all();
 
@@ -32,16 +32,11 @@ class Item extends Eloquent {
 	}
 
 
-	public static function add ($input) {
-		if (!$input) return JSON::error('Incorrect parameters');
-
-		$validation = Validator::make($input, static::$rules);
-		if ($validation->fails()) return JSON::error($validation->errors->first());
-
-		//$item = array('name' => $input['name']);
-		//if (isset($input['archive'])) $item['archive'] = intval($input['archive']);     else $item['archive'] = 0;
-
-		//return Item::create($item);
+	public static function add ($item) {
+		if (!$item) return;
+		$validation = Validator::make($item, static::$rules);
+		if ($validation->fails()) return 0;
+		return Item::create($item) ? 1 : 0;
 	}
 
 

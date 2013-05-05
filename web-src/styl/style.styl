@@ -28,7 +28,7 @@ input::-moz-focus-inner
 
 
 #toolbar
-	z 1; position fixed; left 0; bottom 0; pad 0 5; height toolbar-height; border-box(); width 300
+	z 1; position fixed; left 0; bottom 0; pad 0 5; min-height toolbar-height; border-box(); width 300
 	.btn
 		color #999; font 20; height 40; min-width 40px; margin-right 18px; padding 0 6px; bg none; border none;
 		transition color .2s;
@@ -123,7 +123,7 @@ input::-moz-focus-inner
 
 
 /*** MAIN CONTENT ***************************************************************************************************************/
-#content
+.main-content
 	position relative; mar 0 0 0 sidebar-width; border-box(); color #999; text center; min-width 768px;
 
 	.entry
@@ -191,6 +191,26 @@ input::-moz-focus-inner
 
 
 /*** MAIN CONTENT ***************************************************************************************************************/
+
+
+
+
+/*** SETTINGS CONTENT ***********************************************************************************************************/
+.main-content.settings
+	.entry
+		.btn-save
+		.btn-cancel
+			show 0;
+		&.in-edit
+			.btn-edit
+			.btn-remove
+				show 0;
+			.btn-save
+			.btn-cancel
+				show 1;
+
+
+/*** SETTINGS CONTENT ***********************************************************************************************************/
 
 
 
