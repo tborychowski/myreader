@@ -9,9 +9,28 @@ class Source_Controller extends Base_Controller {
 	public function get_update () { return RSS::update(); }
 
 	/**
-	 * Retrieve a list of items or a single item
+	 * Retrieve a source tree with counters
 	 */
-	public function get_unreads () { return Source::get_unread(); }
+	public function get_tree () {
+		$inp = Input::get();
+
+		$status = isset($inp['status']) ? $inp['status'] : 'archive';
+		if (isset($inp['tag'])) {
+			$type = 'tag';
+			$id = $inp['tag'];
+		}
+		elseif (isset($inp['src'])) {
+			$type = 'src';
+			$id = $inp['src'];
+		}
+		else {
+			$type = 'all';
+			$id = '';
+		}
+
+		return Source::get_tree($status, $type, $id);
+	}
+
 
 	/**
 	 * Retrieve a list of items or a single item

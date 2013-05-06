@@ -8,23 +8,12 @@ Route::get('/login',    [ 'as' => 'login',    'uses' => 'home@login'    ]);
 
 
 /*** API ***/
-Route::get('json/stats', 'item@stats');						// stats
+Route::get('json/stats',              'item@stats');			// stats
 
-Route::get('json/unread/tag/(:any)', 'item@unread_tag');	// unread - tag
-Route::get('json/unread/src/(:num)', 'item@unread_src');	// unread - src
-Route::get('json/unread', 'item@unread_all');				// unread - all
+Route::any('json/items/(:num?)',      'item@index');			// all - all items or item
 
-Route::get('json/starred/tag/(:any)', 'item@starred');		// starred - tag
-Route::get('json/starred/src/(:num)', 'item@starred');		// starred - src
-Route::get('json/starred', 'item@starred');					// starred - all
-
-Route::get('json/items/tag/(:any)', 'item@all');			// all - tag
-Route::get('json/items/src/(:num)', 'item@all');			// all - src
-Route::any('json/items/(:num?)', 'item@index');				// all - all items or item
-
-
-Route::get('json/sourcesfull', 'source@unreads');			// get unread sources with counter
-Route::any('json/sources/(:num?)', 'source@index');			// manage sources
+Route::get('json/sourcetree',         'source@tree');			// get unread source tree with counter
+Route::any('json/sources/(:num?)',    'source@index');			// manage sources
 
 
 

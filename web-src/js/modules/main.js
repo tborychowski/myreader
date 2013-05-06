@@ -7,19 +7,19 @@
 		_items = [],
 		_btnRefresh = null,		// loading swirl
 		_maxBodyHeight = 200,
-		_feedType = 'unread',
 
 
 
-	/*** HANDLERS ***************************************************************************************************************/
+	/*** HANDLERS *****************************************************************************************************/
+
 	_btnClickHandler = function (e) {
 		var btn = $(this),
 			action = btn.data('action'),
 			entry = btn.closest('.entry'),
 			item = _getById(entry.data('id'));
 
-		if (action === 'toggle-star') _toggleStar(item, entry);
 		if (action === 'toggle-expand') _toggleExpand(item, entry);
+		if (action === 'toggle-star') _toggleStar(item, entry);
 		if (action === 'toggle-unread') _toggleUnread(item, entry);
 		else {
 			item.is_unread = true;
@@ -38,7 +38,7 @@
 		item.is_starred = !item.is_starred;
 		el.toggleClass('starred', item.is_starred);
 		App.Put('items/' + item.id, { is_starred: item.is_starred }, function () {
-			App.Publish('entry/changed');
+			App.Publish('nav/refresh');
 		});
 	},
 
@@ -53,7 +53,7 @@
 		el.toggleClass('unread', item.is_unread);
 
 		App.Put('items/' + item.id, { is_unread: item.is_unread }, function () {
-			App.Publish('entry/changed');
+			App.Publish('nav/refresh');
 		});
 	},
 
@@ -111,7 +111,7 @@
 		if (!entry.hasClass('active')) {
 			entry.siblings().removeClass('active');
 			entry.prev().addClass('active');
-			App.Publish('entry/next');
+			App.Publish('nav/next');
 		}
 		else if (entry.hasClass('unread')) _toggleUnread();
 	},
@@ -131,7 +131,7 @@
 		for (; item = _items[i++] ;) if (item.id === id) return item;
 		return null;
 	},
-	/*** HANDLERS ***************************************************************************************************************/
+	/*** HANDLERS *****************************************************************************************************/
 
 	_getItemHtml = function (item) {
 		var cls = [ 'entry' ];
@@ -183,11 +183,9 @@
 
 
 	_load = function (cfg) {
-		if (!_isReady) return;
+		if (!_isReady || !cfg) return;
 		_btnRefresh.addClass('icon-spin');
-		console.log(cfg);
-		if (cfg && cfg.type) _feedType = cfg.type;
-		App.Get(_feedType, _populate);
+		App.Get('items?' + $.param(cfg), _populate);
 	},
 
 
@@ -201,16 +199,18 @@
 		_container.on('click', '.entry', _entryClickHandler);
 		_container.on('click', '.tb-btn', _btnClickHandler);
 
+
+
 		_isReady = true;
 	};
 
-	App.Subscribe('entry/next', _nextItem);
-	App.Subscribe('entry/prev', _previousItem);
-	App.Subscribe('entry/toggleUnread', _toggleUnread);
 	App.Subscribe('entry/toggleStar', _toggleStar);
+	App.Subscribe('entry/toggleUnread', _toggleUnread);
 
-	App.Subscribe('nav/changed', _load);
-	App.Subscribe('app/refresh', _load);
+	App.Subscribe('nav/next', _nextItem);
+	App.Subscribe('nav/prev', _previousItem);
+
+	App.Subscribe('nav/refresh', _load);
 	App.Subscribe('app/ready', _init);
 
 }(jQuery, window.App, this));

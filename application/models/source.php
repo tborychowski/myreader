@@ -13,17 +13,31 @@ class Source extends Eloquent {
 	}
 
 
-	public static function get_unread () {
-		// retreieve all items with unread counters
+	public static function get_tree ($status = 'archive', $type = 'all', $id = '') {
 		$sources = Source::all();
-		$unreads = Item::get_unread_counts();
-		foreach ($sources as $src) $src->items = $unreads[$src->id];
-		return $sources;
+		$unreads = Item::get_unread_counts($status);				// retreieve all items with unread counters
+
+		$tags = [];
+		foreach ($sources as $src) {								// start with array of named objects
+			$tag = $src->tag ? $src->tag : '';
+			unset($src->user_id, $src->created_at, $src->updated_at, $src->tag);
+			$src->unread = isset($unreads[$src->id]) ? $unreads[$src->id] : 0;
+
+			if (!isset($tags[$tag])) $tags[$tag] = [ 'name' => $tag, 'unread' => 0, 'items' => [] ];
+			$tags[$tag]['unread'] += $src->unread;
+			$tags[$tag]['items'][] = $src->to_array();
+		}
+
+		$items = [];
+		foreach ($tags as $tag) $items[] = $tag;					// convert to array of objects
+		return $items;
 	}
+
+
 
 	public static function get ($id = null) {
 		if (isset($id)) return Source::find($id);
-		else return Source::all();
+		return Source::all();
 	}
 
 

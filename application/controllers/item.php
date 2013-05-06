@@ -10,32 +10,31 @@ class Item_Controller extends Base_Controller {
 	public function get_stats () { return Item::stats(); }
 
 
-	public function get_unread_tag ($tag) {
-		return Item::get_unread();
-	}
-	public function get_unread_src ($id) {
-		return Item::get_unread();
-	}
-	public function get_unread_all () {
-		return Item::get_unread();
-	}
-
-
-
-	public function get_starred () {
-		return Item::get_starred();
-	}
-
-	public function get_all () {
-		return Item::get();
-	}
-
-
 	/**
 	 * Retrieve a list of items or a single item
 	 * @param  int $id
 	 */
-	public function get_index ($id = null) { return Item::get($id); }
+	public function get_index ($id = null) {
+		if (isset($id)) return Item::find($id);
+
+		$inp = Input::get();
+
+		$status = isset($inp['status']) ? $inp['status'] : 'archive';
+		if (isset($inp['tag'])) {
+			$type = 'tag';
+			$id = $inp['tag'];
+		}
+		elseif (isset($inp['src'])) {
+			$type = 'src';
+			$id = $inp['src'];
+		}
+		else {
+			$type = 'all';
+			$id = '';
+		}
+
+		return Item::get($status, $type, $id);
+	}
 
 	/**
 	 * Can't create new items

@@ -8,7 +8,7 @@ window.App = (function ($, App, window) {
 	 * @param type		type of the message [success, info | error | warning,alert]; (defaults to: success)
 	 */
 	App.Msg = function (conf, type) {
-		window.log(conf, type);
+		console.log(conf, type);
 		if (conf && conf.type === 'error') window.alert(conf.text);
 	};
 

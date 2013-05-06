@@ -466,7 +466,7 @@ window.App = (function ($, App, window) {
 	 * @param type		type of the message [success, info | error | warning,alert]; (defaults to: success)
 	 */
 	App.Msg = function (conf, type) {
-		window.log(conf, type);
+		console.log(conf, type);
 		if (conf && conf.type === 'error') window.alert(conf.text);
 	};
 
@@ -512,19 +512,19 @@ window.App = (function ($, App, window) {
 		_items = [],
 		_btnRefresh = null,		// loading swirl
 		_maxBodyHeight = 200,
-		_feedType = 'unread',
 
 
 
-	/*** HANDLERS ***************************************************************************************************************/
+	/*** HANDLERS *****************************************************************************************************/
+
 	_btnClickHandler = function (e) {
 		var btn = $(this),
 			action = btn.data('action'),
 			entry = btn.closest('.entry'),
 			item = _getById(entry.data('id'));
 
-		if (action === 'toggle-star') _toggleStar(item, entry);
 		if (action === 'toggle-expand') _toggleExpand(item, entry);
+		if (action === 'toggle-star') _toggleStar(item, entry);
 		if (action === 'toggle-unread') _toggleUnread(item, entry);
 		else {
 			item.is_unread = true;
@@ -543,7 +543,7 @@ window.App = (function ($, App, window) {
 		item.is_starred = !item.is_starred;
 		el.toggleClass('starred', item.is_starred);
 		App.Put('items/' + item.id, { is_starred: item.is_starred }, function () {
-			App.Publish('entry/changed');
+			App.Publish('nav/refresh');
 		});
 	},
 
@@ -558,7 +558,7 @@ window.App = (function ($, App, window) {
 		el.toggleClass('unread', item.is_unread);
 
 		App.Put('items/' + item.id, { is_unread: item.is_unread }, function () {
-			App.Publish('entry/changed');
+			App.Publish('nav/refresh');
 		});
 	},
 
@@ -616,7 +616,7 @@ window.App = (function ($, App, window) {
 		if (!entry.hasClass('active')) {
 			entry.siblings().removeClass('active');
 			entry.prev().addClass('active');
-			App.Publish('entry/next');
+			App.Publish('nav/next');
 		}
 		else if (entry.hasClass('unread')) _toggleUnread();
 	},
@@ -636,7 +636,7 @@ window.App = (function ($, App, window) {
 		for (; item = _items[i++] ;) if (item.id === id) return item;
 		return null;
 	},
-	/*** HANDLERS ***************************************************************************************************************/
+	/*** HANDLERS *****************************************************************************************************/
 
 	_getItemHtml = function (item) {
 		var cls = [ 'entry' ];
@@ -688,11 +688,9 @@ window.App = (function ($, App, window) {
 
 
 	_load = function (cfg) {
-		if (!_isReady) return;
+		if (!_isReady || !cfg) return;
 		_btnRefresh.addClass('icon-spin');
-		console.log(cfg);
-		if (cfg && cfg.type) _feedType = cfg.type;
-		App.Get(_feedType, _populate);
+		App.Get('items?' + $.param(cfg), _populate);
 	},
 
 
@@ -706,17 +704,189 @@ window.App = (function ($, App, window) {
 		_container.on('click', '.entry', _entryClickHandler);
 		_container.on('click', '.tb-btn', _btnClickHandler);
 
+
+
 		_isReady = true;
 	};
 
-	App.Subscribe('entry/next', _nextItem);
-	App.Subscribe('entry/prev', _previousItem);
-	App.Subscribe('entry/toggleUnread', _toggleUnread);
 	App.Subscribe('entry/toggleStar', _toggleStar);
+	App.Subscribe('entry/toggleUnread', _toggleUnread);
 
-	App.Subscribe('nav/changed', _load);
-	App.Subscribe('app/refresh', _load);
+	App.Subscribe('nav/next', _nextItem);
+	App.Subscribe('nav/prev', _previousItem);
+
+	App.Subscribe('nav/refresh', _load);
 	App.Subscribe('app/ready', _init);
+
+}(jQuery, window.App, this));
+(function ($, App, window) {
+	'use strict';
+
+	var _sidebar = null,
+		_toolbar = null,
+		_sourcesContainer = null,
+
+		_isReady = false,
+		_params = { status: 'unread' },
+		_items = null,
+
+
+	/*** EVENT LISTENERS **********************************************************************************************/
+	_popStateHandler = function () {
+		var params = window.location.hash.substr(1);
+		if (params.length) {
+			params = params.split('/');
+			if (params[0]) _params.status = params[0];
+			if (params[1] && params[2]) {
+				if (params[1] === 'tag') _params.tag = params[2];
+				if (params[1] === 'src') _params.src = params[2];
+			}
+		}
+		App.Publish('nav/refresh', [ _params ]);
+	},
+
+	_onKeyDown = function (e) {
+		var key = e.keyCode;
+		if (key === 83) App.Publish('entry/toggleStar');			// s - toggle unread
+		else if (key === 85) App.Publish('entry/toggleUnread');		// u - toggle unread
+		else if (key === 82) App.Publish('nav/refresh');			// r - refresh
+		else if (key === 32) App.Publish('nav/next');				// space - next
+		else if (key === 33) App.Publish('nav/prev');				// pgup - prev
+		else if (key === 34) App.Publish('nav/next');				// pgdown - next
+	},
+
+	_toolbarBtnHandler = function () {
+		var btn = $(this), action = btn.data('action');
+
+		if (action === 'next') App.Publish('nav/next');
+		if (action === 'prev') App.Publish('nav/prev');
+		if (action === 'refresh') App.Publish('nav/refresh');
+
+		if (action === 'unread') _navigate({ status: 'unread' });
+		if (action === 'starred') _navigate({ status: 'starred' });
+		if (action === 'archive') _navigate({ status: 'archive' });
+
+		if (action === 'add') App.Publish('source/add');
+		if (action === 'settings') window.location.href = App.rootPath + '/settings';
+		if (action === 'back') window.location.href = App.rootPath;
+	},
+
+	_sidebarClickHandler = function (e) {
+		e.preventDefault();
+		var btn = $(this), type = btn.data('navType'), id = btn.data('action');
+		_params = { status: _params.status };
+		if (type === 'tag') _params.tag = id;
+		if (type === 'src') _params.src = id;
+		_navigate();
+	},
+	/*** EVENT LISTENERS **********************************************************************************************/
+
+
+	_navigate = function (cfg) {
+		if (cfg) $.extend(_params, cfg);
+		var hash = [_params.status];
+		if (_params.tag) hash.push('tag', _params.tag);
+		else if (_params.src) hash.push('src', _params.src);
+		window.location.hash = hash.join('/');
+	},
+
+	_toggleSelection = function () {
+		_sidebar.find('.nav-btn').removeClass('active');
+		if (_params.tag) _sourcesContainer.find('.nav-' + _params.tag).addClass('active');
+		else if (_params.src) _sourcesContainer.find('.nav-' + _params.src).addClass('active');
+		else _sidebar.find('.nav-header').addClass('active');
+
+		_toolbar
+			.find('.status-buttons .btn-' + _params.status).addClass('active')
+			.siblings('.btn').removeClass('active');
+	},
+
+
+
+	/*** HTML *********************************************************************************************************/
+	_getSourceHtml = function (src) {
+		var icon = (src.icon ? '<img src="favicons/' + src.icon + '"">' : '<i class="icon-rss"></i>');
+		return '<li class="nav-source nav-btn nav-' + src.id + '" data-nav-type="src" data-action="' + src.id + '">' +
+			'<a href="#" class="nav-row">' +
+				(src.unread ? '<span class="no-badge">' + src.unread + '</span>' : '') +
+				'<span class="nav-icon">' + icon + '</span>' +
+				'<span class="nav-name">' + src.name + '</span>' +
+			'</a>' +
+		'</li>';
+	},
+
+	_getTagHtml = function (tag) {
+		return '<li class="nav-tag nav-btn nav-' + tag.name + '" data-nav-type="tag" data-action="' + tag.name + '">' +
+			'<a href="#" class="nav-row"><span class="nav-name">' + tag.name + '</span></a></li>';
+	},
+
+
+	_populateSources = function (sources) {
+		if (typeof sources !== 'undefined') _items = sources;
+
+		var i = 0, j = 0, src, tag, srcAr = [];
+		if (_items && _items.length) {
+			for (; tag = _items[i++] ;) {
+				tag.tag = tag.tag || 'all';
+				srcAr.push(_getTagHtml(tag));
+				if (tag.items) for (j = 0; src = tag.items[j++] ;) srcAr.push(_getSourceHtml(src));
+			}
+		}
+		_sourcesContainer.html(srcAr.join(''));
+		_toggleSelection();
+	},
+
+	_populateStats = function (stats) {
+		_sidebar.find('.nav-header .badge').html(stats.unread);
+		_toolbar.find('.btn-unread .badge').html(stats.unread);
+		_toolbar.find('.btn-starred .badge').html(stats.starred);
+		_toolbar.find('.btn-archive .badge').html(stats.all);
+		document.title = 'MyReader' + (stats.unread > 0 ? ' (' + stats.unread + ')' : '');
+	},
+	/*** HTML *********************************************************************************************************/
+
+
+
+
+
+
+	/*** LOAD DATA ****************************************************************************************************/
+	_loadStats = function () { if (_sourcesContainer.length) App.Get('stats', _populateStats); },
+
+	_reload = function (cfg) {
+		$.extend(_params, cfg);
+		if (_sourcesContainer.length) App.Get('sourcetree?' + $.param(_params), _populateSources);
+		_loadStats();
+	},
+	/*** LOAD DATA ****************************************************************************************************/
+
+
+
+
+
+
+	_init = function () {
+		if (_isReady) return;
+		_sidebar = $('#sidebar');
+		_toolbar = $('#toolbar');
+
+		if (_sidebar.length) _sourcesContainer = _sidebar.find('.sidebar-sources');
+
+		// EVENTS
+		window.onpopstate = _popStateHandler;
+		$(document).on('keydown', _onKeyDown);
+		_toolbar.on('click', '.btn', _toolbarBtnHandler);
+		_sidebar.on('click', '.nav-btn', _sidebarClickHandler);
+
+		if (window.location.hash === '#') window.location.hash = 'unread';
+		_popStateHandler();
+
+		_isReady = true;
+	};
+
+
+	App.Subscribe('app/ready', _init);
+	App.Subscribe('nav/refresh', _reload);
 
 }(jQuery, window.App, this));
 (function ($, App) {
@@ -877,204 +1047,5 @@ window.App = (function ($, App, window) {
 
 	App.Subscribe('source/add', _addSource);
 	App.Subscribe('app/ready', _init);
-
-}(jQuery, window.App, this));
-(function ($, App) {
-	'use strict';
-
-	var _container = null,
-		_isReady = false,
-		_statsContainer = null,
-		_sourcesContainer = null,
-		_params = { linkType: 'type', linkId: 'unread', tag: '', source: '', type: 'unread' },
-		_sources = null,
-
-
-
-
-	/*** NAVIGATION *************************************************************************************************************/
-	_navigate = function () {
-		var dat = $(this).data(), cfg = { linkType: dat.navType, linkId: dat.action };
-		if (dat.navType === 'tag' || dat.navType === 'source') {
-			if (dat.action === 'all-tags') dat.action = '';
-			cfg.source = cfg.tag = '';
-			_container.find('.nav-source,.nav-tag').removeClass('active');
-		}
-		if (dat.navType === 'type') cfg.type = dat.action;
-		else cfg[dat.navType] = dat.action;					// e.g. cfg.source = 123
-		_params = $.extend(_params, cfg);
-		App.Publish('nav/changed', [ _params ]);
-	},
-
-
-	_onNavChange = function (cfg) {
-		_params = $.extend(_params, cfg);
-		_populateSources();
-	},
-
-	_toggleSelection = function (el) {
-		if (!el) el = _container.find('.nav-' + _params.linkType).filter('.nav-' + _params.linkId);
-		if (!el || !el.length) return;
-
-		el.addClass('active').siblings().removeClass('active');
-
-		if (_params.linkType === 'tag') {
-			el.nextUntil('.nav-tag', '.nav-source').show();
-			el.find('.no-badge').hide();
-		}
-		else if (_params.linkType === 'source') {
-			el.show();
-			el.prevUntil('.nav-tag', '.nav-source').show();
-			el.nextUntil('.nav-tag', '.nav-source').show();
-			el.prev('.nav-tag').find('.no-badge').hide();
-		}
-	},
-	/*** NAVIGATION *************************************************************************************************************/
-
-
-
-	/*** HTML *******************************************************************************************************************/
-	_getSourceHtml = function (src) {
-		var icon = (src.icon ? '<img src="favicons/' + src.icon + '"">' : '<i class="icon-rss"></i>');
-		return '<li class="nav-source nav-btn nav-' + src.id + '" data-nav-type="source" data-action="' + src.id + '">' +
-			'<a href="#" class="nav-row">' +
-				(src.items ? '<span class="no-badge">' + src.items + '</span>' : '') +
-				'<span class="nav-icon">' + icon + '</span>' +
-				'<span class="nav-name">' + src.name + '</span>' +
-			'</a>' +
-		'</li>';
-	},
-
-	_getTagHtml = function (tag, unread) {
-		return '<li class="nav-tag nav-btn nav-' + tag + '" data-nav-type="tag" data-action="' + tag + '">' +
-			'<a href="#" class="nav-row">' +
-				(unread ? '<span class="no-badge">' + unread + '</span>' : '') +
-				'<span class="nav-name">' + tag + '</span>' +
-			'</a>' +
-		'</li>';
-	},
-
-
-	_populateSources = function (sources) {
-		if (typeof sources !== 'undefined') _sources = sources;
-
-		var i = 0, src, tags = {}, tagCounts = {}, tag, srcAr = [];
-
-		if (_sources && _sources.length) {
-			srcAr.push('<li class="nav-header"><i class="btn-settings icon-cog"></i>' +
-				'<span class="nav-name nav-btn" data-nav-type="tag" data-action="all-tags">Sources</span></li>');
-
-			for (; src = _sources[i++] ;) {
-				src.tag = src.tag || 'all';
-				tagCounts[src.tag] = tagCounts[src.tag] ? tagCounts[src.tag] + src.items : src.items;
-				tags[src.tag] = tags[src.tag] || [];
-				if (src.items) tags[src.tag].push(_getSourceHtml(src));
-			}
-			for (tag in tags) {
-				if (!tags.hasOwnProperty(tag)) continue;
-				if (!tagCounts[tag]) continue;
-				srcAr.push(_getTagHtml(tag, tagCounts[tag]));
-				srcAr.push(tags[tag].join(''));
-			}
-		}
-		_sourcesContainer.html(srcAr.join(''));
-		_toggleSelection();
-	},
-
-	_updateStats = function (stats) {
-		_statsContainer.find('.stats-unread .badge').html(stats.unread ? stats.unread : '0');
-		_statsContainer.find('.stats-starred .no-badge').html(stats.starred ? stats.starred : '');
-		_statsContainer.find('.stats-items .no-badge').html(stats.all ? stats.all : '');
-	},
-	/*** HTML *******************************************************************************************************************/
-
-
-
-
-
-
-	/*** LOAD DATA **************************************************************************************************************/
-	_reload = function () {
-		if (_statsContainer.length) App.Get('stats', _updateStats);
-		if (_sourcesContainer.length) App.Get('sourcesfull', _populateSources);
-	},
-	/*** LOAD DATA **************************************************************************************************************/
-
-
-
-
-
-
-	_init = function () {
-		if (_isReady) return;
-		_container = $('#sidebar');
-		if (!_container.length) return;
-
-		_statsContainer = _container.find('.sidebar-list-stats');
-		_sourcesContainer = _container.find('.sidebar-list-sources');
-		_container.on('click', '.nav-btn', _navigate);
-
-		_reload();
-
-		App.Publish('nav/changed', [ _params ]);
-		_isReady = true;
-	};
-
-
-	App.Subscribe('app/ready', _init);
-	App.Subscribe('app/refresh', _reload);
-	App.Subscribe('nav/changed', _onNavChange);
-	App.Subscribe('entry/changed', _reload);
-
-}(jQuery, window.App, this));
-(function ($, App) {
-	'use strict';
-
-	var _container = null,
-		_isReady = false,
-
-
-
-	/*** HANDLERS ***************************************************************************************************************/
-	_onKeyDown = function (e) {
-		var key = e.keyCode;
-
-		if (key === 82) App.Publish('app/refresh');					// r - refresh
-		else if (key === 83) App.Publish('entry/toggleStar');		// s - toggle unread
-		else if (key === 85) App.Publish('entry/toggleUnread');		// u - toggle unread
-		else if (key === 32) App.Publish('entry/next');				// space - next
-		else if (key === 33) App.Publish('entry/prev');				// pgup - prev
-		else if (key === 34) App.Publish('entry/next');				// pgdown - next
-		// else window.log(key);
-	},
-
-
-	_btnClickHandler = function () {
-		var btn = $(this), action = btn.data('action');
-
-		if (action === 'next') App.Publish('entry/next');
-		if (action === 'prev') App.Publish('entry/prev');
-		if (action === 'refresh') App.Publish('app/refresh');
-		if (action === 'settings') window.location.href = App.rootPath + '/settings';
-		if (action === 'back') window.location.href = App.rootPath;
-		if (action === 'add') App.Publish('source/add');
-	},
-	/*** HANDLERS ***************************************************************************************************************/
-
-
-
-	init = function () {
-		if (_isReady) return;
-		_container = $('#toolbar');
-		if (!_container.length) return;
-
-		_container.on('click', '.btn', _btnClickHandler);
-		$(document).on('keydown', _onKeyDown);
-
-		_isReady = true;
-	};
-
-
-	App.Subscribe('app/ready', init);
 
 }(jQuery, window.App, this));

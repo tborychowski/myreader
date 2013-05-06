@@ -17,51 +17,55 @@ class Item extends Eloquent {
 	}
 
 	/**
-	 * Retrieve unread counts in an object format
+	 * Retrieve unread counts in an object format (for sidebar feed tree)
 	 * @return object  { id: unreadNumber }
 	 */
-	public static function get_unread_counts () {
-		$items = Item::group_by('source_id')->get([ 'source_id AS id', DB::raw('count(items.id) AS unread') ]);
+	public static function get_unread_counts ($status = 'archive', $type = 'all', $id = '') {
+		$items = Item::group_by('source_id');
+
+		if ($type === 'tag' && isset($id)) {
+			$tag = Source::where_tag($id)->first('id');
+			if ($tag) $id = $tag->id;
+		}
+		if ($type !== 'all' && !empty($id)) $items = $items->where_source_id($id);
+
+		if ($status === 'unread') $items = $items->where_is_unread(1);
+		elseif ($status === 'starred') $items = $items->where_is_starred(1);
+
+		$items = $items->get([ 'source_id AS id', DB::raw('count(items.id) AS unread') ]);
+
 		$unreads = [];
 		foreach ($items as $item) {
-			if (!isset($unreads[$item->id])) $unreads[$item->id] = 1;
-			else $unreads[$item->id]++;
+			if (!isset($unreads[$item->id])) $unreads[$item->id] = 0;
+			$unreads[$item->id] += $item->unread;
 		}
+
 		return $unreads;
 	}
 
 
 
-	public static function get_unread () {
-		$items = Item::with('source')->where_is_unread(1)->get();
+	public static function get ($status = 'archive', $type = 'all', $id = '') {
+		$items = Item::with('source');
 
-		return array_map(function($item) {
-			$item2 = $item->to_array();
-			unset($item2['source']['user_id'], $item2['source']['created_at'], $item2['source']['updated_at']);
-			return $item2;
+		if ($type === 'tag' && isset($id)) {
+			$tag = Source::where_tag($id)->first('id');
+			if ($tag) $id = $tag->id;
+		}
+		if ($type !== 'all' && !empty($id)) $items = $items->where_source_id($id);
+
+		if ($status === 'unread') $items = $items->where_is_unread(1);
+		elseif ($status === 'starred') $items = $items->where_is_starred(1);
+
+		if (method_exists($items, 'all')) $items = $items->all();
+		else $items = $items->get();
+
+		return array_map(function ($item) {
+			unset($item->source->user_id, $item->source->created_at, $item->source->updated_at);
+			return $item;
 		}, $items);
 	}
 
-	public static function get_starred () {
-		$items = Item::with('source')->where_is_starred(1)->get();
-
-		return array_map(function($item) {
-			$item2 = $item->to_array();
-			$item2['source_name'] = $item->source->name;
-			return $item2;
-		}, $items);
-	}
-
-	public static function get ($id = null) {
-		if (isset($id)) return Item::find($id);
-		$items = Item::with('source')->all();
-
-		return array_map(function($item) {
-			$item2 = $item->to_array();
-			$item2['source_name'] = $item->source->name;
-			return $item2;
-		}, $items);
-	}
 
 
 	/**
