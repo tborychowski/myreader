@@ -63,6 +63,8 @@ class Source extends Eloquent {
 
 		if (isset($input->name)) $item->name = $input->name;
 		if (isset($input->url)) $item->url = $input->url;
+		if (isset($input->last_error)) $item->last_error = $input->last_error;
+		$item->updated_at = new \DateTime;
 		$item->save();
 
 		return JSON::success('Item was updated');

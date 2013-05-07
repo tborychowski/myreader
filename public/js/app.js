@@ -984,9 +984,10 @@ window.App = (function ($, App, window) {
 					(src.name || '') +
 					(src.tag ? ' &lt;' + src.tag + '&gt;' : '') +
 				'</h3>' +
-				'<span class="entry-time">' + (src.created_at || '') + '</span>' +
+				'<span class="entry-time">updated: ' + (src.updated_at || '') + '</span>' +
 				'<span class="entry-source">' + (src.url || '') + '</span>' +
 			'</div>' +
+			(src.last_error ? '<div class="entry-body"><p class="error">' + src.last_error + '</p></div>' : '') +
 			'<div class="entry-footer">' +
 				'<span class="tb-btn btn-remove" data-action="remove"><i class="icon-trash"></i> Remove</span>' +
 				'<span class="tb-btn btn-edit"   data-action="edit"><i class="icon-pencil"></i> Edit</span>' +
@@ -1002,7 +1003,7 @@ window.App = (function ($, App, window) {
 					'<input name="name" value="' + (src.name || '') + '" placeholder="name">' +
 					'<input name="tag" value="' + (src.tag || '') + '" placeholder="tag">' +
 				'</h3>' +
-				'<span class="entry-time">' + (src.created_at || '') + '</span>' +
+				'<span class="entry-time">added: ' + (src.created_at || '') + '</span>' +
 				'<span class="entry-source"><input name="url" value="' + (src.url || '') + '" placeholder="url"></span>' +
 			'</div>' +
 			'<div class="entry-footer">' +

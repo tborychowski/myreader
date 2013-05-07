@@ -1,6 +1,574 @@
-a:4:{s:5:"child";a:1:{s:0:"";a:1:{s:3:"rss";a:1:{i:0;a:6:{s:4:"data";s:1:" ";s:7:"attribs";a:1:{s:0:"";a:1:{s:7:"version";s:3:"2.0";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:1:{s:7:"channel";a:1:{i:0;a:6:{s:4:"data";s:18:"                  ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:4:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:8:"Nettuts+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:23:"http://net.tutsplus.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:34:"Web Development & Design Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:13:"lastBuildDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Sat, 04 May 2013 22:52:05 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"language";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"generator";a:1:{i:0;a:5:{s:4:"data";s:27:"http://wordpress.org/?v=3.5";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:5:"image";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:3:{s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:18:"http://nettuts.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:3:"url";a:1:{i:0;a:5:{s:4:"data";s:53:"http://envato.s3.amazonaws.com/rss_images/nettuts.jpg";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:7:"NETTUTS";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}s:4:"item";a:10:{i:0;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:37:"Python Power Tools: virtualenvwrapper";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/_UPwiylkSos/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:97:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 03 May 2013 16:00:38 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:6:"Python";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:6:"Videos";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31569";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:2283:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31569&c=2034314006' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31569&c=2034314006' border='0' alt='' /></a><p>In this series of videos, I&#8217;ll introduce you to several tools that you can add to your arsenal to become a better, more productive, programmer. In this episode, we&#8217;ll review a powerful companion app, <a
+a:4:{s:5:"child";a:1:{s:0:"";a:1:{s:3:"rss";a:1:{i:0;a:6:{s:4:"data";s:1:" ";s:7:"attribs";a:1:{s:0:"";a:1:{s:7:"version";s:3:"2.0";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:1:{s:7:"channel";a:1:{i:0;a:6:{s:4:"data";s:18:"                  ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:4:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:8:"Nettuts+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:23:"http://net.tutsplus.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:34:"Web Development & Design Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:13:"lastBuildDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 07 May 2013 19:29:58 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"language";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"generator";a:1:{i:0;a:5:{s:4:"data";s:27:"http://wordpress.org/?v=3.5";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:5:"image";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:3:{s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:18:"http://nettuts.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:3:"url";a:1:{i:0;a:5:{s:4:"data";s:53:"http://envato.s3.amazonaws.com/rss_images/nettuts.jpg";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:7:"NETTUTS";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}s:4:"item";a:10:{i:0;a:6:{s:4:"data";s:9:"         ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:22:"Use ECMAScript 6 Today";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/U00r_iCrOQM/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:66:"http://net.tutsplus.com/articles/news/ecmascript-6-today/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 07 May 2013 19:25:20 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:1:{i:0;a:5:{s:4:"data";s:4:"News";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31582";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:45981:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31582&c=5307898' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31582&c=5307898' border='0' alt='' /></a><p>Today, ECMAScript 6 is in the process of being finalized. ECMAScript is the foundation of JavaScript and, hence, exploring the proposed features today also means that we get a sneak peak at how we will be writing JavaScript in the near future! In this article, we&#8217;ll explore ten new features, with a significant focus on tools, browsers and transpilers.</p><p><span
+id="more-31582"></span></p><hr
+/><h2>A Brief History: ECMA, ECMAScript and JavaScript</h2><p><strong>JavaScript</strong> was originally developed by <a
+href="https://twitter.com/BrendanEich">Brendan Eich</a> of Netscape, and officially released as part of <a
+href="http://en.wikipedia.org/wiki/Netscape_Navigator">Netscape Navigator</a> 2.0 in 1995. A year later, JavaScript was submitted to <a
+href="http://www.ecma-international.org/">ECMA International</a>, a body that facilitates the standardization of information and communication technology and consumer electronics, so that it can be formalized industry-wise. <strong>ECMAScript</strong>, thus, became the name of the scripting language standardized in <a
+href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMA-262</a>.</p><p>The ECMAScript standard forms the backbone of many other derived languages, including <a
+href="http://www.adobe.com/devnet/actionscript.html">ActionScript</a> and <a
+href="http://msdn.microsoft.com/en-us/library/vstudio/72bd815a(v=vs.100).aspx">JScript</a>. Through the years, ECMAScript has gone through four versions, with the discussions today very much revolving around version six, which has also been code-named, <strong>ECMAScript Harmony</strong>.</p><h3>Version correspondence</h3><p>Before we dive into these new features, it&#8217;s important to note that the ECMAScript standard forms the foundation of JavaScript. There are numerical differences between each of the JavaScript versions and the corresponding ECMAScript editions. This is to say that JavaScript is compatible with the ECMAScript standard, while providing more features. The table below summarizes the <a
+href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/JavaScript_Overview#Relationship_between_JavaScript_Versions_and_ECMAScript_Editions">relationship</a> between <a
+href="http://en.wikipedia.org/wiki/Ecmascript#Version_correspondence">JavaScript and ECMAScript</a>:</p><table
+border=1><tr><td><strong>JavaScript Version</strong></td><td><strong>ECMAScript Edition</strong></td><td><strong>Year</strong></td></tr><tr><td>JavaScript 1.1</td><td>ECMAScript edition 1</td><td>1997</td></tr><tr><td>JavaScript 1.5</td><td>ECMAScript edition 3</td><td>1999</td></tr><tr><td>JavaScript 2.0</td><td>ECMAScript Harmony</td><td>Work in progress</td></tr></table><hr
+/><h2>ES6 Overview</h2><h3>Goals</h3><p>JavaScript has come a long way since its humble beginnings nearly twenty years ago. Today, developers are writing thousands of lines of code creating complex JavaScript applications. Before we dive into the detailed features of ES6, you may want to look at the big picture that is defined in the specification drafts, in terms of <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:harmony#requirements">requirements</a>, <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:harmony#goals">goals</a>, <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:harmony#means">means</a> and <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:harmony#themes">themes</a>. One of the <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:harmony#goals">goals for ES6</a> is to be a better language for creating:</p><ul><li>complex applications</li><li>libraries</li><li>code generators</li></ul><h3>Compatibility</h3><p>The <a
+href="http://kangax.github.io/es5-compat-table/es6/">ES6 compatibility table</a> is very useful, as it tells us the ES6 features that are supported in the current browser. It also gives us a handy link to the specifications for each of the features listed. Do note that some of the features&#8217; existence might not mean full compliance with specifications. When working with Chrome, be sure to enable the &#8220;Experimental JavaScript&#8221; flags.</p><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-compatibility.png" border="0" /></div><h3>Features</h3><p>Now that the big picture is defined, let&#8217;s explore how we can implement them. In the following sections, we will discuss ten features of ES6, using various tools so that we can understand ES6 both in theory and practice. Prior knowledge of JavaScript is a pre-requisite, so feel free to check out <a
+href="http://net.tutsplus.com/tutorials/javascript-ajax/the-best-way-to-learn-javascript/">many resources on JavaScript</a>.</p><p>Listed below are the features that we&#8217;ll go through with a different tool. Try them out one by one, or jump to the specific feature that you&#8217;d like to explore:</p><ol><li><a
+href="#let">Block scoping with <code>let</code></a> [ using <a
+href="http://www.mozilla.org/en-US/firefox/20.0.1/releasenotes/">Firefox browser</a> ]</li><li><a
+href="#const">Block scoping with <code>const</code></a> [ using <a
+href="https://www.google.com/intl/en/chrome/browser/beta.html">Chrome browser</a> ]</li><li><a
+href="#class">Classes</a> [ using <a
+href="https://code.google.com/p/traceur-compiler/">Traceur</a> ]</li><li><a
+href="#params">Default function parameters</a> [ using <a
+href="http://www.typescriptlang.org/">TypeScript</a> ]</li><li><a
+href="#collections">Collections</a> [ using <a
+href="http://nodejs.org/">NodeJS</a> ]</li><li><a
+href="#destructuring">Destructuring</a> [ using <a
+href="http://www.mozilla.org/en-US/firefox/20.0.1/releasenotes/">Firefox browser</a> ]</li><li><a
+href="#rest-spread">Rest parameters &#038; Spread operator</a> [ using <a
+href="https://github.com/aaronfrost/grunt-traceur">Grunt plugin Traceur</a> ]</li><li><a
+href="#for">Iterators</a> [ using <a
+href="http://www.mozilla.org/en-US/firefox/20.0.1/releasenotes/">Firefox browser</a> ]</li><li><a
+href="#comprehension">Array comprehension</a> [ using <a
+href="http://www.mozilla.org/en-US/firefox/20.0.1/releasenotes/">Firefox browser</a> ]</li><li><a
+href="#modules">Modules</a> (using <a
+href="http://square.github.io/es6-module-transpiler/">ES6 Module Transpiler</a>)</li></ol><hr
+/><a
+name="let"></a></p><h2> <span>Feature 1 -</span> Block Scoping with <code>let</code></h2><ul><li><strong>Documentation: </strong> <code><a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:let">let</a></code></li><li><strong>Tool: </strong> <a
+href="http://www.mozilla.org/en-US/firefox/20.0.1/releasenotes/">Firefox browser 20.0</a>: Menu > Tools > Web developer > Web Console</li></ul><p>JavaScript variables are function-scoped. This means that, even if there are variables declared in a nested block, they are available throughout the function. Let&#8217;s review a short example below; we&#8217;ll simply use the web console in Firefox or Chrome to run them. What do you think will be the value of <code>jsFuture</code>?</p><pre class="brush: jscript; title: ; notranslate">
+var jsFuture = &quot;es6&quot;;
+(function () {
+  if (!jsFuture) { var jsFuture = &quot;es5&quot;; }
+  console.log(jsFuture);
+}());
+</pre><p>In the above example, the value of <code>jsFuture</code> in the <code>console.log</code> statement will be &#8220;es5&#8243;. Crucial to your understanding is the fact that, in JavaScript, <a
+href="http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-javascript-hoisting-explained/">variable declarations are hoisted to the top</a>, but variable initializations, on the other hand, are not. Hence, regardless of where the variables are initialized and declared, within the function scope, they will always be hoisted. The snippet below is exactly the same &#8211; with comments to illustrate this feature of variable hoisting.</p><pre class="brush: jscript; title: ; notranslate">
+var jsFuture = &quot;es6&quot;;
+(function () {
+  // var jsFuture = undefined;
+  // variable hoisting
+  if (!jsFuture) { var jsFuture = &quot;es5&quot;; }
+  console.log(jsFuture); // &quot;es5&quot;
+}());
+</pre><p>ES6 tackles this issue with <code>let</code>, which is like <code>var</code>, except for the fact that it is block scoped instead of function scoped. Let&#8217;s consider another example with <code>var</code> below. Calling the function <code>es[6]() </code>will give us the value of <code>i = 10</code>. Notice that, even though <code>var i = 0;</code> is declared in the <code>for</code> loop, the scope of <code>var i</code> defaults to global. Hence, when the function <code>es[6]()</code> is executed, the value of <code>i</code> is <code>10</code>.</p><pre class="brush: jscript; title: ; notranslate">
+var es = [];
+for (var i = 0; i &lt; 10; i++) {
+  es[i] = function () {
+    console.log(&quot;Upcoming edition of ECMAScript is ES&quot; + i);
+  };
+}
+es[6](); // Upcoming edition of ECMAScript is ES10
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-var-es5.png" border="0" /></div><p>Let&#8217;s now use <code>let</code>. To code this out, we&#8217;ll use Firefox and open up the web console through the menu (Tools > Web developer > Web Console). Creating a block-scoped variable within the <code>for</code> loop, <code>let c = i;</code> made it block scoped.</p><pre class="brush: jscript; title: ; notranslate">
+var es = [];
+for (var i = 0; i &lt; 10; i++) {
+  let c = i;
+  es[i] = function () {
+    console.log(&quot;Upcoming edition of ECMAScript is ES&quot; + c);
+  };
+}
+es[6](); // Upcoming edition of ECMAScript is ES6
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-let.png" border="0" /></div><p>Firefox already supports many upcoming ES6 features. Refer to the <a
+href="https://developer.mozilla.org/en-US/docs/JavaScript/ECMAScript_6_support_in_Mozilla">compliance table for Firefox</a> to keep updated on which features are supported, and which ones are also compliant with the current specification.</p><hr
+/><a
+name="const"></a></p><h2> <span>Feature 2 -</span> Block Scoping with <code>const</code></h2><ul><li><strong>Documentation: </strong> <code><a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:const">const</a></code></li><li><strong>Tool: </strong> <a
+href="https://www.google.com/intl/en/chrome/browser/beta.html">Chrome Browser</a> > View > Developer > JavaScript Console</li></ul><p>Constant definitions are now possible with <code>const</code>. <code>let</code> and <code>const</code> behave similarly in the sense that both are block scoped, but with <code>const</code>, the values are read-only and cannot be re-declared later on. Let&#8217;s review a simple code example in Chrome:</p><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-const.png" border="0" /></div><hr
+/><a
+name="class"></a></p><h2> <span>Feature 3 -</span> Classes</h2><ul><li><strong>Documentation: </strong> <code><a
+href="http://wiki.ecmascript.org/doku.php?id=strawman:maximally_minimal_classes">class</a></code></li><li><strong>Tool: </strong> <a
+href="">Traceur</a> with <a
+href="https://www.google.com/intl/en/chrome/browser/beta.html">Chrome Browser</a> > View > Developer > JavaScript Console</li></ul><p>In object-oriented programming languages, a <code>class</code> is a representation of an object. It forms the blueprint, while an object is an instance of a class. With regard to JavaScript, it is a class-less programming language and everything is an object. Traditionally, we&#8217;ve used functions and prototypes to implement classes. Let&#8217;s explore one common way of <a
+href="http://www.phpied.com/3-ways-to-define-a-javascript-class/">implementing class in ES5</a>.</p><pre class="brush: jscript; title: ; notranslate">
+var Language = function(config) {
+  this.name = config.name;
+  this.founder = config.founder;
+  this.year = config.year;
+};
+
+Language.prototype.summary = function() {
+  return this.name + &quot; was created by &quot; + this.founder + &quot; in &quot; + this.year;
+};
+</pre><p>Next, let&#8217;s see how ES6 implements classes with minimal class declaration syntax that can be extremely important to distinguish classes and functions. To code out <code>class</code> using the ES6 syntax, we will use Google&#8217;s <a
+href="https://code.google.com/p/traceur-compiler/">Traceur</a>, which is a <a
+href="http://en.wikipedia.org/wiki/Source-to-source_compiler">transpiler</a> that compiles ES6 code into ES5. First, let&#8217;s create the <code>html</code> file structure within which we will insert the ES6 syntax for classes. In order to compile the Traceur code, we require both <code>traceur.js</code> to compile Traceur to JavaScript, as well as <code>bootstrap.js</code> to <a
+href="https://code.google.com/p/traceur-compiler/wiki/GettingStarted#Pulling_Yourself_Up_By_Your_Bootstraps">bind them all</a>. Finally, Traceur will look for <code>script type="text/traceur"</code> tags to compile the relevant code inside the tags into vanilla JavaScript.</p><pre class="brush: xml; title: ; notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;ES6 Classes&lt;/title&gt;
+  &lt;script src=&quot;https://traceur-compiler.googlecode.com/git/bin/traceur.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://traceur-compiler.googlecode.com/git/src/bootstrap.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script type=&quot;text/traceur&quot;&gt;
+    // insert ES6 code
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><p>Next, within the <code>script type="text/traceur"</code> tags, let&#8217;s use the ES6 syntax to implement the same class that we previously did for <code>Language</code>.</p><pre class="brush: jscript; title: ; notranslate">
+class Language {
+  constructor(name, founder, year) {
+    this.name = name;
+    this.founder = founder;
+    this.year = year;
+  }
+  summary() {
+    return this.name + &quot; was created by &quot; + this.founder + &quot; in &quot; + this.year;
+  }
+}
+</pre><p>We can now create an instance of the <code>class Language</code> by opening the HTML file in the Chrome browser as <code>var js = new Language</code>. In the console, we&#8217;ll see the prompts for other properties of the language as well!</p><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-class.png" border="0" /></div><p>With such a clear syntax declaration, we can also move on to extend the class to implement a sub-class <code>MetaLanguage</code> that will inherit all the properties from the parent class <code>Language</code>. Inside the constructor function, we will require the function <code>super</code> that will call the constructor of the parent class so that it is able to inherit all of its properties. Lastly, we can also add on extra properties, such as <code>version</code>, as illustrated in the code below. Let&#8217;s review the ES6 syntax and run it in the Chrome browser:</p><pre class="brush: jscript; title: ; notranslate">
+class MetaLanguage extends Language {
+  constructor(x, y, z, version) {
+    super(x, y, z);
+    this.version = version;
+  }
+}
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-subclass.png" border="0" /></div><p>Traceur is a useful transpiler that allows us to code using the ES6 syntax, while doing the heavy-lifting for us to compile it back to the current JavaScript version. Do try out <a
+href="https://code.google.com/p/traceur-compiler/wiki/LanguageFeatures">other ES6 features in Traceur</a> as well!</p><hr
+/><a
+name="params"></a></p><h2> <span>Feature 4 -</span> Default Function Parameters</h2><ul><li><strong>Documentation: </strong> <code><a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:parameter_default_values">default function parameters</a></code></li><li><strong>Tool: </strong> <a
+href="http://www.typescriptlang.org/">TypeScript 0.8.3</a></li></ul><p>With default function parameters, we can always have function parameters as an option by setting some defaults. The syntax for this feature in ES6 is extremely intuitive. The default parameters are defined when the functions are defined. Let&#8217;s have a look at the ES6 syntax below in a new <a
+href="http://www.typescriptlang.org/">TypeScript</a> file with an extension of <code>*.ts</code>.</p><pre class="brush: jscript; title: ; notranslate">
+function history(lang = &quot;C&quot;, year = 1972) {
+  return lang + &quot; was created around the year &quot; + year;
+}
+</pre><p>Next, we will <a
+href="https://npmjs.org/package/typescript">install TypeScript as an npm module</a> and run the file <code>.*ts</code> and compile it to vanilla JavaScript. Here are the installation and then compilation commands in the command line:</p><pre class="brush: bash; title: ; notranslate">
+$ npm install -g typescript
+$ npm view typescript version
+0.8.3
+$ tsc 4-default-params.ts
+</pre><p>The command above will create a vanilla JavaScript file, called <code>4-default-params.js</code>, which can then be called from an HTML file. Here&#8217;s the simple HTML file that will call the external JavaScript file that is created by the TypeScript compiler:</p><pre class="brush: xml; title: ; notranslate">
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;ES6 Default Parameters&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script src=&quot;4-default-params.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><p>Finally, we will open the HTML file in Chrome/Firefox and call the function <code>history()</code> two times, with and without the function parameters. Notice that not passing in any function parameters will fall back to the default parameters:</p><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-params.png" border="0" /></div><p>Do check out <a
+href="http://www.typescriptlang.org/Tutorial/">other TypeScript features</a>, including <code>class</code> or <a
+href="http://net.tutsplus.com/tutorials/javascript-ajax/getting-started-with-typescript/">go through a TypeScript tutorial</a> for more in-depth usage.</p><hr
+/><a
+name="collections"></a></p><h2> <span>Feature 5 -</span> Collections</h2><ul><li><strong>Documentation: </strong> <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:simple_maps_and_sets">Sets and Maps</a></li><li><strong>Tool: </strong> <a
+href="http://nodejs.org/">NodeJS v0.10.4</a></li></ul><p>ES6 offers new data structures previously not available in JavaScript. Before we jump into exploring two such data structure (Sets and Maps), let&#8217;s see how we can run ES6 syntax with NodeJS. <a
+href="http://nodejs.org/">Install NodeJS</a>; from here on, we will work in the command line. Firstly, we will check the NodeJS version installed, and then check which options will enable ES6 features with the command <code>node --v8-options | grep harmony</code>.</p><pre class="brush: bash; title: ; notranslate">
+$ node --version
+v0.10.4
+
+$ node --v8-options | grep harmony
+--harmony_typeof (enable harmony semantics for typeof)
+--harmony_scoping (enable harmony block scoping)
+--harmony_modules (enable harmony modules (implies block scoping))
+--harmony_proxies (enable harmony proxies)
+--harmony_collections (enable harmony collections (sets, maps, and weak maps))
+--harmony (enable all harmony features (except typeof))
+</pre><p>Next, start the NodeJS <a
+href="http://en.wikipedia.org/wiki/REPL">repl</a> and query which properties are available for Set and Maps. We will start the NodeJS repl with <code>node --harmony</code> to enable all ES6 features.</p><pre class="brush: bash; title: ; notranslate">
+$ node --harmony
+&gt; Object.getOwnPropertyNames(Set.prototype)
+[ 'constructor',
+  'add',
+  'has',
+  'delete' ]
+&gt; Object.getOwnPropertyNames(Map.prototype)
+[ 'constructor',
+  'get',
+  'set',
+  'has',
+  'delete' ]
+&gt; .exit
+$
+</pre><h3>Sets</h3><p>Sets are simple data structures that are similar to arrays, but each value is unique. Let&#8217;s create a new file, called <code>5-sets.js</code>, and insert some code to create, add, delete and query the new set that we will create. Also, note that we will add &#8220;Hippo&#8221; data twice, but in the set, it will be registered only once!</p><pre class="brush: jscript; title: ; notranslate">
+var engines = new Set(); // create new Set
+
+engines.add(&quot;Gecko&quot;); // add to Set
+engines.add(&quot;Trident&quot;);
+engines.add(&quot;Webkit&quot;);
+engines.add(&quot;Hippo&quot;);
+engines.add(&quot;Hippo&quot;); // note that Hippo is added twice
+
+console.log(&quot;Browser engines include Gecko? &quot; + engines.has(&quot;Gecko&quot;));    // true
+console.log(&quot;Browser engines include Hippo? &quot; + engines.has(&quot;Hippo&quot;));    // true
+console.log(&quot;Browser engines include Indigo? &quot; + engines.has(&quot;Indigo&quot;));   // false
+
+engines.delete(&quot;Hippo&quot;); // delete item
+console.log(&quot;Hippo is deleted. Browser engines include Hippo? &quot; + engines.has(&quot;Hippo&quot;));    // false
+</pre><p>Run the file in the node repl with the command <code>node --harmony 5-set.js</code>. Note that, even though &#8220;Hippo&#8221; was added twice to the set, upon deleting it, the set didn&#8217;t include it anymore. This once again illustrates that a set is a data structure that can only contain unique values.</p><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-set.png" border="0" /></div><h3>Maps</h3><p>Maps are quite similar to JavaScript object key-value pairs. Using a unique key, we can retrieve the value. In ES6, the key can be any JavaScript data type and not just strings. That&#8217;s the interesting part! Let&#8217;s create a new file, called <code>5-map.js</code>, to try out the create, get and delete features:</p><pre class="brush: jscript; title: ; notranslate">
+var es6 = new Map(); // create new Map
+
+es6.set(&quot;edition&quot;, 6);        // key is string
+es6.set(262, &quot;standard&quot;);     // key is number
+es6.set(undefined, &quot;nah&quot;);    // key is undefined
+
+var hello = function() {console.log(&quot;hello&quot;);};
+es6.set(hello, &quot;Hello ES6!&quot;); // key is function
+
+console.log( &quot;Value of 'edition' exits? &quot; + es6.has(&quot;edition&quot;) );     // true
+console.log( &quot;Value of 'year' exits? &quot; + es6.has(&quot;years&quot;) );          // false
+console.log( &quot;Value of 262 exits? &quot; + es6.has(262) );                 // true
+console.log( &quot;Value of undefined exits? &quot; + es6.has(undefined) );     // true
+console.log( &quot;Value of hello() exits? &quot; + es6.has(hello) );           // true
+
+es6.delete(undefined); // delete map
+console.log( &quot;Value of undefined exits? &quot; + es6.has(undefined) );      // false
+
+console.log( es6.get(hello) ); // Hello ES6!
+console.log( &quot;Work is in progress for ES&quot; + es6.get(&quot;edition&quot;) ); // Work is in progress for ES6
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-map.png" border="0" /></div><p>As shown with the ES6 collections features, NodeJS harmony option already supports others ES6 features such as block scoping, proxies and modules. Do try them out in NodeJS as well!</p><hr
+/><a
+name="destructuring"></a></p><h2> <span>Feature 6 -</span> Destructuring</h2><ul><li><strong>Documentation: </strong> <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:destructuring">Destructuring</a></li><li><strong>Tool: </strong> <a
+href="http://www.mozilla.org/en-US/firefox/20.0.1/releasenotes/">Firefox browser 20.0</a>: Menu > Tools > Web developer > Web Console</li></ul><p>In programming languages, the term &#8220;destructuring&#8221; denotes pattern matching. In ES6, we can do some pretty nifty pattern matching in arrays and objects that previously would have taken us more than one step. Let&#8217;s explore some of them by coding it out in Firefox web console.</p><h3>Array destructuring</h3><p>With array destructing, we can initialize variables at once, or even swap them instead of having the conventional way of creating a <code>var temp;</code> temporary variable.</p><pre class="brush: jscript; title: ; notranslate">
+var [ start, end ] = [&quot;earth&quot;, &quot;moon&quot;] // initialize
+console.log(start + &quot; calling &quot; + end); // earth calling moon
+
+[start, end] = [end, start] // variable swapping
+console.log(start + &quot; calling &quot; + end); // moon calling earth
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-swap.png" border="0" /></div><p>Destructuring also becomes a useful shorthand when returning multiple values from a function, as we do not need to wrap around an object anymore. Also, to skip certain variables, just leave the array element empty:</p><pre class="brush: jscript; title: ; notranslate">
+function equinox() {
+  return [20, &quot;March&quot;, 2013, 11, 02];
+}
+var [date, month, , ,] = equinox();
+console.log(&quot;This year's equinox was on &quot; + date + month); // This year's equinox was on 20March
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-destructure.png" border="0" /></div><h3>Object destructuring</h3><p>Due to destructuring, variables can also be initialized from an object that is returned from a function even with deeply nested objects. Also, just like the array patterns, we can skip the ones not needed. Here&#8217;s the snippet of code that illustrates just this:</p><pre class="brush: jscript; title: ; notranslate">
+function equinox2() {
+  return {
+    date: 20,
+    month: &quot;March&quot;,
+    year: 2013,
+    time: {
+      hour: 11, // nested
+      minute: 2
+    }
+  };
+}
+
+var { date: d, month: m, time : { hour: h} } = equinox2();
+// h has the value of the nested property while &quot;year&quot; and &quot;minute&quot; are skipped totally
+
+console.log(&quot;This year's equinox was on &quot; + d + m + &quot; at &quot; + h); // This year's equinox was on 20March at 11
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-destructure-object.png" border="0" /></div><hr
+/><a
+name="rest-spread"></a></p><h2> <span>Feature 7 -</span> Rest Parameters and Spread Operators</h2><ul><li><strong>Documentation: </strong> <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters">Rest parameters</a> &#038; <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:spread">Spread operator</a></li><li><strong>Tool: </strong> <a
+href="https://github.com/aaronfrost/grunt-traceur">Grunt plugin Traceur</a></li></ul><h3>Rest parameters</h3><p>In ES6, rest parameters allows us to easily use a few fixed parameters in a function, along with the rest of the trailing and variable number of parameters. We <a
+href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/arguments">already use <code>arguments</code></a>, which is an array-like object that defines the arguments passed to a function, but clearly we cannot use the array function to manipulate these arguments. With a clear syntax in ES6, it also moves the intent of the developer into the syntax level with three dots <code>...</code> to denote a variable number of arguments.</p><p>Let&#8217;s try to use rest parameters in the ES6 syntax with <a
+href="http://gruntjs.com/getting-started">gruntjs</a> and its <a
+href="https://github.com/aaronfrost/grunt-traceur">plugin for the traceur transpiler</a>, which we used in the <a
+href="#class">previous section</a>.</p><ol><li><p><a
+href="http://gruntjs.com/getting-started">Install grunt command line utility</a>:</p><pre class="brush: bash; title: ; notranslate">
+    $ npm uninstall -g grunt
+    $ npm install -g grunt-cli
+    </pre></li><li><p>Create a file, called <code>package.json</code>, which will define the various modules needed to run Grunt. Note that this list of dependencies includes the traceur plugin:</p><pre class="brush: jscript; title: ; notranslate">
+    {
+      &quot;name&quot;: &quot;rest-params&quot;,
+      &quot;version&quot;: &quot;0.1.0&quot;,
+      &quot;devDependencies&quot;: {
+        &quot;grunt&quot;: &quot;0.4.1&quot;,
+        &quot;grunt-traceur&quot;: &quot;0.0.1&quot;
+      }
+    }
+    </pre></li><li><p>Create the <code>Gruntfile.js</code> which will contain just one task <code>traceur</code> that will convert ES6 syntax to today&#8217;s JavaScript. With this, we will be able to try out ES6 rest parameters.</p><pre class="brush: jscript; title: ; notranslate">
+    module.exports = function(grunt) {
+
+      grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        traceur: {
+          custom: {
+            files:{
+            'js/': ['rest-spread.js']  // dest : 1
+            }
+          }
+        }
+      });
+
+      grunt.loadNpmTasks('grunt-traceur');
+      grunt.registerTask('default', ['traceur']);
+
+    };
+
+    </pre></li><li><p>Create a simple <code>index.html</code> to call the traceur-compiled JavaScript file, <code>js/rest-spread.js</code>:</p><pre class="brush: xml; title: ; notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;ES6 Rest parameters&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;script src=&quot;js/rest-spread.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre></li><li><p>Most importantly, we&#8217;ll create the file <code>rest-spread.js</code>, which will contain the rest parameter syntax:</p><pre class="brush: jscript; title: ; notranslate">
+    function push(array, ...items) { // defining rest parameters with 3 dot syntax
+      items.forEach(function(item) {
+        array.push(item);
+        console.log( item );
+      });
+    }
+
+    // 1 fixed + 4 variable parameters
+    var planets = [];
+    console.log(&quot;Inner planets of our Solar system are: &quot; );
+    push(planets, &quot;Mercury&quot;, &quot;Venus&quot;, &quot;Earth&quot;, &quot;Mars&quot;); // rest parameters
+    </pre></li><li><p>Finally, we will run <code>grunt</code> in the command line, which will, by default, run the traceur task and create the file, <code>js/5-rest-spread.js</code>. Next, just view the file <code>index.html</code> in the browser console:</p><pre class="brush: bash; title: ; notranslate">
+    $ npm install
+    $ grunt
+    ╰─$ grunt
+    Running &quot;traceur:custom&quot; (traceur) task
+    js/ [ 'rest-spread.js' ]
+    Compiling... js/
+    Compilation successful - js/
+    Writing... js/
+    js/rest-spread.js successful.
+    Writing successful - [object Object]
+    </pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-rest.png" border="0" /></div></li></ol><h3>Spread operator</h3><p>A spread operator is the opposite of rest parameters. When calling a function, we can pass in the fixed argument that is needed along with an array of a variable size with the familiar three dot syntax, to indicate the variable number of arguments.</p><p>We will use the same project as the rest parameters above and append in the spread operator code to the file <code>rest-spread.js</code>. In the example below, the function requires six separate arguments. When calling the function, the data is passed as an array with the spread operator. Let&#8217;s see how the syntax looks, when calling the function with fixed arguments as well as a variable number of arguments:</p><ol><li><p>Append the spread operator code to <code>rest-spread.js</code>:</p><pre class="brush: jscript; title: ; notranslate">
+    // Spread operator &quot;...weblink&quot;
+    function createURL (comment, path, protocol, subdomain, domain, tld) {
+          var shoutout = comment
+            + &quot;: &quot;
+            + protocol
+            + &quot;://&quot;
+            + subdomain
+            + &quot;.&quot;
+            + domain
+            + &quot;.&quot;
+            + tld
+            + &quot;/&quot;
+            + path;
+
+      console.log( shoutout );
+    }
+
+    var weblink = [&quot;hypertext/WWW/TheProject.html&quot;, &quot;http&quot;, &quot;info&quot;, &quot;cern&quot;, &quot;ch&quot;],
+      comment = &quot;World's first Website&quot;;
+
+    createURL(comment, ...weblink ); // spread operator
+
+    </pre></li><li><p>Run the traceur compile through the Grunt task in the command line, and view the file, <code>index.html</code>, in the browser:</p><pre class="brush: bash; title: ; notranslate">
+    $ grunt
+    Running &quot;traceur:custom&quot; (traceur) task
+    js/ [ 'rest-spread.js' ]
+    Compiling... js/
+    Compilation successful - js/
+    Writing... js/
+    js/rest-spread.js successful.
+    Writing successful - [object Object]
+
+    Done, without errors.
+    </pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-spread.png" border="0" /></div></li></ol><p>If you&#8217;re already using GruntJS as a build tool in your current project, it will be easy to integrate it with ES6 plugins. So do <a
+href="http://gruntjs.com/plugins/es6">try out other GruntJS ES6-related plugins</a> to compile ES6 syntax to current JavaScript.</p><hr
+/><a
+name="for"></a></p><h2> <span>Feature 8 -</span> Iterators</h2><ul><li><strong>Documentation: </strong> <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:iterators">Iterator</a></li><li><strong>Tool: </strong> <a
+href="http://www.mozilla.org/en-US/firefox/20.0.1/releasenotes/">Firefox browser 20.0</a>: Menu > Tools > Web developer > Web Console</li></ul><p>JavaScript offers <code>for-in</code> for iteration, but it <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:iterators#overview">has some limitations</a>. For example, in an array iteration, the results with a <code>for-in</code> loop will give us the indexes and not the values. Let&#8217;s take a look at the code below to illustrate this:</p><pre class="brush: jscript; title: ; notranslate">
+var planets = [&quot;Mercury&quot;, &quot;Venus&quot;, &quot;Earth&quot;, &quot;Mars&quot;];
+for (p in planets) {
+  console.log(p); // 0,1,2,3
+}
+
+var es6 = {
+  edition: 6,
+  committee: &quot;TC39&quot;,
+  standard: &quot;ECMA-262&quot;
+};
+for (e in es6) {
+  console.log(e); // edition, committee, standard
+}
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-forin.png" border="0" /></div><p>Let&#8217;s try the same concept, but, this time, with <code>for-of</code> with an array, a set and a map:</p><pre class="brush: jscript; title: ; notranslate">
+var planets = [&quot;Mercury&quot;, &quot;Venus&quot;, &quot;Earth&quot;, &quot;Mars&quot;];
+for (p of planets) {
+  console.log(p); // Mercury, Venus, Earth, Mars
+}
+
+var engines = Set([&quot;Gecko&quot;, &quot;Trident&quot;, &quot;Webkit&quot;, &quot;Webkit&quot;]);
+for (var e of engines) {
+    console.log(e);
+    // Set only has unique values, hence Webkit shows only once
+}
+
+var es6 = new Map();
+es6.set(&quot;edition&quot;, 6);
+es6.set(&quot;committee&quot;, &quot;TC39&quot;);
+es6.set(&quot;standard&quot;, &quot;ECMA-262&quot;);
+for (var [name, value] of es6) {
+  console.log(name + &quot;: &quot; + value);
+}
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-forof.png" border="0" /></div><hr
+/><a
+name="comprehension"></a></p><h2> <span>Feature 9 -</span> Array Comprehension</h2><ul><li><strong>Documentation: </strong> <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:array_comprehensions">Array comprehension</a></li><li><strong>Tool: </strong> <a
+href="http://www.mozilla.org/en-US/firefox/20.0.1/releasenotes/">Firefox browser 20.0</a>: Menu > Tools > Web developer > Web Console</li></ul><p>Array comprehensions give us a shorthand syntax to manipulate each of the array contents in a certain pattern. It is very similar to the <code>map()</code> or <code>filter()</code> methods available in the Array object. Let&#8217;s examine how we are using <code>map()</code today. We can use Firefox's web console:</p><pre class="brush: jscript; title: ; notranslate">
+var temperature = [0, 37, 100];
+function degToKelvin(deg) {
+  return deg + 273;
+}
+temperature.map(degToKelvin); // [273, 310, 373]
+</pre><p>Let's run through the same feature in Firefox to see the shorthand syntax in ES6 to create arrays with as many as three loops to create possible solutions for the game, <a
+href="http://en.wikipedia.org/wiki/Cluedo">Cluedo</a>:</p><pre class="brush: jscript; title: ; notranslate">
+// Array created with 1 loop
+var temperature = [0, 37, 100];
+[t + 273 for (t of temperature)]; // [273, 310, 373]
+
+// Array created with 3 loops
+var suspects = [&quot;Miss Scarlet&quot;, &quot;Colonel Mustard&quot;],
+  weapons = [&quot;Candlestick&quot;, &quot;Dagger&quot;],
+  rooms = [&quot;Kitchen&quot;, &quot;Ballroom&quot;];
+
+[(console.log(s + &quot; with a &quot; + w + &quot; in the &quot; + r)) for (s of suspects) for (w of weapons) for (r of rooms)];
+</pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-array-comprehension.png" border="0" /></div><hr
+/><a
+name="modules"></a></p><h2> <span>Feature 10 -</span> Modules</h2><ul><li><strong>Documentation: </strong> <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:modules">Modules</a>, <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:modules_examples">Modules examples</a>, <a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:module_loaders">Modules loaders</a></li><li><strong>Tool: </strong> <a
+href="http://square.github.io/es6-module-transpiler/">ES6 Module transpiler</a></li></ul><p>In programming languages, modules perform isolated discrete functions and are independent of one another. This helps to not only build reusable components across projects, but also keeps errors isolated to the parts related to the current project. We have been <a
+href="http://addyosmani.com/writing-modular-js/">creating modules in JavaScript typically with AMD or CommonJS</a>. Let's create a simple module using the ES6 syntax and <a
+href="http://square.github.io/es6-module-transpiler/">ES6 Module transpiler</a>.</p><ol><li><p>First, let's create the HTML file, <code>index.html</code>, that will call the essential JavaScripts. We'll be using <a
+href="http://requirejs.org/">RequireJS</a> as an <a
+href="http://en.wikipedia.org/wiki/Asynchronous_module_definition">AMD</a> loader; hence, we refer to <a
+href="http://cdnjs.com/">a CDN copy</a> of the latest RequireJS file. Next, we also add the attribute, <code>data-main</code>, on the <code>script</code> tag to tell RequireJS to load the <code>js/init.js</code> file.</p><pre class="brush: xml; title: ; notranslate">
+    &lt;!DOCTYPE html&gt;
+    &lt;!doctype html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot;&gt;
+      &lt;title&gt;ES6 Modules&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js&quot; data-main=&quot;js/init&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre></li><li><p>Now, we will create the file, <code>js/init.js</code>, which will just invoke the <code>js/main.js</code> file:</p><pre class="brush: jscript; title: ; notranslate">
+    require(['main'],
+      function(){
+      });
+    </pre></li><li><p>Create the module, <code>circle</code>, in the file, <code>in/circle.js</code>, in the ES6 syntax. This module exports two functions:</p><pre class="brush: jscript; title: ; notranslate">
+    export function area(radius) {
+      return Math.PI * radius * radius;
+    }
+
+    export function circumference(radius) {
+      return 2 * Math.PI * radius;
+    }
+    </pre></li><li><p>Create the file, <code>in/main.js</code>, that will import the module <code>circle</code> so that we can use the functions of that particular module. Notice the <code>import</code> syntax:</p><pre class="brush: jscript; title: ; notranslate">
+    import { area, circumference } from 'circle';
+
+    console.log(&quot;Area of the circle: &quot; + area(4) + &quot; meter squared&quot;);
+    console.log(&quot;Circumference of the circle: &quot; + circumference(14) + &quot; meters&quot;);
+    </pre></li><li><p>At this point, the folder structure is shown below. We'll use the ES6 Module transpiler to create ES5 compatible code with two newly created files: <code>js/circle.js</code> and <code>js/main.js</code>.</p><pre class="brush: bash; title: ; notranslate">
+    $ tree
+    .
+    |-- in
+    |   |-- circle.js
+    |   `-- main.js
+    |-- index.html
+    `-- js
+        `-- init.js
+    </pre></li><li><p><a
+href="https://github.com/square/es6-module-transpiler#executable">Install the ES6 Module Transpiler</a>:</p><pre class="brush: bash; title: ; notranslate">
+    $ npm install https://github.com/square/es6-module-transpiler.git
+    $ compile-modules --help
+    </pre></li><li><p>Finally, we will transpile these two files. Navigate to the folder, <code>in</code>, from the command line:</p><pre class="brush: bash; title: ; notranslate">
+    $ compile-modules circle.js --type amd --to ../js
+    $ compile-modules main.js --type amd --to ../js
+    $ cd ..
+    $ tree
+    .
+    |-- in
+    |   |-- circle.js
+    |   `-- main.js
+    |-- index.html
+    `-- js
+        |-- circle.js
+        |-- init.js
+        `-- main.js
+    </pre></li><li><p>Do look at the transpiled code in the files <code>js/circle.js</code> and <code>js/main.js</code>. We will now open up the file, <code>index.html</code>, in the browser to see modules in action! We will need to use a web server to run this file. I'm using the <a
+href="http://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python">Python SimpleHTTPServer</a>. Navigate to the command line in the root of the file, <code>index.html</code>:</p><pre class="brush: bash; title: ; notranslate">
+    $ python -m SimpleHTTPServer 8000
+    </pre><div
+class="tutorial_image"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/es6-modules.png" border="0" /></div></li></ol><hr
+/><h2>Resources</h2><p>Many of our web development community members have openly shared about ES6 and what's coming up. I highly recommend going through their blog categories related to ES6:</p><ul><li><a
+href="https://brendaneich.com/?s=ecmascript">Brendan Eich</a></li><li><a
+href="http://addyosmani.com/blog/?s=ecmascript">Addy Osmani</a></li><li><a
+href="http://ariya.ofilabs.com/?s=ecmascript">Ariya Hidayat</a></li><li><a
+href="http://www.nczonline.net/blog/?s=ecmascript">Nicholas Zakas</a></li><li><a
+href="http://www.2ality.com/search/label/esnext">Axel Rauschmayer</a></li><li><a
+href="http://bbenvie.com/">Brandon Benvie</a></li></ul><p>And, for some further reading:</p><ul><li><a
+href="https://developer.mozilla.org/en-US/docs/JavaScript/ECMAScript_6_support_in_Mozilla">ECMAScript 6 support in Mozilla</a></li><li><a
+href="http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts">Draft specification for ES.next</a></li><li><a
+href="http://www.youtube.com/watch?v=u4IdoBU1uKE">The Future of JavaScript</a>, a video by Dave Herman</li><li>ECMAScript 6 - The Refined Parts (<a
+href="https://www.youtube.com/watch?v=Dt0f2XdvriQ">video</a> and <a
+href="https://speakerdeck.com/kitcambridge/es-6-the-refined-parts">slides</a>) by Kit Cambridge</li><li><a
+href="https://twitter.com/esdiscuss">Latest Tweets on ES mailing list</a></li><li><a
+href="https://dl.dropboxusercontent.com/u/3531958/es6-favorite-parts/index.html#/">es6 - my fav parts</a></li><li><a
+href="http://bbenvie.com/articles/2013-01-06/JavaScript-ES6-Has-Tail-Call-Optimization">ES6 has proper tail calls</a></li><li><a
+href="http://webreflection.blogspot.de/2013/01/the-power-of-getters.html">Power of Getters</a></li><li><a
+href="http://www.slideshare.net/dmitrysoshnikov/falsyvalues-dmitry-soshnikov-ecmascript-6">ECMAScript 6</a></li><li><a
+href="https://speakerdeck.com/dherman/es6-deep-dive">ES6 deep Dive</a> by Dave Herman</li></ul><hr
+/><h2>Play with ES6 Today</h2><p>There you have it: ten features of ES6 with tools that allow us to code with the new syntax today. I hope this has made you more excited about what's to come! Please note that, since the standardization work is in progress, the syntax, features and compliances might change. Nonetheless, it's definitely worth the effort to dig in sooner than later.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=U00r_iCrOQM:hBd_MnmK6GM:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=U00r_iCrOQM:hBd_MnmK6GM:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=U00r_iCrOQM:hBd_MnmK6GM:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/U00r_iCrOQM" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Sayanee Basu";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:62:"http://net.tutsplus.com/articles/news/ecmascript-6-today/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"0";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:57:"http://net.tutsplus.com/articles/news/ecmascript-6-today/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:1;a:6:{s:4:"data";s:9:"         ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:33:"Try Tuts+ Premium, Get Cash Back!";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/l2Y6NFVfFw8/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:78:"http://net.tutsplus.com/articles/news/try-tuts-premium-get-cash-back/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 07 May 2013 17:00:54 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:1:{i:0;a:5:{s:4:"data";s:4:"News";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31615";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:3284:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31615&c=938288644' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31615&c=938288644' border='0' alt='' /></a><p><strong>Try Tuts+ Premium and get cash back on a monthly subscription.</strong></p><p>At $19 a month, Tuts+ Premium is fantastic value. But it&#8217;s even better when we hand your first $19 right back to you! For a limited time, we&#8217;re offering $19 cash back to new Tuts+ Premium monthly subscribers when signing up via PayPal.</p><p>If you’ve been thinking about checking out our extensive library of courses, tutorials, eBooks and guides, there’s never been a better time to join up and dive in.</p><p>But this offer ends at noon on the 20th of May AEST, so act fast.</p><p><a
+href="https://tutsplus.com/paypal-cash-back-offer/?utm_source=nettuts&#038;utm_medium=post&#038;utm_campaign=paypal_cashback&#038;wt.mc_id=paypal">Become a Tuts+ Premium Member to take your creative and technical skills to a new level.</a><br
+/> <span
+id="more-31615"></span></p><hr
+/> What can you learn on Tuts+ Premium? Glad you asked! Currently, more than 15,000 members are sharpening their skills in a wide range of areas including web design, web development, Photoshop, vectors, video effects, and many more.</p><p>With Tuts+ Premium you learn from expert instructors in every field, such as:</p><ul><li>Bryan Jones (Creator of CodeKit)</li><li>Jeffrey Way (Nettuts+ Editor)</li><li>Dan Wellman (Author)</li><li>Jeremy McPeak (Author)</ul><p>Join now and get instant access to your very own library of courses, tutorials, and eBooks, available whenever you need them. Become part of a community of over 15,000 members and start getting better at the skills you care about. Our dedicated team adds new content weekly, so there&#8217;s always something fresh to sink your teeth into.</p><blockquote><p><a
+href="https://tutsplus.com/paypal-cash-back-offer/?utm_source=nettuts&#038;utm_medium=post&#038;utm_campaign=paypal_cashback&#038;wt.mc_id=paypal">Become a Tuts+ Premium Member to take your creative and technical skills to a new level.</a></p></blockquote><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=l2Y6NFVfFw8:rfmXlEMto_w:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=l2Y6NFVfFw8:rfmXlEMto_w:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=l2Y6NFVfFw8:rfmXlEMto_w:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/l2Y6NFVfFw8" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:13:"Joel Bankhead";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:74:"http://net.tutsplus.com/articles/news/try-tuts-premium-get-cash-back/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"0";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:69:"http://net.tutsplus.com/articles/news/try-tuts-premium-get-cash-back/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:2;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:37:"Python Power Tools: virtualenvwrapper";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/_UPwiylkSos/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:97:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 03 May 2013 16:00:38 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:6:"Python";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:6:"Videos";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31569";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:2283:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31569&c=1746613936' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31569&c=1746613936' border='0' alt='' /></a><p>In this series of videos, I&#8217;ll introduce you to several tools that you can add to your arsenal to become a better, more productive, programmer. In this episode, we&#8217;ll review a powerful companion app, <a
 href="http://virtualenvwrapper.readthedocs.org/en/latest/">virtualenvwrapper</a>, that wraps virtualenv in a user friendly set of shell functions.<br
 /> <span
 id="more-31569"></span></p> <figure
@@ -9,9 +577,9 @@ width="600" height="338" src="http://www.youtube.com/embed/UcbUXq0wd-8?list=UUd-
 href="http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenvwrapper.mp4"><strong>Download Video</strong></a></figcaption> </figure><blockquote><p> Hoping to dig into Django? Let me teach you in my Tuts+ Premium course: <a
 href="https://tutsplus.com/course/django-unchained/">Django Unchained</a>!</p></blockquote><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=_UPwiylkSos:PBnZHLtH28Y:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=_UPwiylkSos:PBnZHLtH28Y:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=_UPwiylkSos:PBnZHLtH28Y:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/_UPwiylkSos" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"enclosure";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"url";s:102:"http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenvwrapper.mp4";s:6:"length";s:9:"239996851";s:4:"type";s:9:"video/mp4";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"Christopher Roach";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:93:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"2";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:88:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:1;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:30:"Python Power Tools: virtualenv";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/c_4JQDITxTQ/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:90:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 02 May 2013 16:42:19 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:6:"Python";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:6:"Videos";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31560";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:2284:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31560&c=129790427' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31560&c=129790427' border='0' alt='' /></a><p>In this series of videos, I&#8217;ll introduce you to several tools that you can add to your arsenal to become a better, more productive, programmer. We&#8217;ll begin with <a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/_UPwiylkSos" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"enclosure";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"url";s:102:"http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenvwrapper.mp4";s:6:"length";s:9:"239996851";s:4:"type";s:9:"video/mp4";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"Christopher Roach";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:93:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"2";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:88:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:3;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:30:"Python Power Tools: virtualenv";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/c_4JQDITxTQ/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:90:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 02 May 2013 16:42:19 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:6:"Python";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:6:"Videos";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31560";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:2286:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31560&c=1467784167' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31560&c=1467784167' border='0' alt='' /></a><p>In this series of videos, I&#8217;ll introduce you to several tools that you can add to your arsenal to become a better, more productive, programmer. We&#8217;ll begin with <a
 href="https://pypi.python.org/pypi/virtualenv">virtualenv</a>, which allows you to create isolated development environments for installing and upgrading software, without needing to worry about overrides or dependency issues.<br
 /> <span
 id="more-31560"></span></p> <figure
@@ -20,9 +588,9 @@ width="600" height="338" src="http://www.youtube.com/embed/IX-v6yvGYFg" framebor
 href="http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenv.mp4"><strong>Download Video</strong></a></figcaption> </figure><blockquote><p> Hoping to dig into Django? Let me teach you in my Tuts+ Premium course: <a
 href="https://tutsplus.com/course/django-unchained/">Django Unchained</a>!</p></blockquote><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=c_4JQDITxTQ:TPCyLbMQYvE:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=c_4JQDITxTQ:TPCyLbMQYvE:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=c_4JQDITxTQ:TPCyLbMQYvE:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/c_4JQDITxTQ" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"enclosure";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"url";s:95:"http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenv.mp4";s:6:"length";s:9:"269879129";s:4:"type";s:9:"video/mp4";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"Christopher Roach";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:86:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"7";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:2;a:6:{s:4:"data";s:10:"          ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Getting Into Ember: Part 4";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/q1Zzl1QOgbk/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:85:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 30 Apr 2013 19:15:34 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:5:"ember";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31517";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:19090:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31517&c=879627671' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31517&c=879627671' border='0' alt='' /></a><p>In my <a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/c_4JQDITxTQ" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"enclosure";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"url";s:95:"http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenv.mp4";s:6:"length";s:9:"269879129";s:4:"type";s:9:"video/mp4";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"Christopher Roach";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:86:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"8";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:4;a:6:{s:4:"data";s:10:"          ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Getting Into Ember: Part 4";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/q1Zzl1QOgbk/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:85:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 30 Apr 2013 19:15:34 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:5:"ember";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31517";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:19092:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31517&c=1771884847' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31517&c=1771884847' border='0' alt='' /></a><p>In my <a
 href="http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-js-part-3/">previous tutorial</a>, I touched on how to use <code>Ember.Object</code> to define your models and work with datasets. In this section, we&#8217;ll look more closely at how Ember uses the <a
 href="http://handlebarsjs.com/">Handlebars templating framework</a> to define your app&#39;s user interface.</p><p><span
 id="more-31517"></span></p><hr
@@ -129,9 +697,9 @@ href="http://emberjs.com/api/classes/Function.html#method_property">property()</
 href="http://emberjs.com/guides/templates/handlebars-basics/">Ember</a> and Handlebars site to get a good feel for their overall power. Even if you don&#39;t use Ember, Handlebars is a great framework for you to use day-to-day, and worth the investment in learning how to use it.</p><p> Gabriel Manricks wrote a <a
 href="http://net.tutsplus.com/tutorials/javascript-ajax/introduction-to-handlebars/?search_index=1">great tutorial on Handlebars</a> here on Nettuts+ that you can use to get up to speed on the framework.</p><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=q1Zzl1QOgbk:iaI8gUj1DAw:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=q1Zzl1QOgbk:iaI8gUj1DAw:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=q1Zzl1QOgbk:iaI8gUj1DAw:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/q1Zzl1QOgbk" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:9:"Rey Bango";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"5";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:76:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:3;a:6:{s:4:"data";s:10:"          ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:59:"HTTP: The Protocol Every Web Developer Must Know – Part 2";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/zIfp72fhgko/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:113:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Mon, 29 Apr 2013 15:53:26 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:12:"Tools & Tips";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:4:"http";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31155";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:21987:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31155&c=1364702971' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31155&c=1364702971' border='0' alt='' /></a><p>In my <a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/q1Zzl1QOgbk" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:9:"Rey Bango";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"5";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:76:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:5;a:6:{s:4:"data";s:10:"          ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:59:"HTTP: The Protocol Every Web Developer Must Know – Part 2";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/zIfp72fhgko/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:113:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Mon, 29 Apr 2013 15:53:26 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:12:"Tools & Tips";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:4:"http";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31155";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:21987:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31155&c=1848248182' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31155&c=1848248182' border='0' alt='' /></a><p>In my <a
 href="http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-1/">previous article</a>, we covered some of HTTP&#8217;s basics, such as the URL scheme, status codes and request/response headers. With that as our foundation, we will look at the finer aspects of HTTP, like connection handling, authentication and HTTP caching. These topics are fairly extensive, but we&#8217;ll cover the most important bits.</p><p><span
 id="more-31155"></span></p><hr
 /><h2>HTTP Connections</h2><p>A connection must be established between the client and server before they can communicate with each other, and HTTP uses the reliable TCP transport protocol to make this connection. By default, web traffic uses TCP port 80. A TCP stream is broken into IP packets, and it ensures that those packets always arrive in the correct order without fail. HTTP is an application layer protocol over TCP, which is over IP.</p><p>HTTPS is a secure version of HTTP, inserting an additional layer between HTTP and TCP called TLS or SSL (Transport Layer Security or Secure Sockets Layer, respectively). HTTPS communicates over port 443 by default, and we will look at HTTPS later in this article.</p><div
@@ -159,9 +727,9 @@ href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">Caching section</a
 href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">RFC 2616, HTTP specification</a></li><li><a
 href="http://www.amazon.com/HTTP-Definitive-Guide-David-Gourley/dp/1565925092">HTTP Definitive Guide</a></li></ul><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=zIfp72fhgko:jMufuOZXLAo:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=zIfp72fhgko:jMufuOZXLAo:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=zIfp72fhgko:jMufuOZXLAo:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/zIfp72fhgko" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Pavan Podila";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:109:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"6";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:104:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:4;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Test-Driving Shell Scripts";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/8e2tSC6ql7w/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:85:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 26 Apr 2013 17:52:45 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:12:"Tools & Tips";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:4:"bash";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:3:"tdd";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31487";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:24279:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31487&c=1328835008' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31487&c=1328835008' border='0' alt='' /></a><p>Writing shell scripts is very much like programming. Some scripts require little time investment; whereas, other complex scripts may require thought, planning and a larger commitment. From this perspective, it makes sense to take a test-driven approach and unit test our shell scripts.</p><p><span
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/zIfp72fhgko" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Pavan Podila";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:109:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"8";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:104:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:6;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Test-Driving Shell Scripts";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/8e2tSC6ql7w/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:85:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 26 Apr 2013 17:52:45 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:12:"Tools & Tips";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:4:"bash";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:3:"tdd";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31487";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:24279:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31487&c=1915195260' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31487&c=1915195260' border='0' alt='' /></a><p>Writing shell scripts is very much like programming. Some scripts require little time investment; whereas, other complex scripts may require thought, planning and a larger commitment. From this perspective, it makes sense to take a test-driven approach and unit test our shell scripts.</p><p><span
 id="more-31487"></span></p><p>To get the most out of this tutorial, you need to be familiar with the command line interface (CLI); you may want to check out the <a
 href="http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/?search_index=3">The Command Line is Your Best Friend</a> tutorial if you need a refresher. You also need a basic understanding of Bash-like shell scripting. Finally, you may want to familiarize yourself with the test-driven development (TDD) concepts and unit testing in general; be sure to check out these <a
 href="http://net.tutsplus.com/sessions/test-driven-php/">Test-Driven PHP</a> tutorials to get the basic idea.</p><hr
@@ -590,9 +1158,9 @@ done
 </pre><p>We read the first line to retrieve the names of the two players, and then we incrementally read the file to compute the score.</p><hr
 /><h2>Final Thoughts</h2><p>Shell scripts can easily grow from a few lines of code to a few hundred of lines. When this happens, maintenance becomes increasingly difficult. Using TDD and unit testing can greatly help to make your complex script easier to maintain&mdash;not to mention that it forces you to build your complex scripts in a more professional manner.</p><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=8e2tSC6ql7w:FU7kmOJl9R0:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=8e2tSC6ql7w:FU7kmOJl9R0:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=8e2tSC6ql7w:FU7kmOJl9R0:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/8e2tSC6ql7w" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Patkos Csaba";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"16";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:76:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:5;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:24:"Promise-Based Validation";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/g_CrQeWOv6w/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:84:"http://net.tutsplus.com/tutorials/javascript-ajax/promise-based-validation/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 25 Apr 2013 21:46:03 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:9:"Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:8:"promises";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31473";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:18404:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31473&c=1458126849' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31473&c=1458126849' border='0' alt='' /></a><p>The concept of &#8220;Promises&#8221; has changed the way we write asynchronous JavaScript. Over the past year, many frameworks have incorporated some form of the Promise pattern to make asynchronous code easier to write, read and maintain. For example, jQuery added <a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/8e2tSC6ql7w" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Patkos Csaba";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"18";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:76:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:7;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:24:"Promise-Based Validation";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/g_CrQeWOv6w/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:84:"http://net.tutsplus.com/tutorials/javascript-ajax/promise-based-validation/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 25 Apr 2013 21:46:03 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:9:"Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:8:"promises";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31473";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:18404:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31473&c=1599341206' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31473&c=1599341206' border='0' alt='' /></a><p>The concept of &#8220;Promises&#8221; has changed the way we write asynchronous JavaScript. Over the past year, many frameworks have incorporated some form of the Promise pattern to make asynchronous code easier to write, read and maintain. For example, jQuery added <a
 href="http://api.jquery.com/category/deferred-object/">$.Deferred()</a>, and NodeJS has the <a
 href="http://documentup.com/kriskowal/q/">Q</a> and <a
 href="https://github.com/dfilatov/jspromise">jspromise</a> modules that work on both client and server. Client-side MVC frameworks, such as <a
@@ -857,9 +1425,9 @@ href="http://api.jquery.com/category/deferred-object/">jQuery.Deferred()</a></li
 href="http://documentup.com/kriskowal/q/">Q</a></li><li><a
 href="https://github.com/dfilatov/jspromise">jspromise</a></li></ul><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=g_CrQeWOv6w:gXDzrJ7UQEk:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=g_CrQeWOv6w:gXDzrJ7UQEk:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=g_CrQeWOv6w:gXDzrJ7UQEk:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/g_CrQeWOv6w" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Pavan Podila";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:80:"http://net.tutsplus.com/tutorials/javascript-ajax/promise-based-validation/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"17";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:75:"http://net.tutsplus.com/tutorials/javascript-ajax/promise-based-validation/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:6;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:27:"Testing Laravel Controllers";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/AtMxwaB4LZA/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:75:"http://net.tutsplus.com/tutorials/php/testing-laravel-controllers/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 23 Apr 2013 17:13:10 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:3:"PHP";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:7:"laravel";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:3:"tdd";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31456";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:37562:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31456&c=914510113' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31456&c=914510113' border='0' alt='' /></a><p>Testing controllers isn&#8217;t the easiest thing in the world. Well, let me rephrase that: testing them is a cinch; what&#8217;s difficult, at least at first, is determining <em>what</em> to test.</p><p>Should a controller test verify text on the page? Should it touch the database? Should it ensure that variables exist in the view? If this is your first hay-ride, these things can be confusing! Let me help.</p><p><span
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/g_CrQeWOv6w" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Pavan Podila";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:80:"http://net.tutsplus.com/tutorials/javascript-ajax/promise-based-validation/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"17";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:75:"http://net.tutsplus.com/tutorials/javascript-ajax/promise-based-validation/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:8;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:27:"Testing Laravel Controllers";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/AtMxwaB4LZA/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:75:"http://net.tutsplus.com/tutorials/php/testing-laravel-controllers/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 23 Apr 2013 17:13:10 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:3:"PHP";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:7:"laravel";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:3:"tdd";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31456";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:37562:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31456&c=577987485' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31456&c=577987485' border='0' alt='' /></a><p>Testing controllers isn&#8217;t the easiest thing in the world. Well, let me rephrase that: testing them is a cinch; what&#8217;s difficult, at least at first, is determining <em>what</em> to test.</p><p>Should a controller test verify text on the page? Should it touch the database? Should it ensure that variables exist in the view? If this is your first hay-ride, these things can be confusing! Let me help.</p><p><span
 id="more-31456"></span></p><blockquote><p>Controller tests should verify responses, ensure that the correct database access methods are triggered, and assert that the appropriate instance variables are sent to the view.</p></blockquote><p>The process of testing a controller can be divided into three pieces.</p><ul><li><strong>Isolate:</strong> Mock all dependencies (perhaps excluding the <code>View</code>).</li><li><strong>Call:</strong> Trigger the desired controller method.</li><li><strong>Ensure:</strong> Perform assertions, verifying that the stage has been set properly.</li></ul><hr
 /><h2>The Hello World of Controller Testing</h2><p>The best way to learn these things is through examples. Here&#8217;s the &quot;<em>hello world</em>&quot; of controller testing in Laravel.</p><pre class="brush: php; title: ; notranslate">
 &lt;?php
@@ -1451,9 +2019,9 @@ class PostsControllerTest extends TestCase {
 </pre><p>It feels good, doesn&#8217;t it? Hopefully, this article hasn&#8217;t been too overwhelming. The key is to learn how to organize your repositories in such a way to make them as easy as possible to mock and inject into your controllers. As a result of that effort, your tests will be lightning fast!</p><blockquote><p>This article is an excerpt from my upcoming book, <a
 href="https://leanpub.com/laravel-testing-decoded">Laravel Testing Decoded</a>. Stay tuned for its release in May, 2013!</p></blockquote><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=AtMxwaB4LZA:jGG7ZbI99-0:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=AtMxwaB4LZA:jGG7ZbI99-0:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=AtMxwaB4LZA:jGG7ZbI99-0:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/AtMxwaB4LZA" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:11:"Jeffrey Way";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:71:"http://net.tutsplus.com/tutorials/php/testing-laravel-controllers/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"21";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:66:"http://net.tutsplus.com/tutorials/php/testing-laravel-controllers/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:7;a:6:{s:4:"data";s:12:"            ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Meet the Connect Framework";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/oKU4_qbFK0Q/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:86:"http://net.tutsplus.com/tutorials/javascript-ajax/meet-the-connect-framework/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Mon, 22 Apr 2013 14:53:41 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:4:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:9:"Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:7:"connect";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:3;a:5:{s:4:"data";s:4:"node";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31220";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:21872:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31220&c=865966103' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31220&c=865966103' border='0' alt='' /></a><p>Newcomers to NodeJS typically find its API difficult to grasp. Luckily, many developers have created frameworks that make it easier to work with Node. <a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/AtMxwaB4LZA" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:11:"Jeffrey Way";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:71:"http://net.tutsplus.com/tutorials/php/testing-laravel-controllers/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"21";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:66:"http://net.tutsplus.com/tutorials/php/testing-laravel-controllers/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:9;a:6:{s:4:"data";s:12:"            ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Meet the Connect Framework";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/oKU4_qbFK0Q/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:86:"http://net.tutsplus.com/tutorials/javascript-ajax/meet-the-connect-framework/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Mon, 22 Apr 2013 14:53:41 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:4:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:9:"Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:7:"connect";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:3;a:5:{s:4:"data";s:4:"node";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31220";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:21874:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31220&c=1874510657' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31220&c=1874510657' border='0' alt='' /></a><p>Newcomers to NodeJS typically find its API difficult to grasp. Luckily, many developers have created frameworks that make it easier to work with Node. <a
 href="http://www.senchalabs.org/connect/">Connect</a> is one such framework. It sits on top of Node&#8217;s API and draws the line between comfort and control.</p><p><span
 id="more-31220"></span></p><p>Think of Connect as a stack of middleware. With every request, Connect filters through the layers of middleware, each having the opportunity to process the HTTP request. When T.J. Holowaychuk <a
 href="http://tjholowaychuk.com/post/664516126/connect-middleware-for-nodejs">announced Connect</a>, he said there were two types of middleware. The first is a <em>filter</em>.</p><blockquote><p>Filters process the request, but they do not respond to it (think of server logging).</p></blockquote><p>The other type is a <em>provider</em>, which responds to the request. You can incorporate as many layers of middleware as you want; the request passes through each layer until one of the middleware responds to the request.</p><hr
@@ -1624,554 +2192,4 @@ connect()
 /><h2>Conclusion</h2><p>If you want a beginner-friendly library that makes it easy to build large web apps, then Connect isn&#8217;t your solution. Connect is meant to be a thin layer on top of the raw Node API that gives you complete control over your server application. If you want a bit more, I recommend <a
 href="http://expressjs.com/">Express</a> (by the same folks, incidentally). Otherwise, Connect is a fantastic, extensible library for Node web applications.</p><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=oKU4_qbFK0Q:jWZ4rhZp3lY:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=oKU4_qbFK0Q:jWZ4rhZp3lY:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=oKU4_qbFK0Q:jWZ4rhZp3lY:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/oKU4_qbFK0Q" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:14:"Andrew Burgess";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:82:"http://net.tutsplus.com/tutorials/javascript-ajax/meet-the-connect-framework/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"15";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:77:"http://net.tutsplus.com/tutorials/javascript-ajax/meet-the-connect-framework/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:8;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:35:"Writing a Shell Script From Scratch";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/kd9cz6hLDAU/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:94:"http://net.tutsplus.com/tutorials/tools-and-tips/writing-a-shell-script-from-scratch/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 19 Apr 2013 21:27:17 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:12:"Tools & Tips";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:7:"console";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:8:"terminal";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31426";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:22743:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31426&c=365706990' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31426&c=365706990' border='0' alt='' /></a><p>Writing shell scripts can be rather daunting, primarily because the shell isn&#39;t the most friendly of languages to use. However, I hope to show you in this tutorial that shell scripting is actually not as tough or as scary as you might expect.</p><p><span
-id="more-31426"></span></p><p>For this tutorial, we&#39;ll write a script that makes the process of using the <a
-href="http://pivotal.github.com/jasmine/">Jasmine test framework</a> a little bit easier. Actually, I wouldn&#39;t use this script today; I would use <a
-href="http://gruntjs.com/">Grunt.js</a> or something similar. However, I wrote this script before Grunt was around, and I found that writing it proved to be an excellent way to get more comfortable with shell scripting, so that&#39;s why we&#39;re using it.</p><blockquote><p>One note: this tutorial is loosely associated with my upcoming <a
-href="http://tutsplus.com">Tuts+ Premium</a> course,  &quot;Advanced Command Line Techniques.&quot; To learn more about pretty much anything in this tutorial, stay tuned for that course&#8217;s release. Hereafter in this tutorial, it will be referred to as &quot;the course.&quot;</p></blockquote><p>So, our script, which I call <code>jazz</code>, will have four main features:</p><ul><li>It will download Jasmine from the web, unzip it, and delete the sample code.</li><li>It will create JavaScript files and their associated spec files, and pre-fill them with a bit of template code.</li><li>It will open the tests in the browser.</li><li>It will display the help text, which outlines the above.</li></ul><p>Let&#39;s begin with the script file.</p><hr
-/><h2><span>Step 1 -</span> Creating the File</h2><p>Writing a shell script is only useful if you can use it from the terminal; to be able to use your custom scripts on the terminal, you need to put them in a folder that is in your terminal&#39;s <code>PATH</code> variable (you can see your <code>PATH</code> variable by running <code>echo $PATH</code>). I&#39;ve created a <code>~/bin</code> folder (where <code>~</code> is the home directory) on my computer, and that&#39;s where I like to keep custom scripts (if you do the same, you&#39;ll have to add it to your path). So, just create a file, called <code>jazz</code>, and put it in your folder.</p><p>Of course, we&#39;ll also have to make that file executable; otherwise, we won&#39;t be able to run it. We can do this by running the following command:</p><p><pre class="brush: bash; title: ; notranslate">
-    chmod +x jazz
-</pre></p><p>Now that we can actually execute the script, let&#39;s add a very important part. All shell scripts should begin with a <a
-href="https://en.wikipedia.org/wiki/Shebang_(Unix">shebang</a>). As Wikipedia says, this should be the first line of the script; it states what interpreter, or shell, this script should be run with. We&#39;re just going to use a basic, standard shell:</p><p><pre class="brush: bash; title: ; notranslate">
-    #!/bin/sh
-</pre></p><p>All right, with all that set up, we&#39;re ready to start writing the actual code.</p><hr
-/><h2><span> Step 2 &#8211; </span> Outlining the Script Flow</h2><p>Earlier, I pointed out what the different features of our shell script should be. But how will the script know which feature to run? We&#39;ll use a combination of a shell parameter and a case statement. When running the script from the command line, we&#39;ll use a sub-command, like this:</p><p><pre class="brush: bash; title: ; notranslate">
-    jazz init
-    jazz create SomeFile
-    jazz run
-    jazz help
-</pre></p><p>This should look familiar, especially if you&#39;ve used Git:</p><p><pre class="brush: bash; title: ; notranslate">
-    git init
-    git status
-    git commit
-</pre></p><p>Based on that first parameter (<code>init</code>, <code>create</code>, <code>run</code>, <code>help</code>), our case statement will decide what to run. However, we do need a default case: what happens if no first parameter is given, or we get an unrecognized first parameter? In those cases, we&#39;ll show the help text. So, let&#39;s get started!</p><hr
-/><h2><span> Step 3 &#8211; </span> Writing the Help Text</h2><p>We begin with the <code>if</code> statement that checks for our first parameter:</p><p><pre class="brush: bash; title: ; notranslate">
-    if [ $1 ]
-    then
-        # do stuff 
-    else
-        # show help
-    fi
-</pre></p><p>You might be a little confused at first, because a shell <code>if</code> statement is pretty different from a &quot;regular&quot; programming language&#39;s <code>if</code> statement. To get a better understanding of it, watch the screencast on conditional statements in the course. This code checks for the presence of a first parameter (<code>$1</code>); if it&#39;s there, we&#39;ll execute the <code>then</code> code; <code>else</code>, we&#39;ll show the help text.</p><p>It&#39;s a good idea to wrap the printing of the help text in a function, because we need to call it more than once. We do need to define the function before it is called, so we&#39;ll put it at the top. I like this, because now, as soon as I open the file, I see the documentation for the script, which can be a helpful reminder when returning to code you haven&#39;t seen in a while. Without further ado, here&#39;s the <code>help</code> function:</p><p><pre class="brush: bash; title: ; notranslate">
-    function help () {
-        echo &quot;jazz - A simple script that makes using the Jasmine testing framework in a standalone project a little simpler.&quot;
-        echo &quot;
-        echo &quot;    jazz init                  - include jasmine in the project&quot;;
-        echo &quot;    jazz create FunctionName   - creates ./src/FunctionName.js ./spec/FunctionNameSpec.js&quot;;
-        echo &quot;    jazz run                   - runs tests in browser&quot;;
-    }
-</pre></p><p>Now, just replace that <code># show help</code> function with a call to the <code>help</code> function.</p><p><pre class="brush: bash; title: ; notranslate">
-    else
-        help
-    fi
-</pre></p><hr
-/><h2><span> Step 4 &#8211; </span> Writing the Case Statement</h2><p>If there is a first parameter, we need to figure out which it is. For this, we use a <code>case</code> statement:</p><pre class="brush: bash; title: ; notranslate">
-	case &quot;$1&quot; in
-		init)
-		
-		;;
-		create)
-		
-		;;
-		run)
-		
-		;;
-		*)
-			help
-		;;
-	esac
-</pre><p>We pass the first parameter to the <code>case</code> statement; then, it should match one of four things: &quot;init&quot;, &quot;create&quot;, &quot;run&quot;, or our wildcard, default case. Notice that we don&#39;t have an explicit &quot;help&quot; case: that&#39;s just our default case. This works, because anything other than &quot;init&quot;, &quot;create&quot;, and &quot;run&quot; aren&#39;t commands we recognize, so it should get the help text.</p><p>Now we&#39;re ready to write the functional code, and we&#39;ll start with <code>jazz init</code>.</p><hr
-/><h2><span> Step 5 &#8211; </span> Preparing Jasmine with <code>jazz init</code></h2><p>All the code we write here will go within our <code>init)</code> case, from the case statement above. The first step is to actually download the standalone version of Jasmine, which comes in a zip file:</p><p><pre class="brush: bash; title: ; notranslate">
-    echo &quot;Downloading Jasmine ...&quot;
-    curl -sO $JASMINE_LINK
-</pre></p><p>We first echo a little message, and then we use <code>curl</code> to download the zip. The <code>s</code> flag makes it silent (no output) and the <code>O</code> flag saves the contents of the zip to a file (otherwise, it would pipe it to standard out). But what&#39;s with that <code>$JASMINE_LINK</code> variable? Well, you could put the actual link to the zip file there, but I prefer to put it in a variable for two reasons: first, it keeps us from repeating part of the path, as you&#39;ll see in a minute. Second, with that variable near the top of the file, it makes it easy to change the version of Jasmine we&#39;re using: just change that one variable. Here&#39;s that variable declaration (I put it outside the <code>if</code> statement, near the top):</p><p><pre class="brush: bash; title: ; notranslate">
-    JASMIME_LINK=&quot;http://cloud.github.com/downloads/pivotal/jasmine/jasmine-standalone-1.3.1.zip&quot;
-</pre></p><p>Remember, no spaces around the equals-sign in that line.</p><p>Now that we have our zip file, we can unzip it and prepare the contents:</p><p><pre class="brush: bash; title: ; notranslate">
-    unzip -q &lt;code&gt;basename $JASMINE_LINK&lt;/code&gt;
-    rm -rf &lt;code&gt;basename $JASMINE_LINK&lt;/code&gt; src/*.js spec/*.js
-</pre></p><p>In two of these lines, we&#39;re using <code>basename $JASMINE_LINK</code>; the <code>basename</code> command just reduces a path to the base name: so <code>path/to/file.zip</code> becomes just <code>file.zip</code>. This allows us to use that <code>$JASMINE_LINK</code> variable to reference our local zip file.</p><p>After we unzip, we&#39;ll delete that zip file, as well as all the JavaScript files in the <code>src</code> and <code>spec</code> directories. These are the sample files that Jasmine comes with, and we don&#39;t need them.</p><p>Next, we have a Mac-only issue to deal with. By default, when you download something from the internet on a Mac, when you try to run it for the first time, you&#39;ll be asked to confirm that you want to run it. This is because of the extended attribute <code>com.apple.quarantine</code> that Apple puts on the file. We need to remove this attribute.</p><pre class="brush: bash; title: ; notranslate">
-    if which xattr &gt; /dev/null &amp;&amp; [ &quot;&lt;code&gt;xattr SpecRunner.html&lt;/code&gt;&quot; = &quot;com.apple.quarantine&quot; ]
-    then
-        xattr -d com.apple.quarantine SpecRunner.html
-    fi
-</pre><p>We begin by checking for the presence of the <code>xattr</code> command, because it doesn&#39;t exist on some Unix systems (I&#39;m not sure, but it may be a Mac-only program). If you watched the course screencast on conditionals, you&#39;ll know that we can pass any command to <code>if</code>; if it has an exit status of anything but <code>0</code>, it&#39;s false. If <code>which</code> finds the <code>xattr</code> command, it will exit with <code>0</code>; otherwise, it will exit with <code>1</code>. In either case, <code>which</code> will display some output; we can keep that from showing by redirecting it to <code>/dev/null</code> (this is a <a
-href="https://en.wikipedia.org/wiki//dev/null">special file</a> that discards all data written to it).</p><p>That double ampersand is an boolean AND; it&#39;s there for the second condition we want to check. That is, does the <code>SpecRunner.html</code> have that attribute? We can simply run the <code>xattr</code> command on the file, and compare it&#39;s output to the string we&#39;re expecting. (We can&#39;t just expect the file to have the attribute, because you can actually turn this feature off in Mac OS X, and we&#39;ll get an error when trying to remove it if the file doesn&#39;t have the attribute).</p><p>So, if <code>xattr</code> is found and the file has the attribute, we&#39;ll remove it, with the <code>d</code> (for delete) flag. Pretty straightforward, right?</p><p>The final step is to edit <code>SpecRunner.html</code>. Currently, it contains scripts tags for the sample JavaScript files that we deleted; we should also delete those scripts tags. I happen to know that those script tags span lines 12 to 18 in the files. So, we can use the stream editor <code>sed</code> to delete those lines:</p><p><pre class="brush: bash; title: ; notranslate">
-    sed -i &quot;&quot; '12,18d' SpecRunner.html
-    echo &quot;Jasmine initialized!&quot;
-</pre></p><p>The <code>i</code> flag tells <code>sed</code> to edit the file in place, or to save the output from the command to the same file we passed in; the empty string after the flag means that we don&#39;t want <code>sed</code> to back up the file for us; if you wanted that, you could just put a file extension in that string (like <code>.bak</code>, to get <code>SpecRunner.html.bak</code>).</p><p>Finally, we&#39;ll let the user know that Jasmine has been initialized. And that&#39;s it for our <code>jazz init</code> command.</p><hr
-/><h2><span> Step 6 &#8211; </span> Creating Files with <code>jazz create</code></h2><p>Next up, we&#39;re going to let our users create JavaScript files and their associated spec files. This portion of the code will go in the &#8220;create&quot; section of the <code>case</code> statement we wrote earlier.</p><p><pre class="brush: bash; title: ; notranslate">
-    if [ $2 ]
-    then
-        # create files
-    else
-        echo &quot;please include a name for the file&quot;
-    fi
-</pre></p><p>When using <code>jazz create</code>, we need to include a name for the file as the second parameter: <code>jazz create View</code>, for example. We&#39;ll use this to create <code>src/View.js</code> and <code>spec/ViewSpec.js</code>. So, if there isn&#39;t a second parameter, we&#39;ll remind the user to add one.</p><p>If there is a file name, we&#39;ll start by creating those two files (inside the <code>then</code> part above):</p><p><pre class="brush: bash; title: ; notranslate">
-    echo &quot;function $2 () {\n\n}&quot; &gt; src/$2.js
-    echo &quot;describe('$2', function () {\n\n});&quot; &gt; spec/$2Spec.js
-</pre></p><p>Of course, you can put whatever you want into your <code>src</code> file. I&#39;m doing something basic here; so <code>jazz create View</code> will create <code>src/View.js</code> with this:</p><pre class="brush: jscript; title: ; notranslate">
-function View () {
-
-}
-</pre><p>You could replace that first <code>echo</code> line with this:</p><p><pre class="brush: bash; title: ; notranslate">
-    echo &quot;var $2 = (function () {\n\tvar $2Prototype = {\n\n\t};\n\n\treturn {\n\t\tcreate : function (attrs) {\n\t\t\tvar o = Object.create($2Prototype);\n\t\t\textend(o, attrs);\n\t\t\treturn o;\n\t\t}\n \t};\n}());&quot; &gt; src/$2.js
-</pre></p><p>And then <code>jazz create View</code> will result in this:</p><pre class="brush: jscript; title: ; notranslate">
-    var View = (function () {
-        var ViewPrototype = {
-        
-        };
-    
-        return {
-            create : function (attrs) {
-                var o = Object.create(ViewPrototype);
-                extend(o, attrs);
-                return o;
-            }
-        };
-    }());
-</pre><p>So, really, your imagination is the limit. Of course, you&#39;ll want the spec file to be the standard Jasmine spec code, which is what I have above; but you can tweak that however you like as well.</p><p>The next step is to add the script tags for these files to <code>SpecRunner.html</code>. At first, this might seem tricky: how can we add lines to the middle of a file programmatically? Once again, it&#39;s <code>sed</code> that does the job.</p><p><pre class="brush: bash; title: ; notranslate">
-    sed -i &quot;&quot; &quot;11a\\
-    &lt;script src='src/$2.js'&gt;&lt;/script&gt;\\
-    &lt;script src='spec/$2Spec.js'&gt;&lt;/script&gt;
-    &quot; SpecRunner.html
-</pre></p><p>We start just like we did before: in-place edit without a backup. Then our command: at line 11, we want to append the two following lines. It&#39;s important to escape the two new-lines, so that they&#39;ll appear in the text. As you can see, this just inserts those two scripts tags, exactly what we need for this step.</p><p>We can end with some output:</p><p><pre class="brush: bash; title: ; notranslate">
-    echo &quot;Created:&quot;
-    echo &quot;\t- src/$2.js&quot;
-    echo &quot;\t- spec/$2Spec.js&quot;
-    echo &quot;Edited:&quot;
-    echo &quot;\t- SpecRunner.html&quot;
-</pre></p><p>And that&#39;s <code>jazz create</code>!</p><hr
-/><h2><span> Step 7 &#8211; </span> Running the Specs with <code>jazz run</code></h2><p>The last step is to actually run the tests. This means opening the <code>SpecRunner.html</code> file in a browser. There&#39;s a bit of a caveat here. On Mac OS X, we can use the <code>open</code> command to open a file in it&#39;s default program; this won&#39;t work on any other OS, but that&#39;s the way I do it here. Unfortunately, there&#39;s no real cross-platform way to do this, that I know of. If you&#39;re using this script under Cygwin on Windows, you can use <code>cygstart</code> in place of <code>open</code>; otherwise, try googling &quot;[your OS] shell script open browser&quot; and see what you come up with. Unfortunately, some versions of Linux (at least Ubuntu, in my experience) have an <code>open</code> command that&#39;s for something completely different. All this to say, your mileage with the following may vary.</p><pre class="brush: bash; title: ; notranslate">if [ &quot;`which open`&quot; = '/usr/bin/open' ] 
-then
-    open SpecRunner.html
-else
-    echo &quot;Please open SpecRunner.html in your browser&quot;
-fi
-</pre><p>By now, you know exactly what this does: if we have <code>open</code>, we&#39;ll open <code>SpecRunner.html</code>, otherwise, we&#39;ll just print a message telling the user to open the file in the browser.</p><p>Originally, that <code>if</code> condition looked like this:</p><pre class="brush: plain; title: ; notranslate">if which open &gt; /dev/null
-</pre><p>As we did with <code>xattr</code>, it just checked for existence of <code>open</code>; however, since I found out that there&#39;s a different <code>open</code> command on Linux (even on my Ubuntu server, which can&#39;t even open a browser!), I figured it might be better to compare the path of the <code>open</code> program, since the Linux one is at <code>/bin/open</code> (again, at least on Ubuntu server).</p><p>All this extra wordiness about <code>open</code> might sound like an excuse for my lack of a good solution, it actually points out something important about the command line. Don&#39;t mistake understanding the terminal with understanding a computer&#39;s configuration. This tutorial, and the associated course, have taught you a little bit more about the Bash shell (and the Z shell), but that doesn&#39;t mean each computer you use will be configured the same; there are many ways to install new commands (or different versions of commands), as well as remove commands. <em>Caveat developer</em>.</p><p>Well, that&#39;s the entire script! Here it is again, all together:</p><pre class="brush: bash; title: ; notranslate">
-    #! /bin/sh
-
-    function help () {
-        echo &quot;jazz - A simple script that makes using the Jasmine testing framework in a standalone project a little simpler.&quot;
-        echo &quot;&quot;
-        echo &quot;    jazz init                  - include jasmine in the project&quot;;
-        echo &quot;    jazz create FunctionName   - creates ./src/FunctionName.js ./spec/FunctionNameSpec.js&quot;;
-        echo &quot;    jazz run                   - runs tests in browser&quot;;
-    }
-
-    JASMIME_LINK=&quot;http://cloud.github.com/downloads/pivotal/jasmine/jasmine-standalone-1.3.1.zip&quot;
-
-    if [ $1 ] 
-    then
-      case &quot;$1&quot; in
-      init)
-        echo &quot;Downloading Jasmine . . .&quot;
-        curl -sO $JASMIME_LINK 
-        unzip -q `basename $JASMIME_LINK` 
-        rm `basename $JASMIME_LINK` src/*.js spec/*.js
-        
-        if which xattr &gt; /dev/null &amp;&amp; [ &quot;`xattr SpecRunner.html`&quot; = &quot;com.apple.quarantine&quot; ]
-        then
-          xattr -d com.apple.quarantine SpecRunner.html
-        fi
-
-        sed -i &quot;&quot; &quot;12,18d&quot; SpecRunner.html
-        echo &quot;Jasmine initialized!&quot;
-      ;;
-      create)
-        if [ $2 ]
-        then 
-          echo &quot;function $2 () {\n\n}&quot; &gt; ./src/$2.js
-          echo &quot;describe('$2', function () {\nit('runs');\n});&quot; &gt; ./spec/$2Spec.js
-          sed -i &quot;&quot; &quot;11a\\
-          &lt;script src='src/$2.js'&gt;&lt;/script&gt;\\
-          &lt;script src='spec/$2Spec.js'&gt;&lt;/script&gt;
-          &quot; SpecRunner.html
-          echo &quot;Created:&quot;
-          echo &quot;\t- src/$2.js&quot;
-          echo &quot;\t- spec/$2Spec.js&quot;
-          echo &quot;Edited:&quot;
-          echo &quot;\t- SpecRunner.html&quot;
-        else
-          echo 'please add a name for the file'
-        fi
-      ;;
-      &quot;run&quot;)
-        if [ &quot;`which open`&quot; = '/usr/bin/open' ] 
-        then
-          open ./SpecRunner.html
-        else
-          echo &quot;Please open SpecRunner.html in your browser&quot;
-        fi
-      ;;
-      *)
-        help;
-      ;;
-      esac
-    else
-      help;
-    fi
-</pre><p>Well, go on, give it a try!</p><p><pre class="brush: bash; title: ; notranslate">
-    mkdir project
-    cd project
-    jazz init
-    jazz create Dog
-    # edit src/Dog.js and spec/DogSpec.js
-    jazz run
-</pre></p><p>By the way, if you want to have some more fun with this project, you can <a
-href="https://github.com/andrew8088/jazz">find it on Github</a>.</p><hr
-/><h2>Conclusion</h2><p>So there you have it! We&#39;ve just written an intermediate level shell script; that wasn&#39;t so bad, now, was it? Don&#8217;t forget to stay tuned for my upcoming <a
-href="http://tutsplus.com">Tuts+ Premium</a> course; you&#39;ll learn a lot more about many of the techniques used in this article, as well as countless others. Have fun on the terminal!</p><div class="feedflare">
-<a href="http://feeds.feedburner.com/~ff/nettuts?a=kd9cz6hLDAU:jC7bqt1ahxQ:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=kd9cz6hLDAU:jC7bqt1ahxQ:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=kd9cz6hLDAU:jC7bqt1ahxQ:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=kd9cz6hLDAU:jC7bqt1ahxQ:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=kd9cz6hLDAU:jC7bqt1ahxQ:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=kd9cz6hLDAU:jC7bqt1ahxQ:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=kd9cz6hLDAU:jC7bqt1ahxQ:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=kd9cz6hLDAU:jC7bqt1ahxQ:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/kd9cz6hLDAU" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:14:"Andrew Burgess";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:90:"http://net.tutsplus.com/tutorials/tools-and-tips/writing-a-shell-script-from-scratch/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"12";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:85:"http://net.tutsplus.com/tutorials/tools-and-tips/writing-a-shell-script-from-scratch/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:9;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:17:"Reflection in PHP";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/eUw_aN38rD8/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:65:"http://net.tutsplus.com/tutorials/php/reflection-in-php/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 18 Apr 2013 17:46:16 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:3:"PHP";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:9:"Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:10:"reflection";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31408";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:18576:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31408&c=431502751' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31408&c=431502751' border='0' alt='' /></a><p>Reflection is generally defined as a program&#8217;s ability to inspect itself and modify its logic at execution time. In less technical terms, reflection is asking an object to tell you about its properties and methods, and altering those members (even private ones). In this lesson, we&#8217;ll dig into how this is accomplished, and when it might prove useful.</p><p><span
-id="more-31408"></span></p><hr
-/><h2>A Little History</h2><p>At the dawn of the age of programming, there was the assembly language. A program written in assembly resides on physical registers inside the computer. Its composition, methods and values could be inspected at any time by reading the registers. Even more, you could alter the program while it was running by simply modifying those registers. It required some intimate knowledge about the running program, but it was inherently reflective.</p><blockquote
-class="pullquote"><p>As with any cool toy, use reflection, but don&#8217;t abuse it.</p></blockquote><p>As higher-level programming languages (like C) came along, this reflectivity faded and disappeared. It was later re-introduced with object-oriented programming.</p><p>Today, most programming languages can use reflection. Statically typed languages, such as Java, have little to no problems with reflection. What I find interesting, however, is that any dynamically-typed language (like PHP or Ruby) is heavily based on reflection. Without the concept of reflection, duck-typing would most likely be impossible to implement. When you send one object to another (a parameter, for example), the receiving object has no way of knowing the structure and type of that object. All it can do is use reflection to identify the methods that can and cannot be called on the received object.</p><hr
-/><h2>A Simple Example</h2><p>Reflection is prevalent in PHP. In fact, there are several situations when you may use it without even knowing it. For example:</p><pre class="brush: php; title: ; notranslate">
-// Nettuts.php
-
-require_once 'Editor.php';
-
-class Nettuts {
-
-	function publishNextArticle() {
-		$editor = new Editor('John Doe');
-		$editor-&gt;setNextArticle('135523');
-		$editor-&gt;publish();
-	}
-
-}
-</pre><p>And:</p><pre class="brush: php; title: ; notranslate">
-// Editor.php
-
-class Editor {
-
-	private $name;
-	public $articleId;
-
-	function __construct($name) {
-		$this-&gt;name = $name;
-	}
-
-	public function setNextArticle($articleId) {
-		$this-&gt;articleId = $articleId;
-	}
-
-	public function publish() {
-		// publish logic goes here
-		return true;
-	}
-
-}
-</pre><p>In this code, we have a direct call to a locally initialized variable with a known type. Creating the editor in <code>publishNextArticle()</code> makes it obvious that the <code>$editor</code> variable is of type <code>Editor</code>. No reflection is needed here, but let&#8217;s introduce a new class, called <code>Manager</code>:</p><pre class="brush: php; title: ; notranslate">
-// Manager.php
-
-require_once './Editor.php';
-require_once './Nettuts.php';
-
-class Manager {
-
-	function doJobFor(DateTime $date) {
-		if ((new DateTime())-&gt;getTimestamp() &gt; $date-&gt;getTimestamp()) {
-			$editor = new Editor('John Doe');
-			$nettuts = new Nettuts();
-			$nettuts-&gt;publishNextArticle($editor);
-		}
-	}
-
-}
-</pre><p>Next, modify <code>Nettuts</code>, like so:</p><pre class="brush: php; title: ; notranslate">
-// Nettuts.php
-
-class Nettuts {
-
-	function publishNextArticle($editor) {
-		$editor-&gt;setNextArticle('135523');
-		$editor-&gt;publish();
-	}
-
-}
-</pre><p>Now, <code>Nettuts</code> has absolutely no relation to the <code>Editor</code> class. It does not include its file, it does not initialize its class and it does not even know it exists. I could pass an object of any type into the <code>publishNextArticle()</code> method and the code would work.</p> <figure
-class="tutorial_image"> <img
-src="http://cdn.tutsplus.com/net.tutsplus.com/authors/jeremymcpeak/php-reflection-class-diagram1.png" alt="Class Diagram" /><br
-/> </figure><p>As you can see from this class diagram, <code>Nettuts</code> only has a direct relationship to <code>Manager</code>. <code>Manager</code> creates it, and therefore, <code>Manager</code> depends on <code>Nettuts</code>. But <code>Nettuts</code> no longer has any relation to the <code>Editor</code> class, and <code>Editor</code> is only related to <code>Manager</code>.</p><p>At runtime, <code>Nettuts</code> uses an <code>Editor</code> object, thus the &lt;&lt;uses&gt;&gt; and the question mark. At runtime, PHP inspects the received object and verifies that it implements the <code>setNextArticle()</code> and <code>publish()</code> methods.</p><h3>Object Member Information</h3><p>We can make PHP display the details of an object. Let&#8217;s create a PHPUnit test to help us easily exercise our code:</p><pre class="brush: php; title: ; notranslate">
-// ReflectionTest.php
-
-require_once '../Editor.php';
-require_once '../Nettuts.php';
-
-class ReflectionTest extends PHPUnit_Framework_TestCase {
-
-	function testItCanReflect() {
-		$editor = new Editor('John Doe');
-		$tuts = new Nettuts();
-		$tuts-&gt;publishNextArticle($editor);
-	}
-
-}
-</pre><p>Now, add a <code>var_dump()</code> to <code>Nettuts</code>:</p><pre class="brush: php; title: ; notranslate">
-// Nettuts.php
-
-class NetTuts {
-
-	function publishNextArticle($editor) {
-		$editor-&gt;setNextArticle('135523');
-		$editor-&gt;publish();
-		var_dump(new ReflectionClass($editor));
-	}
-
-}
-</pre><p>Run the test, and watch the magic happen in the output:</p><pre class="brush: xml; title: ; notranslate">PHPUnit 3.6.11 by Sebastian Bergmann.
-
-.object(ReflectionClass)#197 (1) {
-  [&quot;name&quot;]=&gt;
-  string(6) &quot;Editor&quot;
-}
-Time: 0 seconds, Memory: 2.25Mb
-
-OK (1 test, 0 assertions)</pre><p>Our reflection class has a <code>name</code> property set to the original type of the <code>$editor</code> variable: <code>Editor</code>, but that&#8217;s not much information. What about <code>Editor</code>&#8216;s methods?</p><pre class="brush: php; title: ; notranslate">
-// Nettuts.php
-
-class Nettuts {
-
-	function publishNextArticle($editor) {
-		$editor-&gt;setNextArticle('135523');
-		$editor-&gt;publish();
-
-		$reflector = new ReflectionClass($editor);
-		var_dump($reflector-&gt;getMethods());
-	}
-
-}</pre><p>In this code, we assign the reflection class&#8217; instance to the <code>$reflector</code> variable so that we can now trigger its methods. <code>ReflectionClass</code> exposes a large set of methods that you can use to obtain an object&#8217;s information. One of these methods is <code>getMethods()</code>, which returns an array containing each method&#8217;s information.</p><pre class="brush: xml; title: ; notranslate">
-PHPUnit 3.6.11 by Sebastian Bergmann.
-
-.array(3) {
-  [0]=&gt;
-  &amp;object(ReflectionMethod)#196 (2) {
-    [&quot;name&quot;]=&gt;
-    string(11) &quot;__construct&quot;
-    [&quot;class&quot;]=&gt;
-    string(6) &quot;Editor&quot;
-  }
-  [1]=&gt;
-  &amp;object(ReflectionMethod)#195 (2) {
-    [&quot;name&quot;]=&gt;
-    string(14) &quot;setNextArticle&quot;
-    [&quot;class&quot;]=&gt;
-    string(6) &quot;Editor&quot;
-  }
-  [2]=&gt;
-  &amp;object(ReflectionMethod)#194 (2) {
-    [&quot;name&quot;]=&gt;
-    string(7) &quot;publish&quot;
-    [&quot;class&quot;]=&gt;
-    string(6) &quot;Editor&quot;
-  }
-}
-
-Time: 0 seconds, Memory: 2.25Mb
-
-OK (1 test, 0 assertions)
-</pre><p>Another method, <code>getProperties()</code>, retrieves the properties (even private properties!) of the object:</p><pre class="brush: xml; title: ; notranslate">
-PHPUnit 3.6.11 by Sebastian Bergmann.
-
-.array(2) {
-  [0]=&gt;
-  &amp;object(ReflectionProperty)#196 (2) {
-    [&quot;name&quot;]=&gt;
-    string(4) &quot;name&quot;
-    [&quot;class&quot;]=&gt;
-    string(6) &quot;Editor&quot;
-  }
-  [1]=&gt;
-  &amp;object(ReflectionProperty)#195 (2) {
-    [&quot;name&quot;]=&gt;
-    string(9) &quot;articleId&quot;
-    [&quot;class&quot;]=&gt;
-    string(6) &quot;Editor&quot;
-  }
-}
-
-Time: 0 seconds, Memory: 2.25Mb
-
-OK (1 test, 0 assertions)
-</pre><p>The elements in the arrays returned from <code>getMethod()</code> and <code>getProperties()</code> are of type <code>ReflectionMethod</code> and <code>ReflectionProperty</code>, respectively; these objects are quite useful:</p><pre class="brush: php; title: ; notranslate">
-// Nettuts.php
-
-class Nettuts {
-
-	function publishNextArticle($editor) {
-		$editor-&gt;setNextArticle('135523');
-		$editor-&gt;publish(); // first call to publish()
-
-		$reflector = new ReflectionClass($editor);
-		$publishMethod = $reflector-&gt;getMethod('publish');
-		$publishMethod-&gt;invoke($editor); // second call to publish()
-	}
-
-}
-</pre><p>Here, we use <code>getMethod()</code> to retrieve a single method with the name of &#8220;publish&#8221;; the result of which is a <code>ReflectionMethod</code> object. Then, we call the <code>invoke()</code> method, passing it the <code>$editor</code> object, in order to execute the editor&#8217;s <code>publish()</code> method a second time.</p><p>This process was simple in our case, because we already had an <code>Editor</code> object to pass to <code>invoke()</code>. We may have several <code>Editor</code> objects in some circumstances, giving us the luxury of choosing which object to use. In other circumstances, we may have no objects to work with, in which case we would need to obtain one from <code>ReflectionClass</code>.</p><p>Let&#8217;s modify <code>Editor</code>&#8216;s <code>publish()</code> method to demonstrate the double call:</p><pre class="brush: php; title: ; notranslate">
-// Editor.php
-
-class Editor {
-
-	[ ... ]
-
-	public function publish() {
-		// publish logic goes here
-		echo (&quot;HERE\n&quot;);
-		return true;
-	}
-
-}
-</pre><p>And the new output:</p><pre class="brush: xml; title: ; notranslate">
-PHPUnit 3.6.11 by Sebastian Bergmann.
-
-.HERE
-HERE
-
-Time: 0 seconds, Memory: 2.25Mb
-
-OK (1 test, 0 assertions)
-</pre><h3>Manipulating Instance Data</h3><p>We can also modify code at execution time. What about modifying a private variable that has no public setter? Let&#8217;s add a method to <code>Editor</code> that retrieves the editor&#8217;s name:</p><pre class="brush: php; title: ; notranslate">
-// Editor.php
-
-class Editor {
-
-	private $name;
-	public $articleId;
-
-	function __construct($name) {
-		$this-&gt;name = $name;
-	}
-
-	[ ... ]
-
-	function getEditorName() {
-		return $this-&gt;name;
-	}
-
-}
-</pre><p>This new method is called, <code>getEditorName()</code>, and simply returns the value from the private <code>$name</code> variable. The <code>$name</code> variable is set at creation time, and we have no public methods that let us change it. But we can access this variable using reflection. You might first try the more obvious approach:</p><pre class="brush: php; title: ; notranslate">
-// Nettuts.php
-
-class Nettuts {
-
-	function publishNextArticle($editor) {
-		var_dump($editor-&gt;getEditorName());
-
-		$reflector = new ReflectionClass($editor);
-		$editorName = $reflector-&gt;getProperty('name');
-		$editorName-&gt;getValue($editor);
-
-	}
-
-}
-</pre><p>Even though this outputs the value at the <code>var_dump()</code> line, it throws an error when trying to retrieve the value with reflection:</p><pre class="brush: xml; title: ; notranslate">PHPUnit 3.6.11 by Sebastian Bergmann.
-
-Estring(8) &quot;John Doe&quot;
-Time: 0 seconds, Memory: 2.50Mb
-
-There was 1 error:
-
-1) ReflectionTest::testItCanReflect
-ReflectionException: Cannot access non-public member Editor::name
-
-[...]/Reflection in PHP/Source/NetTuts.php:13
-[...]/Reflection in PHP/Source/Tests/ReflectionTest.php:13
-/usr/bin/phpunit:46
-
-FAILURES!
-Tests: 1, Assertions: 0, Errors: 1.</pre><p>In order to fix this problem, we need to ask the <code>ReflectionProperty</code> object to grant us access to the private variables and methods:</p><pre class="brush: php; title: ; notranslate">// Nettuts.php
-
-class Nettuts {
-
-	function publishNextArticle($editor) {
-		var_dump($editor-&gt;getEditorName());
-
-		$reflector = new ReflectionClass($editor);
-		$editorName = $reflector-&gt;getProperty('name');
-		$editorName-&gt;setAccessible(true);
-		var_dump($editorName-&gt;getValue($editor));
-	}
-
-}</pre><p>Calling <code>setAccessible()</code> and passing <code>true</code> does the trick:</p><pre class="brush: xml; title: ; notranslate">PHPUnit 3.6.11 by Sebastian Bergmann.
-
-.string(8) &quot;John Doe&quot;
-string(8) &quot;John Doe&quot;
-Time: 0 seconds, Memory: 2.25Mb
-
-OK (1 test, 0 assertions)</pre><p>As you can see, we&#8217;ve managed to read private variable. The first line of output is from the object&#8217;s own <code>getEditorName()</code> method, and the second comes from reflection. But what about changing a private variable&#8217;s value? Use the <code>setValue()</code> method:</p><pre class="brush: php; title: ; notranslate">// Nettuts.php
-
-class Nettuts {
-
-	function publishNextArticle($editor) {
-		var_dump($editor-&gt;getEditorName());
-
-		$reflector = new ReflectionClass($editor);
-		$editorName = $reflector-&gt;getProperty('name');
-		$editorName-&gt;setAccessible(true);
-		$editorName-&gt;setValue($editor, 'Mark Twain');
-		var_dump($editorName-&gt;getValue($editor));
-	}
-
-}</pre><p>And that&#8217;s it. This code changes &#8220;John Doe&#8221; to &#8220;Mark Twain&#8221;.</p><pre class="brush: xml; title: ; notranslate">PHPUnit 3.6.11 by Sebastian Bergmann.
-
-.string(8) &quot;John Doe&quot;
-string(10) &quot;Mark Twain&quot;
-Time: 0 seconds, Memory: 2.25Mb
-
-OK (1 test, 0 assertions)</pre><hr
-/><h2>Indirect Reflection Use</h2><p>Some of PHP&#8217;s built-in functionality indirectly uses reflection&mdash;one being the <code>call_user_func()</code> function.</p><h3>The Callback</h3><p>The <code>call_user_func()</code> function accepts an array: the first element pointing to an object, and the second a method&#8217;s name. You can supply an optional parameter, which is then passed to the called method. For example:</p><pre class="brush: php; title: ; notranslate">
-// Nettuts.php
-
-class Nettuts {
-
-	function publishNextArticle($editor) {
-		var_dump($editor-&gt;getEditorName());
-
-		$reflector = new ReflectionClass($editor);
-		$editorName = $reflector-&gt;getProperty('name');
-		$editorName-&gt;setAccessible(true);
-		$editorName-&gt;setValue($editor, 'Mark Twain');
-		var_dump($editorName-&gt;getValue($editor));
-
-		var_dump(call_user_func(array($editor, 'getEditorName')));
-	}
-
-}
-</pre><p>The following output demonstrates that the code retrieves the proper value:</p><pre class="brush: xml; title: ; notranslate">PHPUnit 3.6.11 by Sebastian Bergmann.
-
-.string(8) &quot;John Doe&quot;
-string(10) &quot;Mark Twain&quot;
-string(10) &quot;Mark Twain&quot;
-Time: 0 seconds, Memory: 2.25Mb
-
-OK (1 test, 0 assertions)</pre><h3>Using a Variable&#8217;s Value</h3><p>Another example of indirect reflection is calling a method by the value contained within a variable, as opposed to directly calling it. For example:</p><pre class="brush: php; title: ; notranslate">
-// Nettuts.php
-
-class Nettuts {
-
-	function publishNextArticle($editor) {
-		var_dump($editor-&gt;getEditorName());
-
-		$reflector = new ReflectionClass($editor);
-		$editorName = $reflector-&gt;getProperty('name');
-		$editorName-&gt;setAccessible(true);
-		$editorName-&gt;setValue($editor, 'Mark Twain');
-		var_dump($editorName-&gt;getValue($editor));
-
-		$methodName = 'getEditorName';
-		var_dump($editor-&gt;$methodName());
-	}
-
-}
-</pre><p>This code produces the same output as the previous example. PHP simply replaces the variable with the string it represents and calls the method. It even works when you want to create objects by using variables for class names.</p><hr
-/><h2>When Should We Use Reflection?</h2><p>Now that we&#8217;ve put the technical details behind us, when should we leverage reflection? Here are a few scenarios:</p><ul><li><strong>Dynamic typing</strong> is probably impossible without reflection.</li><li><strong>Aspect Oriented Programming</strong> listens from method calls and places code around methods, all accomplished with reflection.</li><li><strong>PHPUnit</strong> relies heavily on reflection, as do other mocking frameworks.</li><li><strong>Web frameworks</strong> in general use reflection for different purposes. Some use it to initialize models, constructing objects for views and more. Laravel makes heavy use of reflection to inject dependencies.</li><li><strong>Metaprogramming</strong>, like our last example, is hidden reflection.</li><li><strong>Code analysis frameworks</strong> use reflection to understand your code.</li></ul><hr
-/><h2>Final Thoughts</h2><p>As with any cool toy, use reflection, but don&#8217;t abuse it. Reflection is costly when you inspect many objects, and it has the potential to complicate your project&#8217;s architecture and design. I recommend that you make use of it only when it actually gives you an advantage, or when you have no other viable option.</p><p>Personally, I&#8217;ve only used reflection in a few instances, most commonly when using third party modules that lack documentation. I find myself frequently using code similar to the last example. It&#8217;s easy to call the proper method, when your MVC responds with a variable containing &#8220;add&#8221; or &#8220;remove&#8221; values.</p><p>Thanks for reading!</p><div class="feedflare">
-<a href="http://feeds.feedburner.com/~ff/nettuts?a=eUw_aN38rD8:la2MqgJF9Rw:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=eUw_aN38rD8:la2MqgJF9Rw:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=eUw_aN38rD8:la2MqgJF9Rw:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=eUw_aN38rD8:la2MqgJF9Rw:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=eUw_aN38rD8:la2MqgJF9Rw:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=eUw_aN38rD8:la2MqgJF9Rw:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=eUw_aN38rD8:la2MqgJF9Rw:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=eUw_aN38rD8:la2MqgJF9Rw:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/eUw_aN38rD8" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Patkos Csaba";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:61:"http://net.tutsplus.com/tutorials/php/reflection-in-php/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"24";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:56:"http://net.tutsplus.com/tutorials/php/reflection-in-php/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}s:44:"http://purl.org/rss/1.0/modules/syndication/";a:2:{s:12:"updatePeriod";a:1:{i:0;a:5:{s:4:"data";s:6:"hourly";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:15:"updateFrequency";a:1:{i:0;a:5:{s:4:"data";s:1:"1";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"link";a:2:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"rel";s:4:"self";s:4:"type";s:19:"application/rss+xml";s:4:"href";s:35:"http://feeds.feedburner.com/nettuts";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:2:{s:3:"rel";s:3:"hub";s:4:"href";s:32:"http://pubsubhubbub.appspot.com/";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:3:{s:4:"info";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:3:"uri";s:7:"nettuts";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:14:"emailServiceId";a:1:{i:0;a:5:{s:4:"data";s:7:"nettuts";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:18:"feedburnerHostname";a:1:{i:0;a:5:{s:4:"data";s:28:"http://feedburner.google.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}}}}}}s:4:"type";i:128;s:7:"headers";a:10:{s:12:"content-type";s:23:"text/xml; charset=UTF-8";s:4:"etag";s:27:"95P5y+D9f0pP2w5YvI3vWwQwQpc";s:13:"last-modified";s:29:"Sun, 05 May 2013 15:25:03 GMT";s:16:"content-encoding";s:4:"gzip";s:4:"date";s:29:"Sun, 05 May 2013 15:46:08 GMT";s:7:"expires";s:29:"Sun, 05 May 2013 15:46:08 GMT";s:13:"cache-control";s:18:"private, max-age=0";s:22:"x-content-type-options";s:7:"nosniff";s:16:"x-xss-protection";s:13:"1; mode=block";s:6:"server";s:3:"GSE";}s:5:"build";s:14:"20121030175911";}
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/oKU4_qbFK0Q" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:14:"Andrew Burgess";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:82:"http://net.tutsplus.com/tutorials/javascript-ajax/meet-the-connect-framework/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"15";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:77:"http://net.tutsplus.com/tutorials/javascript-ajax/meet-the-connect-framework/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}s:44:"http://purl.org/rss/1.0/modules/syndication/";a:2:{s:12:"updatePeriod";a:1:{i:0;a:5:{s:4:"data";s:6:"hourly";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:15:"updateFrequency";a:1:{i:0;a:5:{s:4:"data";s:1:"1";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"link";a:2:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"rel";s:4:"self";s:4:"type";s:19:"application/rss+xml";s:4:"href";s:35:"http://feeds.feedburner.com/nettuts";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:2:{s:3:"rel";s:3:"hub";s:4:"href";s:32:"http://pubsubhubbub.appspot.com/";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:3:{s:4:"info";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:3:"uri";s:7:"nettuts";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:14:"emailServiceId";a:1:{i:0;a:5:{s:4:"data";s:7:"nettuts";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:18:"feedburnerHostname";a:1:{i:0;a:5:{s:4:"data";s:28:"http://feedburner.google.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}}}}}}s:4:"type";i:128;s:7:"headers";a:10:{s:12:"content-type";s:23:"text/xml; charset=UTF-8";s:4:"etag";s:27:"/W4ts9e5bpvIXflESVYKWYwcztM";s:13:"last-modified";s:29:"Tue, 07 May 2013 20:40:46 GMT";s:16:"content-encoding";s:4:"gzip";s:4:"date";s:29:"Tue, 07 May 2013 20:58:25 GMT";s:7:"expires";s:29:"Tue, 07 May 2013 20:58:25 GMT";s:13:"cache-control";s:18:"private, max-age=0";s:22:"x-content-type-options";s:7:"nosniff";s:16:"x-xss-protection";s:13:"1; mode=block";s:6:"server";s:3:"GSE";}s:5:"build";s:14:"20121030175911";}

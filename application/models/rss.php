@@ -20,23 +20,60 @@ class RSS {
 		$pie->force_feed(true);
 		$pie->init();
 
-		if ($pie->error()) die($pie->error());		// cancel id errors
-
-		$feeds = $pie->get_items();
-
 		$items = 0;
-		foreach ($feeds as $feed) {
-			$items += Item::add([
-				'user_id' => 1,
-				'source_id' => $item->id,
-				'item_id' => $feed->get_id(),
-				'datetime' => $feed->get_date('Y-m-d H:i:s'),
-				'title' => $feed->get_title(),
-				'content' => $feed->get_content(),
-				'url' => $feed->get_link()
-			]);
+		$src = [ 'last_error' => '' ];
+
+		if ($pie->error()) {
+			$src['last_error'] = $pie->error();
 		}
+		else {
+			$feeds = $pie->get_items();
+			foreach ($feeds as $feed) {
+				$items += Item::add([
+					'user_id' => 1,
+					'source_id' => $item->id,
+					'item_id' => $feed->get_id(),
+					'datetime' => $feed->get_date('Y-m-d H:i:s'),
+					'title' => $feed->get_title(),
+					'content' => $feed->get_content(),
+					'url' => $feed->get_link()
+				]);
+			}
+			if (empty($item->real_url)) static::get_icon($feed->get_link());
+		}
+
+		Source::update($item->id, (object)$src);
+
 		return $items;
+	}
+
+	//http://www.google.com/s2/favicons?domain=nettuts.com
+	//https://plus.google.com/_/favicon?domain=http://feeds.feedburner.com/CssTricks
+	public static function get_icon ($url) {
+		echo static::get_real_url($url).'<br>';
+
+	}
+
+	public static function get_real_url ($url) {
+		$ch = curl_init($url);
+		curl_setopt_array($ch, [
+			CURLOPT_RETURNTRANSFER => true,     // return web page
+			CURLOPT_HEADER         => false,    // do not return headers
+			CURLOPT_FOLLOWLOCATION => true,     // follow redirects
+			CURLOPT_USERAGENT      => "spider", // who am i
+			CURLOPT_AUTOREFERER    => true,     // set referer on redirect
+			CURLOPT_CONNECTTIMEOUT => 120,      // timeout on connect
+			CURLOPT_TIMEOUT        => 120,      // timeout on response
+			CURLOPT_MAXREDIRS      => 10,       // stop after 10 redirects
+		]);
+		$header = curl_getinfo($ch);
+		curl_close($ch);
+		return $header['url'];
+
+		//TODO
+		// $url = 'http://google.com/dhasjkdas/sadsdds/sdda/sdads.html';
+		// $parse = parse_url($url);
+		// print $parse['host']; // prints 'google.com'
 	}
 
 }

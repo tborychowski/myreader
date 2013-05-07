@@ -79,7 +79,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transp
 .main-content .entry .pull-right .tb-btn{margin-left:15px;margin-right:0}
 .main-content .entry .mark-unread,.main-content .entry .addstar,.main-content .entry .expand{display:inline-block}
 .main-content .entry .mark-read,.main-content .entry .unstar,.main-content .entry .collapse{display:none}
-.main-content .entry:last-child{margin-bottom:70%}
+.main-content .entry:last-child{margin-bottom:60%}
 .main-content .entry.active,.main-content .entry.unread{background-color:#fff}
 .main-content .entry.unread a{color:#08c}
 .main-content .unread .mark-unread,.main-content .starred .addstar,.main-content .expanded .expand{display:none}
@@ -93,6 +93,9 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transp
 .main-content .entry-header a.entry-source{color:#666;margin-left:4px}
 .main-content .entry-header .entry-time{float:right;margin:5px 0 0 5px;color:#666;font-size:12px}
 .main-content .entry-footer{padding:0;background:#ddd url(../img/noise.png) 0 0 repeat;border-top:1px solid #aaa;-webkit-box-shadow:0 1px 0 #fff inset;-moz-box-shadow:0 1px 0 #fff inset;box-shadow:0 1px 0 #fff inset;position:relative}
+.main-content.settings .entry input{font-size:inherit;padding:2px 4px;margin:0 5px 5px 0;}
+.main-content.settings .entry input[name="url"]{width:400px}
+.main-content.settings .entry .error{color:#f00;margin:0}
 .main-content.settings .entry .btn-save,.main-content.settings .entry .btn-cancel{display:none}
 .main-content.settings .entry.in-edit .btn-edit,.main-content.settings .entry.in-edit .btn-remove{display:none}
 .main-content.settings .entry.in-edit .btn-save,.main-content.settings .entry.in-edit .btn-cancel{display:inline-block}

@@ -147,7 +147,7 @@ input::-moz-focus-inner
 		.collapse
 			show 0;
 		&:last-child
-			margin-bottom 70%;
+			margin-bottom 60%;
 		&.active
 		&.unread
 			background-color #fff;
@@ -195,6 +195,12 @@ input::-moz-focus-inner
 
 /*** SETTINGS CONTENT *************************************************************************************************/
 .main-content.settings .entry
+	input
+		font inherit; pad 2 4; mar 0 5 5 0
+		&[name="url"]
+			width 400
+	.error
+		color red; mar 0;
 	.btn-save
 	.btn-cancel
 		show 0;
