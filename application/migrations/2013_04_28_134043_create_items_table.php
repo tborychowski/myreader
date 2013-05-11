@@ -13,7 +13,7 @@ class Create_Items_Table {
 			$table->engine = "MyISAM";
 			$table->increments('id');
 			$table->integer('user_id');
-			$table->integer('source_id');
+			$table->string('source_id');
 			$table->integer('item_id')->unique();	// simplepie ID
 			$table->date('datetime');
 			$table->string('title');

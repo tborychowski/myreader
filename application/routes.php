@@ -18,9 +18,8 @@ Route::get('/json/stats', 'item@stats');
 
 Route::get('/login', [ 'as' => 'login', 'uses' => 'home@login' ]);
 Route::post('/json/login', function () {
-	//$u = User::find(1); $u->password = Hash::make(''); $u->save();  // reset password
-	// $u = User::create([ 'email' => '', 'password' => Hash::make('') ]);
-	// $u->save();
+	//$u = User::create([ 'email' => '', 'password' => Hash::make('') ]);
+	//$u->save();
 
 	if (Auth::attempt(Input::json(true))) return JSON::success();
 	return JSON::error('Incorrect login or password');

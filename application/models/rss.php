@@ -16,7 +16,6 @@ class RSS {
 		$countItems = 0;
 		@set_time_limit(5000);
 		foreach ($feeds as $feed) $countItems += self::update_feed($feed);
-
 		return count($feeds).' feeds updated with '.$countItems.' new items';
 	}
 
@@ -36,7 +35,9 @@ class RSS {
 		}
 		else {
 			$feeds = $pie->get_items();
+			$feedUrl = '';
 			foreach ($feeds as $feed) {
+				$feedUrl = $feed->get_link();
 				$items += Item::add([
 					'user_id' => 1,
 					'source_id' => $item->id,
@@ -45,12 +46,17 @@ class RSS {
 					'title' => $feed->get_title(),
 					'content' => htmLawed::hl($feed->get_description(), static::$hlConf),	// get summary only
 					//'content' => htmLawed::hl($feed->get_content(), static::$hlConf),
-					'url' => $feed->get_link()
+					'url' => $feedUrl
 				]);
 			}
 
+			//XXX: To Be Removed
+			if (isset($item->real_url) && is_array($item->real_url)) $item->real_url = '';
+
 			if (empty($item->real_url)) {
-				$item->real_url = static::get_real_url($feed->get_link());
+				$lnk = $feedUrl;
+				if (!$lnk) $lnk = $item->url;
+				$item->real_url = static::get_real_url($lnk);
 				$src['real_url'] = $item->real_url;
 			}
 
@@ -92,8 +98,15 @@ class RSS {
 		]);
 		$a = curl_exec($ch);
 		curl_close($ch);
-		if (preg_match('#Location: (.*)#', $a, $r)) $url = trim($r[1]);
-		return parse_url($url)['host'];                // get domain from url
+		if (preg_match('#Location: (.*)#', $a, $r)) $url2 = trim($r[1]);
+
+		$parse = parse_url($url2);
+		if (isset($parse['host'])) return $parse['host'];       // get domain from url
+
+		$parse = parse_url($url);
+		if (isset($parse['host'])) return $parse['host'];       // get domain from original url
+
+		return $url;
 	}
 
 }

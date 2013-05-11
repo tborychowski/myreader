@@ -26,12 +26,12 @@
 
 	_onKeyDown = function (e) {
 		var key = e.keyCode;
-		if (key === 83) App.Publish('entry/toggleStar');			// s - toggle unread
-		else if (key === 85) App.Publish('entry/toggleUnread');		// u - toggle unread
-		else if (key === 82) App.Publish('nav/refresh');			// r - refresh
-		else if (key === 32) App.Publish('nav/next');				// space - next
-		else if (key === 33) App.Publish('nav/prev');				// pgup - prev
-		else if (key === 34) App.Publish('nav/next');				// pgdown - next
+		if (key === 83) App.Publish('entry/toggleStar');				// s - toggle unread
+		else if (key === 85) App.Publish('entry/toggleUnread');			// u - toggle unread
+		else if (key === 82) App.Publish('nav/refresh', [ _params ]);	// r - refresh
+		else if (key === 32) App.Publish('nav/next');					// space - next
+		else if (key === 33) App.Publish('nav/prev');					// pgup - prev
+		else if (key === 34) App.Publish('nav/next');					// pgdown - next
 	},
 
 	_toolbarBtnHandler = function () {
@@ -39,11 +39,13 @@
 
 		if (action === 'next') App.Publish('nav/next');
 		if (action === 'prev') App.Publish('nav/prev');
-		if (action === 'refresh') App.Publish('nav/refresh');
+		if (action === 'refresh') App.Publish('nav/refresh', [ _params ]);
 
 		if (action === 'unread') _navigate({ status: 'unread' });
 		if (action === 'starred') _navigate({ status: 'starred' });
 		if (action === 'archive') _navigate({ status: 'archive' });
+		if (action === 'all-read') App.Publish('entry/allread', [ _params ]);
+
 
 		if (action === 'add') App.Publish('source/add');
 		if (action === 'settings') window.location.href = App.rootPath + '/settings';
@@ -64,10 +66,12 @@
 
 	_navigate = function (cfg) {
 		if (cfg) $.extend(_params, cfg);
-		var hash = [_params.status];
+		var hash = [_params.status], oldHash = window.location.hash.substr(1), newHash;
 		if (_params.tag) hash.push('tag', _params.tag);
 		else if (_params.src) hash.push('src', _params.src);
-		window.location.hash = hash.join('/');
+		newHash = hash.join('/');
+		if (newHash !== oldHash) window.location.hash = newHash;
+		else App.Publish('nav/refresh', [ _params ]);
 	},
 
 	_toggleSelection = function () {
@@ -87,11 +91,13 @@
 	_populateSources = function (sources) {
 		if (typeof sources !== 'undefined') _items = sources;
 
-		var i = 0, tag, src, j, elems = _sourcesContainer.find('.nav-source');
+		var i = 0, tag, src, j, elems = _sourcesContainer.find('.nav-source'), row;
 		for (; tag = _items[i++] ;) {
 			if (!tag.items) continue;
 			for (j = 0; src = tag.items[j++] ;) {
-				elems.filter('.nav-' + src.id).find('.no-badge').html(src.unread ? src.unread : '');
+				row = elems.filter('.nav-' + src.id);
+				if (src.unread) row.show().find('.no-badge').html(src.unread);
+				else row.hide().find('.no-badge').html('');
 			}
 		}
 

@@ -3,10 +3,11 @@
 class Source extends Eloquent {
 
 
-	public static $rules = array(
-		'name'  => 'required|alpha_num|unique:sources',
-		'url'  => 'required|url|unique:sources'
-	);
+	public static $rules = [
+		'name'  => 'required|alpha_dash|unique:sources,name',
+		'tag'  => 'alpha_dash',
+		'url'  => 'required|url|unique:sources,url'
+	];
 
 	public function items () {
 		return $this->has_many('Item');
@@ -61,8 +62,17 @@ class Source extends Eloquent {
 		$item = Source::find($id);
 		if (!$item) return JSON::error('Item not found');
 
+		// VALIDATE
+		$rules = static::$rules;
+		$rules['name'] .= ','.$item->id;
+		$rules['url'] .= ','.$item->id;
+		$validation = Validator::make($input, $rules);
+		if ($validation->fails()) return JSON::error($validation->errors->first());
+
+
 		if (isset($input->name)) $item->name = $input->name;
 		if (isset($input->url)) $item->url = $input->url;
+		if (isset($input->tag)) $item->tag = $input->tag;
 		if (isset($input->real_url)) $item->real_url = $input->real_url;
 		if (isset($input->icon)) $item->icon = $input->icon;
 		if (isset($input->last_error)) $item->last_error = $input->last_error;

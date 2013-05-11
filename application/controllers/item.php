@@ -16,24 +16,7 @@ class Item_Controller extends Base_Controller {
 	 */
 	public function get_index ($id = null) {
 		if (isset($id)) return Item::find($id);
-
-		$inp = Input::get();
-
-		$status = isset($inp['status']) ? $inp['status'] : 'archive';
-		if (isset($inp['tag'])) {
-			$type = 'tag';
-			$id = $inp['tag'];
-		}
-		elseif (isset($inp['src'])) {
-			$type = 'src';
-			$id = $inp['src'];
-		}
-		else {
-			$type = 'all';
-			$id = '';
-		}
-
-		return Item::get($status, $type, $id);
+		return Item::get(Input::get());
 	}
 
 	/**
@@ -44,7 +27,12 @@ class Item_Controller extends Base_Controller {
 	/**
 	 * Update item
 	 */
-	public function put_index ($id = null) { return Item::update($id, Input::json()); }
+	public function put_index ($id = null) {
+		if (isset($id)) return Item::update($id, Input::json());
+
+		$items = Item::get(Input::get(), false);
+		return Item::update_all($items, Input::json());
+	}
 
 	/**
 	 * Delete item

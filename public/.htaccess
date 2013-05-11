@@ -13,6 +13,10 @@
 	RewriteEngine On
 </IfModule>
 
+<Limit GET POST PUT DELETE>
+	Allow from all
+</Limit>
+
 # For all files not found in the file system, reroute the request to the
 # "index.php" front controller, keeping the query string intact
 

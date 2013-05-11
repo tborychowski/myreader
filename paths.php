@@ -22,9 +22,8 @@
 */
 
 $environments = array(
-
-	'local' => array('http://localhost*', '*.dev'),
-
+	'prod' => array('http://herhor.info*', 'http://95.211.178.6*'),
+	//'local' => array('http://localhost*', '*.dev'),
 );
 
 // --------------------------------------------------------------

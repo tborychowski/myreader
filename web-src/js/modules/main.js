@@ -7,6 +7,7 @@
 		_items = [],
 		_btnRefresh = null,		// loading swirl
 		_maxBodyHeight = 200,
+		_params = {},
 
 
 
@@ -54,6 +55,12 @@
 
 		App.Put('items/' + item.id, { is_unread: item.is_unread }, function () {
 			App.Publish('nav/refresh');
+		});
+	},
+
+	_markAllAsRead = function (cfg) {
+		App.Put('items?' + $.param(cfg), { is_unread: false }, function () {
+			App.Publish('nav/refresh', [ { status: cfg.status, src: null, tag: null } ]);
 		});
 	},
 
@@ -123,7 +130,8 @@
 			entry = entry || _container.find('.entry').first();
 		}
 		dist = entry[0].offsetTop;
-		_body.animate({ scrollTop: dist }, animSpeed, callback || function () {});
+		_body.animate({ scrollTop: dist }, animSpeed);
+		setTimeout(callback || function () {}, animSpeed);
 	},
 
 	_getById = function (id) {
@@ -140,10 +148,11 @@
 
 		return '<div id="entry' + item.id + '" class="' + cls.join(' ') + '" data-id="' + item.id + '">' +
 		'<div class="entry-header">' +
-			'<h3><a href="' + item.link + '" target="_blank">' + item.title + '</a></h3>' +
+			'<h3><a href="' + item.url + '" target="_blank">' + item.title + '</a></h3>' +
 			'<span class="entry-time">' + item.datetime + '</span>' +
 			'<span class="entry-source">from ' +
-				'<a href="#" class="entry-source entry-source-' + item.source.id + '">' + item.source.name + '</a>' +
+				'<a href="#' + _params.status + '/src/' + item.source.id + '" class="entry-source entry-source-' +
+					item.source.id + '">' + item.source.name + '</a>' +
 			'</span>' +
 		'</div>' +
 		'<div class="entry-body">' + item.content + '</div>' +
@@ -184,6 +193,7 @@
 
 	_load = function (cfg) {
 		if (!_isReady || !cfg) return;
+		_params = cfg;
 		_btnRefresh.addClass('icon-spin');
 		App.Get('items?' + $.param(cfg), _populate);
 	},
@@ -196,14 +206,15 @@
 		if (!_container.length) return;
 		_body = $('html,body');
 		_btnRefresh = $('#toolbar .icon-repeat');
-		_container.on('click', '.entry', _entryClickHandler);
-		_container.on('click', '.tb-btn', _btnClickHandler);
 
-
+		_container
+			.on('click', '.entry', _entryClickHandler)
+			.on('click', '.tb-btn', _btnClickHandler);
 
 		_isReady = true;
 	};
 
+	App.Subscribe('entry/allread', _markAllAsRead);
 	App.Subscribe('entry/toggleStar', _toggleStar);
 	App.Subscribe('entry/toggleUnread', _toggleUnread);
 

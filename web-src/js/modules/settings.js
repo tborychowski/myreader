@@ -55,14 +55,11 @@
 	_editSave = function (entry, item) {
 		var form = entry.find('form'), newItem = form.formParams(true);
 
-		// if (!newItem.name) return window.alert('Please enter Source Name');
-		// if (!newItem.url) return window.alert('Please enter Source URL');
-
-		item = $.extend({}, item, newItem);
+		$.extend(item, newItem);
 		if (item.id) App.Put('sources/' + item.id, newItem, function () { _editStop(entry, item); });
 		else {
 			App.Post('sources', newItem, function (resp) {
-				item = $.extend({}, item, resp);
+				$.extend(item, resp);
 				_items.push(item);
 				_editStop(entry, item);
 			});
@@ -75,7 +72,6 @@
 			if (resp.result !== 'success') return;
 			entry.remove();
 			_items = App.UTIL.removeFromArray(_items, item);
-			console.log(_items);
 		});
 	},
 	/*** HANDLERS ***************************************************************************************************************/
@@ -89,7 +85,7 @@
 		return '<div class="entry" data-id="' + (src.id || '') + '">' +
 			'<div class="entry-header">' +
 				'<h3>' +
-					(src.icon ? '<img src="' + src.icon + '">' : '') +
+					(src.icon ? '<img src="../storage/favicons/' + src.id + '.png"> ' : '') +
 					(src.name || '') +
 					(src.tag ? ' &lt;' + src.tag + '&gt;' : '') +
 				'</h3>' +

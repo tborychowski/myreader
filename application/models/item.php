@@ -45,17 +45,34 @@ class Item extends Eloquent {
 
 
 
-	public static function get ($status = 'archive', $type = 'all', $id = '') {
+	public static function get ($inp, $lim = 20) {
+		$status = isset($inp['status']) ? $inp['status'] : 'archive';
+		if (isset($inp['tag'])) {
+			$type = 'tag';
+			$id = $inp['tag'];
+		}
+		elseif (isset($inp['src'])) {
+			$type = 'src';
+			$id = $inp['src'];
+		}
+		else {
+			$type = 'all';
+			$id = '';
+		}
+
 		$items = Item::with('source');
 
-		if ($type === 'tag' && isset($id)) {
-			$tag = Source::where_tag($id)->first('id');
-			if ($tag) $id = $tag->id;
-		}
-		if ($type !== 'all' && !empty($id)) $items = $items->where_source_id($id);
+		if ($type === 'tag' && isset($id)) $ids = Source::where_tag($id)->lists('id');
+		if ($type === 'src' && isset($id)) $ids = [ $id ];
+
+		if ($type !== 'all' && !empty($ids)) $items = $items->where_in('source_id', $ids);
 
 		if ($status === 'unread') $items = $items->where_is_unread(1);
 		elseif ($status === 'starred') $items = $items->where_is_starred(1);
+
+		if ($lim === false) return $items;
+
+		$items = $items->take(20);
 
 		if (method_exists($items, 'all')) $items = $items->all();
 		else $items = $items->get();
@@ -92,6 +109,15 @@ class Item extends Eloquent {
 		$item->save();
 
 		return JSON::success('Item was updated');
+	}
+
+	public static function update_all ($items, $input) {
+		if (!$items) return JSON::error('Items not found');
+
+		if (isset($input->is_unread)) $items->update([ 'is_unread' => $input->is_unread ]);
+		if (isset($input->is_starred)) $items->update([ 'is_starred' => $input->is_starred ]);
+
+		return JSON::success('Items were updated');
 	}
 
 

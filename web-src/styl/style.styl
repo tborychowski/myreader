@@ -35,12 +35,16 @@ input::-moz-focus-inner
 #toolbar
 #sideToolbar
 	.btn
-		color #888; font 20; height 40; min-width 48px; margin-right 18px; pad 0 10; bg none; border none;
-		transition color .2s; text-shadow 0 1px 0 #fff;
+		color #888; font 13/1.5; height 40; min-width 48px; margin-right 18px; pad 0 10; bg none; border none;
+		transition color .2s; text-shadow 0 1px 0 #fff; b 1;
 		&:hover
 			color #555;
+		&:active
+			color #000;
+		i
+			font 20/1; b 0; vertical-align top;
 	.btn-group
-		radius 15; border #999; height 30; mar 4 0 0 10; shadow 0 1 0 #fff; bg #ddd; pad 0 5;
+		radius 15; border #999; height 30; mar 4 10 0 10; shadow 0 1 0 #fff; bg #ddd; pad 0 5;
 		.btn
 			height 30; mar 0 5 0 0; position relative; padding-top 3px;
 		.badge
@@ -53,6 +57,8 @@ input::-moz-focus-inner
 		color #666; text-shadow 0 -1px 0 #000;
 		&:hover
 			color #999;
+		&:active
+			color #555;
 	.pull-right
 		margin-right 0;
 
@@ -63,7 +69,7 @@ input::-moz-focus-inner
 	bg #333 'noise.png' 0 0 repeat; shadow -5 0 5 #000 .4 inset; overflow hidden; overflow-y auto;
 
 	.sidebar-wrapper
-		pos 50 0 toolbar-height 0; pad 0; margin-right -20px; overflow hidden; overflow-y auto;
+		pos 90 0 toolbar-height 0; pad 0; margin-right -20px; overflow hidden; overflow-y auto;
 
 	.nav-list
 		pad 0; list-style none; width 180;
@@ -79,7 +85,7 @@ input::-moz-focus-inner
 			color #eee;
 
 	.nav-row
-		text-shadow 0 -1px 0 rgba(#000, .4); color #A4A4A4; overflow hidden; pad 6 15; margin-bottom 3px; show 2;
+		text-shadow 0 -1px 0 rgba(#000, .4); color #A4A4A4; overflow hidden; pad 4 15; margin-bottom 3px; show 2;
 		border-top 1px solid transparent; border-bottom 1px solid transparent;
 		&:hover
 			color #eee;
@@ -213,6 +219,8 @@ input::-moz-focus-inner
 			width 400
 	.error
 		color red; mar 0;
+	.entry-header h3 img
+		mar 0 5 -1 0
 	.btn-save
 	.btn-cancel
 		show 0;
