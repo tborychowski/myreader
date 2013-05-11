@@ -2,6 +2,15 @@
 
 class RSS {
 
+	static $hlConf = [
+		'safe'           => 1,
+		'deny_attribute' => '* -alt -title -src -href',
+		'keep_bad'       => 0,
+		'comment'        => 1,
+		'cdata'          => 1,
+		'elements'       => 'div,p,ul,li,a,img,dl,dt,h1,h2,h3,h4,h5,h6,ol,br,table,tr,td,blockquote,pre,ins,del,th,thead,tbody,b,i,strong,em,tt'
+	];
+
 	public static function update () {
 		$feeds = Source::get();
 		$countItems = 0;
@@ -34,7 +43,8 @@ class RSS {
 					'item_id' => $feed->get_id(),
 					'datetime' => $feed->get_date('Y-m-d H:i:s'),
 					'title' => $feed->get_title(),
-					'content' => $feed->get_content(),
+					'content' => htmLawed::hl($feed->get_description(), static::$hlConf),	// get summary only
+					//'content' => htmLawed::hl($feed->get_content(), static::$hlConf),
 					'url' => $feed->get_link()
 				]);
 			}
