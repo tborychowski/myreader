@@ -84,7 +84,7 @@
 
 	/*** HTML *********************************************************************************************************/
 	_getSourceHtml = function (src) {
-		var icon = (src.icon ? '<img src="favicons/' + src.icon + '"">' : '<i class="icon-rss"></i>');
+		var icon = (src.icon ? '<img src="../storage/favicons/' + src.id + '.png"">' : '<i class="icon-rss"></i>');
 		return '<li class="nav-source nav-btn nav-' + src.id + '" data-nav-type="src" data-action="' + src.id + '">' +
 			'<a href="#" class="nav-row">' +
 				(src.unread ? '<span class="no-badge">' + src.unread + '</span>' : '') +

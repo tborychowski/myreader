@@ -17,7 +17,7 @@ class Create_Sources_Table {
 			$table->string('tag', 25);
 			$table->string('url')->unique();
 			$table->string('real_url');
-			$table->string('icon');
+			$table->integer('icon');
 			$table->string('last_error');
 			$table->timestamps();
 		});

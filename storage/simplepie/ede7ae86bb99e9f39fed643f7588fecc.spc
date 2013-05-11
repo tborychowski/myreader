@@ -1,6 +1,161 @@
-a:4:{s:5:"child";a:1:{s:0:"";a:1:{s:3:"rss";a:1:{i:0;a:6:{s:4:"data";s:1:" ";s:7:"attribs";a:1:{s:0:"";a:1:{s:7:"version";s:3:"2.0";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:1:{s:7:"channel";a:1:{i:0;a:6:{s:4:"data";s:18:"                  ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:4:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:8:"Nettuts+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:23:"http://net.tutsplus.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:34:"Web Development & Design Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:13:"lastBuildDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 07 May 2013 19:29:58 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"language";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"generator";a:1:{i:0;a:5:{s:4:"data";s:27:"http://wordpress.org/?v=3.5";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:5:"image";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:3:{s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:18:"http://nettuts.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:3:"url";a:1:{i:0;a:5:{s:4:"data";s:53:"http://envato.s3.amazonaws.com/rss_images/nettuts.jpg";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:7:"NETTUTS";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}s:4:"item";a:10:{i:0;a:6:{s:4:"data";s:9:"         ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:22:"Use ECMAScript 6 Today";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/U00r_iCrOQM/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:66:"http://net.tutsplus.com/articles/news/ecmascript-6-today/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 07 May 2013 19:25:20 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:1:{i:0;a:5:{s:4:"data";s:4:"News";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31582";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:45981:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31582&c=5307898' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31582&c=5307898' border='0' alt='' /></a><p>Today, ECMAScript 6 is in the process of being finalized. ECMAScript is the foundation of JavaScript and, hence, exploring the proposed features today also means that we get a sneak peak at how we will be writing JavaScript in the near future! In this article, we&#8217;ll explore ten new features, with a significant focus on tools, browsers and transpilers.</p><p><span
+a:4:{s:5:"child";a:1:{s:0:"";a:1:{s:3:"rss";a:1:{i:0;a:6:{s:4:"data";s:1:" ";s:7:"attribs";a:1:{s:0:"";a:1:{s:7:"version";s:3:"2.0";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:1:{s:7:"channel";a:1:{i:0;a:6:{s:4:"data";s:18:"                  ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:4:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:8:"Nettuts+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:23:"http://net.tutsplus.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:34:"Web Development & Design Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:13:"lastBuildDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 10 May 2013 15:13:16 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"language";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"generator";a:1:{i:0;a:5:{s:4:"data";s:27:"http://wordpress.org/?v=3.5";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:5:"image";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:1:{s:0:"";a:3:{s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:18:"http://nettuts.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:3:"url";a:1:{i:0;a:5:{s:4:"data";s:53:"http://envato.s3.amazonaws.com/rss_images/nettuts.jpg";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:7:"NETTUTS";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}s:4:"item";a:10:{i:0;a:6:{s:4:"data";s:9:"         ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:30:"Master Developers: Addy Osmani";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/7hx3IvwhzZ0/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:83:"http://net.tutsplus.com/articles/interviews/master-developers-addy-osmani/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 10 May 2013 15:09:13 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:1:{i:0;a:5:{s:4:"data";s:10:"Interviews";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31661";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:23782:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31661&c=982123961' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31661&c=982123961' border='0' alt='' /></a><p>A bright star in the JavaScript community, Addy Osmani has skyrocketed to prominence not only for his fabulous JavaScript articles and open source contributions but for also being one of the friendliest and approachable developers around.</p><p>His <a
+href="http://addyosmani.com/blog/">blog</a> is a treasture trove of front-end knowledge and well-worth the visit. In this post, we&#39;ll chat with Addy about how he got his feet wet in JS and bring up some tough topics relating to his work in developer relations at Google.</p><p><span
+id="more-31661"></span></p><hr
+/><div
+class="question"><h4><span>Q</span> You took to JavaScript like a fish to water. How&#39;d you get so entrenched in the JS world?</h4></div><blockquote
+class="pullquote"><p> JavaScript was going to play a large role in making this possible.</p></blockquote><p>I wrote some of my first JavaScript back when Netscape Navigator was the dominant browser. Dynamic front-end development was only slowly starting to becoming more popular at the time, but the idea of being able to write something with just HTML/CSS/JS and have it work everywhere was powerful. I got hooked on to that idea and have been ever since. Some of my first creations were little things you would laugh at today &#8211; calculators, password generators, nothing too amazing.</p><p>As a language enthusiast, I liked that JavaScript was prototype-based and weakly typed, so I decided to continued learning it alongside other languages like C++. Back in the early 2000&#39;s, I tried bridging the languages by writing a little interpreter on top of SpiderMonkey (Mozilla&#39;s JavaScript engine), which let me write logic for my desktop apps in JS and define UI components using C++.  It was a silly idea, but I learned a lot about JavaScript engine internals in the process.</p><p>I spent a lot of time building small hobby sites, but when I was in my last year at high-school, I decided to really get stuck into the world of browser internals. I wrote a lightweight rendering engine, basic HTML 4.01/CSS 2.1 parsers and wrapped all of these parts into my own little browser. The project was a nightmare to get working reliably, in part due to how lax web developers were with standards-compliance in their pages &#8211; it&#39;s funny being on the other side of the fence now! The larger challenges were spec-compliance, rendering large tables and maintaining performance, whilst loading up video plugins (anyone remember good ol&#39; ActiveX?).</p><p>I continued learning and using JavaScript as a freelance web developer while in college, slowly writing more complex sites and playing around with Dojo. It wasn&#39;t, however, until I got an invitation to GMail in 2006 that it occurred to me that the browser was going to be the next platform for building rich applications. JavaScript was going to play a large role in making this possible and I decided to walk away from desktop app development permanently.</p><p>Since then, I&#39;ve been trying to continue learning and where I can, push the front-end community forward through my writing and contributions to open-source. JavaScript is virtually everywhere today, and it&#39;s one of the reasons why I love the language. If I want to teach one of my kids how to author JavaScript, I can just pop-open my browser DevTools and show them. No additional compilation steps needed &#8211; there&#39;s something really special about that.</p><hr
+/><div
+class="question"><h4><span>Q</span> You produce a LOT of content; I&#39;m sure people are wondering how you do it. Can you share your secrets for not only generating this content, but actually understanding what you&#39;re writing about?</h4></div><blockquote
+class="pullquote"><p> If you leap into any non-trivial topic with that mindset, it&#39;s necessary to break it down into simple, more easily digestible steps</p></blockquote><p>The secret is that I consider myself to be somewhat stupid. Really. If you leap into any non-trivial topic with that mindset, it&#39;s necessary to break it down into simple, more easily digestible steps in order for it to make any semblance of sense.</p><p>It&#39;s this perspective that I think makes my writing feel accessible &#8211; I try to make sense of those concepts or tools that can initially feel quite daunting to the average developer. It&#39;s important to be able to apply this to articles and especially documentation. So, keep it simple. This helps make articles more focused. How do I generate so much content whilst understanding the material?. Well, I make understanding a prerequisite.</p><blockquote
+class="pullquote"><p> First do it, then do it right, then do it better.</p></blockquote><p>Einstein has this great quote: &quot;If you can&#39;t explain it simply, you don&#39;t understand it well enough&quot; and it&#39;s true. You cannot teach about or claim a framework, tool or best practice, unless you&#39;ve actually taken the time to use it yourself. Finding this time is easier in my current role, but back in my days as a 9-5 engineer, I would spend time over breakfast and lunch actively using what I would later write about on the weekend.</p><p>Finding time to get everything done is always a challenge. For the past few years, I have this mantra that I try to apply to every task &#8211; &#8220;<me>First do it, then do it right, then do it better</em>&#8221; &#8211; it&#39;s all about setting realistic goals for yourself and iterating fast as soon as you have something that just works. It won&#39;t be the most eloquently written article, nor the most beautiful code, but it&#39;s a simple baseline you can build on.</p><p>You can then share this first iteration with your peers and get a feel for whether you&#39;re going in the right direction or the idea is worth pursuing. To me, that makes a great deal more sense than spending weeks on a draft or prototype before asking for input.</p><hr
+/><div
+class="question"><h4><span>Q</span> You were at AOL before. What are the differences in the culture there versus Google, and how has it impacted your views on software development?</h4></div><blockquote
+class="pullquote"><p> There&#39;s something special about being a part of a company with such high standards.</p></blockquote><p>Both AOL and Google are companies with terrific engineering teams, and any of my reflections of culture aren&#39;t about any specific groups, more a general observation.</p><p>The engineering culture at Google is such that we care a lot about polish and shipping things when we feel they&#39;re just right. There&#39;s something special about being a part of a company with such high standards.</p><p>At AOL, I was proud of any of the products or applications we completed, but due to the fast-paced nature of business and competition, delaying launches or releases for polish wasn&#39;t always feasible. I think that&#39;s a reality for many businesses, despite any desire they may have to change that culture.</p><p>When it is possible to delay releases to, as Google say, get it &quot;right&quot; I think it can make a world of difference to your users first impressions of your product.</p><hr
+/><div
+class="question"><h4><span>Q</span> What are you thoughts on the state of the JavaScript community and the direction the TC39 group is taking with respect to ES6?</h4></div><blockquote
+class="pullquote"><p> I&#39;m pleased with the direction <a
+href="http://www.ecma-international.org/memento/TC39.htm">TC39</a> have been taking over the past few years.</p></blockquote><p>I&#39;m pleased with the direction <a
+href="http://www.ecma-international.org/memento/TC39.htm">TC39</a> have been taking over the past few years, which in part has been helped with the involvement of Rick Waldron and Yehuda Katz from the jQuery project. They&#39;ve paid close attention to the patterns and libraries developers have been heavily relying on, and investigating how these could be better solved using platform primitives. I won&#39;t comment on ES6 specifically, but I&#39;m looking forward to seeing modules, classes, &#39;let&#39; and <code>Object.observe()</code> available more widely.</p><p>On the JavaScript community: we&#39;re in a good place but the one thing I wish we would collectively do is spend less time creating new frameworks and more time investing in efforts to improve existing solutions. I think it&#39;s fantastic that developers are spending time learning how to solve problems on their own &#8211; it&#39;s one of the best ways to learn new things &#8211; but if it&#39;s an experiment, make that clear so that other developers don&#39;t expect you to maintain the project. That type of thing only adds to the noise, so please keep support in mind when releasing things!.</p><hr
+/><div
+class="question"><h4><span>Q</span> A lot of people view Google&#39;s forking of WebKit as a play to allow them to embed Dart into Chrome. Do you see Dart being Google&#39;s ideal over JavaScript?</h4></div><blockquote
+class="pullquote"><p> One of the big myths out there is that it exists to replace JavaScript.</p></blockquote><p>I was actually super curious to learn more about the goals Dart had when I first joined Google. One of the big myths out there is that it exists to replace JavaScript, but it turns out that this isn&#39;t quite true. <a
+href="http://code.google.com/p/dart/">Dart</a> is targeted at those developers more familiar with Java, C++, C#, who are trying to build high-performance web apps; and so on that, have certain expectations around their tooling and language. I think that&#39;s a legitimate reason for something like Dart to exist.</p><p>As a company, both JavaScript and Dart are technologies that we believe in and invest in. We participate in TC39, working on the future of JavaScript and also continue work on V8, the fast JavaScript engine. The Chrome engineers continue to work to push the web forward with new specs like Web Components. Meanwhile, the team that originally built V8 is now building the Dart VM.</p><p>Back to your original question &#8211; I believe forking WebKit was a lot more to do with the divergence of the multi-process architecture between both projects than trying to embed Dart into Chrome. Dart&#39;s a separate open-source project with it&#39;s own goals and you can still get Dartium today (the build of Chromium using the Dart VM).</p><hr
+/><div
+class="question"><h4><span>Q</span> Now that Blink is in the works, how do you think this help the web, and what do you feel are some new challenges that web developers will face with yet another rendering engine to think about?</h4></div><p>When I first heard the news about Blink, I was concerned that we&#39;d now have another browser to support.</p><blockquote><p>The reality, however, is that there have already been so many differences between the various WebKit ports that this isn&#39;t going to negatively impact how you develop and test.</p></blockquote><p>In fact, <a
+href="http://www.chromium.org/blink">Blink</a> allows us to give developers more of the tools, features and compatibility they need to get the most out of the web as a platform. Long-term it&#39;s going to let us prioritise features that will ease building the next generation of web apps and in the same way that V8 gave us a way to speed up JavaScript, I think Blink is going to let us innovate in ways that will benefit the whole platform.</p><hr
+/><div
+class="question"><h4><span>Q</span> Google is in an interesting position, where they&#39;re heavily vested in both native apps (Android) and web experiences. As you do developer relations at Google, how do you balance the business directives and priorities for both ecosystems?</h4></div><p>We get caught up in the debate about native vs. web quite often these days, but don&#39;t talk as much about the need to put our users first. They&#39;re the focus. There are many cases where you can deliver a compelling experience for the web on desktop and mobile and it&#39;ll work fantastic. That said, there are others, where either the platform or mobile browsers still need work. As a business, you often need to make a call on what makes the most sense for your users. I think that, at present, it makes a great deal of sense to offer developers the best platforms possible for making a call on native vs web, and that&#39;s what we do, via Android and Chrome for Mobile.</p><hr
+/><div
+class="question"><h4><span>Q</span> Stripping away specific web technologies, what should developers be thinking about at a higher level when it comes to the future of the web?</h4></div><blockquote
+class="pullquote"><p> Reusable components.</p></blockquote><p>Reusable components. Traditionally, a lot of us have developed applications quite vertically, spreading a single concept (whether it be logic or UI) across a few different parts of the project. Not only does this make it harder to maintain the idea but it also makes it difficult to extract and reuse the idea in future applications without a great deal of effort. It also decreases our chances of being able to share the component with others.</p><p>Without referring to specific technologies, we&#39;re working on making it easier to define and package up components on the web platform side, and now is a great time to start thinking about how your own apps might be written, if they were broken down into specific components.</p><hr
+/><div
+class="question"><h4><span>Q</span> Staying on this track, what are the key technologies, end-to-end, that you feel are making the most impact to pushing the web forward? Why?</h4></div><p>The front-end is seeing a revolution in tooling at the moment with an increasing number of developers starting to use Grunt and explore workflow tools around it like <a
+href="http://yeoman.io/">Yeoman</a>. Developers are paying more attention to what they can automate and I think that this will help facilitate more time spending building better apps and less time on those manual processes in between.</p> <figure
+class="tutorial_image"> <a
+href="http://angularjs.org/"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/angular.jpg" alt="angular" width="564" height="320" class="alignnone size-full wp-image-31672" /></a><br
+/> </figure><p>Going back to the components idea, I think that between web components and front-end package management we have a huge opportunity to really shift the way we develop for the web. <a
+href="http://angularjs.org/">AngularJS</a> (and Angular directives) have done a great job of re-introducing the idea of reusable blocks of functionality and things are really looking up on the package management side of things, through Bower.</p><p>Writing an app with lists you want to make sortable? Great. A few keystrokes at the command-line and you&#39;ve got that. Want to make the items in that list persist when you&#39;re offline? No problem. A few more keystrokes and you&#39;re using a package another developer once had to write to get that capability. Want to turn your list into a reusable component anyone else can use? That&#39;s easy. That&#39;s the future we&#39;re working towards.</p><hr
+/><div
+class="question"><h4><span>Q</span> Yeoman is your new baby. Why did you feel the need to spin up such an ambitious effort when existing projects seemed to be filling the need?</h4></div> <figure
+class="tutorial_image"> <a
+href="http://yeoman.io"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/yeoman.jpg" alt="yeoman" width="459" height="344" class="alignnone size-full wp-image-31669" /></a><br
+/> </figure><p>We&#39;re fortunate to have a wealth of helpful tools at our disposal on the front-end these days â€“ tools that save us time and make our lives just a little bit easier. Abstractions like <a
+href="http://sass-lang.com/">Sass</a> and <a
+href="http://coffeescript.org/">CoffeeScript</a>, frameworks like <a
+href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>, module loaders like <a
+href="http://requirejs.org/">RequireJS</a>, a never-ending list of MVC and unit testing librariesâ€¦some would say we&#39;re spoiled for choice and it&#39;s interesting seeing how long it can take you to get a project started up.</p><blockquote
+class="pullquote"><p> Are you still manually refreshing your browser whenever you make a change to your app?</p></blockquote><p>As much as these tools work exceptionally well on their own, it can be a tedious process getting them to work together, especially if you have to put together a workflow and build process where they all compile and get optimized succinctly. Even if you do manage to get a solid build process in place, you&#39;re often left having to spend a great deal of time writing out the boilerplate code for your application.</p><p>Even then, you have to ask yourself how well this fits in with your day to day workflow. There are several little steps we repetitively do while developing which can more easily be handed off to tooling. Are you still manually refreshing your browser whenever you make a change to your app to preview how they look? Still trying to figure out whether you&#39;re using the latest versions of all your dependencies? Wondering if there was just something that let you get on with coding and forget about a lot of the grunt work?</p><p>We were too, which is why we started looking at whether we could give developers a solution to many of these common problems. We tried solving them in a free, open-source project we recently released called Yeoman. Yeoman&#39;s official tagline is that we&#39;re a â€œrobust and opinionated client-side stack, comprised of tools and frameworks that can help developers quickly build compelling web applicationsâ€.</p><p>Practically, we&#39;re a series of tools and tasks that help you achieve automate some of the more tedious tasks in front-end development. We&#39;re composed of yo (the scaffolding tool), <a
+href="http://gruntjs.com/">grunt</a> (the build tool) and <a
+href="http://bower.io/">bower</a> (for package management).</p> <figure
+class="tutorial_image"> <a
+href="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/bower.jpg"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/bower.jpg" alt="bower" width="600" height="267" class="alignnone size-full wp-image-31675" /></a><br
+/> </figure><p>If you find that you&#39;re still writing boilerplate code for your application, manually managing the dependencies for your apps or putting together your own build system to work with the tools you love, you might find Yeoman a nice way to save yourself some headache.</p><hr
+/><div
+class="question"><h4><span>Q</span> When you launched Yeoman, Windows wasn&#39;t initially supported. What were the challenges you faced with supporting it, and how can the Windows developer community help in these circumstances?</h4></div><blockquote
+class="pullquote"><p> The Windows developer community could really help us here.</p></blockquote><p>Creating a command-line tool that works well cross-platform can be a delicate dance. One of the initial challenges with Windows support was that a lot of our team were used to using a *nix system and having access to <a
+href="http://mxcl.github.io/homebrew/">homebrew</a>/apt-get. We weren&#39;t however as well versed in using PowerShell or <a
+href="http://chocolatey.org/">Chocolatey</a> (the PowerShell-based Windows equivalent to apt-get) and needed time to understand how well these solutions compared to the tools we had available elsewhere.</p><p>It then took time to find (or get) all of the packages we required up on Chocolately as we needed git, phantoms, opting and many others. The situation there has greatly improved since our first release and Windows is now officially supported with Yeoman using the instructions on our homepage.</p><p>The Windows developer community could really help us here by advocating for more widespread adoption of tools like Chocolately and helping us reach parity with tools like apt-get. Other than that they&#39;ve been fantastic and we&#39;ve really appreciated the help and support the Windows developer community have offered us throughout our road to compatibility.</p><p>I&#39;ve got to give a call out to Sindre Sorhus, Mickael Daniels and Paul Irish, all of whom really helped improve our Windows efforts in the early days.</p><hr
+/><div
+class="question"><h4><span>Q</span> Along those lines, I have a question based on totally selfish-motivation, since I use Windows. How can *nix and Windows developers collaborate more effectively so that everyone can contribute?</h4></div><p>At the moment, there are a lot of (fantastic) development tools being written which are not just *nix, but Mac specific because making them cross-platform has it&#39;s own development costs and overhead. I would love to see more open-discussion and development of tools that can work everywhere, but this can&#39;t be done without the help of users.</p><blockquote><p> If there&#39;s a tool you want for Windows that you just see on Mac, please be vocal about it &#8211; even better, submit a pull request!</p></blockquote><p>Try to find out what it would take to bring it to Windows (and elsewhere) and who knows? Maybe the combined efforts of multiple communities would be enough to make something happen.</p><hr
+/><div
+class="question"><h4><span>Q</span> You&#39;ve written excellent posts, published books and contributed to top OSS projects, like jQuery and Yeoman. Of all your professional accomplishments, is there one thing that really stands out as a proud moment?</h4></div><p>Releasing my first book, <em><a
+href="http://shop.oreilly.com/product/0636920025832.do">Learning JavaScript Design Patterns</a></em> (with O&#39;Reilly) was probably the accomplishment that&#39;s given me the greatest satisfaction. It was my largest writing project, and I made the decision for it to be completely open-source from the start &#8211; a call I&#39;ll never regret. Making educational material available to anyone, anywhere whether they can afford it has the potential for a great deal of both good.</p><p>It also has the potential to increase your book&#39;s impact, so if you&#39;re an author &#8211; please consider doing it. You won&#39;t regret it!</p><hr
+/> Thanks so much to Addy for sitting down with it. If you have any of your own questions for him, I&#8217;m sure he won&#8217;t mind answering below in the comments!</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/nettuts?a=7hx3IvwhzZ0:cYYgk90ZAFw:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=7hx3IvwhzZ0:cYYgk90ZAFw:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=7hx3IvwhzZ0:cYYgk90ZAFw:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=7hx3IvwhzZ0:cYYgk90ZAFw:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=7hx3IvwhzZ0:cYYgk90ZAFw:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=7hx3IvwhzZ0:cYYgk90ZAFw:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=7hx3IvwhzZ0:cYYgk90ZAFw:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=7hx3IvwhzZ0:cYYgk90ZAFw:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/7hx3IvwhzZ0" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:9:"Rey Bango";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:79:"http://net.tutsplus.com/articles/interviews/master-developers-addy-osmani/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"11";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:74:"http://net.tutsplus.com/articles/interviews/master-developers-addy-osmani/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:1;a:6:{s:4:"data";s:9:"         ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:79:"Introduction to WordPress Plugin Development: Early Bird Tickets Now Available!";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/1n0-FeJ02PQ/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:125:"http://net.tutsplus.com/articles/news/introduction-to-wordpress-plugin-development-early-bird-tickets-now-available/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 10 May 2013 15:00:17 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:1:{i:0;a:5:{s:4:"data";s:4:"News";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31654";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:4036:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31654&c=253389186' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31654&c=253389186' border='0' alt='' /></a><p><strong>We are excited to announce a fantastic new workshop led by Instructor Tom McFarlin: <a
+href="http://enva.to/12gkpjnt">Introduction to WordPress Plugin Development</a></strong></p><p>Are you an aspiring WordPress developer? Are you ready to take the next step and start building your own custom plugins for WordPress? Our newest Tuts+ Live Workshop is the perfect way to get started!</p><p><strong>Early Bird tickets are half-price at only $49</strong>, but places are strictly limited so act fast to make sure you don’t miss out!<br
+/> <span
+id="more-31654"></span></p><hr
+/><h2>Introduction to WordPress Plugin Development</h2><p>Our newest Tuts+ Live Workshop, Introduction to WordPress Plugin Development, teaches you everything that you need to know to start developing WordPress plugins; from setting up a local development environment, all the way through to building a WordPress plugin that&#8217;s ready for release into the WordPress Plugin Repository.</p><p>It&#8217;s led by Instructor Tom McFarlin, a self-employed WordPress developer who divides his time between running his own WordPress development shop, building plugins for WordPress, blogging every day about software development in the context of WordPress, and working for 8BIT (the team responsible for Standard Theme and WP Daily).</p><p>Each weekly workshop will last one hour, running over a five week period. You&#8217;ll have the opportunity to follow along with Tom, ask questions live during the workshop, and complete a weekly homework assignment. Not able to make it to the live recording? No problem! All of the workshop recordings will be made available online the day after the live workshop.</p><p><a
+href="http://enva.to/12gkpjnt">Learn more about Introduction to WordPress Plugin Development</a></p><p><iframe
+width="640" height="360" src="http://www.youtube.com/embed/QErsaJMdmCc?rel=0" frameborder="0" allowfullscreen></iframe></p><hr
+/><h2>Grab an Early Bird Ticket Now!</h2><p>We’re offering a <strong>special Early Bird price of $49</strong>, but these tickets are limited. Once the Early Bird tickets have disappeared, the workshop will be $99.</p><p>If you’re interested in future workshops then definitely <a
+href="http://eepurl.com/qnEP5">join the Tuts+ Live Workshops mailing list</a> to stay posted on upcoming workshops and get notified as soon as they’re available, the Early Bird tickets for our previous workshops have all sold out, so it’s worth getting ahead of the game!</p><p>We’re really excited about new workshop, <a
+href="http://enva.to/12gkpjnt">Introduction to WordPress Plugin Development</a>, but places are strictly limited so act fast to make sure you don’t miss out!</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/nettuts?a=1n0-FeJ02PQ:VrdQPjAK1E0:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=1n0-FeJ02PQ:VrdQPjAK1E0:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=1n0-FeJ02PQ:VrdQPjAK1E0:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=1n0-FeJ02PQ:VrdQPjAK1E0:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=1n0-FeJ02PQ:VrdQPjAK1E0:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=1n0-FeJ02PQ:VrdQPjAK1E0:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=1n0-FeJ02PQ:VrdQPjAK1E0:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=1n0-FeJ02PQ:VrdQPjAK1E0:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/1n0-FeJ02PQ" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:13:"Joel Bankhead";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:121:"http://net.tutsplus.com/articles/news/introduction-to-wordpress-plugin-development-early-bird-tickets-now-available/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"0";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:116:"http://net.tutsplus.com/articles/news/introduction-to-wordpress-plugin-development-early-bird-tickets-now-available/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:2;a:6:{s:4:"data";s:9:"         ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:37:"10 Tips for Learning a New Technology";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/r2a0hxpckRs/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:88:"http://net.tutsplus.com/articles/general/10-tips-for-learning-a-new-technology/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 09 May 2013 02:07:00 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:1:{i:0;a:5:{s:4:"data";s:7:"General";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31631";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:16115:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31631&c=1653995933' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31631&c=1653995933' border='0' alt='' /></a><p>We live in a very exciting time. Never before has education been so cheaply available to the masses (if not free). The medium, itself, has made tectonic shifts from a classroom setting, to blogs, screencasts and complete university classes, as a set of videos and interactive forums. Given these resources, there&#8217;s absolutely no excuse not to dive in and learn. However, with such a wealth of resources, filtering through the options can often become overwhelming. In this article, I will outline a simple process to kick-start your education.</p><p><span
+id="more-31631"></span></p><blockquote><p>Although my suggestions will primarily pertain to software development, these principles are certainly applicable to other fields.</p></blockquote><hr
+/><h2><span>1.</span> Overcoming Inertia</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/inertia.jpg' alt='Inertia' title='' border='0'></div><p>Learning something new always begins by first overcoming the inertia to make the first move. This is the same inertia you feel when you want to change the TV channel, but the remote isn&#39;t nearby! Thankfully, there are some simple techniques to get excited and motivated. One that has worked really well for me is the concept of <a
+href="http://tinyhabits.com/">Tiny Habits</a>. Rather than becoming overwhelmed by the task at hand, take a tiny step and do something to get started. Using the <em>&quot;get the TV remote&quot;</em> example, start by wiggling your toes, then bend forward, then push yourself away from the couch. Next, try to fall off onto the floor, and finally get up. By following a series of tiny steps, you will overcome your inertia and the task won&#39;t seem as overwhelming. This same idea can be applied to learning new skills. It&#8217;s all about tiny steps.</p><hr
+/><h2><span>2 -</span> Watch the Pros</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/pro.jpg' alt='Pro' title='' border='0'></div><p>The first step, when picking up a new skill, is to determine <em>what</em> to learn. This could be anything you feel passionate about, and have a genuine interest in exploring further. It&#8217;s important to have this strong inclination, as it will provide you with the necessary fuel, during those low times. Once you decide what to learn, be it a new programming language, an application framework, or a tool, research inspiring work done by their respective communities. You may find it on <a
+href="http://www.youtube.com/channels/recommended_for_you">YouTube</a>, <a
+href="https://vimeo.com/channels/staffpicks">Vimeo</a>, <a
+href="https://news.ycombinator.com/newest">HackerNews</a>, blogs or even from one of your <a
+href="https://twitter.com/i/discover">Twitter</a> friends. Reviewing what others have done will give you confidence that you, too, can do it!</p><hr
+/><h2><span>3 -</span> Let the Information Flow Begin</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/info-flow.jpg' alt='Information Flow' title='' border='0'></div><p>Once you cross the stage of convincing yourself about the thing you want to learn, it&#8217;s time that become a sponge, and start absorbing knowledge. Begin with some Google searching on &quot;beginner tutorials&quot; related to your topic. As you know, Nettuts+ offers hundreds upon hundreds of tutorials. Check here as well. <a
+href="http://www.stackoverflow.com">StackOverflow</a> is one place where you will surely find links to a plethora of resources. Alternatively, <a
+href="http://www.quora.com/Learning-to-Program/What-are-the-best-sites-for-learning-programming">Quora</a> is an excellent place to search for answers. Once you sift through these links, you may wish to take a more concentrated dose by looking for the best books on the topic. Personally I refer to <a
+href="http://www.amazon.com/books-used-books-textbooks/b/ref=sa_menu_bo?ie=UTF8&amp;node=283155">Amazon</a> for hunting down highly rated books.</p><hr
+/><h2><span>4 -</span> Listen and Watch</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/watch.jpg' alt='Watch' title='' border='0'></div><p>As you delve deeper into the pool of knowledge, you will want to add other forms of information &#8211; namely, podcasts and screencasts. I encourage you to browse through <a
+href="http://www.apple.com/education/itunes-u/">iTunesU</a>, which offers complete classes on a variety of topics from some of the best institutions in the world. This is particularly helpful for those who prefer an academic setting.</p><p>These days, there are a handful of websites that offers online education. Look no further than our very own <a
+href="http://tutsplus.com">Tuts+ Premium</a>. Hoping to learn PHP or JavaScript? There&#8217;s <a
+href="https://tutsplus.com/courses/?q=true&#038;filter_topic=35">no better resource on the web</a>. Alternatively, you might consider:</p><ul><li><a
+href="https://www.udemy.com/">Udemy</a></li><li><a
+href="http://www.codecademy.com">CodeAcademy</a></li><li><a
+href="http://www.codeschool.com/">CodeSchool</a></li></ul><p>You can also watch conference presentations, such as <a
+href="http://www.youtube.com/playlist?list=PL56D792A831D0C362">Google IO</a> on YouTube, or <a
+href="http://www.confreaks.com/">Confreaks</a> for free!</p><hr
+/><h2><span>5 -</span> Time for Action</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/action.jpg' alt='Action' title='' border='0'></div><blockquote
+class="pullquote"><p> The best way to learn is by doing.</p></blockquote><p>Okay, you&#8217;ve read countless tutorials, watched videos, and have a better understanding of the technology that you&#8217;ve been hoping to learn. What now? Well, it&#8217;s time to put your knowledge to the test. Ultimately, the best way to learn is by doing.</p><p>Pick a personal project that you can build using this new technology. Design some simple features and implement them. You will most definitely hit some stumbling blocks. When this happens, research the solution on StackOverflow or Google. You are now on a journey to become an expert in that technology. The more failures and road blocks you encounter, the wiser you will be. There is a saying that &quot;the experts are ones who have made the most mistakes.&quot; It means they&#8217;ve tried crazy things and pushed the limits of a technology. As a result, they&#8217;ve acquired an intimate understanding of how it works. With such insight, they are able to bend the tech to their will and wield Jedi powers (<em>for good, of course</em>).</p><p>These powers are also within your reach.</p><hr
+/><h2><span>6 -</span> Blogging</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/blog.jpg' alt='Blogging' title='' border='0'></div><p>As you embark on your journey, it&#8217;s helpful to chronicle the steps (or missteps) you took along the way. Blogs are easily the most popular form of expression in the tech community. It&#8217;s part of our DNA. When you put a pen to your learnings, you&#8217;re forcing yourself to become more cohesive in your thoughts, bringing some structure into the dispersed pieces of knowledge that you have accumulated. Who knows, in the process, you just might be educating someone else on the Internet. Pay it forward when you can.</p><p>If you&#8217;d like to take things a step further (as writers do every day here on Nettuts+), can take this a step further and create screencasts, which is preferred by most visual learners. Overall, blogging helps you build your communication skills, which is as important as the technology you are learning.</p><hr
+/><h2><span>7 -</span> Feel the Pulse</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/pulse.jpg' alt='Pulse' title='' border='0'></div><blockquote
+class="pullquote"><p> Technology matures when people do crazy and sometimes unthinkable things.</p></blockquote><p>Social Networks have become a universal way of staying in touch and discovering new things. Twitter and Facebook are the primary suspects for information, but there are more focused websites, like the previously mentioned Quora, that have a wide-ranging set of topics, which people may vote and comment on. It&#8217;s a great place to find answers and opinions from well-known individuals with real-life experiences. In fact, a quick search on Quora for <a
+href="http://www.quora.com/Learning-New-Things">other perspectives on learning</a>, reveals an interesting set of results.</p><p>Scanning the ever-growing set of questions on StackOverflow can also be a fun way to review the way in which others are pushing the limits of a particular technology. In fact, technology matures when people do crazy and sometimes unthinkable things with it.</p><p>If you want to feel the pulse of a technology, and determine whether it&#8217;s worth learning, try a search on StackOverflow to see the breadth and depth of the community. The <a
+href="http://stackoverflow.com/questions?sort=votes">Most Voted</a>, <a
+href="http://stackoverflow.com/questions?sort=featured">Featured</a> questions are excellent candidates for this sort of exploration. You can also carry out a similar exploration on <a
+href="https://github.com/explore">GitHub</a>.</p><hr
+/><h2><span>8 -</span> Meetups and Conferences</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/meetup.jpg' alt='Meetup' title='' border='0'></div><p>Although social networks are great, nothing can substitute real human connection. It is quite likely that you have a <a
+href="http://www.meetup.com/">Meetup</a> group in a place near you, where you&#8217;ll find several like-minded folks. You will learn about interesting projects that others are working on, while also getting some of your tricky problems solved!. On a related note, conferences, too, are a great place to share experiences and enrich your already growing skill-set.</p><hr
+/><h2><span>9 -</span> GitHub</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/octocat.jpg' alt='Octocat' title='' border='0'></div><p><a
+href="https://github.com/explore">GitHub</a> is the iconic landmark for the world of open-source projects. It&#8217;s a treasure trove of knowledge and creativity, expressed in the form of code. Once you feel comfortable with a particular technology, your next step should be to explore GitHub to find interesting projects. Read the source code. Read as much as you can. In doing so, you can learn a variety of things, such as:</p><ul><li>How to organize large projects</li><li>Interesting libraries that projects are using</li><li>Code patterns and overall design</li><li>Documentation style</li><li>Testing patterns</li><li>Solutions to odd issues, pointed out in the Issues section of the project</li></ul><p>All of this knowledge is just waiting to be devoured. Interestingly, and to your benefit, it only comes with a simple price tag: <em>curiosity</em>.</p><hr
+/><h2><span>10 -</span> Concentrated Learning</h2><div
+class='tutorial_image'><img
+src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/dose.jpg' alt='Dose' title='' border='0'></div><p>If you worry that the process outlined above is too slow, you might also try a fast-track approach. You may have heard about the &quot;Learn <em>X</em> in 24 hours&quot;, but that is not what I am referring to. A more pragmatic time-line is probably a few weeks. If that seems reasonable, you can try something like <a
+href="http://pragprog.com/book/btlang/seven-languages-in-seven-weeks">Seven Languages in Seven Weeks</a> or <a
+href="http://pragprog.com/book/btlang/seven-databases-in-seven-weeks">Seven Databases in Seven Weeks</a>. Although these books refer to languages and databases, you could do the same with other technologies.</p><p>A slightly different style would be to <a
+href="http://learncodethehardway.org/">learn things the &quot;hard way&quot;</a>. The idea here is to accept upfront that nobody can master a skill unless it is practiced daily. So to gain expertise, you practice by working through countless exercises. In a similar vein, you also have <a
+href="http://codekata.pragprog.com/">Katas</a> and <a
+href="https://www.google.com/search?q=koans">Koans</a>, that encourage solving problems in the language of your choice. These will introduce you to concepts and techniques that may initially be alien to you. That&#8217;s the point! If you really want to displace yourself from your comfort zone, give them a shot!</p><hr
+/><h2>Learn an Orthogonal Skill</h2><blockquote
+class="pullquote"><p> Your right-brain processes information in a very different fashion.</p></blockquote><p>Programming is primarily a left-brain activity. It leverages the analytical part of the brain that looks for a step-by-step approach to solving problems. To appreciate the power of the right-brain, take up a creative activity, such as painting, 3D-modeling, origami, playing an instrument, or even building photo books out of your family albums. In fact, programming requires a great deal of creativity. You might have already experienced this, if you&#8217;ve ever found solutions to obtuse problems in your sleep. This is because your right-brain processes information in a very different fashion, and can compile ideas from all over the place. Andy Hunt, from the pragmatic bookshelf, wrote a book on this topic: <a
+href="http://pragprog.com/book/ahptl/pragmatic-thinking-and-learning">Pragmatic Thinking and Learning: Refactor Your Wetware</a>. If you want to be firing on all synapses, pick up a skill orthogonal to what you already do.</p><hr
+/><h2>Summary</h2><p>Acquiring a new skill is always exciting. It&#8217;s the start of a new experience that will shape your thinking. But first, you must overcome your inertia. Once you do, your journey to absorb knowledge from every facet of the web begins. I hope that the process outlined above has given you some ideas for approaching this long road.</p><p>If you have a different approach to learning, I&#8217;d love to learn more about it. Feel free to leave a comment, while I leave you with these inspiring links:</p><ul><li><a
+href="http://pragprog.com/book/tpp/the-pragmatic-programmer">From Journeyman to Master</a></li><li><a
+href="http://pragprog.com/book/cfcar2/the-passionate-programmer">Passionate Programmer</a></li><li><a
+href="https://vimeo.com/36579366">Inventing on Principle</a></li><li><a
+href="https://vimeo.com/64895205">Stop Drawing Dead Fish</a></li><li><a
+href="http://www.lighttable.com/">LightTable</a></li></ul><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/nettuts?a=r2a0hxpckRs:50YOPm3SVxk:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=r2a0hxpckRs:50YOPm3SVxk:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=r2a0hxpckRs:50YOPm3SVxk:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=r2a0hxpckRs:50YOPm3SVxk:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=r2a0hxpckRs:50YOPm3SVxk:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=r2a0hxpckRs:50YOPm3SVxk:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=r2a0hxpckRs:50YOPm3SVxk:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=r2a0hxpckRs:50YOPm3SVxk:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/r2a0hxpckRs" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Pavan Podila";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:84:"http://net.tutsplus.com/articles/general/10-tips-for-learning-a-new-technology/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"35";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:79:"http://net.tutsplus.com/articles/general/10-tips-for-learning-a-new-technology/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:3;a:6:{s:4:"data";s:9:"         ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:22:"Use ECMAScript 6 Today";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/U00r_iCrOQM/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:66:"http://net.tutsplus.com/articles/news/ecmascript-6-today/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 07 May 2013 19:25:20 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:1:{i:0;a:5:{s:4:"data";s:4:"News";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31582";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:45987:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31582&c=1611249059' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31582&c=1611249059' border='0' alt='' /></a><p>Today, ECMAScript 6 is in the process of being finalized. ECMAScript is the foundation of JavaScript and, hence, exploring the proposed features today also means that we get a sneak peak at how we will be writing JavaScript in the near future! In this article, we&#8217;ll explore ten new features, with a significant focus on tools, browsers and transpilers.</p><p><span
 id="more-31582"></span></p><hr
 /><h2>A Brief History: ECMA, ECMAScript and JavaScript</h2><p><strong>JavaScript</strong> was originally developed by <a
 href="https://twitter.com/BrendanEich">Brendan Eich</a> of Netscape, and officially released as part of <a
@@ -557,18 +712,18 @@ href="http://www.slideshare.net/dmitrysoshnikov/falsyvalues-dmitry-soshnikov-ecm
 href="https://speakerdeck.com/dherman/es6-deep-dive">ES6 deep Dive</a> by Dave Herman</li></ul><hr
 /><h2>Play with ES6 Today</h2><p>There you have it: ten features of ES6 with tools that allow us to code with the new syntax today. I hope this has made you more excited about what's to come! Please note that, since the standardization work is in progress, the syntax, features and compliances might change. Nonetheless, it's definitely worth the effort to dig in sooner than later.</p><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=U00r_iCrOQM:hBd_MnmK6GM:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=U00r_iCrOQM:hBd_MnmK6GM:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=U00r_iCrOQM:hBd_MnmK6GM:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=U00r_iCrOQM:hBd_MnmK6GM:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/U00r_iCrOQM" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Sayanee Basu";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:62:"http://net.tutsplus.com/articles/news/ecmascript-6-today/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"0";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:57:"http://net.tutsplus.com/articles/news/ecmascript-6-today/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:1;a:6:{s:4:"data";s:9:"         ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:33:"Try Tuts+ Premium, Get Cash Back!";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/l2Y6NFVfFw8/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:78:"http://net.tutsplus.com/articles/news/try-tuts-premium-get-cash-back/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 07 May 2013 17:00:54 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:1:{i:0;a:5:{s:4:"data";s:4:"News";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31615";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:3284:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31615&c=938288644' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31615&c=938288644' border='0' alt='' /></a><p><strong>Try Tuts+ Premium and get cash back on a monthly subscription.</strong></p><p>At $19 a month, Tuts+ Premium is fantastic value. But it&#8217;s even better when we hand your first $19 right back to you! For a limited time, we&#8217;re offering $19 cash back to new Tuts+ Premium monthly subscribers when signing up via PayPal.</p><p>If you’ve been thinking about checking out our extensive library of courses, tutorials, eBooks and guides, there’s never been a better time to join up and dive in.</p><p>But this offer ends at noon on the 20th of May AEST, so act fast.</p><p><a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/U00r_iCrOQM" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Sayanee Basu";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:62:"http://net.tutsplus.com/articles/news/ecmascript-6-today/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"12";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:57:"http://net.tutsplus.com/articles/news/ecmascript-6-today/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:4;a:6:{s:4:"data";s:9:"         ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:33:"Try Tuts+ Premium, Get Cash Back!";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/l2Y6NFVfFw8/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:78:"http://net.tutsplus.com/articles/news/try-tuts-premium-get-cash-back/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 07 May 2013 17:00:54 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:1:{i:0;a:5:{s:4:"data";s:4:"News";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31615";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:3214:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31615&c=880668353' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31615&c=880668353' border='0' alt='' /></a><p><strong>Try Tuts+ Premium and get cash back on a monthly subscription.</strong></p><p>At $19 a month, Tuts+ Premium is fantastic value. But it&#8217;s even better when we hand your first $19 right back to you! For a limited time, we&#8217;re offering $19 cash back to new Tuts+ Premium monthly subscribers when signing up via PayPal.</p><p>If you’ve been thinking about checking out our extensive library of courses, tutorials, eBooks and guides, there’s never been a better time to join up and dive in.</p><p>But this offer ends at noon on the 20th of May AEST, so act fast.</p><p><a
 href="https://tutsplus.com/paypal-cash-back-offer/?utm_source=nettuts&#038;utm_medium=post&#038;utm_campaign=paypal_cashback&#038;wt.mc_id=paypal">Become a Tuts+ Premium Member to take your creative and technical skills to a new level.</a><br
 /> <span
 id="more-31615"></span></p><hr
 /> What can you learn on Tuts+ Premium? Glad you asked! Currently, more than 15,000 members are sharpening their skills in a wide range of areas including web design, web development, Photoshop, vectors, video effects, and many more.</p><p>With Tuts+ Premium you learn from expert instructors in every field, such as:</p><ul><li>Bryan Jones (Creator of CodeKit)</li><li>Jeffrey Way (Nettuts+ Editor)</li><li>Dan Wellman (Author)</li><li>Jeremy McPeak (Author)</ul><p>Join now and get instant access to your very own library of courses, tutorials, and eBooks, available whenever you need them. Become part of a community of over 15,000 members and start getting better at the skills you care about. Our dedicated team adds new content weekly, so there&#8217;s always something fresh to sink your teeth into.</p><blockquote><p><a
-href="https://tutsplus.com/paypal-cash-back-offer/?utm_source=nettuts&#038;utm_medium=post&#038;utm_campaign=paypal_cashback&#038;wt.mc_id=paypal">Become a Tuts+ Premium Member to take your creative and technical skills to a new level.</a></p></blockquote><div class="feedflare">
+href="https://tutsplus.com/paypal-cash-back-offer/?utm_source=nettuts&#038;utm_medium=post&#038;utm_campaign=paypal_cashback&#038;wt.mc_id=paypal">Join Tuts+ Premium</a></p></blockquote><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=l2Y6NFVfFw8:rfmXlEMto_w:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=l2Y6NFVfFw8:rfmXlEMto_w:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=l2Y6NFVfFw8:rfmXlEMto_w:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=l2Y6NFVfFw8:rfmXlEMto_w:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/l2Y6NFVfFw8" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:13:"Joel Bankhead";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:74:"http://net.tutsplus.com/articles/news/try-tuts-premium-get-cash-back/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"0";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:69:"http://net.tutsplus.com/articles/news/try-tuts-premium-get-cash-back/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:2;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:37:"Python Power Tools: virtualenvwrapper";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/_UPwiylkSos/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:97:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 03 May 2013 16:00:38 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:6:"Python";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:6:"Videos";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31569";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:2283:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31569&c=1746613936' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31569&c=1746613936' border='0' alt='' /></a><p>In this series of videos, I&#8217;ll introduce you to several tools that you can add to your arsenal to become a better, more productive, programmer. In this episode, we&#8217;ll review a powerful companion app, <a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/l2Y6NFVfFw8" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:13:"Joel Bankhead";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:74:"http://net.tutsplus.com/articles/news/try-tuts-premium-get-cash-back/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"0";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:69:"http://net.tutsplus.com/articles/news/try-tuts-premium-get-cash-back/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:5;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:37:"Python Power Tools: virtualenvwrapper";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/_UPwiylkSos/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:97:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 03 May 2013 16:00:38 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:6:"Python";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:6:"Videos";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31569";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:2281:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31569&c=680253100' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31569&c=680253100' border='0' alt='' /></a><p>In this series of videos, I&#8217;ll introduce you to several tools that you can add to your arsenal to become a better, more productive, programmer. In this episode, we&#8217;ll review a powerful companion app, <a
 href="http://virtualenvwrapper.readthedocs.org/en/latest/">virtualenvwrapper</a>, that wraps virtualenv in a user friendly set of shell functions.<br
 /> <span
 id="more-31569"></span></p> <figure
@@ -577,9 +732,9 @@ width="600" height="338" src="http://www.youtube.com/embed/UcbUXq0wd-8?list=UUd-
 href="http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenvwrapper.mp4"><strong>Download Video</strong></a></figcaption> </figure><blockquote><p> Hoping to dig into Django? Let me teach you in my Tuts+ Premium course: <a
 href="https://tutsplus.com/course/django-unchained/">Django Unchained</a>!</p></blockquote><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=_UPwiylkSos:PBnZHLtH28Y:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=_UPwiylkSos:PBnZHLtH28Y:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=_UPwiylkSos:PBnZHLtH28Y:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=_UPwiylkSos:PBnZHLtH28Y:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/_UPwiylkSos" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"enclosure";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"url";s:102:"http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenvwrapper.mp4";s:6:"length";s:9:"239996851";s:4:"type";s:9:"video/mp4";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"Christopher Roach";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:93:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"2";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:88:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:3;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:30:"Python Power Tools: virtualenv";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/c_4JQDITxTQ/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:90:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 02 May 2013 16:42:19 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:6:"Python";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:6:"Videos";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31560";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:2286:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31560&c=1467784167' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31560&c=1467784167' border='0' alt='' /></a><p>In this series of videos, I&#8217;ll introduce you to several tools that you can add to your arsenal to become a better, more productive, programmer. We&#8217;ll begin with <a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/_UPwiylkSos" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"enclosure";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"url";s:102:"http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenvwrapper.mp4";s:6:"length";s:9:"239996851";s:4:"type";s:9:"video/mp4";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"Christopher Roach";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:93:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"3";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:88:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenvwrapper/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:6;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:8:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:30:"Python Power Tools: virtualenv";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/c_4JQDITxTQ/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:90:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 02 May 2013 16:42:19 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:6:"Python";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:6:"Videos";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31560";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:2286:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31560&c=1696214996' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31560&c=1696214996' border='0' alt='' /></a><p>In this series of videos, I&#8217;ll introduce you to several tools that you can add to your arsenal to become a better, more productive, programmer. We&#8217;ll begin with <a
 href="https://pypi.python.org/pypi/virtualenv">virtualenv</a>, which allows you to create isolated development environments for installing and upgrading software, without needing to worry about overrides or dependency issues.<br
 /> <span
 id="more-31560"></span></p> <figure
@@ -588,9 +743,9 @@ width="600" height="338" src="http://www.youtube.com/embed/IX-v6yvGYFg" framebor
 href="http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenv.mp4"><strong>Download Video</strong></a></figcaption> </figure><blockquote><p> Hoping to dig into Django? Let me teach you in my Tuts+ Premium course: <a
 href="https://tutsplus.com/course/django-unchained/">Django Unchained</a>!</p></blockquote><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=c_4JQDITxTQ:TPCyLbMQYvE:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=c_4JQDITxTQ:TPCyLbMQYvE:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=c_4JQDITxTQ:TPCyLbMQYvE:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=c_4JQDITxTQ:TPCyLbMQYvE:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/c_4JQDITxTQ" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"enclosure";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"url";s:95:"http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenv.mp4";s:6:"length";s:9:"269879129";s:4:"type";s:9:"video/mp4";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"Christopher Roach";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:86:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"8";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:4;a:6:{s:4:"data";s:10:"          ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Getting Into Ember: Part 4";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/q1Zzl1QOgbk/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:85:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 30 Apr 2013 19:15:34 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:5:"ember";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31517";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:19092:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31517&c=1771884847' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31517&c=1771884847' border='0' alt='' /></a><p>In my <a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/c_4JQDITxTQ" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:9:"enclosure";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"url";s:95:"http://tutsplus-media.s3.amazonaws.com/net.tutsplus.com/video/Python-Power-Tools-virtualenv.mp4";s:6:"length";s:9:"269879129";s:4:"type";s:9:"video/mp4";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:17:"Christopher Roach";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:86:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"8";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/python-tutorials/python-power-tools-virtualenv/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:7;a:6:{s:4:"data";s:10:"          ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Getting Into Ember: Part 4";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/q1Zzl1QOgbk/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:85:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 30 Apr 2013 19:15:34 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:5:"ember";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31517";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:19092:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31517&c=2091424013' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31517&c=2091424013' border='0' alt='' /></a><p>In my <a
 href="http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-js-part-3/">previous tutorial</a>, I touched on how to use <code>Ember.Object</code> to define your models and work with datasets. In this section, we&#8217;ll look more closely at how Ember uses the <a
 href="http://handlebarsjs.com/">Handlebars templating framework</a> to define your app&#39;s user interface.</p><p><span
 id="more-31517"></span></p><hr
@@ -697,9 +852,9 @@ href="http://emberjs.com/api/classes/Function.html#method_property">property()</
 href="http://emberjs.com/guides/templates/handlebars-basics/">Ember</a> and Handlebars site to get a good feel for their overall power. Even if you don&#39;t use Ember, Handlebars is a great framework for you to use day-to-day, and worth the investment in learning how to use it.</p><p> Gabriel Manricks wrote a <a
 href="http://net.tutsplus.com/tutorials/javascript-ajax/introduction-to-handlebars/?search_index=1">great tutorial on Handlebars</a> here on Nettuts+ that you can use to get up to speed on the framework.</p><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=q1Zzl1QOgbk:iaI8gUj1DAw:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=q1Zzl1QOgbk:iaI8gUj1DAw:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=q1Zzl1QOgbk:iaI8gUj1DAw:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=q1Zzl1QOgbk:iaI8gUj1DAw:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/q1Zzl1QOgbk" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:9:"Rey Bango";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"5";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:76:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:5;a:6:{s:4:"data";s:10:"          ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:59:"HTTP: The Protocol Every Web Developer Must Know – Part 2";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/zIfp72fhgko/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:113:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Mon, 29 Apr 2013 15:53:26 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:12:"Tools & Tips";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:4:"http";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31155";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:21987:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31155&c=1848248182' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31155&c=1848248182' border='0' alt='' /></a><p>In my <a
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/q1Zzl1QOgbk" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:9:"Rey Bango";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"6";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:76:"http://net.tutsplus.com/tutorials/javascript-ajax/getting-into-ember-part-4/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:8;a:6:{s:4:"data";s:10:"          ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:59:"HTTP: The Protocol Every Web Developer Must Know – Part 2";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/zIfp72fhgko/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:113:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Mon, 29 Apr 2013 15:53:26 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:2:{i:0;a:5:{s:4:"data";s:12:"Tools & Tips";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:4:"http";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31155";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:21985:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31155&c=520493599' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31155&c=520493599' border='0' alt='' /></a><p>In my <a
 href="http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-1/">previous article</a>, we covered some of HTTP&#8217;s basics, such as the URL scheme, status codes and request/response headers. With that as our foundation, we will look at the finer aspects of HTTP, like connection handling, authentication and HTTP caching. These topics are fairly extensive, but we&#8217;ll cover the most important bits.</p><p><span
 id="more-31155"></span></p><hr
 /><h2>HTTP Connections</h2><p>A connection must be established between the client and server before they can communicate with each other, and HTTP uses the reliable TCP transport protocol to make this connection. By default, web traffic uses TCP port 80. A TCP stream is broken into IP packets, and it ensures that those packets always arrive in the correct order without fail. HTTP is an application layer protocol over TCP, which is over IP.</p><p>HTTPS is a secure version of HTTP, inserting an additional layer between HTTP and TCP called TLS or SSL (Transport Layer Security or Secure Sockets Layer, respectively). HTTPS communicates over port 443 by default, and we will look at HTTPS later in this article.</p><div
@@ -727,9 +882,9 @@ href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html">Caching section</a
 href="http://www.w3.org/Protocols/rfc2616/rfc2616.html">RFC 2616, HTTP specification</a></li><li><a
 href="http://www.amazon.com/HTTP-Definitive-Guide-David-Gourley/dp/1565925092">HTTP Definitive Guide</a></li></ul><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=zIfp72fhgko:jMufuOZXLAo:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=zIfp72fhgko:jMufuOZXLAo:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=zIfp72fhgko:jMufuOZXLAo:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=zIfp72fhgko:jMufuOZXLAo:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/zIfp72fhgko" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Pavan Podila";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:109:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"8";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:104:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:6;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Test-Driving Shell Scripts";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/8e2tSC6ql7w/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:85:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 26 Apr 2013 17:52:45 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:12:"Tools & Tips";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:4:"bash";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:3:"tdd";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31487";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:24279:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31487&c=1915195260' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31487&c=1915195260' border='0' alt='' /></a><p>Writing shell scripts is very much like programming. Some scripts require little time investment; whereas, other complex scripts may require thought, planning and a larger commitment. From this perspective, it makes sense to take a test-driven approach and unit test our shell scripts.</p><p><span
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/zIfp72fhgko" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Pavan Podila";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:109:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:1:"9";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:104:"http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-2/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:9;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Test-Driving Shell Scripts";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/8e2tSC6ql7w/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:85:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Fri, 26 Apr 2013 17:52:45 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:12:"Tools & Tips";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:4:"bash";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:3:"tdd";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31487";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:24277:"<a
+href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31487&c=486151746' target='_blank'><img
+src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31487&c=486151746' border='0' alt='' /></a><p>Writing shell scripts is very much like programming. Some scripts require little time investment; whereas, other complex scripts may require thought, planning and a larger commitment. From this perspective, it makes sense to take a test-driven approach and unit test our shell scripts.</p><p><span
 id="more-31487"></span></p><p>To get the most out of this tutorial, you need to be familiar with the command line interface (CLI); you may want to check out the <a
 href="http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/?search_index=3">The Command Line is Your Best Friend</a> tutorial if you need a refresher. You also need a basic understanding of Bash-like shell scripting. Finally, you may want to familiarize yourself with the test-driven development (TDD) concepts and unit testing in general; be sure to check out these <a
 href="http://net.tutsplus.com/sessions/test-driven-php/">Test-Driven PHP</a> tutorials to get the basic idea.</p><hr
@@ -1158,1038 +1313,4 @@ done
 </pre><p>We read the first line to retrieve the names of the two players, and then we incrementally read the file to compute the score.</p><hr
 /><h2>Final Thoughts</h2><p>Shell scripts can easily grow from a few lines of code to a few hundred of lines. When this happens, maintenance becomes increasingly difficult. Using TDD and unit testing can greatly help to make your complex script easier to maintain&mdash;not to mention that it forces you to build your complex scripts in a more professional manner.</p><div class="feedflare">
 <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=8e2tSC6ql7w:FU7kmOJl9R0:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=8e2tSC6ql7w:FU7kmOJl9R0:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=8e2tSC6ql7w:FU7kmOJl9R0:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=8e2tSC6ql7w:FU7kmOJl9R0:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/8e2tSC6ql7w" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Patkos Csaba";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"18";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:76:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:7;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:24:"Promise-Based Validation";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/g_CrQeWOv6w/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:84:"http://net.tutsplus.com/tutorials/javascript-ajax/promise-based-validation/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Thu, 25 Apr 2013 21:46:03 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:9:"Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:8:"promises";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31473";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:18404:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31473&c=1599341206' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31473&c=1599341206' border='0' alt='' /></a><p>The concept of &#8220;Promises&#8221; has changed the way we write asynchronous JavaScript. Over the past year, many frameworks have incorporated some form of the Promise pattern to make asynchronous code easier to write, read and maintain. For example, jQuery added <a
-href="http://api.jquery.com/category/deferred-object/">$.Deferred()</a>, and NodeJS has the <a
-href="http://documentup.com/kriskowal/q/">Q</a> and <a
-href="https://github.com/dfilatov/jspromise">jspromise</a> modules that work on both client and server. Client-side MVC frameworks, such as <a
-href="http://emberjs.com">EmberJS</a> and <a
-href="http://angularjs.org/">AngularJS</a>, also implement their own versions of Promises.</p><p><span
-id="more-31473"></span></p><p>But it doesn&#8217;t have to stop there: we can rethink older solutions and apply Promises to them. In this article, we&#8217;ll do just that: validate a form using the Promise pattern to expose a super simple API.</p><hr
-/><h2>What is a Promise?</h2><blockquote
-class="pullquote"><p> Promises notify the result of an operation.</p></blockquote><p>Simply put, Promises notify the result of an operation. The result can be a success or a failure, and the operation, itself, can be anything that abides by a simple contract. I chose to use the word <em>contract</em> because you can design this contract in several different ways. Thankfully, the development community reached a consensus and created a specification called <a
-href="http://promises-aplus.github.io/promises-spec/">Promises/A+</a>.</p><p>Only the operation truly knows when it has completed; as such, it is responsibile for notifying its result using the Promises/A+ contract. In other words, it <em>promises</em> to tell you the final result on completion.</p><p>The operation returns a <code>promise</code> object, and you can attach your callbacks to it by using the <code>done()</code> or <code>fail()</code> methods. The operation can notify its outcome by calling <code>promise.resolve()</code> or <code>promise.reject()</code>, respectively. This is depicted in the following figure:</p> <figure
-class='tutorial_image'><img
-src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/04/promise-validation-promise.png' alt='Figure for Promises' title='' border='0'></figure><hr
-/><h2>Using Promises for Form Validation</h2><p>Let me paint a plausible scenario.</p><blockquote
-class="pullquote"><p>We can rethink older solutions and apply Promises to them.</p></blockquote><p>Client-side form validation always begins with the simplest of intentions. You may have a sign-up form with <em>Name</em> and <em>Email</em> fields, and you need to ensure that the user provides valid input for both fields. That seems fairly straightforward, and you start implementing your solution.</p><p>You are then told that email addresses must be unique, and you decide to validate the email address on the server. So, the user clicks the submit button, the server checks the email&#8217;s uniqueness and the page refreshes to display any errors. That seems like the right approach, right? Nope. Your client wants a slick user experience; visitors should see any error messages without refreshing the page.</p><p>Your form has the <em>Name</em> field that doesn&#8217;t require any server-side support, but then you have the <em>Email</em> field that requires you to make a request to the server. Server requests means <code>$.ajax()</code> calls, so you will have to perform email validation in your callback function. If your form has multiple fields that require server-side support, your code will be a nested mess of <code>$.ajax()</code> calls in callbacks. Callbacks inside callbacks: &#8220;Welcome to callback hell! We hope you have a miserable stay!&#8221;.</p><p>So, how do we handle callback hell?</p><h3>The Solution I Promised</h3><p>Take a step back and think about this problem. We have a set of operations that can either succeed or fail. Either of these results can be captured as a <code>Promise</code>, and the operations can be anything from simple client-side checks to complex server-side validations. Promises also give you the added benefit of consistency, as well as letting you avoid conditionally checking on the type of validation. Lets see how we can do this.</p><blockquote><p>As I noted earlier, there are several promise implementations in the wild, but I will focus on jQuery&#8217;s <a
-href="http://api.jquery.com/deferred">$.Deferred()</a> Promise implementation.</p></blockquote><p>We will build a simple validation framework where every check immediately returns either a result or a Promise. As a user of this framework, you only have to remember one thing: <em>&#8220;it always returns a Promise&#8221;</em>. Lets get started.</p><h3>Validator Framework using Promises</h3><p>I think it&#8217;s easier to appreciate the simplicity of Promises from the consumer&#8217;s point of view. Lets say I have a form with three fields: Name, Email and Address:</p><pre class="brush: xml; title: ; notranslate">
-&lt;form&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;large-4 columns&quot;&gt;
-      &lt;label&gt;Name&lt;/label&gt;
-      &lt;input type=&quot;text&quot; class=&quot;name&quot;/&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;large-4 columns&quot;&gt;
-      &lt;label&gt;Email&lt;/label&gt;
-      &lt;input type=&quot;text&quot; class=&quot;email&quot;/&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;large-4 columns&quot;&gt;
-      &lt;label&gt;Address&lt;/label&gt;
-      &lt;input type=&quot;text&quot; class=&quot;address&quot;/&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/form&gt;
-</pre><p>I will first configure the validation criteria with the following object. This also serves as our framework&#8217;s API:</p><pre class="brush: jscript; title: ; notranslate">
-var validationConfig = {
-  '.name': {
-    checks: 'required',
-    field: 'Name'
-  },
-  '.email': {
-    checks: ['required'],
-    field: 'Email'
-  },
-  '.address': {
-    checks: ['random', 'required'],
-    field: 'Address'
-  }
-};
-</pre><p>The keys of this config object are jQuery selectors; their values are objects with the following two properties:</p><ul><li><code>checks</code>: a string or array of validations.</li><li><code>field</code>: the human-readable field name, which will be used for reporting errors for that field</li></ul><p>We can call our validator, exposed as the global variable <code>V</code>, like this:</p><pre class="brush: jscript; title: ; notranslate">
-V.validate(validationConfig)
-  .done(function () {
-      // Success
-  })
-  .fail(function (errors) {
-      // Validations failed. errors has the details
-  });
-</pre><p>Note the use of the <code>done()</code> and <code>fail()</code> callbacks; these are the default callbacks for handing a Promise&#8217;s result. If we happen to add more form fields, you could simply augment the <code>validationConfig</code> object without disturbing the rest of the setup (the <a
-href="http://en.wikipedia.org/wiki/Open/closed_principle">Open-Closed Principle</a> in action). In fact, we can add other validations, like the uniqueness constraint for email addresses, by extending the validator framework (which we will see later).</p><p>So that&#8217;s the consumer-facing API for the validator framework. Now, let&#8217;s dive in and see how it works under the hood.</p><h3>Validator, Under the Hood</h3><p>The validator is exposed as an object with two properties:</p><ul><li><code>type</code>: contains the different kinds of validations, and it is also serves as the extension point for adding more.</li><li><code>validate</code>: the core method that performs the validations based upon the provided config object.</li></ul><p>The overall structure can be summarized as:</p><pre class="brush: jscript; title: ; notranslate">
-var V = (function ($) {
-
-var validator = {
-
-  /*
-  * Extension point - just add to this hash
-  * 
-  * V.type['my-validator'] = {
-  *   ok: function(value){ return true; },
-  *   message: 'Failure message for my-validator'
-  *   }
-  */
-  type: {
-    'required': {
-      ok: function (value) {
-          // is valid ?
-      },
-      message: 'This field is required'
-    },
-
-    ...
-  },
-
-  /**
-   *
-   * @param config
-   * {
-   *   '&lt;jquery-selector&gt;': string | object | [ string ]
-   * }
-   */
-  validate: function (config) {
-
-    // 1. Normalize the configuration object  
-
-    // 2. Convert each validation to a promise  
-
-    // 3. Wrap into a master promise
-
-    // 4. Return the master promise
-  }
-};
-
-})(jQuery);
-</pre><p>The <code>validate</code> method provides the underpinnings of this framework. As seen in the comments above, there are four steps that happen here:</p><p><strong>1. Normalize the configuration object.</strong></p><p>This is where we go through our config object and convert it into an internal representation. This is mostly to capture all the information we need to carry out the validation and report errors if necessary:</p><pre class="brush: jscript; title: ; notranslate">
-function normalizeConfig(config) {
-  config = config || {};
-
-  var validations = [];
-
-  $.each(config, function (selector, obj) {
-
-    // make an array for simplified checking
-    var checks = $.isArray(obj.checks) ? obj.checks : [obj.checks];
-
-    $.each(checks, function (idx, check) {
-      validations.push({
-        control: $(selector),
-        check: getValidator(check),
-        checkName: check,
-        field: obj.field
-      });
-    });
-
-  });
-  return validations;
-}
-
-function getValidator(type) {
-  if ($.type(type) === 'string' &amp;&amp; validator.type[type]) return validator.type[type];
-
-  return validator.noCheck;
-}
-
-</pre><p>This code loops over the keys in the config object and creates an internal representation of the validation. We will use this representation in the <code>validate</code> method.</p><p>The <code>getValidator()</code> helper fetches the validator object from the <code>type</code> hash. If we don&#8217;t find one, we return the <code>noCheck</code> validator which always returns true.</li></p><p><strong>2. Convert each validation to a Promise.</strong></p><p>Here, we ensure every validation is a Promise by checking the return value of <code>validation.ok()</code>. If it contains the <code>then()</code> method, we know it&#8217;s a Promise (this is as per the Promises/A+ spec). If not, we create an ad-hoc Promise that resolves or rejects depending on the return value.</p><pre class="brush: jscript; title: ; notranslate">    
-validate: function (config) {
-  // 1. Normalize the configuration object
-  config = normalizeConfig(config);
-  var promises = [],
-    checks = [];
-
-  // 2. Convert each validation to a promise
-  $.each(config, function (idx, v) {
-    var value = v.control.val();
-    var retVal = v.check.ok(value);
-
-    // Make a promise, check is based on Promises/A+ spec
-    if (retVal.then) {
-      promises.push(retVal);
-    }
-    else {
-      var p = $.Deferred();
-
-      if (retVal) p.resolve();
-      else p.reject();
-
-      promises.push(p.promise());
-    }
-    checks.push(v);
-  });
-  // 3. Wrap into a master promise
-
-  // 4. Return the master promise
-}
-</pre><p><strong>3. Wrap into a master Promise.</strong></p><p>We created an array of Promises in the previous step. When they all succeed, we want to either resolve once or fail with detailed error information. We can do this by wrapping all of the Promises into a single Promise and propagate the result. If everything goes well, we just resolve on the master promise.</p><p>For errors, we can read from our internal validation representation and use it for reporting. Since there can be multiple validation failures, we loop over the <code>promises</code> array and read the <code>state()</code> result. We collect all of the rejected promises into the <code>failed</code> array and call <code>reject()</code> on the master promise:</p><pre class="brush: jscript; title: ; notranslate">
-// 3. Wrap into a master promise
-var masterPromise = $.Deferred();
-$.when.apply(null, promises)
-  .done(function () {
-    masterPromise.resolve();
-  })
-  .fail(function () {
-    var failed = [];
-    $.each(promises, function (idx, x) {
-      if (x.state() === 'rejected') {
-        var failedCheck = checks[idx];
-        var error = {
-          check: failedCheck.checkName,
-          error: failedCheck.check.message,
-          field: failedCheck.field,
-          control: failedCheck.control
-        };
-        failed.push(error);
-      }
-    });
-    masterPromise.reject(failed);
-  });
-
-// 4. Return the master promise
-return masterPromise.promise();
-</pre><p><strong>4. Return the master promise.</strong></p><p>Finally we return the master promise from the <code>validate()</code> method. This is the Promise on which the client code sets up the <code>done()</code> and <code>fail()</code> callbacks.</p><p>Steps two and three are the crux of this framework. By normalizing the validations into a Promise, we can handle them consistently. We have more control with a master Promise object, and we can attach additional contextual information that may be useful to the end user.</p><hr
-/><h2>Using the Validator</h2><p>See the demo file for a full use of the validator framework. We use the <code>done()</code> callback to report success and <code>fail()</code> to show a list of errors against each of the fields. The screenshots below show the success and failure states:</p> <figure
-class='tutorial_image'><img
-src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/04/promise-validation-demo-success.png' alt='Demo showing Success' title='' border='0'></figure> <figure
-class='tutorial_image'><img
-src='http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/04/promise-validation-demo-failure.png' alt='Demo showing failures' title='' border='0'></figure><p>The demo uses the same HTML and validation configuration mentioned earlier in this article. The only addition is the code that displays the alerts. Note the use of the <code>done()</code> and <code>fail()</code> callbacks to handle the validation results.</p><pre class="brush: jscript; title: ; notranslate">
-function showAlerts(errors) {
-  var alertContainer = $('.alert');
-  $('.error').remove();
-
-  if (!errors) {
-    alertContainer.html('&lt;small class=&quot;label success&quot;&gt;All Passed&lt;/small&gt;');
-  } else {
-    $.each(errors, function (idx, err) {
-      var msg = $('&lt;small&gt;&lt;/small&gt;')
-          .addClass('error')
-          .text(err.error);
-
-      err.control.parent().append(msg);
-    });
-  }
-}
-
-$('.validate').click(function () {
-
-  $('.indicator').show();
-  $('.alert').empty();
-
-  V.validate(validationConfig)
-      .done(function () {
-        $('.indicator').hide();
-        showAlerts();
-      })
-      .fail(function (errors) {
-        $('.indicator').hide();
-        showAlerts(errors);
-      });
-
-});
-</pre><h3>Extending the Validator</h3><p>I mentioned earlier that we can add more validation operations to the framework by extending the validator&#8217;s <code>type</code> hash. Consider the <code>random</code> validator as an example. This validator randomly succeeds or fails. I know its not a useful validator, but it&#8217;s worth noting some of its concepts:</p><ul><li>Use <code>setTimeout()</code> to make the validation async. You can also think of this as simulating network latency.</li><li>Return a Promise from the <code>ok()</code> method.</li></ul><pre class="brush: jscript; title: ; notranslate">  
-// Extend with a random validator
-V.type['random'] = {
-  ok: function (value) {
-    var deferred = $.Deferred();
-
-    setTimeout(function () {
-      var result = Math.random() &lt; 0.5;
-      if (result) deferred.resolve();
-      else deferred.reject();
-
-    }, 1000);
-
-    return deferred.promise();
-  },
-  message: 'Failed randomly. No hard feelings.'
-};
-</pre><p>In the demo, I used this validation on the <em>Address</em> field like so:</p><pre class="brush: jscript; title: ; notranslate">
-var validationConfig = {
-  /* cilpped for brevity */
-
-  '.address': {
-    checks: ['random', 'required'],
-    field: 'Address'
-  }
-};
-</pre><hr
-/><h2>Summary</h2><p>I hope that this article has given you a good idea of how you can apply Promises to old problems and build your own framework around them. The Promise-based approach is a fantastic solution to abstract operations that may or may not run synchronously. You can also chain callbacks and even compose higher-order Promises from a set of other Promises.</p><p>The Promise pattern is applicable in a variety of scenarios, and you&#8217;ll hopefully encounter some of them and see an immediate match!</p><hr
-/><h2>References</h2><ul><li><a
-href="http://promises-aplus.github.io/promises-spec/">Promises/A+ spec</a></li><li><a
-href="http://api.jquery.com/category/deferred-object/">jQuery.Deferred()</a></li><li><a
-href="http://documentup.com/kriskowal/q/">Q</a></li><li><a
-href="https://github.com/dfilatov/jspromise">jspromise</a></li></ul><div class="feedflare">
-<a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=g_CrQeWOv6w:gXDzrJ7UQEk:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=g_CrQeWOv6w:gXDzrJ7UQEk:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=g_CrQeWOv6w:gXDzrJ7UQEk:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=g_CrQeWOv6w:gXDzrJ7UQEk:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/g_CrQeWOv6w" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Pavan Podila";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:80:"http://net.tutsplus.com/tutorials/javascript-ajax/promise-based-validation/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"17";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:75:"http://net.tutsplus.com/tutorials/javascript-ajax/promise-based-validation/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:8;a:6:{s:4:"data";s:11:"           ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:27:"Testing Laravel Controllers";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/AtMxwaB4LZA/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:75:"http://net.tutsplus.com/tutorials/php/testing-laravel-controllers/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Tue, 23 Apr 2013 17:13:10 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:3:{i:0;a:5:{s:4:"data";s:3:"PHP";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:7:"laravel";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:3:"tdd";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31456";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:37562:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31456&c=577987485' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31456&c=577987485' border='0' alt='' /></a><p>Testing controllers isn&#8217;t the easiest thing in the world. Well, let me rephrase that: testing them is a cinch; what&#8217;s difficult, at least at first, is determining <em>what</em> to test.</p><p>Should a controller test verify text on the page? Should it touch the database? Should it ensure that variables exist in the view? If this is your first hay-ride, these things can be confusing! Let me help.</p><p><span
-id="more-31456"></span></p><blockquote><p>Controller tests should verify responses, ensure that the correct database access methods are triggered, and assert that the appropriate instance variables are sent to the view.</p></blockquote><p>The process of testing a controller can be divided into three pieces.</p><ul><li><strong>Isolate:</strong> Mock all dependencies (perhaps excluding the <code>View</code>).</li><li><strong>Call:</strong> Trigger the desired controller method.</li><li><strong>Ensure:</strong> Perform assertions, verifying that the stage has been set properly.</li></ul><hr
-/><h2>The Hello World of Controller Testing</h2><p>The best way to learn these things is through examples. Here&#8217;s the &quot;<em>hello world</em>&quot; of controller testing in Laravel.</p><pre class="brush: php; title: ; notranslate">
-&lt;?php
-
-# app/tests/controllers/PostsControllerTest.php
-
-class PostsControllerTest extends TestCase {
-
-  public function testIndex()
-  {
-      $this-&gt;client-&gt;request('GET', 'posts');
-  }
-
-}
-</pre><p>Laravel leverages a handful of Symfony&#8217;s components to ease the process of testing routes and views, including HttpKernel, DomCrawler, and BrowserKit. This is why it&#8217;s paramount that your PHPUnit tests inherit from, not <code>PHPUnit\_Framework\_TestCase</code>, but <code>TestCase</code>. Don&#8217;t worry, Laravel still extends the former, but it helps setup the Laravel app for testing, as well as provides a variety of helper assertion methods that you are encouraged to use. More on that shortly.</p><p>In the code snippet above, we make a <code>GET</code> request to <code>/posts</code>, or <code>localhost:8000/posts</code>. Assuming that this line is added to a fresh installation of Laravel, Symfony will throw a <code>NotFoundHttpException</code>. If working along, try it out by running <code>phpunit</code> from the command line.</p><pre class="brush: bash; title: ; notranslate">
-$ phpunit
-1) PostsControllerTest::testIndex
-Symfony\Component\HttpKernel\Exception\NotFoundHttpException:
-</pre><p>In <em>human-speak</em>, this essentially translates to, &quot;<em>Hey, I tried to call that route, but you don&#8217;t have anything registered, fool!</em>&quot;</p><p>As you can imagine, this type of request is common enough to the point that it makes sense to provide a helper method, such as <code>$this-&gt;call()</code>. In fact, Laravel does that very thing! This means that the previous example can be refactored, like so:</p><pre class="brush: php; title: ; notranslate">
-#app/tests/controllers/PostsControllerTest.php
-
-public function testIndex()
-{
-    $this-&gt;call('GET', 'posts');
-}
-</pre><h3>Overloading is Your Friend</h3><p>Though we&#8217;ll stick with the base functionality in this chapter, in my personal projects, I take things a step further by allowing for such methods as <code>$this-&gt;get()</code>, <code>$this-&gt;post()</code>, etc. Thanks to PHP overloading, this only requires the addition of a single method, which you could add to <code>app/tests/TestCase.php</code>.</p><pre class="brush: php; title: ; notranslate">
-# app/tests/TestCase.php
-
-public function __call($method, $args)
-{
-    if (in_array($method, ['get', 'post', 'put', 'patch', 'delete']))
-    {
-        return $this-&gt;call($method, $args[0]);
-    }
-
-    throw new BadMethodCallException;
-}
-</pre><p>Now, you&#8217;re free to write <code>$this-&gt;get('posts')</code> and achieve the exact same result as the previous two examples. As noted above, however, let&#8217;s stick with the framework&#8217;s base functionality for simplicity&#8217;s sake.</p><p>To make the test pass, we only need to prepare the proper route.</p><pre class="brush: php; title: ; notranslate">
-&lt;?php
-
-# app/routes.php
-
-Route::get('posts', function()
-{
-    return 'all posts';
-});
-</pre><p>Running <code>phpunit</code> again will return us to green.</p><hr
-/><h2>Laravel&#8217;s Helper Assertions</h2><p>A test that you&#8217;ll find yourself writing repeatedly is one that ensures that a controller passes a particular variable to a view. For example, the <code>index</code> method of <code>PostsController</code> should pass a <code>$posts</code> variable to its associated view, right? That way, the view can filter through all posts, and display them on the page. This is an important test to write!</p><p>If it&#8217;s that common a task, then, once again, wouldn&#8217;t it make sense for Laravel to provide a helper assertion to accomplish this very thing? Of course it would. And, of course, Laravel does!</p><p><code>Illuminate\Foundation\Testing\TestCase</code> includes a number of methods that will drastically reduce the amount of code needed to perform basic assertions. This list includes:</p><ul><li><code>assertViewHas</code></li><li><code>assertResponseOk</code></li><li><code>assertRedirectedTo</code></li><li><code>assertRedirectedToRoute</code></li><li><code>assertRedirectedToAction</code></li><li><code>assertSessionHas</code></li><li><code>assertSessionHasErrors</code></li></ul><p>The following examples calls <code>GET /posts</code> and verifies that its views receives the variable, <code>$posts</code>.</p><pre class="brush: php; title: ; notranslate">
-# app/tests/controllers/PostsControllerTest.php
-
-public function testIndex()
-{
-    $this-&gt;call('GET', 'posts');
-
-    $this-&gt;assertViewHas('posts');
-}
-</pre><blockquote><p><strong>Tip:</strong> When it comes to formatting, I prefer to provide a line break between a test&#8217;s assertion and the code that prepares the stage.</p></blockquote><p><code>assertViewHas</code> is simply a bit of sugar that inspects the response object &#8211; which is returned from <code>$this-&gt;call()</code> &#8211; and verifies that the data associated with the view contains a <code>posts</code> variable.</p><p>When inspecting the response object, you have two core choices.</p><ul><li><code>$response-&gt;getOriginalContent()</code>: Fetch the original content, or the returned <code>View</code>. Optionally, you may access the <code>original</code> property directly, rather than calling the <code>getOriginalContent</code> method.</li><li><code>$response-&gt;getContent()</code>: Fetch the rendered output. If a <code>View</code> instance is returned from the route, then <code>getContent()</code> will be equal to the HTML output. This can be helpful for DOM verifications, such as &quot;<em>the view must contain this string.</em>&quot;</li></ul><p>Let&#8217;s assume that the <code>posts</code> route consists of:</p><pre class="brush: php; title: ; notranslate">
-&lt;?php
-
-# app/routes.php
-
-Route::get('posts', function()
-{
-    return View::make('posts.index');
-});
-</pre><p>Should we run <code>phpunit</code>, it will squawk with a helpful <em>next step</em> message:</p><pre class="brush: bash; title: ; notranslate">
-1) PostsControllerTest::testIndex
-Failed asserting that an array has the key 'posts'.
-</pre><p>To make it green, we simply fetch the posts and pass it to the view.</p><pre class="brush: php; title: ; notranslate">
-
-# app/routes.php
-
-Route::get('posts', function()
-{
-    $posts = Post::all();
-
-    return View::make('posts.index', ['posts', $posts]);
-});
-</pre><p>One thing to keep in mind is that, as the code currently stands, it only ensures that the variable, <code>$posts</code>, is passed to the view. It doesn&#8217;t inspect its value. The <code>assertViewHas</code> optionally accepts a second argument to verify the value of the variable, as well as its existence.</p><pre class="brush: php; title: ; notranslate">
-
-# app/tests/controllers/PostsControllerTest.php
-
-public function testIndex()
-{
-    $this-&gt;call('GET', 'posts');
-
-    $this-&gt;assertViewHas('posts', 'foo');
-}
-</pre><p>With this modified code, unles the view has a variable, <code>$posts</code>, that is equal to <code>foo</code>, the test will fail. In this situation, though, it&#8217;s likely that we&#8217;d rather not specify a value, but instead declare that the value be an instance of Laravel&#8217;s <code>Illuminate\Database\Eloquent\Collection</code> class. How might we accomplish that? PHPUnit provides a helpful <code>assertInstanceOf</code> assertion to fill this very need!</p><pre class="brush: php; title: ; notranslate">
-
-# app/tests/controllers/PostsControllerTest.php
-
-public function testIndex()
-{
-    $response = $this-&gt;call('GET', 'posts');
-
-    $this-&gt;assertViewHas('posts');
-
-    // getData() returns all vars attached to the response.
-    $posts = $response-&gt;original-&gt;getData()['posts'];
-
-    $this-&gt;assertInstanceOf('Illuminate\Database\Eloquent\Collection', $posts);
-}
-</pre><p>With this modification, we&#8217;ve declared that the controller <strong>must</strong> pass <code>$posts</code> &#8211; an instance of <code>Illuminate\Database\Eloquent\Collection</code> &#8211; to the view. Excellent.</p><hr
-/><h2>Mocking the Database</h2><p>There&#8217;s one glaring problem with our tests so far. Did you catch it?</p><blockquote><p>For each test, a SQL query is being executed on the database. Though this is useful for certain kinds of testing (acceptance, integration), for basic controller testing, it will only serve to decrease performance.</p></blockquote><p>I&#8217;ve drilled this into your skull multiple times at this point. We&#8217;re not interested in testing Eloquent&#8217;s ability to fetch records from a database. It has its own tests. Taylor knows it works! Let&#8217;s not waste time and processing power repeating those same tests.</p><p>Instead, it&#8217;s best to mock the database, and merely verify that the appropriate methods are called with the correct arguments. Or, in other words, we want to ensure that <code>Post::all()</code> never fires and hits the database. We know that works, so it doesn&#8217;t require testing.</p><p>This section will depend heavily on the Mockery library. Please review that chapter <a
-href="http://leanpub.com/laravel-testing-decoded">from my book</a>, if you&#8217;re not yet familiar with it.</p><h3>Required Refactoring</h3><p>Unfortunately, so far, we&#8217;ve structured the code in a way that makes it virtually impossible to test.</p><pre class="brush: php; title: ; notranslate">
-# app/routes.php
-
-Route::get('posts', function()
-{
-    // Ouch. We can't test this!!
-    $posts = Post::all();
-
-    return View::make('posts.index')
-        -&gt;with('posts', $posts);
-});
-</pre><p>This is precisely why it&#8217;s considered bad practice to nest Eloquent calls into your controllers. Don&#8217;t confuse Laravel&#8217;s facades, which are testable and can be swapped out with mocks (<code>Queue::shouldReceive()</code>), with your Eloquent models. The solution is to inject the database layer into the controller through the constructor. This requires some refactoring.</p><blockquote><p><strong>Warning:</strong> Storing logic within route callbacks is useful for small projects and APIs, but they make testing incredibly difficult. For applications of any considerable size, use controllers.</p></blockquote><p>Let&#8217;s register a new resource by replacing   the <code>posts</code> route with:</p><pre class="brush: php; title: ; notranslate">
-# app/routes.php
-
-Route::resource('posts', 'PostsController');
-</pre><p>&#8230;and create the necessary resourceful controller with Artisan.</p><pre class="brush: bash; title: ; notranslate">
-$ php artisan controller:make PostsController
-Controller created successfully!
-</pre><p>Now, rather than referencing the <code>Post</code> model directly, we&#8217;ll inject it into the controller&#8217;s constructor. Here&#8217;s a condensed example that omits all restful methods except the one that we&#8217;re currently interested in testing.</p><pre class="brush: php; title: ; notranslate">
-&lt;?php
-
-# app/controllers/PostsController.php
-
-class PostsController extends BaseController {
-
-  protected $post;
-
-  public function __construct(Post $post)
-  {
-      $this-&gt;post = $post;
-  }
-
-  public function index()
-  {
-      $posts = $this-&gt;post-&gt;all();
-
-      return View::make('posts.index')
-          -&gt;with('posts', $posts);
-  }
-
-}
-</pre><blockquote><p>Please note that it&#8217;s a better idea to typehint an interface, rather than reference the Eloquent model, itself. But, one thing at a time! Let&#8217;s work up to that.</p></blockquote><p>This is a significantly better way to structure the code. Because the model is now injected, we have the ability to swap it out with a mocked version for testing. Here&#8217;s an example of doing just that:</p><pre class="brush: php; title: ; notranslate">
-&lt;?php
-
-# app/tests/controllers/PostsControllerTest.php
-
-class PostsControllerTest extends TestCase {
-
-  public function __construct()
-  {
-      // We have no interest in testing Eloquent
-      $this-&gt;mock = Mockery::mock('Eloquent', 'Post');
-  }
-
-  public function tearDown()
-  {
-      Mockery::close();
-  }
-
-  public function testIndex()
-  {
-      $this-&gt;mock
-           -&gt;shouldReceive('all')
-           -&gt;once()
-           -&gt;andReturn('foo');
-
-      $this-&gt;app-&gt;instance('Post', $this-&gt;mock);
-
-      $this-&gt;call('GET', 'posts');
-
-      $this-&gt;assertViewHas('posts');
-  }
-
-}
-</pre><p>The key benfit to this restructuring is that, now, the database will never needlessly be hit. Instead, using Mockery, we merely verify that the <code>all</code> method is triggered on the model.</p><pre class="brush: php; title: ; notranslate">
-$this-&gt;mock
-    -&gt;shouldReceive('all')
-    -&gt;once();
-</pre><p>Unfortunately, if you choose to forego coding to an interface, and instead inject the <code>Post</code> model into the controller, a bit of trickery has to be used in order to get around Eloquent&#8217;s use of statics, which can clash with Mockery. This is why we hijack both the <code>Post</code> and <code>Eloquent</code> classes within the test&#8217;s constructor, before the official versions have been loaded. This way, we have a clean slate to declare any expectations. The downside, of course, is that we can&#8217;t default to any existing methods, through the use of Mockery methods, like <code>makePartial()</code>.</p><h3>The IoC Container</h3><p>Laravel&#8217;s IoC container drastically eases the process of injecting dependencies into your classes. Each time a controller is requested, it is resolved out of the IoC container. As such, when we need to declare that a mock version of <code>Post</code> should be used for testing, we only need to provide Laravel with the instance of <code>Post</code> that should be used.</p><pre class="brush: php; title: ; notranslate">
-$this-&gt;app-&gt;instance('Post', $this-&gt;mock);
-</pre><blockquote><p>Think of this code as saying, &quot;<em>Hey Laravel, when you need an instance of <code>Post</code>, I want you to use my mocked version.</em>&quot; Because the app extends the <code>Container</code>, we have access to all IoC methods directly off of it.</p></blockquote><p>Upon instantiation of the controller, Laravel leverages the power of PHP reflection to read the typehint and inject the dependency for you. That&#8217;s right; you don&#8217;t have to write a single binding to allow for this; it&#8217;s automated!</p><hr
-/><h2>Redirections</h2><p>Another common expectation that you&#8217;ll find yourself writing is one that ensures that the user is redirected to the proper location, perhaps upon adding a new post to the database. How might we accomplish this?</p><pre class="brush: php; title: ; notranslate">
-# app/tests/controllers/PostsControllerTest.php
-
-public function testStore()
-{
-    $this-&gt;mock
-         -&gt;shouldReceive('create')
-         -&gt;once();
-
-    $this-&gt;app-&gt;instance('Post', $this-&gt;mock);
-
-    $this-&gt;call('POST', 'posts');
-
-    $this-&gt;assertRedirectedToRoute('posts.index');
-
-}
-</pre><p>Assuming that we&#8217;re following a restful flavor, to add a new post, we&#8217;d <code>POST</code> to the collection, or <code>posts</code> (don&#8217;t confuse the <code>POST</code> request method with the resource name, which just happens to have the same name).</p><pre class="brush: php; title: ; notranslate">
-$this-&gt;call('POST', 'posts');
-</pre><p>Then, we only need to leverage another of Laravel&#8217;s helper assertions, <code>assertRedirectedToRoute</code>.</p><blockquote><p><strong>Tip:</strong> When a resource is registered with Laravel (<code>Route::resource()</code>), the framework will automatically register the necessary named routes. Run <code>php artisan routes</code> if you ever forget what these names are.</p></blockquote><p>You might prefer to also ensure that the <code>$_POST</code> superglobal is passed to the <code>create</code> method. Even though we aren&#8217;t physically submitting a form, we can still allow for this, via the <code>Input::replace()</code> method, which allows us to &quot;stub&quot; this array. Here&#8217;s the modified test, which uses Mockery&#8217;s <code>with()</code> method to verify the arguments passed to the method referenced by <code>shouldReceive</code>.</p><pre class="brush: php; title: ; notranslate">
-# app/tests/controllers/PostsControllerTest.php
-
-public function testStore()
-{
-    Input::replace($input = ['title' =&gt; 'My Title']);&lt;/p&gt;
-
-    $this-&gt;mock
-         -&gt;shouldReceive('create')
-         -&gt;once()
-         -&gt;with($input);
-
-    $this-&gt;app-&gt;instance('Post', $this-&gt;mock);
-
-    $this-&gt;call('POST', 'posts');
-
-    $this-&gt;assertRedirectedToRoute('posts.index');
-}
-</pre><hr
-/><h2>Paths</h2><p>One thing that we haven&#8217;t considered in this test is validation. There should be two separate paths through the <code>store</code> method, dependent upon whether the validation passes:</p><ol><li>Redirect back to the &quot;Create Post&quot; form, and display the form validation errors.</li><li>Redirect to the collection, or the named route, <code>posts.index</code>.</li></ol><blockquote><p>As a best practice, each test should represent but one path through your code.</p></blockquote><p>This first path will be for failed validation.</p><pre class="brush: php; title: ; notranslate">
-# app/tests/controllers/PostsControllerTest.php
-
-public function testStoreFails()
-{
-    // Set stage for a failed validation
-    Input::replace(['title' =&gt; '']);
-
-    $this-&gt;app-&gt;instance('Post', $this-&gt;mock);
-
-    $this-&gt;call('POST', 'posts');
-
-    // Failed validation should reload the create form
-    $this-&gt;assertRedirectedToRoute('posts.create');
-
-    // The errors should be sent to the view
-    $this-&gt;assertSessionHasErrors(['title']);
-}
-</pre><p>The code snippet above explicitly declares which errors should exist. Alternatively, you may omit the argument to <code>assertSessionHasErrors</code>, in which case it will merely verify that a message bag has been flashed (in translation, your Redirection includes <code>withErrors($errors)</code>).</p><p>Now for the test that handles successful validation.</p><pre class="brush: php; title: ; notranslate">
-# app/tests/controllers/PostsControllerTest.php
-
-public function testStoreSuccess()
-{
-    // Set stage for successful validation
-    Input::replace(['title' =&gt; 'Foo Title']);&lt;/p&gt;
-
-    $this-&gt;mock
-         -&gt;shouldReceive('create')
-         -&gt;once();
-
-    $this-&gt;app-&gt;instance('Post', $this-&gt;mock);
-
-    $this-&gt;call('POST', 'posts');
-
-    // Should redirect to collection, with a success flash message
-    $this-&gt;assertRedirectedToRoute('posts.index', ['flash']);
-}
-</pre><p>The production code for these two tests might look like:</p><pre class="brush: php; title: ; notranslate">
-# app/controllers/PostsController.php
-
-public function store()
-{
-    $input = Input::all();
-
-    // We'll run validation in the controller for convenience
-    // You should export this to the model, or a service
-    $v = Validator::make($input, ['title' =&gt; 'required']);
-
-    if ($v-&gt;fails())
-    {
-        return Redirect::route('posts.create')
-            -&gt;withInput()
-            -&gt;withErrors($v-&gt;messages());
-    }
-
-    $this-&gt;post-&gt;create($input);
-
-    return Redirect::route('posts.index')
-        -&gt;with('flash', 'Your post has been created!');
-}
-</pre><p>Notice how the <code>Validator</code> is nested directly in the controller? Generally, I&#8217;d recommend that you abstract this away to a service. That way, you can test your validation in isolation from any controllers or  routes. Nonetheless, let&#8217;s leave things as they are for simplicity&#8217;s sake. One thing to keep in mind is that we aren&#8217;t mocking the <code>Validator</code>, though you certainly could do so. Because this class is a facade, it can easily be swapped out with a mocked version, via the Facade&#8217;s <code>shouldReceive</code> method, without us needing to worry about injecting an instance through the constructor. Win!</p><pre class="brush: php; title: ; notranslate">
-# app/controllers/PostsController.php
-
-Validator::shouldReceive('make')
-    -&gt;once()
-    -&gt;andReturn(Mockery::mock(['fails' =&gt; 'true']));
-</pre><p>From time to time, you&#8217;ll find that a method that needs to be mocked should return an object, itself. Luckily, with Mockery, this is a piece of cake: we only need to create an anonymous mock, and pass an array, which signals the method name and response value, respectively. As such:</p><pre class="brush: php; title: ; notranslate">
-Mockery::mock(['fails' =&gt; 'true'])
-</pre><p>will prepare an object, containing a <code>fails()</code> method that returns <code>true</code>.</p><hr
-/><h2>Repositories</h2><p>To allow for optimal flexibility, rather than creating a direct link between your controller and an ORM, like Eloquent, it&#8217;s better to code to an interface. The considerable advantage to this approach is that, should you perhaps need to swap out Eloquent for, say, Mongo or Redis, doing so literally requires the modification of a single line. Even better, the controller doesn&#8217;t ever need to be touched.</p><blockquote><p>Repositories represent the data access layer of your application.</p></blockquote><p>What might an interface for managing the database layer of a <code>Post</code> look like? This should get you started.</p><pre class="brush: php; title: ; notranslate">
-&lt;?php
-
-# app/repositories/PostRepositoryInterface.php
-
-interface PostRepositoryInterface {
-
-    public function all();
-
-    public function find($id);
-
-    public function create($input);
-
-}
-</pre><p>This can certainly be extended, but we&#8217;ve added the bare minimum methods for the demo: <code>all</code>, <code>find</code>, and <code>create</code>. Notice that the repository interfaces are being stored within <code>app/repositories</code>. Because this folder is not autoloaded by default, we need to update the <code>composer.json</code> file for the application to reference it.</p><pre class="brush: jscript; title: ; notranslate">
-// composer.json
-
-&quot;autoload&quot;: {
-  &quot;classmap&quot;: [
-    // ....
-    &quot;app/repositories&quot;
-  ]
-}
-</pre><blockquote><p>When a new class is added to this directory, don&#8217;t forget to <code>composer dump-autoload -o</code>. The <code>-o</code>, (<em>optimize</em>) flag is optional, but should always be used, as a best practice.</p></blockquote><p>If you attempt to inject this interface into your controller, Laravel will snap at you. Go ahead; try it out and see. Here&#8217;s the modified <code>PostController</code>, which has been updated to inject an interface, rather than the <code>Post</code> Eloquent model.</p><pre class="brush: php; title: ; notranslate">
-&lt;?php
-
-# app/controllers/PostsController.php
-
-use Repositories\PostRepositoryInterface as Post;
-
-class PostsController extends BaseController {
-
-    protected $post;
-
-    public function __construct(Post $post)
-    {
-        $this-&gt;post = $post;
-    }
-
-    public function index()
-    {
-        $posts = $this-&gt;post-&gt;all();
-
-        return View::make('posts.index', ['posts' =&gt; $posts]);
-    }
-
-}
-</pre><p>If you run the server and view the output, you&#8217;ll be met with the dreaded (but beautiful) Whoops error page, declaring that &quot;<em>PostRepositoryInterface is not instantiable.</em>&quot;</p> <figure
-class=tutorial_image> <img
-src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/04/instantiable.jpg" alt="Not Instantiable"><br
-/> </figure><p>If you think about it, of course the framework is squawking! Laravel is smart, but it&#8217;s not a mind reader. It needs to be told which implementation of the interface should be used within the controller.</p><p>For now, let&#8217;s add this binding to <code>app/routes.php</code>. Later, we&#8217;ll instead make use of service providers to store this sort of logic.</p><pre class="brush: php; title: ; notranslate">
-# app/routes.php
-
-App::bind(
-    'Repositories\PostRepositoryInterface',
-    'Repositories\EloquentPostRepository'
-);
-</pre><p>Verbalize this function call as, &quot;<em>Laravel, baby, when you need an instance of <code>PostRepositoryInterface</code>, I want you to use <code>EloquentPostRepository</code>.</em>&quot;</p><p><code>app/repositories/EloquentPostRepository</code> will simply be a wrapper around Eloquent that implements <code>PostRepositoryInterface</code>. This way, we&#8217;re not restricting the API (and every other implementation) to Eloquent&#8217;s interpretation; we can name the methods however we wish.</p><pre class="brush: php; title: ; notranslate">
-&lt;?php namespace Repositories;
-
-# app/repositories/EloquentPostRepository.php
-
-use Repositories\PostRepositoryInterface;
-use Post;
-
-class EloquentPostRepository implements PostRepositoryInterface {
-
-  public function all()
-  {
-      return Post::all();
-  }
-
-  public function find($id)
-  {
-      return Post::find($id);
-  }
-
-  public function create($input)
-  {
-      return Post::create($input);
-  }
-
-}
-</pre><blockquote><p>Some might argue that the <code>Post</code> model should be injected into this implementation for testability purposes. If you agree, simply inject it through the constructor, per usual.</p></blockquote><p>That&#8217;s all it should take! Refresh the browser, and things should be back to normal. Only, now, your application is far better structured, and the controller is no longer linked to Eloquent.</p><p>Let&#8217;s imagine that, a few months from now, your boss informs you that you need to swap Eloquent out with Redis. Well, because you&#8217;ve structured your application in this future-proof way, you only need to create the new <code>app/repositories/RedisPostRepository</code> implementation:</p><pre class="brush: php; title: ; notranslate">
-&lt;?php namespace Repositories;
-
-# app/repositories/RedisPostRepository.php
-
-use Repositories\PostRepositoryInterface;
-
-class RedisPostRepository implements PostRepositoryInterface {
-
-  public function all()
-  {
-      // return all with Redis
-  }
-
-  public function find($id)
-  {
-      // return find one with Redis
-  }
-
-  public function create($input)
-  {
-      // return create with Redis
-  }
-
-}
-</pre><p>And update the binding:</p><pre class="brush: php; title: ; notranslate">
-# app/routes.php
-
-App::bind(
-    'Repositories\PostRepositoryInterface',
-    'Repositories\RedisPostRepository'
-);
-</pre><p>Instantly, you&#8217;re now leveraging Redis in your controller. Notice how <code>app/controllers/PostsController.php</code> was never touched? That&#8217;s the beauty of it!</p><hr
-/><h2>Structure</h2><p>So far in this lesson, our organization has been a bit lacking. IoC bindings in the <code>routes.php</code> file? All repositories grouped together in one directory? Sure, that may work in the beginning, but, very quickly, it&#8217;ll become apparent that this doesn&#8217;t scale.</p><p>In the final section of this article, we&#8217;ll PSR-ify our code, and leverage service providers to register any applicable bindings.</p><blockquote><p>PSR-0 defines the mandatory requirements that must be adhered to for autoloader interoperability.</p></blockquote><p>A PSR-0 loader may be registered with Composer, via the <code>psr-0</code> object.</p><pre class="brush: jscript; title: ; notranslate">
-// composer.json
-
-&quot;autoload&quot;: {
-    &quot;psr-0&quot;: {
-        &quot;Way&quot;: &quot;app/lib/&quot;
-    }
-}
-</pre><p>The syntax can be confusing at first. It certainly was for me. An easy way to decipher <code>&quot;Way&quot;: &quot;app/lib/&quot;</code> is to think to yourself, &quot;<em>The base folder for the <code>Way</code> namespace is located in <code>app/lib</code>.</em>&quot; Of course, replace my last name with the name of your project. The directory structure to match this would be:</p><ul><li>app/<ul><li>lib/</li><li>Way/</li></ul></li></ul><p>Next, rather than grouping all repositories into a <code>repositories</code> directory, a more elegant approach might be to categorize them into multiple directories, like so:</p><ul><li>app/<ul><li>lib/</li><li>Way/<ul><li>Storage/</li><li>Post/<ul><li>PostRepositoryInterface.php</li><li>EloquentPostRepository.php</li></ul></li></ul></li></ul></li></ul><p>It&#8217;s vital that we adhere to this naming and folder convention, if we want the autoloading to work as expected. The only remaining thing to do is update the namespaces for <code>PostRepositoryInterface</code> and <code>EloquentPostRepository</code>.</p><pre class="brush: php; title: ; notranslate">
-&lt;?php namespace Way\Storage\Post;
-
-# app/lib/Way/Storage/Post/PostRepositoryInterface.php
-
-interface PostRepositoryInterface {
-
-    public function all();
-
-    public function find($id);
-
-    public function create($input);
-
-}
-</pre><p>And for the implementation:</p><pre class="brush: php; title: ; notranslate">
-&lt;?php namespace Way\Storage\Post;
-
-# app/lib/Way/Storage/Post/EloquentPostRepository.php
-
-use Post;
-
-class EloquentPostRepository implements PostRepositoryInterface {
-
-    public function all()
-    {
-        return Post::all();
-    }
-
-    public function find($id)
-    {
-        return Post::find($id);
-    }
-
-    public function create($input)
-    {
-        return Post::create($input);
-    }
-
-}
-</pre><p>There we go; that&#8217;s much cleaner. But what about those pesky bindings? The routes file may be a convenient place to experiment, but it makes little sense to store them there permanently. Instead, we&#8217;ll use service providers.</p><blockquote><p>Service providers are nothing more than bootstrap classes that can be used to do anything you wish: register a binding, hook into an event, import a routes file, etc.</p></blockquote><p>A service provider&#8217;s <code>register()</code> will be triggered automatically by Laravel.</p><pre class="brush: php; title: ; notranslate">
-&lt;?php namespace Way\Storage;
-
-# app/lib/Way/Storage/StorageServiceProvider.php
-
-use Illuminate\Support\ServiceProvider;
-
-class StorageServiceProvider extends ServiceProvider {
-
-    // Triggered automatically by Laravel
-    public function register()
-    {
-        $this-&gt;app-&gt;bind(
-            'Way\Storage\Post\PostRepositoryInterface',
-            'Way\Storage\Post\EloquentPostRepository'
-        );
-    }
-
-}
-</pre><p>To make this file known to Laravel, you only need to include it in <code>app/config/app.php</code>, within the <code>providers</code> array.</p><pre class="brush: php; title: ; notranslate">
-# app/config/app.php
-
-'providers' =&gt; array(
-    'Illuminate\Foundation\Providers\ArtisanServiceProvider',
-    'Illuminate\Auth\AuthServiceProvider',
-    // ...
-    'Way\Storage\StorageServiceProvider'
-)
-</pre><p>Good; now we have a dedicated file for registering new bindings.</p><h3>Updating the Tests</h3><p>With our new structure in place, rather than mocking the Eloquent model, itself, we can instead mock <code>PostRepositoryInterface</code>. Here&#8217;s an example of one such test:</p><pre class="brush: php; title: ; notranslate">
-# app/tests/controllers/PostsControllerTest.php
-
-public function testIndex()
-{
-    $mock = Mockery::mock('Way\Storage\Post\PostRepositoryInterface');
-    $mock-&gt;shouldReceive('all')-&gt;once();
-
-    $this-&gt;app-&gt;instance('Way\Storage\Post\PostRepositoryInterface', $mock);
-
-    $this-&gt;call('GET', 'posts');
-
-    $this-&gt;assertViewHas('posts');
-}
-</pre><p>However, we can improve this. It stands to reason that every method within <code>PostsControllerTest</code> will require a mocked version of the repository. As such, it&#8217;s better to extract some of this prep work into its own method, like so:</p><pre class="brush: php; title: ; notranslate">
-# app/tests/controllers/PostsControllerTest.php
-
-public function setUp()
-{
-    parent::setUp();
-
-    $this-&gt;mock('Way\Storage\Post\PostRepositoryInterface');
-}
-
-public function mock($class)
-{
-    $mock = Mockery::mock($class);
-
-    $this-&gt;app-&gt;instance($class, $mock);
-
-    return $mock;
-}
-
-public function testIndex()
-{
-    $this-&gt;mock-&gt;shouldReceive('all')-&gt;once();
-
-    $this-&gt;call('GET', 'posts');
-
-    $this-&gt;assertViewHas('posts');
-}
-</pre><p>Not bad, ay?</p><p>Now, if you want to be super-fly, and are willing to add a touch of test logic to your production code, you could even perform your mocking within the Eloquent model! This would allow for:</p><pre class="brush: php; title: ; notranslate">
-Post::shouldReceive('all')-&gt;once();
-</pre><p>Behind the scenes, this would mock <code>PostRepositoryInterface</code>, and update the IoC binding. You can&#8217;t get much more readable than that!</p><p>Allowing for this syntax only requires you to update the <code>Post</code> model, or, better, a <code>BaseModel</code> that all of the Eloquent models extend. Here&#8217;s an example of the former:</p><pre class="brush: php; title: ; notranslate">
-&lt;?php
-
-# app/models/Post.php
-
-class Post extends Eloquent {
-
-    public static function shouldReceive()
-    {
-        $class = get_called_class();
-        $repo = &quot;Way\\Storage\\{$class}\\{$class}RepositoryInterface&quot;;
-        $mock = Mockery::mock($repo);
-
-        App::instance($repo, $mock);
-
-        return call_user_func_array([$mock, 'shouldReceive'], func_get_args());
-    }
-
-}
-</pre><p>If you can manage the inner &quot;<em>Should I be embedding test logic into production code</em>&quot; battle, you&#8217;ll find that this allows for significantly more readable tests.</p><pre class="brush: php; title: ; notranslate">
-&lt;?php
-
-# app/tests/controllers/PostsControllerTest.php
-
-class PostsControllerTest extends TestCase {
-
-    public function tearDown()
-    {
-        Mockery::close();
-    }
-
-    public function testIndex()
-    {
-        Post::shouldReceive('all')-&gt;once();
-
-        $this-&gt;call('GET', 'posts');
-
-        $this-&gt;assertViewHas('posts');
-    }
-
-    public function testStoreFails()
-    {
-        Input::replace($input = ['title' =&gt; '']);
-
-        $this-&gt;call('POST', 'posts');
-
-        $this-&gt;assertRedirectedToRoute('posts.create');
-        $this-&gt;assertSessionHasErrors();
-    }
-
-    public function testStoreSuccess()
-    {
-        Input::replace($input = ['title' =&gt; 'Foo Title']);
-
-        Post::shouldReceive('create')-&gt;once();
-
-        $this-&gt;call('POST', 'posts');
-
-        $this-&gt;assertRedirectedToRoute('posts.index', ['flash']);
-    }
-
-}
-</pre><p>It feels good, doesn&#8217;t it? Hopefully, this article hasn&#8217;t been too overwhelming. The key is to learn how to organize your repositories in such a way to make them as easy as possible to mock and inject into your controllers. As a result of that effort, your tests will be lightning fast!</p><blockquote><p>This article is an excerpt from my upcoming book, <a
-href="https://leanpub.com/laravel-testing-decoded">Laravel Testing Decoded</a>. Stay tuned for its release in May, 2013!</p></blockquote><div class="feedflare">
-<a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=AtMxwaB4LZA:jGG7ZbI99-0:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=AtMxwaB4LZA:jGG7ZbI99-0:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=AtMxwaB4LZA:jGG7ZbI99-0:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=AtMxwaB4LZA:jGG7ZbI99-0:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/AtMxwaB4LZA" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:11:"Jeffrey Way";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:71:"http://net.tutsplus.com/tutorials/php/testing-laravel-controllers/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"21";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:66:"http://net.tutsplus.com/tutorials/php/testing-laravel-controllers/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}i:9;a:6:{s:4:"data";s:12:"            ";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";s:5:"child";a:5:{s:0:"";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:26:"Meet the Connect Framework";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:54:"http://feedproxy.google.com/~r/nettuts/~3/oKU4_qbFK0Q/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:86:"http://net.tutsplus.com/tutorials/javascript-ajax/meet-the-connect-framework/#comments";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:7:"pubDate";a:1:{i:0;a:5:{s:4:"data";s:31:"Mon, 22 Apr 2013 14:53:41 +0000";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:8:"category";a:4:{i:0;a:5:{s:4:"data";s:17:"JavaScript & AJAX";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:9:"Tutorials";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:2;a:5:{s:4:"data";s:7:"connect";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:3;a:5:{s:4:"data";s:4:"node";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:4:"guid";a:1:{i:0;a:5:{s:4:"data";s:32:"http://net.tutsplus.com/?p=31220";s:7:"attribs";a:1:{s:0:"";a:1:{s:11:"isPermaLink";s:5:"false";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:11:"description";a:1:{i:0;a:5:{s:4:"data";s:21874:"<a
-href='http://rss.buysellads.com/click.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31220&c=1874510657' target='_blank'><img
-src='http://rss.buysellads.com/img.php?z=1260013&k=d754f1e9ba63a736ba8ff5ece958f7dd&a=31220&c=1874510657' border='0' alt='' /></a><p>Newcomers to NodeJS typically find its API difficult to grasp. Luckily, many developers have created frameworks that make it easier to work with Node. <a
-href="http://www.senchalabs.org/connect/">Connect</a> is one such framework. It sits on top of Node&#8217;s API and draws the line between comfort and control.</p><p><span
-id="more-31220"></span></p><p>Think of Connect as a stack of middleware. With every request, Connect filters through the layers of middleware, each having the opportunity to process the HTTP request. When T.J. Holowaychuk <a
-href="http://tjholowaychuk.com/post/664516126/connect-middleware-for-nodejs">announced Connect</a>, he said there were two types of middleware. The first is a <em>filter</em>.</p><blockquote><p>Filters process the request, but they do not respond to it (think of server logging).</p></blockquote><p>The other type is a <em>provider</em>, which responds to the request. You can incorporate as many layers of middleware as you want; the request passes through each layer until one of the middleware responds to the request.</p><hr
-/><h2>Basic Syntax</h2><p>First, you need to install the Connect package through npm:</p><pre class="brush: bash; title: ; notranslate">
-npm install connect
-</pre><p>Now create a <code>server.js</code> file, and add the following code:</p><pre class="brush: jscript; title: ; notranslate">
-var connect = require(&quot;connect&quot;);
-</pre><p>The <code>connect</code> variable is a function that returns a new Connect application. So, our next step is to create that app:</p><pre class="brush: jscript; title: ; notranslate">
-var app = connect();
-</pre><p>You don&#8217;t need to create an <code>app</code> variable for most of your applications. The functions involved in creating an application (<code>connect()</code> and <code>use()</code>) are chainable:</p><pre class="brush: jscript; title: ; notranslate">
-connect()
-    .use(/* middleware */)
-    .use(/* middleware */)
-    .listen(3000);
-</pre><p>The <code>use()</code> function adds a layer of middleware to the application, and the <code>listen()</code> function tells our application to begin accepting connections on the specified port (3000 in this example).</p><p>Let&#8217;s start with something simple: logging. The code for a Connect application that uses only the logging middleware is rather simple:</p><pre class="brush: jscript; title: ; notranslate">
-connect()
-    .use(connect.logger())
-    .listen(3000);
-</pre><blockquote
-class="pullquote"><p>By default, Node parses very little of the incoming request.</p></blockquote><p>Add that code to your file, and start the server by running <code>node server.js</code>. Navigate to any path in your browser, and ignore the &#8220;Cannot GET &#8230;&#8221; results. We&#8217;re not interested in what the server sent back to the browser; we&#8217;re interested in the server&#8217;s log. Look at the terminal, and you&#8217;ll see the log of your requests. Be sure to check out the <a
-href="http://www.senchalabs.org/connect/logger.html">logger documentation</a> for information on its other features and customization.</p><p>That was a filter; now let&#8217;s look at a provider. The simplest provider is the static provider; it serves static files from a specified folder. Here&#8217;s its syntax:</p><pre class="brush: jscript; title: ; notranslate">
-.use(connect.static(__dirname + &quot;/public&quot;)
-</pre><p>You can probably guess the purpose of Node&#8217;s <code>__dirname</code> variable: it&#8217;s the path to the current directory. This middleware statically serves anything from a <code>public</code> folder in the current directory. So, create <code>public/page.html</code> and add an <code>&lt;h1&gt;</code> element. Restart the server (<code>node server.js</code>), and navigate to <code>localhost:3000/page.html</code> in your browser. You should <code>page.html</code> rendered in the browser.</p><p>Let&#8217;s now take a quick look at some of Connect&#8217;s other middleware options.</p><hr
-/><h2>Parsing Request Bodies</h2><p>By default, Node parses very little of the incoming request, but you can incorporate several different filters to parse the request if you need to handle more complexity. There are four filters:</p><ul><li><code>connect.json()</code> parses JSON request bodies (where the <code>content-type</code> is <code>application/json</code>).</li><li><code>connect.urlencoded()</code> parses <code>x-ww-form-urlencoded</code> request bodies.</li><li><code>connect.multipart()</code> parses <code>multipart/form-data</code> request bodies.</li><li><code>connect.bodyParser()</code> is a shortcut for enabling all of the three above.</li></ul><p>Using any of these filters gives you the ability to access your parsed body via <code>request.body</code> (we&#8217;ll talk about how to get that <code>request</code> object soon).</p><p>I think these filters are a good example of how to fine-grain your control with Connect. You can use very little processing in order to streamline your application.</p><hr
-/><h2>Parsing Cookies and Sessions</h2><p>Cookies and sessions are an important part of any web application, and there are several pieces of middleware that help manage them. The <code>connect.cookieParser()</code> parses cookies for you, and you can retrieve the cookies and their values, via the <code>request.cookies</code> object. This is more useful if you add the <code>connect.session()</code> filter to your app. This filter requires the cookie parser to already be in place. Here&#8217;s a small example:</p><pre class="brush: jscript; title: ; notranslate">
-connect()
-    .use(connect.cookieParser())
-    .use(connect.session({ secret: 'some secret text', cookie: { maxAge: 30000 }}))
-    .use(function(req, res) {
-        var sess = req.session,
-            url = req.url.split(&quot;/&quot;);
-
-    if (url[1] == &quot;name&quot; &amp;&amp; url[2]) {
-        sess.name = url[2];
-        res.end(&quot;name saved: &quot; + url[2]);
-    } else if (sess.name) {
-        res.write(&quot;session-stored name: &quot; + sess.name);    
-        res.end(&quot;stored for another: &quot; + (sess.cookie.maxAge / 1000) + &quot; seconds&quot;);
-    } else {
-        res.end(&quot;no stored name; go to /name/{name} to save a name&quot;);
-    }
-}).listen(3000);
-</pre><blockquote
-class="pullquote"><p>Every middleware function you write needs to either pass the request to the <code>next</code> layer or respond to the request.</p></blockquote><p>After the <code>cookieParser</code>, we include the <code>session</code> filter and pass it a two options:</p><ul><li>The <code>secret</code> creates a signed cookie which keeps track of the session.</li><li>The <code>cookie.maxAge</code> defines its life-span in milliseconds; the 30000 in this code is 30 seconds.</li></ul><p>In the final <code>use()</code> call, we pass a function that responds to the request. We use two properties from the <code>request</code> object: <code>req.session</code> for session data, and <code>req.url</code> for the request URL.</p><p>If  the application receives a request for <code>/name/some_name</code>, then it stores the value <code>some_name</code> in <code>req.session.name</code>. Anything stored within a session can be retrieved in subsequent requests for the length of our session. Any requests made for <code>/name/other</code> replaces the session variable, and any requests to other URLs output the session variable&#8217;s value and the time left for the session.</p><p>So, you can navigate to <code>localhost:3000/name/your_name</code>, and then go to <code>localhost:3000</code> to see <code>your_name</code>. Refresh the page a few times and watch the seconds count down. When the session expires, you&#8217;ll see the default &#8220;no stored name&#8221; message.</p><p>I mentioned that the <code>cookieParser</code> filter must come before <code>session</code>.</p><blockquote><p>The order of inclusion is important with middleware because the request is passed, in order, from layer to layer.</p></blockquote><p>Because <code>session</code> needs the parsed cookie data, the request must go through <code>cookieParser</code> before <code>session</code>.</p><p>I could explain every other built-in piece of middleware, but I&#8217;ll just mention a few more before we write our own code to interface with Connect.</p><ul><li><a
-href="http://www.senchalabs.org/connect/compress.html">compress</a>: Gzip compression middleware</li><li><a
-href="http://www.senchalabs.org/connect/basicAuth.html">basicAuth</a>: basic http authentication</li><li><a
-href="http://www.senchalabs.org/connect/directory.html">directory</a>: directory listing middleware</li><li><a
-href="http://www.senchalabs.org/connect/errorHandler.html">errorHandler</a>: flexible error handler</li></ul><hr
-/><h2>Writing Your Own Middleware</h2><p>You just learned how to write your own code with Connect. Here&#8217;s the basic syntax once again:</p><pre class="brush: jscript; title: ; notranslate">
-.use(function (req, res, next) {
-
-})
-</pre><p>The function&#8217;s three parameters are important; they provide access to the outside world. The <code>req</code> parameter is, of course, the request object, and <code>res</code> is the response. The third parameter, <code>next</code>, is the key to making functions that work well in the middleware stack. It&#8217;s a function that passes the request to the next middleware in the stack. See this example:</p><pre class="brush: jscript; title: ; notranslate">
-connect()
-    .use(function (req, res, next) {
-        if (req.method === 'POST') {
-            res.end(&quot;This is a POST request&quot;);
-        } else {
-            next();
-        }
-    })
-    .use(function (req, res) {
-        res.end(&quot;This is not a POST request (probably a GET request)&quot;);
-    }).listen(3000);
-</pre><p>This code uses two middleware functions. The first function checks the request method to see if it&#8217;s a POST request. If it is, it responds by saying so. Otherwise, we call <code>next()</code> and pass the request to the next function, which responds no matter what. Use <code>curl</code> to test both layers in the terminal:</p><pre class="brush: bash; title: ; notranslate">
-$ curl http://localhost:3000
-This is not a POST request (probably a GET request)
-
-$ curl -X POST http://localhost:3000
-This is a POST request
-</pre><p>If you don&#8217;t like the terminal, try <a
-href="https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo">this useful Chrome plugin</a>.</p><p>It&#8217;s important to remember that every middleware function you write needs to either pass the request to the <code>next</code> layer or respond to the request. If your function branches (via if statements or other conditionals), you must ensure that every branch passes the request or responds to it. If your app hangs in the browser, it&#8217;s probably because you forgot to call <code>next()</code> at some point.</p><p>Now, what about those <code>request</code> and <code>response</code> parameters? These are the very same request and response objects you receive when using a &#8220;raw&#8221; Node server:</p><pre class="brush: jscript; title: ; notranslate">
-require(&quot;http&quot;).createServer(function (req, res) {
-    // ...
-}).listen(3000);
-</pre><p>If you haven&#8217;t used Node&#8217;s server API before, let me show you what you can do with it.</p><hr
-/><h2>The Request Object</h2><p>The <code>request</code> object is actually an <code>http.IncomingMessage</code> object, and its important properties are listed below::</p><ul><li><code>req.method</code> tells you which HTTP method was used.</li><li><code>req.url</code> tells you which URL was requested.</li><li><code>req.headers</code> is an object with the header names and values.</li><li><code>req.query</code> is an object with any data in a query string (to parse that, you&#8217;ll need the <code>connect.query()</code> middleware in place).</li><li><code>req.body</code> is an object of the form data (you&#8217;ll need some body parsing middleware in place).</li><li><code>req.cookies</code> is an object of the cookie data (requires cookie parsing).</li><li><code>req.session</code> is an object of the session data (again, you&#8217;ll need cookie parsing and session middleware in place)</li></ul><p>You can see all of this at work with the following code:</p><pre class="brush: jscript; title: ; notranslate">
-connect()
-    .use(connect.query()) // gives us req.query
-    .use(connect.bodyParser())  // gives us req.body
-    .use(connect.cookieParser()) // for session
-    .use(connect.session({ secret: &quot;asdf&quot; }))     // gives us req.session
-    .use(function (req, res) {
-        res.write(&quot;req.url: &quot; + req.url + &quot;\n\n&quot;);
-        res.write(&quot;req.method: &quot; + req.method + &quot;\n\n&quot;);
-        res.write(&quot;req.headers: &quot; + JSON.stringify(req.headers) + &quot;\n\n&quot;);
-        res.write(&quot;req.query: &quot; + JSON.stringify(req.query) + &quot;\n\n&quot;);
-        res.write(&quot;req.body: &quot; + JSON.stringify(req.body) + &quot;\n\n&quot;);
-        res.write(&quot;req.cookies: &quot; + JSON.stringify(req.cookies) + &quot;\n\n&quot;);
-        res.write(&quot;req.session: &quot; + JSON.stringify(req.session));
-        res.end();
-    }).listen(3000);
-</pre><p>To see something for each one of these values, you need to post some data to a URL with a query string. The following should be enough:</p><pre class="brush: bash; title: ; notranslate">
-curl -X POST -d &quot;name=YourName&quot; &quot;http://localhost:3000/some/url?some=data&quot;
-</pre><p>With those seven properties, you can manage just about any request you&#8217;ll receive. I don&#8217;t think trailers are used often (I&#8217;ve never seen them in my experience), but you can use <code>req.trailers</code> if you expect them in your requests (trailers are just like headers, but after the body).</p><p>So, what about your response?</p><hr
-/><h2>The Response Object</h2><p>The raw response object doesn&#8217;t provide the luxuries that libraries (like Express) gives you. For example, you can&#8217;t respond with a simple render call to a premade template&mdash;at least, not by default. Very little is assumed in the response, so you need to fill in all the little details.</p><p>We&#8217;ll start with the status code and the response headers. You can set these all at once using the <code>writeHead()</code> method. Here&#8217;s an example from the Node docs:</p><pre class="brush: jscript; title: ; notranslate">
-var body = 'hello world';
-response.writeHead(200, {
-    'Content-Length': body.length,
-    'Content-Type': 'text/plain' 
-});
-</pre><p>If you need to individually set headers, you can use the <code>setHeader()</code> method:</p><pre class="brush: jscript; title: ; notranslate">
-connect()
-    .use(function (req, res) {
-        var accept = req.headers.accept.split(&quot;,&quot;),
-            body, type;
-            console.log(accept);
-        if (accept.indexOf(&quot;application/json&quot;) &amp;gt; -1) {
-            type = &quot;application/json&quot;;
-            body = JSON.stringify({ message: &quot;hello&quot; });
-        } else if (accept.indexOf(&quot;text/html&quot;) &amp;gt; -1) {
-            type = &quot;text/html&quot;;
-            body = &quot;&lt;h1&gt; Hello! &lt;/h1&gt;&quot;;
-        } else {
-            type = &quot;text/plain&quot;;
-            body = &quot;hello!&quot;;
-        }
-        res.statusCode = 200;
-        res.setHeader(&quot;Content-Type&quot;, type);
-        res.end(body);
-    }).listen(3000);
-</pre><p>Add this code to a file, start up the server and request it from the browser. You got HTML! Now run:</p><pre class="brush: bash; title: ; notranslate">
-curl http://localhost:3000
-</pre><p>And you&#8217;ll receive plain text. For JSON, try this:</p><pre class="brush: bash; title: ; notranslate">
-curl -H &quot;accept:application/json&quot; http://localhost:3000
-</pre><p>All from the same URL!</p><p>Use <code>res.getHeader(name)</code> if you need to know what headers have already been set. Tou can also use <code>res.removeHeader(name)</code> to remove a header.</p><p>Of course, a response is useless without a body. As you&#8217;ve seen throughout this tutorial, you can write chunks of data to the body with the <code>res.write()</code> method. This accepts a string or <a
-href="http://nodejs.org/api/buffer.html">buffer</a> object as an argument. If it&#8217;s a string, the second parameter is the encoding type (it defaults to <code>utf8</code>).</p><p>The <code>res.end()</code> method closes the body, but you can pass data to it to write to the response stream. This is useful in situations where you only need to output a single line.</p><hr
-/><h2>Third-Party Middleware</h2><p>It&#8217;s somewhat difficult to respond with larger HTML bodies in plain old Node and Connect. This is a good place to throw third-party middleware into the mix. You can find a list of third-party middleware <a
-href="https://github.com/senchalabs/connect/wiki">on the Connect Github wiki</a>. As an example, we&#8217;re going to use the <a
-href="https://github.com/Yitsushi/connect-jade">connect-jade package</a>, which allows us to render jade views.</p><p>First, install <code>connect-jade</code>:</p><pre class="brush: bash; title: ; notranslate">
-npm install connect-jade
-</pre><p>Next, require and add it as middleware. You&#8217;ll want to set a few default values:</p><pre class="brush: jscript; title: ; notranslate">
-var connect = require(&quot;connect&quot;),
-    connectJade = require(&quot;connect-jade&quot;);
-
-connect()
-    .use(connectJade({
-        root: __dirname + &quot;/views&quot;,
-        defaults: {
-            title: &quot;MyApp&quot;
-        }
-    }))
-    .use(function (req, res) {
-        res.render(&quot;index&quot;, { heading: &quot;Welcome to My App&quot; });
-    }).listen(3000);
-</pre><p>Set the root as the directory that contains the view files. You can also set <code>defaults</code>; these are variables that are available inside every view, unless we override them later when calling <code>render()</code>.</p><p>The final function in this code makes a call to <code>res.render()</code>. This method is provided by the <code>connect-jade</code> package.</p><blockquote><p>The first argument it accepts is the name of the view to render.</p></blockquote><p>It&#8217;s the path to the view, <em>sans</em> the path that we defined when adding the middleware, <em>sans</em> the jade file extension. For this code, we need a <code>views/index.jade</code> template to render. We&#8217;ll keep it simple:</p><pre class="brush: xml; title: ; notranslate">
-html
-  head
-    title= title
-  body
-    h1= heading
-</pre><p>If you&#8217;re not familiar with <a
-href="http://jade-lang.com/">jade</a>, we indent tag names to create an HTML structure. The equal sign retrieves the value of a JavaScript variable. Those variables come from the <code>defaults</code> we set up, plus the (optional) second parameter object passed to <code>res.render()</code>.</p><p>There are many other <a
-href="https://github.com/senchalabs/connect/wiki">third-party middlewares</a>, but they work similar to each other. You install them via npm, require them and put them into action.</p><hr
-/><h2>Modules as Middleware</h2><p>If you dig into how Connect works, you&#8217;ll find that each layer is actually a Node module&mdash;a very intelligent design. If you use Connect for sizeable applications, it would be ideal to write your code in Node module format. You might have an <code>app.js</code> file like this:</p><pre class="brush: jscript; title: ; notranslate">
-// app.js
-module.exports = function (req, res, next) {
-    res.end(&quot;this comes from a module&quot;);
-};
-</pre><p>And in your <code>server.js</code>:</p><pre class="brush: jscript; title: ; notranslate">
-var connect = require(&quot;connect&quot;),
-    app = require(&quot;./app&quot;);
-
-connect()
-    .use(app)
-    .listen(3000);
-</pre><hr
-/><h2>Conclusion</h2><p>If you want a beginner-friendly library that makes it easy to build large web apps, then Connect isn&#8217;t your solution. Connect is meant to be a thin layer on top of the raw Node API that gives you complete control over your server application. If you want a bit more, I recommend <a
-href="http://expressjs.com/">Express</a> (by the same folks, incidentally). Otherwise, Connect is a fantastic, extensible library for Node web applications.</p><div class="feedflare">
-<a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:yIl2AUoC8zA"><img src="http://feeds.feedburner.com/~ff/nettuts?d=yIl2AUoC8zA" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:F7zBnMyn0Lo"><img src="http://feeds.feedburner.com/~ff/nettuts?i=oKU4_qbFK0Q:jWZ4rhZp3lY:F7zBnMyn0Lo" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:V_sGLiPBpWU"><img src="http://feeds.feedburner.com/~ff/nettuts?i=oKU4_qbFK0Q:jWZ4rhZp3lY:V_sGLiPBpWU" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:gIN9vFwOqvQ"><img src="http://feeds.feedburner.com/~ff/nettuts?i=oKU4_qbFK0Q:jWZ4rhZp3lY:gIN9vFwOqvQ" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/nettuts?a=oKU4_qbFK0Q:jWZ4rhZp3lY:TzevzKxY174"><img src="http://feeds.feedburner.com/~ff/nettuts?d=TzevzKxY174" border="0"></img></a>
-</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/oKU4_qbFK0Q" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:14:"Andrew Burgess";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:82:"http://net.tutsplus.com/tutorials/javascript-ajax/meet-the-connect-framework/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"15";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:77:"http://net.tutsplus.com/tutorials/javascript-ajax/meet-the-connect-framework/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}s:44:"http://purl.org/rss/1.0/modules/syndication/";a:2:{s:12:"updatePeriod";a:1:{i:0;a:5:{s:4:"data";s:6:"hourly";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:15:"updateFrequency";a:1:{i:0;a:5:{s:4:"data";s:1:"1";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"link";a:2:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"rel";s:4:"self";s:4:"type";s:19:"application/rss+xml";s:4:"href";s:35:"http://feeds.feedburner.com/nettuts";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:2:{s:3:"rel";s:3:"hub";s:4:"href";s:32:"http://pubsubhubbub.appspot.com/";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:3:{s:4:"info";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:3:"uri";s:7:"nettuts";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:14:"emailServiceId";a:1:{i:0;a:5:{s:4:"data";s:7:"nettuts";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:18:"feedburnerHostname";a:1:{i:0;a:5:{s:4:"data";s:28:"http://feedburner.google.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}}}}}}s:4:"type";i:128;s:7:"headers";a:10:{s:12:"content-type";s:23:"text/xml; charset=UTF-8";s:4:"etag";s:27:"/W4ts9e5bpvIXflESVYKWYwcztM";s:13:"last-modified";s:29:"Tue, 07 May 2013 20:40:46 GMT";s:16:"content-encoding";s:4:"gzip";s:4:"date";s:29:"Tue, 07 May 2013 20:58:25 GMT";s:7:"expires";s:29:"Tue, 07 May 2013 20:58:25 GMT";s:13:"cache-control";s:18:"private, max-age=0";s:22:"x-content-type-options";s:7:"nosniff";s:16:"x-xss-protection";s:13:"1; mode=block";s:6:"server";s:3:"GSE";}s:5:"build";s:14:"20121030175911";}
+</div><img src="http://feeds.feedburner.com/~r/nettuts/~4/8e2tSC6ql7w" height="1" width="1"/>";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:32:"http://purl.org/dc/elements/1.1/";a:1:{s:7:"creator";a:1:{i:0;a:5:{s:4:"data";s:12:"Patkos Csaba";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:36:"http://wellformedweb.org/CommentAPI/";a:1:{s:10:"commentRss";a:1:{i:0;a:5:{s:4:"data";s:81:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/feed/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:38:"http://purl.org/rss/1.0/modules/slash/";a:1:{s:8:"comments";a:1:{i:0;a:5:{s:4:"data";s:2:"22";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:8:"origLink";a:1:{i:0;a:5:{s:4:"data";s:76:"http://net.tutsplus.com/tutorials/tools-and-tips/test-driving-shell-scripts/";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}s:44:"http://purl.org/rss/1.0/modules/syndication/";a:2:{s:12:"updatePeriod";a:1:{i:0;a:5:{s:4:"data";s:6:"hourly";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:15:"updateFrequency";a:1:{i:0;a:5:{s:4:"data";s:1:"1";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"link";a:2:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"rel";s:4:"self";s:4:"type";s:19:"application/rss+xml";s:4:"href";s:35:"http://feeds.feedburner.com/nettuts";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}i:1;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:2:{s:3:"rel";s:3:"hub";s:4:"href";s:32:"http://pubsubhubbub.appspot.com/";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:3:{s:4:"info";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:3:"uri";s:7:"nettuts";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:14:"emailServiceId";a:1:{i:0;a:5:{s:4:"data";s:7:"nettuts";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}s:18:"feedburnerHostname";a:1:{i:0;a:5:{s:4:"data";s:28:"http://feedburner.google.com";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:0:"";}}}}}}}}}}}}s:4:"type";i:128;s:7:"headers";a:10:{s:12:"content-type";s:23:"text/xml; charset=UTF-8";s:4:"etag";s:27:"6NR1WHals/wMrmBoVHdHG8mRVv4";s:13:"last-modified";s:29:"Sat, 11 May 2013 11:10:33 GMT";s:16:"content-encoding";s:4:"gzip";s:4:"date";s:29:"Sat, 11 May 2013 11:29:22 GMT";s:7:"expires";s:29:"Sat, 11 May 2013 11:29:22 GMT";s:13:"cache-control";s:18:"private, max-age=0";s:22:"x-content-type-options";s:7:"nosniff";s:16:"x-xss-protection";s:13:"1; mode=block";s:6:"server";s:3:"GSE";}s:5:"build";s:14:"20121030175911";}
