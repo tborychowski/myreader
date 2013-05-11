@@ -83,35 +83,17 @@
 
 
 	/*** HTML *********************************************************************************************************/
-	_getSourceHtml = function (src) {
-		var icon = (src.icon ? '<img src="../storage/favicons/' + src.id + '.png"">' : '<i class="icon-rss"></i>');
-		return '<li class="nav-source nav-btn nav-' + src.id + '" data-nav-type="src" data-action="' + src.id + '">' +
-			'<a href="#" class="nav-row">' +
-				(src.unread ? '<span class="no-badge">' + src.unread + '</span>' : '') +
-				'<span class="nav-icon">' + icon + '</span>' +
-				'<span class="nav-name">' + src.name + '</span>' +
-			'</a>' +
-		'</li>';
-	},
-
-	_getTagHtml = function (tag) {
-		return '<li class="nav-tag nav-btn nav-' + tag.name + '" data-nav-type="tag" data-action="' + tag.name + '">' +
-			'<a href="#" class="nav-row"><span class="nav-name">' + tag.name + '</span></a></li>';
-	},
-
-
 	_populateSources = function (sources) {
 		if (typeof sources !== 'undefined') _items = sources;
 
-		var i = 0, j = 0, src, tag, srcAr = [];
-		if (_items && _items.length) {
-			for (; tag = _items[i++] ;) {
-				tag.tag = tag.tag || 'all';
-				srcAr.push(_getTagHtml(tag));
-				if (tag.items) for (j = 0; src = tag.items[j++] ;) srcAr.push(_getSourceHtml(src));
+		var i = 0, tag, src, j, elems = _sourcesContainer.find('.nav-source');
+		for (; tag = _items[i++] ;) {
+			if (!tag.items) continue;
+			for (j = 0; src = tag.items[j++] ;) {
+				elems.filter('.nav-' + src.id).find('.no-badge').html(src.unread ? src.unread : '');
 			}
 		}
-		_sourcesContainer.html(srcAr.join(''));
+
 		_toggleSelection();
 	},
 
@@ -133,6 +115,7 @@
 	_loadStats = function () { if (_sourcesContainer.length) App.Get('stats', _populateStats); },
 
 	_reload = function (cfg) {
+		if (!_isReady) return;   // don't fetch on init as these are already populated in html
 		$.extend(_params, cfg);
 		if (_sourcesContainer.length) App.Get('sourcetree?' + $.param(_params), _populateSources);
 		_loadStats();
