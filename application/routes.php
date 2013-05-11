@@ -1,24 +1,31 @@
 <?php
 
-// landing page
-Route::get('/',         [ 'as' => 'home',     'uses' => 'home@index'    ]);
-Route::get('/settings', [ 'as' => 'settings', 'uses' => 'home@settings' ]);
-Route::get('/update',   [ 'as' => 'update',   'uses' => 'source@update' ]);
-Route::get('/login',    [ 'as' => 'login',    'uses' => 'home@login'    ]);
+Route::group(['before' => 'auth'], function () {
+	Route::get('/',         'home@index');					// landing page
+	Route::get('/settings', 'home@settings');				// settings page
+
+	Route::any('/json/items/(:num?)',   'item@index');		// all - all items or item
+	Route::get('/json/sourcetree',      'source@tree');		// get unread source tree with counter
+	Route::any('/json/sources/(:num?)', 'source@index');	// manage sources
+
+	Route::get('/logout', function () { Auth::logout(); return Redirect::to('login'); });
+});
 
 
-/*** API ***/
-Route::get('json/stats',              'item@stats');			// stats
+// both have to either pass email or be authenticated
+Route::get('/update', 'source@update');
+Route::get('/json/stats', 'item@stats');
 
-Route::any('json/items/(:num?)',      'item@index');			// all - all items or item
+Route::get('/login', [ 'as' => 'login', 'uses' => 'home@login' ]);
+Route::post('/json/login', function () {
+	//$u = User::find(1); $u->password = Hash::make(''); $u->save();  // reset password
+	// $u = User::create([ 'email' => '', 'password' => Hash::make('') ]);
+	// $u->save();
 
-Route::get('json/sourcetree',         'source@tree');			// get unread source tree with counter
-Route::any('json/sources/(:num?)',    'source@index');			// manage sources
+	if (Auth::attempt(Input::json(true))) return JSON::success();
+	return JSON::error('Incorrect login or password');
+});
 
-
-
-
-Route::get('/logout',   [ 'as' => 'logout', function () { Auth::logout(); return Redirect::to('login'); }]);
 
 
 

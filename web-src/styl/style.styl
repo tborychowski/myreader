@@ -6,7 +6,7 @@ sidebar-width = 180px
 toolbar-height = 40px
 
 html
-	bg #ddd 'noise.png' 0 0 repeat;
+	bg #ddd 'noise.png' 0 0 repeat; height 100%;
 
 a:focus
 	outline none;
@@ -30,19 +30,31 @@ input::-moz-focus-inner
 #toolbar
 	z 1; position fixed; left sidebar-width; bottom 0; right 0; pad 0; height toolbar-height; border-box();
 	bg #ddd 'noise.png' 0 0 repeat; border-top #aaa; shadow 0 1 0 #fff 1 inset; text center
+
+
+#toolbar
+#sideToolbar
 	.btn
 		color #888; font 20; height 40; min-width 48px; margin-right 18px; pad 0 10; bg none; border none;
 		transition color .2s; text-shadow 0 1px 0 #fff;
 		&:hover
-			color #666;
+			color #555;
 	.btn-group
-		radius 15; border #999; height 30; mar 4 0 0; shadow 0 1 0 #fff; bg #ddd; pad 0 5;
+		radius 15; border #999; height 30; mar 4 0 0 10; shadow 0 1 0 #fff; bg #ddd; pad 0 5;
 		.btn
 			height 30; mar 0 5 0 0; position relative;
 		.badge
 			font 11/1; b 1; pos 1 2; bg #999; color #FFF; padding 2 5 1; radius 10; text-shadow none;
 
-
+#sideToolbar
+	z 1; position fixed; left 0; bottom 0; width sidebar-width; pad 0; height toolbar-height; border-box();
+	border-top #222; shadow 0 1 0 #555 1 inset; text center
+	.btn
+		color #666; text-shadow 0 -1px 0 #000;
+		&:hover
+			color #999;
+	.pull-right
+		margin-right 0;
 
 
 /*** SIDEBAR **********************************************************************************************************/
@@ -51,7 +63,7 @@ input::-moz-focus-inner
 	bg #333 'noise.png' 0 0 repeat; shadow -5 0 5 #000 .4 inset; overflow hidden; overflow-y auto;
 
 	.sidebar-wrapper
-		pos 50 0 0 0; pad 0; margin-right -20px; overflow hidden; overflow-y auto;
+		pos 50 0 toolbar-height 0; pad 0; margin-right -20px; overflow hidden; overflow-y auto;
 
 	.nav-list
 		pad 0; list-style none; width 180;
@@ -216,3 +228,24 @@ input::-moz-focus-inner
 
 
 //@import "_mobile";
+
+html.login
+	bg #333 'noise.png' 0 0 repeat;
+	body
+		height 100%;
+	form
+		show 2; radius 1; pad 15 40 30; gradient #ddd #aaa; mar -80px auto 0; width 170; border #000; top 50%;
+		shadow 0 15 15 2 #fff .5 inset, 0 2 20 2 #000 .6; position relative;
+
+	label
+		show 2; color: #444; b 1; font 12; pad 10 0 0; mar 0; text-shadow 0 1px 0 #fff; non-selectable();
+
+	input[type]
+		pad 3 4; font 15; size 100% auto; border-box(); bg rgba(#fff,.6); radius 1; border #777; shadow: 0 1 0 #fff .5, 0 1 2 #000 .2 inset
+
+		&:focus
+			bg rgba(#fff, .9)
+
+	button
+		pos(); visibility hidden;
+

@@ -35,21 +35,25 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
-html{background:#ddd url(../img/noise.png) 0 0 repeat}
+html{background:#ddd url(../img/noise.png) 0 0 repeat;height:100%}
 a:focus{outline:none}
 button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transparent}
 .logo{font-size:24px;color:#999;padding:5px 0 0 15px;float:left;opacity:.3;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;position:fixed;z-index:10;}
 .logo .icon-rss{font-size:34px;vertical-align:bottom;margin-right:-4px;}
 .logo .icon-rss:before{-webkit-transform:rotate(270deg) translateZ(1px);-moz-transform:rotate(270deg) translateZ(1px);-o-transform:rotate(270deg) translateZ(1px);-ms-transform:rotate(270deg) translateZ(1px);transform:rotate(270deg) translateZ(1px)}
 .main-logo{font-size:270px;margin:-155px 0 0 0;color:#ccc;text-shadow:0 1px 0 #fff,1px -1px 0 #aaa;opacity:.4;cursor:default;position:fixed;top:48%;left:50%}
-#toolbar{z-index:1;position:fixed;left:180px;bottom:0;right:0;padding:0;height:40px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:#ddd url(../img/noise.png) 0 0 repeat;border-top:1px solid #aaa;-webkit-box-shadow:0 1px 0 #fff inset;-moz-box-shadow:0 1px 0 #fff inset;box-shadow:0 1px 0 #fff inset;text-align:center;}
-#toolbar .btn{color:#888;font-size:20px;height:40px;min-width:48px;margin-right:18px;padding:0 10px;background:none;border:none;-webkit-transition:color .2s ease-out;-moz-transition:color .2s ease-out;-o-transition:color .2s ease-out;-ms-transition:color .2s ease-out;transition:color .2s ease-out;text-shadow:0 1px 0 #fff;}
-#toolbar .btn:hover{color:#666}
-#toolbar .btn-group{-moz-border-radius:15px;border-radius:15px;background-clip:padding-box;-webkit-background-clip:padding;-moz-background-clip:padding;-ms-background-clip:padding;background-clip:padding;border:1px solid #999;height:30px;margin:4px 0 0;-webkit-box-shadow:0 1px 0 #fff;-moz-box-shadow:0 1px 0 #fff;box-shadow:0 1px 0 #fff;background:#ddd;padding:0 5px;}
-#toolbar .btn-group .btn{height:30px;margin:0 5px 0 0;position:relative}
-#toolbar .btn-group .badge{font-size:11px;line-height:1;font-weight:bold;position:absolute;top:1px;right:2px;background:#999;color:#fff;padding:2px 5px 1px;-moz-border-radius:10px;border-radius:10px;background-clip:padding-box;-webkit-background-clip:padding;-moz-background-clip:padding;-ms-background-clip:padding;background-clip:padding;text-shadow:none}
+#toolbar{z-index:1;position:fixed;left:180px;bottom:0;right:0;padding:0;height:40px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:#ddd url(../img/noise.png) 0 0 repeat;border-top:1px solid #aaa;-webkit-box-shadow:0 1px 0 #fff inset;-moz-box-shadow:0 1px 0 #fff inset;box-shadow:0 1px 0 #fff inset;text-align:center}
+#toolbar .btn,#sideToolbar .btn{color:#888;font-size:20px;height:40px;min-width:48px;margin-right:18px;padding:0 10px;background:none;border:none;-webkit-transition:color .2s ease-out;-moz-transition:color .2s ease-out;-o-transition:color .2s ease-out;-ms-transition:color .2s ease-out;transition:color .2s ease-out;text-shadow:0 1px 0 #fff;}
+#toolbar .btn:hover,#sideToolbar .btn:hover{color:#555}
+#toolbar .btn-group,#sideToolbar .btn-group{-moz-border-radius:15px;border-radius:15px;background-clip:padding-box;-webkit-background-clip:padding;-moz-background-clip:padding;-ms-background-clip:padding;background-clip:padding;border:1px solid #999;height:30px;margin:4px 0 0 10px;-webkit-box-shadow:0 1px 0 #fff;-moz-box-shadow:0 1px 0 #fff;box-shadow:0 1px 0 #fff;background:#ddd;padding:0 5px;}
+#toolbar .btn-group .btn,#sideToolbar .btn-group .btn{height:30px;margin:0 5px 0 0;position:relative}
+#toolbar .btn-group .badge,#sideToolbar .btn-group .badge{font-size:11px;line-height:1;font-weight:bold;position:absolute;top:1px;right:2px;background:#999;color:#fff;padding:2px 5px 1px;-moz-border-radius:10px;border-radius:10px;background-clip:padding-box;-webkit-background-clip:padding;-moz-background-clip:padding;-ms-background-clip:padding;background-clip:padding;text-shadow:none}
+#sideToolbar{z-index:1;position:fixed;left:0;bottom:0;width:180px;padding:0;height:40px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border-top:1px solid #222;-webkit-box-shadow:0 1px 0 #555 inset;-moz-box-shadow:0 1px 0 #555 inset;box-shadow:0 1px 0 #555 inset;text-align:center;}
+#sideToolbar .btn{color:#666;text-shadow:0 -1px 0 #000;}
+#sideToolbar .btn:hover{color:#999}
+#sideToolbar .pull-right{margin-right:0}
 #sidebar{position:fixed;top:0;left:0;bottom:0;width:180px;padding:45px 0 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-size:13px;background:#333 url(../img/noise.png) 0 0 repeat;-webkit-box-shadow:-5px 0 5px rgba(0,0,0,0.4) inset;-moz-box-shadow:-5px 0 5px rgba(0,0,0,0.4) inset;box-shadow:-5px 0 5px rgba(0,0,0,0.4) inset;overflow:hidden;overflow-y:auto;}
-#sidebar .sidebar-wrapper{position:absolute;top:50px;right:0;bottom:0;left:0;padding:0;margin-right:-20px;overflow:hidden;overflow-y:auto}
+#sidebar .sidebar-wrapper{position:absolute;top:50px;right:0;bottom:40px;left:0;padding:0;margin-right:-20px;overflow:hidden;overflow-y:auto}
 #sidebar .nav-list{padding:0;list-style:none;width:180px;}
 #sidebar .nav-list:last-child{margin-bottom:10px}
 #sidebar .nav-header{color:#999;text-shadow:0 -1px 0 rgba(0,0,0,0.4);cursor:default;display:block;font-size:13px;line-height:20px;font-weight:bold;padding:0;text-transform:uppercase;overflow:hidden;}
@@ -99,3 +103,10 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transp
 .main-content.settings .entry .btn-save,.main-content.settings .entry .btn-cancel{display:none}
 .main-content.settings .entry.in-edit .btn-edit,.main-content.settings .entry.in-edit .btn-remove{display:none}
 .main-content.settings .entry.in-edit .btn-save,.main-content.settings .entry.in-edit .btn-cancel{display:inline-block}
+html.login{background:#333 url(../img/noise.png) 0 0 repeat;}
+html.login body{height:100%}
+html.login form{display:block;-moz-border-radius:1px;border-radius:1px;background-clip:padding-box;-webkit-background-clip:padding;-moz-background-clip:padding;-ms-background-clip:padding;background-clip:padding;padding:15px 40px 30px;background:-webkit-linear-gradient(top,#ddd,#aaa);background:-moz-linear-gradient(top,#ddd,#aaa);background:-o-linear-gradient(top,#ddd,#aaa);background:-ms-linear-gradient(top,#ddd,#aaa);background:linear-gradient(top,#ddd,#aaa);margin:-80px auto 0;width:170px;border:1px solid #000;top:50%;-webkit-box-shadow:0 15px 15px 2px rgba(255,255,255,0.5) inset, 0 2px 20px 2px rgba(0,0,0,0.6);-moz-box-shadow:0 15px 15px 2px rgba(255,255,255,0.5) inset, 0 2px 20px 2px rgba(0,0,0,0.6);box-shadow:0 15px 15px 2px rgba(255,255,255,0.5) inset, 0 2px 20px 2px rgba(0,0,0,0.6);position:relative}
+html.login label{display:block;color:#444;font-weight:bold;font-size:12px;padding:10px 0 0;margin:0;text-shadow:0 1px 0 #fff;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default}
+html.login input[type]{padding:3px 4px;font-size:15px;width:100%;height:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:rgba(255,255,255,0.6);-moz-border-radius:1px;border-radius:1px;background-clip:padding-box;-webkit-background-clip:padding;-moz-background-clip:padding;-ms-background-clip:padding;background-clip:padding;border:1px solid #777;-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.5) , 0 1px 2px rgba(0,0,0,0.2) inset;-moz-box-shadow:0 1px 0 rgba(255,255,255,0.5) , 0 1px 2px rgba(0,0,0,0.2) inset;box-shadow:0 1px 0 rgba(255,255,255,0.5) , 0 1px 2px rgba(0,0,0,0.2) inset;}
+html.login input[type]:focus{background:rgba(255,255,255,0.9)}
+html.login button{position:absolute;visibility:hidden}

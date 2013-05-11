@@ -47,6 +47,7 @@
 
 		if (action === 'add') App.Publish('source/add');
 		if (action === 'settings') window.location.href = App.rootPath + '/settings';
+		if (action === 'logout') window.location.href = App.rootPath + '/logout';
 		if (action === 'back') window.location.href = App.rootPath;
 	},
 
@@ -130,8 +131,9 @@
 	_init = function () {
 		if (_isReady) return;
 		_sidebar = $('#sidebar');
-		_toolbar = $('#toolbar');
+		_toolbar = $('#toolbar, #sideToolbar');
 
+		if (!_sidebar.length && !_toolbar.length) return;
 		if (_sidebar.length) _sourcesContainer = _sidebar.find('.sidebar-sources');
 
 		// EVENTS
