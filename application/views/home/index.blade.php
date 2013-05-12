@@ -1,29 +1,10 @@
 @layout('master')
 @section('content')
 
-
-<div id="toolbar">
-	<div class="btn-group pull-left status-buttons">
-		<button class="btn btn-unread" data-action="unread">
-			<i class="icon-eye-open"></i> <span class="badge">{{$stats['unread']}}</span>
-		</button>
-		<button class="btn btn-starred" data-action="starred">
-			<i class="icon-star-empty"></i> <span class="badge">{{$stats['starred']}}</span>
-		</button>
-		<button class="btn btn-archive" data-action="archive">
-			<i class="icon-inbox"></i> <span class="badge">{{$stats['all']}}</span>
-		</button>
-	</div>
-	<button class="btn pull-left" data-action="all-read"><i class="icon-ok-circle"></i> mark all as read</button>
-
-	<button class="btn pull-right" data-action="next"><i class="icon-chevron-down"></i></button>
-	<button class="btn pull-right" data-action="prev"><i class="icon-chevron-up"></i></button>
-	<button class="btn pull-right" data-action="refresh"><i class="icon-repeat"></i></button>
-</div>
-
 <div id="sidebar">
+	<span id="logo"><i class="icon-rss"></i> myreader</span>
 	<ul class="nav-list">
-		<li class="nav-header nav-btn active">
+		<li class="nav-header nav-btn active" data-nav-type="unread">
 			<a href="#" class="nav-row">
 				<span class="badge">{{$stats['unread']}}</span>
 				<span class="nav-name nav-btn">Unread</span>
@@ -60,9 +41,28 @@
 		<button class="btn pull-right" data-action="settings"><i class="icon-cog"></i></button>
 		<button class="btn pull-left" data-action="logout"><i class="icon-signout"></i></button>
 	</div>
-
 </div>
 
 <div id="content" class="main-content unreaditems"></div>
+
+<div id="toolbar">
+	<div class="btn-group pull-left status-buttons">
+		<button class="btn btn-unread" data-action="unread">
+			<i class="icon-eye-open"></i> <span class="badge">{{$stats['unread']}}</span>
+		</button>
+		<button class="btn btn-starred" data-action="starred">
+			<i class="icon-star-empty"></i> <span class="badge">{{$stats['starred']}}</span>
+		</button>
+		<button class="btn btn-archive" data-action="archive">
+			<i class="icon-inbox"></i> <span class="badge">{{$stats['all']}}</span>
+		</button>
+	</div>
+	<button class="btn pull-left" data-action="all-read"><i class="icon-ok-circle"></i> mark all as read</button>
+
+	<button class="btn pull-right" data-action="next"><i class="icon-chevron-down"></i></button>
+	<button class="btn pull-right" data-action="prev"><i class="icon-chevron-up"></i></button>
+	<button class="btn pull-right" data-action="refresh"><i class="icon-repeat"></i></button>
+</div>
+
 
 @endsection

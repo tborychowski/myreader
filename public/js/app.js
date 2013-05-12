@@ -830,6 +830,7 @@ window.App = (function ($, App, window) {
 		e.preventDefault();
 		var btn = $(this), type = btn.data('navType'), id = btn.data('action');
 		_params = { status: _params.status };
+		if (type === 'unread') _params.status = 'unread';
 		if (type === 'tag') _params.tag = id;
 		if (type === 'src') _params.src = id;
 		_navigate();
@@ -989,7 +990,8 @@ window.App = (function ($, App, window) {
 	_editSave = function (entry, item) {
 		var form = entry.find('form'), newItem = form.formParams(true);
 
-		$.extend(item, newItem);
+		if (item) $.extend(item, newItem);
+		else item = newItem;
 		if (item.id) App.Put('sources/' + item.id, newItem, function () { _editStop(entry, item); });
 		else {
 			App.Post('sources', newItem, function (resp) {
@@ -1016,6 +1018,7 @@ window.App = (function ($, App, window) {
 	_getSourceHtml = function (src) {
 		src = src || {};
 		if (src.created_at && src.created_at.date) src.created_at = src.created_at.date;
+		if (src.updated_at && src.updated_at.date) src.updated_at = src.updated_at.date;
 		return '<div class="entry" data-id="' + (src.id || '') + '">' +
 			'<div class="entry-header">' +
 				'<h3>' +

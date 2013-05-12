@@ -57,6 +57,7 @@
 		e.preventDefault();
 		var btn = $(this), type = btn.data('navType'), id = btn.data('action');
 		_params = { status: _params.status };
+		if (type === 'unread') _params.status = 'unread';
 		if (type === 'tag') _params.tag = id;
 		if (type === 'src') _params.src = id;
 		_navigate();

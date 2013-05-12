@@ -6,7 +6,7 @@ sidebar-width = 180px
 toolbar-height = 40px
 
 html
-	bg #ddd 'noise.png' 0 0 repeat; height 100%;
+	bg #ddd 'noise.png' 0 0 repeat; height 100%
 
 a:focus
 	outline none;
@@ -15,8 +15,9 @@ button::-moz-focus-inner
 input::-moz-focus-inner
 	padding 0; border 0;
 
-.logo
-	font 24; color #999; pad 5 0 0 15; float left; opacity .3; non-selectable(); position fixed; z 10;
+
+#logo
+	pos 0; left 0; font 24; color #999; pad 5 0 0 15; opacity .3; non-selectable();
 	.icon-rss
 		font 34; vertical-align bottom; margin-right -4px;
 		&:before
@@ -51,7 +52,7 @@ input::-moz-focus-inner
 			font 11/1; b 1; pos 2 0; bg #666; color #FFF; padding 2 5 1; radius 10; text-shadow none;
 
 #sideToolbar
-	z 1; position fixed; left 0; bottom 0; width sidebar-width; pad 0; height toolbar-height; border-box();
+	position fixed; left 0; bottom 0; width sidebar-width; pad 0; height toolbar-height; border-box();
 	border-top #222; shadow 0 1 0 #555 1 inset; text center
 	.btn
 		color #666; text-shadow 0 -1px 0 #000;
@@ -67,6 +68,7 @@ input::-moz-focus-inner
 #sidebar
 	position fixed; top 0; left 0; bottom 0; width sidebar-width; pad 45 0 0; border-box(); font 13;
 	bg #333 'noise.png' 0 0 repeat; shadow -5 0 5 #000 .4 inset; overflow hidden; overflow-y auto;
+
 
 	.sidebar-wrapper
 		pos 90 0 toolbar-height 0; pad 0; margin-right -20px; overflow hidden; overflow-y auto;
@@ -90,37 +92,33 @@ input::-moz-focus-inner
 		&:hover
 			color #eee;
 
-	.active .nav-row
-	.nav-row:focus
-		color #C8BCBE; gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D; shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F
+		.badge
+		.no-badge
+		.btn-settings
+			float right; margin-left -100%; position relative;
 
-	.badge
-	.no-badge
-	.btn-settings
-		float right; margin-left -100%; position relative;
+		.badge
+		.no-badge
+			vertical-align middle; font 12px/15px; padding 0 2 0 0; radius 2; show 1; white-space nowrap;
+		.badge
+			background-color #999; color #FFF; b 1; text-shadow 0 -1px 0 rgba(#000, .25); padding 2 6 1;
 
-	.badge
-	.no-badge
-		vertical-align middle; font 12px/15px; padding 0 2 0 0; radius 2; show 1; white-space nowrap;
-	.badge
-		background-color #999; color #FFF; b 1; text-shadow 0 -1px 0 rgba(#000, .25); padding 2 6 1;
+		.icon-rss
+		.nav-icon
+		.nav-icon img
+			float left; size 16;
+		.icon-rss
+			font 16; color #888; opacity .3;
+		.nav-icon
+			margin-right 8px;
 
-	.icon-rss
-	.nav-icon
-	.nav-icon img
-		float left; size 16;
-	.icon-rss
-		font 16; color #888; opacity .3;
-	.nav-icon
-		margin-right 8px;
+		.nav-name
+			float left; height 16; vertical-align middle; white-space nowrap; max-width 120px;
+			overflow hidden; text-overflow ellipsis;
 
-	.nav-name
-		float left; height 16; vertical-align middle; white-space nowrap; max-width 120px;
-		overflow hidden; text-overflow ellipsis;
-
-	.nav-btn
-		&.nav-type
-			font 16;
+		.nav-btn
+			&.nav-type
+				font 16;
 
 	.nav-tag
 		margin-top 15px;
@@ -130,6 +128,10 @@ input::-moz-focus-inner
 		.nav-name
 			line-height 15px
 
+	.active .nav-row
+	.nav-row:focus
+		color #C8BCBE; gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D; shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F
+
 /*** SIDEBAR **********************************************************************************************************/
 
 
@@ -137,7 +139,7 @@ input::-moz-focus-inner
 
 /*** MAIN CONTENT *****************************************************************************************************/
 .main-content
-	position relative; mar 0 0 0 sidebar-width; border-box(); color #999; text center; min-width 768px;
+	position relative; mar 0 0 0 sidebar-width; border-box(); color #999; text center; padding-bottom 50%;
 
 	.entry
 		text left; background-color #f9f9f9; border-bottom #aaa; transition background-color .5s;
@@ -164,8 +166,8 @@ input::-moz-focus-inner
 		.unstar
 		.collapse
 			show 0;
-		&:last-child
-			margin-bottom 60%;
+		// &:last-child
+		// 	margin-bottom 60%;
 		&.active
 		&.unread
 			background-color #fff;
