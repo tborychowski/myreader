@@ -34,8 +34,11 @@ input
 
 
 	.sidebar-wrapper
-		pos 90 0 toolbar-height 0; pad 0; margin-right -20px; overflow hidden; overflow-y auto;
+		position fixed; top 90px; bottom toolbar-height; left 0; width (sidebar-width + 20); pad 0;
+		overflow hidden; overflow-y auto;
 
+	&>.nav-list
+		position fixed
 	.nav-list
 		pad 0; list-style none; width 180;
 		&:last-child
@@ -93,7 +96,8 @@ input
 
 	.active .nav-row
 	.nav-row:focus
-		color #C8BCBE; gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D; shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F
+		color #C8BCBE; gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D;
+		shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F
 
 /*** SIDEBAR **********************************************************************************************************/
 
@@ -179,7 +183,7 @@ input
 
 
 #sideLogo
-	pos 0; left 0; font 24; color #999; pad 5 0 0 15; opacity .3; non-selectable();
+	position fixed; top 0; left 0; font 24; color #999; pad 5 0 0 15; opacity .3; non-selectable();
 	.icon-rss
 		font 34; vertical-align bottom; margin-right -4px;
 		&:before
@@ -215,8 +219,8 @@ input
 
 	#mainToolbar
 		size 100% toolbar-height; z 1; position relative; float right; min-width 768px;
-		bg #ddd 'noise.png' 0 0 repeat; border-top #aaa; shadow 0 1 0 #fff 1 inset; text center
-		shadow -5 3 5 #000 .5;
+		bg #ddd 'noise.png' 0 0 repeat; border-top #aaa; text center
+		shadow 0 1 0 #fff 1 inset, -5 3 5 #000 .5;
 
 	#sideToolbar
 		position absolute; left 0; background #222; size sidebar-width toolbar-height; text center
