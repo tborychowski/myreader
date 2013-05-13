@@ -202,7 +202,7 @@
 
 	_init = function () {
 		if (_isReady) return;
-		_container = $('#content.unreaditems');
+		_container = $('#main.unreaditems .main-wrapper');
 		if (!_container.length) return;
 		_body = $('html,body');
 		_btnRefresh = $('#toolbar .icon-repeat');

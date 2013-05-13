@@ -10,8 +10,6 @@
 </head>
 <body>
 
-<div class="main-logo"><i class="icon-rss"></i></div>
-
 @yield('content')
 
 <script>var App = App || {}; App.rootPath = '{{ URL::base() }}';</script>

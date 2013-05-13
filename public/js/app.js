@@ -748,7 +748,7 @@ window.App = (function ($, App, window) {
 
 	_init = function () {
 		if (_isReady) return;
-		_container = $('#content.unreaditems');
+		_container = $('#main.unreaditems .main-wrapper');
 		if (!_container.length) return;
 		_body = $('html,body');
 		_btnRefresh = $('#toolbar .icon-repeat');
@@ -1076,7 +1076,7 @@ window.App = (function ($, App, window) {
 
 	_init = function () {
 		if (_isReady) return;
-		_container = $('#content.settings');
+		_container = $('#main.settings .main-wrapper');
 		if (!_container.length) return;
 
 		_container.on('click', '.tb-btn', _btnClickHandler);

@@ -141,7 +141,7 @@
 
 	_init = function () {
 		if (_isReady) return;
-		_container = $('#content.settings');
+		_container = $('#main.settings .main-wrapper');
 		if (!_container.length) return;
 
 		_container.on('click', '.tb-btn', _btnClickHandler);

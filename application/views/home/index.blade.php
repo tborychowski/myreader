@@ -1,8 +1,13 @@
 @layout('master')
 @section('content')
 
+<div id="main" class="unreaditems">
+	<div id="mainLogo"><i class="icon-rss"></i></div>
+	<div class="main-wrapper"></div>
+</div>
+
 <div id="sidebar">
-	<span id="logo"><i class="icon-rss"></i> myreader</span>
+	<span id="sideLogo"><i class="icon-rss"></i> myreader</span>
 	<ul class="nav-list">
 		<li class="nav-header nav-btn active" data-nav-type="unread">
 			<a href="#" class="nav-row">
@@ -17,7 +22,6 @@
 				<li class="nav-tag nav-btn nav-{{$tag['name']}}" data-nav-type="tag" data-action="{{$tag['name']}}">
 					<a href="#" class="nav-row"><span class="nav-name">{{$tag['name']}}</span></a>
 				</li>
-
 				@foreach ($tag['items'] as $src)
 					<li class="nav-source nav-btn nav-{{ $src['id'] }}" data-nav-type="src" data-action="{{ $src['id'] }}"
 						@if (!$src['unread']) style="display:none" @endif
@@ -37,31 +41,33 @@
 		</ul>
 	</div>
 
+</div>
+
+
+<div id="toolbar">
 	<div id="sideToolbar">
 		<button class="btn pull-right" data-action="settings"><i class="icon-cog"></i></button>
 		<button class="btn pull-left" data-action="logout"><i class="icon-signout"></i></button>
 	</div>
-</div>
 
-<div id="content" class="main-content unreaditems"></div>
+	<div id="mainToolbar">
+		<div class="btn-group pull-left status-buttons">
+			<button class="btn btn-unread" data-action="unread">
+				<i class="icon-eye-open"></i> <span class="badge">{{$stats['unread']}}</span>
+			</button>
+			<button class="btn btn-starred" data-action="starred">
+				<i class="icon-star-empty"></i> <span class="badge">{{$stats['starred']}}</span>
+			</button>
+			<button class="btn btn-archive" data-action="archive">
+				<i class="icon-inbox"></i> <span class="badge">{{$stats['all']}}</span>
+			</button>
+		</div>
+		<button class="btn pull-left" data-action="all-read"><i class="icon-ok-circle"></i> mark all as read</button>
 
-<div id="toolbar">
-	<div class="btn-group pull-left status-buttons">
-		<button class="btn btn-unread" data-action="unread">
-			<i class="icon-eye-open"></i> <span class="badge">{{$stats['unread']}}</span>
-		</button>
-		<button class="btn btn-starred" data-action="starred">
-			<i class="icon-star-empty"></i> <span class="badge">{{$stats['starred']}}</span>
-		</button>
-		<button class="btn btn-archive" data-action="archive">
-			<i class="icon-inbox"></i> <span class="badge">{{$stats['all']}}</span>
-		</button>
+		<button class="btn pull-right" data-action="next"><i class="icon-chevron-down"></i></button>
+		<button class="btn pull-right" data-action="prev"><i class="icon-chevron-up"></i></button>
+		<button class="btn pull-right" data-action="refresh"><i class="icon-repeat"></i></button>
 	</div>
-	<button class="btn pull-left" data-action="all-read"><i class="icon-ok-circle"></i> mark all as read</button>
-
-	<button class="btn pull-right" data-action="next"><i class="icon-chevron-down"></i></button>
-	<button class="btn pull-right" data-action="prev"><i class="icon-chevron-up"></i></button>
-	<button class="btn pull-right" data-action="refresh"><i class="icon-repeat"></i></button>
 </div>
 
 
