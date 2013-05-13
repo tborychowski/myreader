@@ -49,7 +49,12 @@ class Source extends Eloquent {
 		$validation = Validator::make($input, static::$rules);
 		if ($validation->fails()) return JSON::error($validation->errors->first());
 
-		$item = array('name' => $input['name'], 'url' => $input['url']);
+		$item = [
+			'name' => $input['name'],
+			'url' => $input['url'],
+			'user_id' => Auth::user()->id
+		];
+
 		if (isset($input['tag'])) $item['tag'] = $input['tag']; else $item['tag'] = '';
 
 		return Source::create($item);
@@ -64,7 +69,7 @@ class Source extends Eloquent {
 
 		// VALIDATE
 		$rules = static::$rules;
-		$rules['name'] .= ','.$item->id;
+		$rules['name'] .= ','.$item->id;	// ensure it's unique without the current
 		$rules['url'] .= ','.$item->id;
 		$validation = Validator::make($input, $rules);
 		if ($validation->fails()) return JSON::error($validation->errors->first());
