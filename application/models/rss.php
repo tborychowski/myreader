@@ -11,15 +11,15 @@ class RSS {
 		'elements'       => 'div,p,ul,li,a,img,dl,dt,h1,h2,h3,h4,h5,h6,ol,br,table,tr,td,blockquote,pre,ins,del,th,thead,tbody,b,i,strong,em,tt'
 	];
 
-	public static function update () {
-		$feeds = Source::get();
+	public static function update ($user_id) {
+		$feeds = Source::where_user_id($user_id)->get();
 		$countItems = 0;
 		@set_time_limit(5000);
-		foreach ($feeds as $feed) $countItems += self::update_feed($feed);
+		foreach ($feeds as $feed) $countItems += self::update_feed($feed, $user_id);
 		return count($feeds).' feeds updated with '.$countItems.' new items';
 	}
 
-	public static function update_feed ($item) {
+	public static function update_feed ($item, $user_id) {
 		$pie = new SimplePie();
 		$pie->set_cache_location(path('storage').'simplepie');
 		$pie->set_cache_duration(1800);
@@ -39,7 +39,7 @@ class RSS {
 			foreach ($feeds as $feed) {
 				$feedUrl = $feed->get_link();
 				$items += Item::add([
-					'user_id' => 1,
+					'user_id' => $user_id,
 					'source_id' => $item->id,
 					'item_id' => $feed->get_id(),
 					'datetime' => $feed->get_date('Y-m-d H:i:s'),
@@ -51,7 +51,7 @@ class RSS {
 			}
 
 			//XXX: To Be Removed
-			if (isset($item->real_url) && is_array($item->real_url)) $item->real_url = '';
+			// if (isset($item->real_url) && is_array($item->real_url)) $item->real_url = '';
 
 			if (empty($item->real_url)) {
 				$lnk = $feedUrl;
@@ -100,8 +100,10 @@ class RSS {
 		curl_close($ch);
 		if (preg_match('#Location: (.*)#', $a, $r)) $url2 = trim($r[1]);
 
-		$parse = parse_url($url2);
-		if (isset($parse['host'])) return $parse['host'];       // get domain from url
+		if (isset($url2)) {
+			$parse = parse_url($url2);
+			if (isset($parse['host'])) return $parse['host'];       // get domain from url
+		}
 
 		$parse = parse_url($url);
 		if (isset($parse['host'])) return $parse['host'];       // get domain from original url

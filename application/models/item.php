@@ -8,11 +8,11 @@ class Item extends Eloquent {
 
 
 
-	public static function stats () {
+	public static function stats ($user_id) {
 		return [
-			'unread' => Item::where_is_unread(1)->count(),
-			'starred' => Item::where_is_starred(1)->count(),
-			'all' => Item::count()
+			'unread' => Item::where_user_id($user_id)->where_is_unread(1)->count(),
+			'starred' => Item::where_user_id($user_id)->where_is_starred(1)->count(),
+			'all' => Item::where_user_id($user_id)->count()
 		];
 	}
 

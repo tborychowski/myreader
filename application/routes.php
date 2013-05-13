@@ -4,6 +4,7 @@ Route::group(['before' => 'auth'], function () {
 	Route::get('/',         'home@index');					// landing page
 	Route::get('/settings', 'home@settings');				// settings page
 
+	Route::get('/json/stats',           'item@stats');
 	Route::any('/json/items/(:num?)',   'item@index');		// all - all items or item
 	Route::get('/json/sourcetree',      'source@tree');		// get unread source tree with counter
 	Route::any('/json/sources/(:num?)', 'source@index');	// manage sources
@@ -13,17 +14,21 @@ Route::group(['before' => 'auth'], function () {
 
 
 // both have to either pass email or be authenticated
-Route::get('/update', 'source@update');
-Route::get('/json/stats', 'item@stats');
+Route::get('/update/(:any?)', 'source@update');
+Route::get('/stats/(:any?)', 'item@stats');
+
 
 Route::get('/login', [ 'as' => 'login', 'uses' => 'home@login' ]);
 Route::post('/json/login', function () {
-	//$u = User::create([ 'email' => '', 'password' => Hash::make('') ]);
-	//$u->save();
-
 	if (Auth::attempt(Input::json(true))) return JSON::success();
 	return JSON::error('Incorrect login or password');
 });
+
+
+// Route::get('/makeuser', function () {
+// 	$u = User::create([ 'email' => '', 'password' => Hash::make('') ]);
+// 	$u->save();
+// });
 
 
 

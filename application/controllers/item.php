@@ -7,7 +7,12 @@ class Item_Controller extends Base_Controller {
 	/**
 	 * Retrieve counters: unread, starred, all
 	 */
-	public function get_stats () { return Item::stats(); }
+	public function get_stats ($email = null) {
+		if (isset($email)) $user = User::where_email($email)->first();
+		else $user = Auth::user();
+		if (!$user) return JSON::error('User not found');
+		return Item::stats($user->id);
+	}
 
 
 	/**
