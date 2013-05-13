@@ -1022,7 +1022,7 @@ window.App = (function ($, App, window) {
 		return '<div class="entry" data-id="' + (src.id || '') + '">' +
 			'<div class="entry-header">' +
 				'<h3>' +
-					(src.icon ? '<img src="../storage/favicons/' + src.id + '.png"> ' : '') +
+					(src.icon ? '<img src="img/favicons/' + src.id + '.png"> ' : '') +
 					(src.name || '') +
 					(src.tag ? ' &lt;' + src.tag + '&gt;' : '') +
 				'</h3>' +

@@ -72,7 +72,7 @@ class RSS {
 	//https://plus.google.com/_/favicon?domain=http://feeds.feedburner.com/CssTricks
 	public static function get_icon ($item) {
 		$iconUrl = 'https://plus.google.com/_/favicon?domain=' . $item->real_url;
-		$file = path('storage').'/favicons/'.$item->id.'.png';
+		$file = path('public').'/img/favicons/'.$item->id.'.png';
 		$tooOld = isset($item->icon) && ($item->icon + 604800 < time());
 		$noImg = !file_exists($file);
 

@@ -1,11 +1,9 @@
 @layout('master')
 @section('content')
-
 <div id="main" class="unreaditems">
 	<div id="mainLogo"><i class="icon-rss"></i></div>
 	<div class="main-wrapper"></div>
 </div>
-
 <div id="sidebar">
 	<span id="sideLogo"><i class="icon-rss"></i> myreader</span>
 	<ul class="nav-list">
@@ -28,7 +26,7 @@
 						><a href="#" class="nav-row">
 							<span class="no-badge">@if ($src['unread']) {{ $src['unread'] }} @endif</span>
 							<span class="nav-icon">
-								@if ($src['icon']) <img src="../storage/favicons/{{ $src['id'] }}.png">
+								@if ($src['icon']) <img src="img/favicons/{{ $src['id'] }}.png">
 								@else <i class="icon-rss"></i>
 								@endif
 							</span>
