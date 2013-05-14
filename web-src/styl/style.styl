@@ -6,8 +6,8 @@ toolbar-height = 40px
 
 html
 	font-family sans-serif
-	// -ms-text-size-adjust: 100%;
-	// -webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 html
 body
 	height 100%;
@@ -31,14 +31,13 @@ input
 #sidebar
 	position fixed; top 0; left 0; bottom 0; width sidebar-width; pad 45 0 0; border-box(); font 13;
 	bg #333 'noise.png' 0 0 repeat; overflow hidden; overflow-y auto;
+	-webkit-transform translateZ(0);
 
 
 	.sidebar-wrapper
-		position fixed; top 90px; bottom toolbar-height; left 0; width (sidebar-width + 20); pad 0;
+		position absolute; top 90px; bottom toolbar-height; left 0; width (sidebar-width + 20); pad 0;
 		overflow hidden; overflow-y auto;
 
-	&>.nav-list
-		position fixed
 	.nav-list
 		pad 0; list-style none; width 180;
 		&:last-child
@@ -183,7 +182,7 @@ input
 
 
 #sideLogo
-	position fixed; top 0; left 0; font 24; color #999; pad 5 0 0 15; opacity .3; non-selectable();
+	position absolute; top 0; left 0; font 24; color #999; pad 5 0 0 15; opacity .3; non-selectable();
 	.icon-rss
 		font 34; vertical-align bottom; margin-right -4px;
 		&:before

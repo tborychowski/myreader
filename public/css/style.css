@@ -1,12 +1,11 @@
-html{font-family:sans-serif}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 html,body{height:100%}
 body{margin:0;padding-left:180px}
 a:focus{outline:none}
 button,input{font-family:inherit;font-size:100%;}
 button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transparent}
-#sidebar{position:fixed;top:0;left:0;bottom:0;width:180px;padding:45px 0 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-size:13px;background:#333 url(../img/noise.png) 0 0 repeat;overflow:hidden;overflow-y:auto;}
-#sidebar .sidebar-wrapper{position:fixed;top:90px;bottom:40px;left:0;width:200px;padding:0;overflow:hidden;overflow-y:auto}
-#sidebar>.nav-list{position:fixed}
+#sidebar{position:fixed;top:0;left:0;bottom:0;width:180px;padding:45px 0 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-size:13px;background:#333 url(../img/noise.png) 0 0 repeat;overflow:hidden;overflow-y:auto;-webkit-transform:translateZ(0);}
+#sidebar .sidebar-wrapper{position:absolute;top:90px;bottom:40px;left:0;width:200px;padding:0;overflow:hidden;overflow-y:auto}
 #sidebar .nav-list{padding:0;list-style:none;width:180px;}
 #sidebar .nav-list:last-child{margin-bottom:10px}
 #sidebar .nav-header{color:#999;text-shadow:0 -1px 0 rgba(0,0,0,0.4);cursor:default;display:block;font-size:13px;line-height:20px;font-weight:bold;padding:0;text-transform:uppercase;overflow:hidden;}
@@ -50,7 +49,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transp
 #main .entry-header a.entry-source{color:#666;margin-left:4px}
 #main .entry-header .entry-time{float:right;margin:5px 0 0 5px;color:#666;font-size:12px}
 #main .entry-footer{padding:0;background:#ddd url(../img/noise.png) 0 0 repeat;border-top:1px solid #aaa;-webkit-box-shadow:0 1px 0 #fff inset;-moz-box-shadow:0 1px 0 #fff inset;box-shadow:0 1px 0 #fff inset;position:relative}
-#sideLogo{position:fixed;top:0;left:0;font-size:24px;color:#999;padding:5px 0 0 15px;opacity:.3;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;}
+#sideLogo{position:absolute;top:0;left:0;font-size:24px;color:#999;padding:5px 0 0 15px;opacity:.3;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;}
 #sideLogo .icon-rss{font-size:34px;vertical-align:bottom;margin-right:-4px;}
 #sideLogo .icon-rss:before{-webkit-transform:rotate(270deg) translateZ(1px);-moz-transform:rotate(270deg) translateZ(1px);-o-transform:rotate(270deg) translateZ(1px);-ms-transform:rotate(270deg) translateZ(1px);transform:rotate(270deg) translateZ(1px)}
 #mainLogo{font-size:270px;margin:-155px 0 0 0;color:#ccc;text-shadow:0 1px 0 #fff,1px -1px 0 #aaa;opacity:.4;cursor:default;position:fixed;top:48%;left:50%}
