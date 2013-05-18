@@ -8,7 +8,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 {{Asset::styles()}}
 </head>
-<body>
+<body class="@yield('body_class')">
 
 @yield('content')
 

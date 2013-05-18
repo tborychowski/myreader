@@ -23,6 +23,7 @@ window.App = (function ($, App, window) {
 		else if (typeof msg === 'string') App.Msg({type: 'error', text: msg});
 		else {
 			if (msg.status === 404 || msg.status === 400) App.Msg('Requested service not available', 'error');
+			if (msg.statusText === 'abort') return;
 			else {
 				if (msg.details) App.Msg({ type: (msg.result === 'warning' ? 'warning' : 'error'), text: msg.details, delay: 5 });
 				else App.Msg('Unknown server error.', 'error');

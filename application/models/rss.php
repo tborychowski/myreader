@@ -14,9 +14,32 @@ class RSS {
 	public static function update ($user_id) {
 		$feeds = Source::where_user_id($user_id)->get();
 		$countItems = 0;
+		$removedItems = 0;
 		@set_time_limit(5000);
 		foreach ($feeds as $feed) $countItems += self::update_feed($feed, $user_id);
-		return count($feeds).' feeds updated with '.$countItems.' new items';
+		foreach ($feeds as $feed) $removedItems += self::clean_feed($feed, $user_id);
+		return [
+			'result' => 'success',
+			'feeds' => count($feeds),
+			'items' => $countItems,
+			'removed' => $removedItems
+		];
+	}
+
+	/**
+	 * Clean-up feed - remove old items
+	 * @return int          number of items removed
+	 */
+	public static function clean_feed ($item, $user_id) {
+		//Source::update($item->id, (object)$src);
+		$day = 86400;
+		$month = $day * 30;
+		$monthAgo = date('Y-m-d G:i:s', time() - $month);
+		$items = Item::where_user_id($user_id)->where_source_id($item->id);
+		$items = $items->where('created_at', '<', $monthAgo);
+		$count = count($items->get());
+		$items->delete();
+		return $count;
 	}
 
 	public static function update_feed ($item, $user_id) {
@@ -49,9 +72,6 @@ class RSS {
 					'url' => $feedUrl
 				]);
 			}
-
-			//XXX: To Be Removed
-			// if (isset($item->real_url) && is_array($item->real_url)) $item->real_url = '';
 
 			if (empty($item->real_url)) {
 				$lnk = $feedUrl;

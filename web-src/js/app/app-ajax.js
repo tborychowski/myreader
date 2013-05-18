@@ -16,14 +16,17 @@ window.App = (function ($, App) {
 	/**
 	 * Ajax GET short-cut
 	 * @param url			url to request => assist/{url}
+	 * @param data			(optional) data to pass to the server
 	 * @param callback		callback function
+	 * @param timeout		(optional) when longer timeout is required
 	 * e.g. App.Request('url', function(response){ });
 	 */
-	App.Get = function (url, data, callback) {
+	App.Get = function (url, data, callback, timeout) {
+		var params = { url: rootPath + url, type: 'get', data: data };
+		if (typeof callback === 'number') timeout = callback;
 		if (typeof data === 'function') { callback = data; data = {}; }
-		return $.ajax({ url: rootPath + url, type: 'get', data: data })
-			.fail(App.Error)
-			.done(function (data) { requestCompleted(data, callback); });
+		if (timeout) params.timeout = timeout;
+		return $.ajax(params).fail(App.Error).done(function (data) { requestCompleted(data, callback); });
 	};
 
 	/**
@@ -34,13 +37,9 @@ window.App = (function ($, App) {
 	 * e.g. App.Request('url', { id: 123 }, function(response){ });
 	 */
 	App.Post = function (url, data, callback) {
-		if (typeof data === 'function' && !callback) {
-			callback = data;
-			data = {};
-		}
-		return $.ajax({ url: rootPath + url, type: 'post', data: JSON.stringify(data) })
-			.fail(App.Error)
-			.done(function (data) { requestCompleted(data, callback); });
+		var params = { url: rootPath + url, type: 'post', data: JSON.stringify(data) };
+		if (typeof data === 'function') { callback = data; data = {}; }
+		return $.ajax(params).fail(App.Error).done(function (data) { requestCompleted(data, callback); });
 	};
 
 	/**
@@ -51,13 +50,9 @@ window.App = (function ($, App) {
 	 * e.g. App.Request('url', { id: 123 }, function(response){ });
 	 */
 	App.Put = function (url, data, callback) {
-		if (typeof data === 'function' && !callback) {
-			callback = data;
-			data = {};
-		}
-		return $.ajax({ url: rootPath + url, type: 'put', data: JSON.stringify(data) })
-			.fail(App.Error)
-			.done(function (data) { requestCompleted(data, callback); });
+		var params = { url: rootPath + url, type: 'put', data: JSON.stringify(data) };
+		if (typeof data === 'function') { callback = data; data = {}; }
+		return $.ajax(params).fail(App.Error).done(function (data) { requestCompleted(data, callback); });
 	};
 
 
@@ -68,9 +63,8 @@ window.App = (function ($, App) {
 	 * e.g. App.Request('url', function(response){ });
 	 */
 	App.Delete = function (url, callback) {
-		return $.ajax({ url: rootPath + url, type: 'delete' })
-			.fail(App.Error)
-			.done(function (data) { requestCompleted(data, callback); });
+		var params = { url: rootPath + url, type: 'delete' };
+		return $.ajax(params).fail(App.Error).done(function (data) { requestCompleted(data, callback); });
 	};
 
 

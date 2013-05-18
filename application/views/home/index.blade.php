@@ -1,6 +1,7 @@
 @layout('master')
+@section('body_class')main @endsection
 @section('content')
-<div id="main" class="unreaditems">
+<div id="main">
 	<div id="mainLogo"><i class="icon-rss"></i></div>
 	<div class="main-wrapper"></div>
 </div>
@@ -49,6 +50,12 @@
 	</div>
 
 	<div id="mainToolbar">
+		<div class="pull-right">
+			<button class="btn pull-right" data-action="next"><i class="icon-chevron-down"></i></button>
+			<button class="btn pull-right" data-action="prev"><i class="icon-chevron-up"></i></button>
+			<button class="btn pull-right" data-action="refresh"><i class="icon-repeat"></i></button>
+		</div>
+
 		<div class="btn-group pull-left status-buttons">
 			<button class="btn btn-unread" data-action="unread">
 				<i class="icon-eye-open"></i> <span class="badge">{{$stats['unread']}}</span>
@@ -62,9 +69,6 @@
 		</div>
 		<button class="btn pull-left" data-action="all-read"><i class="icon-ok-circle"></i> mark all as read</button>
 
-		<button class="btn pull-right" data-action="next"><i class="icon-chevron-down"></i></button>
-		<button class="btn pull-right" data-action="prev"><i class="icon-chevron-up"></i></button>
-		<button class="btn pull-right" data-action="refresh"><i class="icon-repeat"></i></button>
 	</div>
 </div>
 

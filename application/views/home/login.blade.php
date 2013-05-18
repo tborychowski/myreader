@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <title>MyReader</title>
 {{Asset::styles()}}
-<body>
+<body class="login">
 {{Form::open()}}
 	{{Form::label('username', 'Username')}}
 	{{Form::text('username', null, array('autofocus'=>'true', 'autocomplete'=>'off'))}}

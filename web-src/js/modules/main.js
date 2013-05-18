@@ -202,14 +202,23 @@
 
 	_init = function () {
 		if (_isReady) return;
-		_container = $('#main.unreaditems .main-wrapper');
+		_container = $('body.main .main-wrapper');
 		if (!_container.length) return;
 		_body = $('html,body');
 		_btnRefresh = $('#toolbar .icon-repeat');
 
+
+		// handle middle click on links
+		$(document).on('click', function (e) {
+			if (e.button !== 1) return;
+			var tar = $(e.target);
+			if (tar.is('.entry a')) _entryClickHandler.call(tar.closest('.entry')[0]);
+		});
+
 		_container
 			.on('click', '.entry', _entryClickHandler)
 			.on('click', '.tb-btn', _btnClickHandler);
+
 
 		_isReady = true;
 	};

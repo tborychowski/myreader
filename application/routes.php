@@ -8,6 +8,7 @@ Route::group(['before' => 'auth'], function () {
 	Route::any('/json/items/(:num?)',   'item@index');		// all - all items or item
 	Route::get('/json/sourcetree',      'source@tree');		// get unread source tree with counter
 	Route::any('/json/sources/(:num?)', 'source@index');	// manage sources
+	Route::get('/json/update',          'source@update');	// update route for a logged user (alias)
 
 	Route::get('/logout', function () { Auth::logout(); return Redirect::to('login'); });
 });
