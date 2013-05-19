@@ -80,6 +80,7 @@ body.settings #main .entry .entry-header{padding:10px 15px 5px;}
 body.settings #main .entry .entry-header h3 img{margin:0 5px -1px 0}
 body.settings #main .entry .entry-footer{padding:0 6px}
 body.settings #main .entry .entry-time{font-size:13px;padding:7px 0 0}
+body.settings #main .entry .entry-source{float:left}
 body.settings #main .entry .btn-save,body.settings #main .entry .btn-cancel{display:none}
 body.settings #main .entry.in-edit .btn-edit,body.settings #main .entry.in-edit .btn-remove{display:none}
 body.settings #main .entry.in-edit .btn-save,body.settings #main .entry.in-edit .btn-cancel{display:inline-block}
