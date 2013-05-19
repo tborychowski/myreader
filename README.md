@@ -9,6 +9,8 @@ A lightweight RSS reader & aggregator.
 - easy to set-up and use
 - user friendly & minimalistic interface
 - works nicely on mobile devices (ipad, iphone)
+- comes with a [google chrome notifier](https://github.com/tborychowski/myreader-notifier) extension
+
 
 ### Screen
 ![Main](https://raw.github.com/tborychowski/myreader/master/web-src/screenshots/main.png)
