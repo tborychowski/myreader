@@ -1,4 +1,5 @@
 @layout('master')
+@section('title'){{ $stats['unread'] ? '&#40;'.$stats['unread'].'&#41;' : '' }} @endsection
 @section('body_class')main @endsection
 @section('content')
 <div id="main">
@@ -58,13 +59,13 @@
 
 		<div class="btn-group pull-left status-buttons">
 			<button class="btn btn-unread" data-action="unread">
-				<i class="icon-eye-open"></i> <span class="badge">{{$stats['unread']}}</span>
+				<i class="icon-eye-open"></i> <span class="badge">{{$stats['unreadStr']}}</span>
 			</button>
 			<button class="btn btn-starred" data-action="starred">
-				<i class="icon-star-empty"></i> <span class="badge">{{$stats['starred']}}</span>
+				<i class="icon-star-empty"></i> <span class="badge">{{$stats['starredStr']}}</span>
 			</button>
 			<button class="btn btn-archive" data-action="archive">
-				<i class="icon-inbox"></i> <span class="badge">{{$stats['all']}}</span>
+				<i class="icon-inbox"></i> <span class="badge">{{$stats['allStr']}}</span>
 			</button>
 		</div>
 		<button class="btn pull-left" data-action="all-read"><i class="icon-ok-circle"></i> mark all as read</button>

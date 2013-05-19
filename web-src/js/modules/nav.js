@@ -107,9 +107,9 @@
 
 	_populateStats = function (stats) {
 		_sidebar.find('.nav-header .badge').html(stats.unread);
-		_toolbar.find('.btn-unread .badge').html(stats.unread);
-		_toolbar.find('.btn-starred .badge').html(stats.starred);
-		_toolbar.find('.btn-archive .badge').html(stats.all);
+		_toolbar.find('.btn-unread .badge').html(stats.unreadStr);
+		_toolbar.find('.btn-starred .badge').html(stats.starredStr);
+		_toolbar.find('.btn-archive .badge').html(stats.allStr);
 		document.title = 'MyReader' + (stats.unread > 0 ? ' (' + stats.unread + ')' : '');
 	},
 	/*** HTML *********************************************************************************************************/

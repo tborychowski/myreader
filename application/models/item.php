@@ -7,12 +7,24 @@ class Item extends Eloquent {
 	public function source () {	return $this->belongs_to('Source');	}
 
 
+	private static function formatCounter ($num) {
+		if ($num >= 1000000) return (round($num / 100000) / 10) . 'm';
+		if ($num >= 1000) return (round($num / 100) / 10) . 'k';
+		return $num;
+	}
 
 	public static function stats ($user_id) {
+		$unr = Item::where_user_id($user_id)->where_is_unread(1)->count();
+		$star = Item::where_user_id($user_id)->where_is_starred(1)->count();
+		$all = Item::where_user_id($user_id)->count();
+
 		return [
-			'unread' => Item::where_user_id($user_id)->where_is_unread(1)->count(),
-			'starred' => Item::where_user_id($user_id)->where_is_starred(1)->count(),
-			'all' => Item::where_user_id($user_id)->count()
+			'unread' => $unr,
+			'unreadStr' => static::formatCounter($unr),
+			'starred' => $star,
+			'starredStr' => static::formatCounter($star),
+			'all' => $all,
+			'allStr' => static::formatCounter($all)
 		];
 	}
 

@@ -178,7 +178,7 @@
 					resp.removed + ' old items removed';
 			}
 			window.alert(msg);
-		}, 10000).always(function () {
+		}, 20000).always(function () {
 			_updateRequest = null;
 			_showUpdateLoading(btn);
 		});

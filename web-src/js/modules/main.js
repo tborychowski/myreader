@@ -148,12 +148,13 @@
 
 		return '<div id="entry' + item.id + '" class="' + cls.join(' ') + '" data-id="' + item.id + '">' +
 		'<div class="entry-header">' +
-			'<h3><a href="' + item.url + '" target="_blank">' + item.title + '</a></h3>' +
 			'<span class="entry-time">' + item.datetime + '</span>' +
 			'<span class="entry-source">from ' +
-				'<a href="#' + _params.status + '/src/' + item.source.id + '" class="entry-source entry-source-' +
+				// '<a href="#' + _params.status + '/src/' + item.source.id + '" class="entry-source entry-source-' +
+				'<a href="http://' + item.source.real_url + '" class="entry-source entry-source-' +
 					item.source.id + '">' + item.source.name + '</a>' +
 			'</span>' +
+			'<h3><a href="' + item.url + '" target="_blank">' + item.title + '</a></h3>' +
 		'</div>' +
 		'<div class="entry-body">' + item.content + '</div>' +
 		'<div class="entry-footer">' +

@@ -53,9 +53,9 @@ button{cursor:default}
 #main .entry-body p>img,#main .entry-body div>div>a>img{float:right;clear:right;max-width:250px;max-height:200px;margin:3px 0 10px 20px}
 #main .entry-header{overflow:hidden;padding:15px;}
 #main .entry-header h3{font-size:18px;line-height:28px;margin:0;font-weight:normal}
-#main .entry-header .entry-source{color:#999;font-size:12px;margin-left:2px}
+#main .entry-header .entry-source{float:right;clear:right;color:#999;font-size:12px;margin-left:2px}
 #main .entry-header a.entry-source{color:#666;margin-left:4px}
-#main .entry-header .entry-time{float:right;margin:5px 0 0 5px;color:#666;font-size:12px}
+#main .entry-header .entry-time{float:right;clear:right;margin:5px 0 0 5px;color:#666;font-size:12px}
 #main .entry-footer{position:relative;padding:15px 6px 0}
 #toolbar{position:fixed;left:0;right:0;bottom:0;padding-left:180px;height:40px;z-index:1;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}
 #toolbar .btn{color:#888;font-size:13px;line-height:1.5;height:40px;min-width:48px;margin-right:18px;padding:0 10px;background:none;border:none;-webkit-transition:color .2s ease-out;-moz-transition:color .2s ease-out;-o-transition:color .2s ease-out;-ms-transition:color .2s ease-out;transition:color .2s ease-out;text-shadow:0 1px 0 #fff;font-weight:bold;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;-moz-border-radius:0;border-radius:0;background-clip:padding-box;-webkit-background-clip:padding;-moz-background-clip:padding;-ms-background-clip:padding;background-clip:padding;}
