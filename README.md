@@ -11,7 +11,8 @@ A lightweight RSS reader & aggregator.
 - works nicely on mobile devices (ipad, iphone)
 
 ### Screen
-![Screen1](/path/to/img.jpg)
+![Main](https://raw.github.com/tborychowski/myreader/master/web-src/screenshots/main.png)
+![Settings](https://raw.github.com/tborychowski/myreader/master/web-src/screenshots/settings.png)
 
 
 ### Alternatives
