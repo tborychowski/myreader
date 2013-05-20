@@ -1,10 +1,11 @@
 MyReader
 =======
 
-A lightweight RSS reader & aggregator.
+A lightweight RSS reader & aggregator. 
+Utilizes [SimplePie](http://simplepie.org) library to aggregate your feeds and presents them with a beautiful UI.
 
 ### Features
-- extremely lightweight (takes only 3.3MB on disc (prod. version) excluding DB)
+- extremely lightweight (takes only 3.3MB on disc (prod. version) including external libraries, excluding DB)
 - extremely fast, opens up instantly
 - easy to set-up and use
 - user friendly & minimalistic interface
