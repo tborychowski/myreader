@@ -1,7 +1,7 @@
 MyReader
 =======
 
-A lightweight RSS reader & aggregator.
+A lightweight, self-hosted RSS reader & aggregator (Google Reader alternative)
 
 Utilizes [SimplePie](http://simplepie.org) to aggregate your feeds and presents them in a beautiful UI.
 
