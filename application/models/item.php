@@ -7,12 +7,6 @@ class Item extends Eloquent {
 	public function source () {	return $this->belongs_to('Source');	}
 
 
-	private static function formatCounter ($num) {
-		if ($num >= 1000000) return (round($num / 100000) / 10) . 'm';
-		if ($num >= 1000) return (round($num / 100) / 10) . 'k';
-		return $num;
-	}
-
 	public static function stats ($user_id) {
 		$unr = Item::where_user_id($user_id)->where_is_unread(1)->count();
 		$star = Item::where_user_id($user_id)->where_is_starred(1)->count();
@@ -57,34 +51,36 @@ class Item extends Eloquent {
 
 
 
-	public static function get ($inp, $lim = 20) {
+	/**
+	 * Retrieve items from the DB
+	 * @param  array   $inp  input parameters
+	 * @param  boolean $lim  should it limit to 20 items or take all
+	 * @return array         filtered items
+	 */
+	public static function get ($inp, $limit = true) {
 		$status = isset($inp['status']) ? $inp['status'] : 'archive';
-		if (isset($inp['tag'])) {
-			$type = 'tag';
-			$id = $inp['tag'];
-		}
-		elseif (isset($inp['src'])) {
-			$type = 'src';
-			$id = $inp['src'];
-		}
-		else {
-			$type = 'all';
-			$id = '';
-		}
 
-		$items = Item::with('source');
+		$pageSize = 20;
+		$pageNo = 0;
+		if (isset($inp['page'])) $pageNo = intval($inp['page']);
+
+		if (isset($inp['tag']))     { $type = 'tag'; $id = $inp['tag']; }
+		elseif (isset($inp['src'])) { $type = 'src'; $id = $inp['src']; }
+		else                        { $type = 'all'; $id = ''; }
+
+
+		$items = Item::with('source')->order_by('datetime', 'desc');
 
 		if ($type === 'tag' && isset($id)) $ids = Source::where_tag($id)->lists('id');
 		if ($type === 'src' && isset($id)) $ids = [ $id ];
-
 		if ($type !== 'all' && !empty($ids)) $items = $items->where_in('source_id', $ids);
 
 		if ($status === 'unread') $items = $items->where_is_unread(1);
 		elseif ($status === 'starred') $items = $items->where_is_starred(1);
 
-		if ($lim === false) return $items;
+		if ($limit === false) return $items;
 
-		$items = $items->take(20);
+		$items = $items->skip($pageSize * $pageNo)->take($pageSize);
 
 		if (method_exists($items, 'all')) $items = $items->all();
 		else $items = $items->get();
@@ -141,6 +137,15 @@ class Item extends Eloquent {
 
 		$item->delete();
 		return JSON::success('Item was removed');
+	}
+
+
+
+
+	private static function formatCounter ($num) {
+		if ($num >= 1000000) return (round($num / 100000) / 10) . 'm';
+		if ($num >= 1000) return (round($num / 100) / 10) . 'k';
+		return $num;
 	}
 
 }

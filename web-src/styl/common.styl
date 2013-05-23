@@ -7,8 +7,12 @@ html
 html
 body
 	height 100%;
-	&::-webkit-scrollbar { width: 7px; height: 7px; }
-	&::-webkit-scrollbar-thumb { background: #888; -webkit-background-clip: padding-box; }
+	&::-webkit-scrollbar
+		size 8; bg #ddd;
+	&::-webkit-scrollbar-thumb
+		bg #aaa; clip padding;
+		&:hover
+			bg #888;
 
 
 body

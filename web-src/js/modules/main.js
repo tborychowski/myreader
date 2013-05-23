@@ -8,6 +8,7 @@
 		_btnRefresh = null,		// loading swirl
 		_maxBodyHeight = 200,
 		_params = {},
+		_pageNo = 0,
 
 
 
@@ -27,6 +28,12 @@
 			_toggleUnread(item, entry);
 		}
 		e.stopPropagation();
+	},
+
+	_loadMoreClickHandler = function (e) {
+		e.preventDefault();
+		_pageNo++;
+		_load(_params);
 	},
 
 	_toggleStar = function (item, el) {
@@ -141,6 +148,10 @@
 	},
 	/*** HANDLERS *****************************************************************************************************/
 
+	_getMoreLoader = function () {
+		return '<a href="#" class="load-more-items"><i class="icon-download"></i> load more...</a>';
+	},
+
 	_getItemHtml = function (item) {
 		var cls = [ 'entry' ];
 		if (item.is_unread === 1) cls.push('unread');
@@ -149,12 +160,12 @@
 		return '<div id="entry' + item.id + '" class="' + cls.join(' ') + '" data-id="' + item.id + '">' +
 		'<div class="entry-header">' +
 			'<span class="entry-time">' + item.datetime + '</span>' +
+			'<h3><a href="' + item.url + '" target="_blank">' + item.title + '</a></h3>' +
 			'<span class="entry-source">from ' +
 				// '<a href="#' + _params.status + '/src/' + item.source.id + '" class="entry-source entry-source-' +
 				'<a href="http://' + item.source.real_url + '" class="entry-source entry-source-' +
 					item.source.id + '">' + item.source.name + '</a>' +
 			'</span>' +
-			'<h3><a href="' + item.url + '" target="_blank">' + item.title + '</a></h3>' +
 		'</div>' +
 		'<div class="entry-body">' + item.content + '</div>' +
 		'<div class="entry-footer">' +
@@ -182,11 +193,22 @@
 			_btnRefresh.removeClass('icon-spin');
 			return _container.html('');
 		}
-		_items = items;
 		var i = 0, item, itemAr = [];
 		for (; item = items[i++] ;) itemAr.push(_getItemHtml(item));
-		_container.html(itemAr);
-		_scrollEntryToView();
+
+		if (items.length === 20) itemAr.push(_getMoreLoader());
+
+		if (_pageNo) {
+			_container.find('.load-more-items').remove();
+			_container.append(itemAr);
+			_items = _items.concat(items);
+		}
+		else {
+			_container.html(itemAr);
+			_items = items;
+			_scrollEntryToView();
+		}
+
 		_btnRefresh.removeClass('icon-spin');
 		_maxBodyHeight = parseInt(_container.find('.entry .entry-body').first().css('max-height'), 10);
 	},
@@ -194,8 +216,13 @@
 
 	_load = function (cfg) {
 		if (!_isReady || !cfg) return;
-		_params = cfg;
 		_btnRefresh.addClass('icon-spin');
+
+		if (!App.UTIL.areObjectsEqual(_params, cfg)) {
+			_params = cfg;
+			_pageNo = 0;
+		}
+		if (_pageNo) cfg.page = _pageNo;
 		App.Get('items?' + $.param(cfg), _populate);
 	},
 
@@ -218,7 +245,8 @@
 
 		_container
 			.on('click', '.entry', _entryClickHandler)
-			.on('click', '.tb-btn', _btnClickHandler);
+			.on('click', '.tb-btn', _btnClickHandler)
+			.on('click', '.load-more-items', _loadMoreClickHandler);
 
 
 		_isReady = true;
