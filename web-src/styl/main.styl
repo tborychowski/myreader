@@ -2,13 +2,17 @@
 
 
 #main
-	position relative; mar 0; border-box(); color #999; text center; z 1; float right; padding-bottom 60%; width 100%;
-	min-width 768px; min-height 100%; box-shadow: -5px 0 5px rgba(0,0,0,0.5); bg #ddd 'noise.png' 0 0 repeat;
+	pos 0 0 toolbar-height sidebar-width; border-box(); color #999; text center; z 1; overflow-y auto;
+	shadow -5px 0 5px #000 .5; -webkit-overflow-scrolling touch;
+	bg #ddd 'noise.png' 0 0 repeat;
+
 
 	.main-wrapper
 		position relative;
 	.entry
 		text left; background-color #f7f7f7; border-bottom #ccc; transition background-color .7s;
+		&:last-child
+			margin-bottom 50%;
 		a
 			color #888; transition color .5s; u 0;
 			&:hover
@@ -73,6 +77,8 @@
 	.load-more-items
 		color #888; bg #eee; border #bbb; radius 30; show 2; font 13/1.5; mar 20 auto; pad 8; u 0; width 130; transition()
 		shadow 0 1 0 #fff .5;
+		&:last-child
+			margin-bottom 50%;
 		i
 			margin-right 5px; font 18; vertical-align top;
 		&:hover

@@ -138,7 +138,7 @@
 	_init = function () {
 		if (_isReady) return;
 		_sidebar = $('#sidebar');
-		_toolbar = $('#toolbar, #sideToolbar');
+		_toolbar = $('#mainToolbar, #sideToolbar');
 
 		if (!_sidebar.length && !_toolbar.length) return;
 		if (_sidebar.length) _sourcesContainer = _sidebar.find('.sidebar-sources');

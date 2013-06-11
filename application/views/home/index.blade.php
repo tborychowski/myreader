@@ -2,10 +2,7 @@
 @section('title'){{ $stats['unread'] ? '&#40;'.$stats['unread'].'&#41;' : '' }} @endsection
 @section('body_class')main @endsection
 @section('content')
-<div id="main">
-	<div id="mainLogo"><i class="icon-rss"></i></div>
-	<div class="main-wrapper"></div>
-</div>
+
 <div id="sidebar">
 	<span id="sideLogo"><i class="icon-rss"></i> myreader</span>
 	<ul class="nav-list">
@@ -41,36 +38,39 @@
 		</ul>
 	</div>
 
-</div>
-
-
-<div id="toolbar">
 	<div id="sideToolbar">
 		<button class="btn pull-right" data-action="settings"><i class="icon-cog"></i></button>
 		<button class="btn pull-left" data-action="logout"><i class="icon-signout"></i></button>
 	</div>
+</div>
 
-	<div id="mainToolbar">
-		<div class="pull-right">
-			<button class="btn pull-right" data-action="next"><i class="icon-chevron-down"></i></button>
-			<button class="btn pull-right" data-action="prev"><i class="icon-chevron-up"></i></button>
-			<button class="btn pull-right" data-action="refresh"><i class="icon-repeat"></i></button>
-		</div>
 
-		<div class="btn-group pull-left status-buttons">
-			<button class="btn btn-unread" data-action="unread">
-				<i class="icon-eye-open"></i> <span class="badge">{{$stats['unreadStr']}}</span>
-			</button>
-			<button class="btn btn-starred" data-action="starred">
-				<i class="icon-star-empty"></i> <span class="badge">{{$stats['starredStr']}}</span>
-			</button>
-			<button class="btn btn-archive" data-action="archive">
-				<i class="icon-inbox"></i> <span class="badge">{{$stats['allStr']}}</span>
-			</button>
-		</div>
-		<button class="btn pull-left" data-action="all-read"><i class="icon-ok-circle"></i> mark all as read</button>
+<div id="main">
+	<div id="mainLogo"><i class="icon-rss"></i></div>
 
+	<div class="main-wrapper"></div>
+</div>
+
+
+<div id="mainToolbar">
+	<div class="pull-right">
+		<button class="btn pull-right" data-action="next"><i class="icon-chevron-down"></i></button>
+		<button class="btn pull-right" data-action="prev"><i class="icon-chevron-up"></i></button>
+		<button class="btn pull-right" data-action="refresh"><i class="icon-repeat"></i></button>
 	</div>
+
+	<div class="btn-group pull-left status-buttons">
+		<button class="btn btn-unread" data-action="unread">
+			<i class="icon-eye-open"></i> <span class="badge">{{$stats['unreadStr']}}</span>
+		</button>
+		<button class="btn btn-starred" data-action="starred">
+			<i class="icon-star-empty"></i> <span class="badge">{{$stats['starredStr']}}</span>
+		</button>
+		<button class="btn btn-archive" data-action="archive">
+			<i class="icon-inbox"></i> <span class="badge">{{$stats['allStr']}}</span>
+		</button>
+	</div>
+	<button class="btn pull-left" data-action="all-read"><i class="icon-ok-circle"></i> mark all as read</button>
 </div>
 
 

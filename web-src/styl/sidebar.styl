@@ -2,14 +2,13 @@
 
 
 #sidebar
-	position fixed; top 0; left 0; bottom 0; width sidebar-width; pad 45 0 0; border-box(); font 13;
-	bg #333 'noise.png' 0 0 repeat; overflow hidden; overflow-y auto;
-	-webkit-transform translate3d(0, 0, 0); transform translate3d(0, 0, 0);
+	pos 0,,0,0; width sidebar-width; pad 45 0 0; border-box(); font 13; overflow hidden;
+	bg #333 'noise.png' 0 0 repeat; //-webkit-transform translate3d(0, 0, 0); transform translate3d(0, 0, 0);
 
 
 	.sidebar-wrapper
 		position absolute; top 90px; bottom toolbar-height; left 0; width (sidebar-width + 20); pad 0;
-		overflow hidden; overflow-y auto;
+		overflow hidden; overflow-y auto; -webkit-overflow-scrolling touch;
 
 	.nav-list
 		pad 0; list-style none; width 180;

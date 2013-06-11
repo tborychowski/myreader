@@ -232,7 +232,7 @@
 		if (_isReady) return;
 		_container = $('body.main .main-wrapper');
 		if (!_container.length) return;
-		_body = $('html,body');
+		_body = $('body.main #main');
 		_btnRefresh = $('#toolbar .icon-repeat');
 
 

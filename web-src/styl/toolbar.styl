@@ -1,9 +1,10 @@
 @import "_lib";
 
-
-#toolbar
-	position fixed; left 0; right 0; bottom 0; padding-left sidebar-width; height toolbar-height; z 1; border-box();
+#sideToolbar
+#mainToolbar
+	pos(); left 0; right 0; bottom 0; height toolbar-height; z 1; border-box(); bg #ddd 'noise.png' 0 0 repeat;
 	-webkit-transform translate3d(0, 0, 0); transform translate3d(0, 0, 0);
+
 
 	.btn
 		color #888; font 13/1.5; height 40; min-width 48px; margin-right 18px; pad 0 10; bg none; border none;
@@ -21,32 +22,21 @@
 		.badge
 			font 11/1; b 1; pos 2 0; bg #666; color #FFF; padding 2 5 1; radius 10; text-shadow none;
 
-	#mainToolbar
-		size 100% toolbar-height; z 1; position relative; float right; min-width 768px;
-		bg #ddd 'noise.png' 0 0 repeat; border-top #aaa; text center
-		shadow 0 1 0 #fff 1 inset, -5 3 5 #000 .5;
+#mainToolbar
+	left sidebar-width; border-top #aaa; text center; shadow 0 1 0 #fff 1 inset, -5 3 5 #000 .5;
 
-	#sideToolbar
-		position absolute; left 0; background #222; size sidebar-width toolbar-height; text center
-		bg #333 'noise.png' 0 0 repeat; border-top #222; shadow 0 1 0 #555 1 inset;
+#sideToolbar
+	text center; background-color #333; border-top #222; shadow 0 1 0 #555 1 inset;
 
-		.btn
-			color #666; text-shadow 0 -1px 0 #000;
-			&:hover
-				color #999;
-			&:active
-				color #555;
-		.pull-right
-			margin-right 0;
+	.btn
+		&
+		&:hover
+		&:active
+			color #666; text-shadow 0 -1px 0 #000; bg none; border none;
 
-
-
-
-
-@media all and (max-width: 785px)
-	body
-	#toolbar
-		padding-left 0;
-		#main
-		#mainToolbar
-			width 100%; min-width 0; shadow none;
+		&:hover
+			color #999;
+		&:active
+			color #555;
+	.pull-right
+		margin-right 0;
