@@ -12,12 +12,15 @@ Utilizes [SimplePie](http://simplepie.org) to aggregate your feeds and presents 
 - user friendly & minimalistic interface
 - works nicely on mobile devices (ipad, iphone)
 - comes with a [google chrome notifier](https://github.com/tborychowski/myreader-notifier) extension
+- offers user friendly [keystrokes](https://github.com/tborychowski/myreader/wiki/Keystrokes)
 
 
 ### Screen
 ![Main](https://raw.github.com/tborychowski/myreader/master/web-src/screenshots/main.png)
 ![Settings](https://raw.github.com/tborychowski/myreader/master/web-src/screenshots/settings.png)
 
+### Installation
+Please see the wiki: [Installation](https://github.com/tborychowski/myreader/wiki/Installation)
 
 ### Alternatives
 - [Tiny Tiny RSS](http://tt-rss.org) - extremely powerful, but huge and slow
