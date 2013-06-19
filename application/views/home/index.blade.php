@@ -70,7 +70,9 @@
 			<i class="icon-inbox"></i> <span class="badge">{{$stats['allStr']}}</span>
 		</button>
 	</div>
-	<button class="btn pull-left" data-action="all-read"><i class="icon-ok-circle"></i> mark all as read</button>
+	<button class="btn pull-left btn-mark-all-as-read" data-action="all-read">
+		<i class="icon-ok-circle"></i> mark all as read
+	</button>
 </div>
 
 

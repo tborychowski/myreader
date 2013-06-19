@@ -3,7 +3,7 @@ html,body{height:100%;}
 html::-webkit-scrollbar,body::-webkit-scrollbar{width:8px;height:8px;background:#ddd}
 html::-webkit-scrollbar-thumb,body::-webkit-scrollbar-thumb{background:#aaa;background-clip:padding-box;-webkit-background-clip:padding;-moz-background-clip:padding;-ms-background-clip:padding;background-clip:padding;}
 html::-webkit-scrollbar-thumb:hover,body::-webkit-scrollbar-thumb:hover{background:#888}
-body{margin:0;padding-left:180px;overflow:hidden}
+body{margin:0;padding-left:sidebar-width;overflow:hidden}
 a:focus{outline:none}
 button,input{font-family:inherit;font-size:100%;}
 button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0 solid transparent}
@@ -110,4 +110,7 @@ html.login button{position:absolute;visibility:hidden}
 #main{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
 #sidebar{display:none}
 #mainLogo{margin-left:-96px}
+}@media all and (max-width: 640px){#mainToolbar .btn{margin-right:10px;min-width:40px}
+#mainToolbar .btn-group .btn{margin-right:0}
+#mainToolbar .btn-mark-all-as-read{display:none}
 }

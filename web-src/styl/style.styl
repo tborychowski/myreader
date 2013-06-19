@@ -1,9 +1,53 @@
 @import "_lib";
 
+html
+	font-family sans-serif
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+html
+body
+	height 100%;
+	&::-webkit-scrollbar
+		size 8; bg #ddd;
+	&::-webkit-scrollbar-thumb
+		bg #aaa; clip padding;
+		&:hover
+			bg #888;
+
+
+body
+	margin 0; padding-left sidebar-width; overflow hidden;
+
+a:focus
+	outline none;
+button
+input
+	font-family inherit; font-size 100%;
+	&::-moz-focus-inner
+		padding 0; border 0;
+button
+	cursor default;
+
+
+
+#sideLogo
+	position absolute; top 0; left 0; font 24; color #999; pad 5 0 0 15; opacity .3; non-selectable();
+	.icon-rss
+		font 34; vertical-align bottom; margin-right -4px;
+		&:before
+			rotate 270
+
+#mainLogo
+	font 270; margin -155 0 0 0; color #ccc; text-shadow 0 1px 0 #fff, 1px -1px 0 #aaa; opacity .4; cursor default;
+	position fixed; top 48%; left 50%;
+	-webkit-transform translate3d(0, 0, 0) translateZ(0); transform translate3d(0, 0, 0) translateZ(0);
+
+
+
 sidebar-width = 180px
 toolbar-height = 40px
 
-@import "common";
+
 @import "sidebar";
 @import "main";
 @import "toolbar";
@@ -29,3 +73,13 @@ toolbar-height = 40px
 
 	#mainLogo
 		margin-left -96px;
+
+@media all and (max-width: 640px)
+	#mainToolbar
+		.btn
+			margin-right 10px; min-width 40px;
+		//.status-buttons
+		.btn-group .btn
+			margin-right 0;
+		.btn-mark-all-as-read
+			show 0;
