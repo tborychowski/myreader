@@ -2,22 +2,28 @@
 
 class RSS {
 
+	// htmLawed config
 	static $hlConf = [
 		'safe'           => 1,
-		'deny_attribute' => '* -alt -title -src -href',
 		'keep_bad'       => 0,
 		'comment'        => 1,
 		'cdata'          => 1,
+		'deny_attribute' => '* -alt -title -src -href',
 		'elements'       => 'div,p,ul,li,a,img,dl,dt,h1,h2,h3,h4,h5,h6,ol,br,table,tr,td,blockquote,pre,ins,del,th,thead,tbody,b,i,strong,em,tt'
 	];
+
+	static $ageLimit = 2592000; // 86400 * 30 -> 30 days ago
+
 
 	public static function update ($user_id) {
 		$feeds = Source::where_user_id($user_id)->get();
 		$countItems = 0;
 		$removedItems = 0;
 		@set_time_limit(5000);
+
 		foreach ($feeds as $feed) $countItems += self::update_feed($feed, $user_id);
 		foreach ($feeds as $feed) $removedItems += self::clean_feed($feed, $user_id);
+
 		return [
 			'result' => 'success',
 			'feeds' => count($feeds),
@@ -31,18 +37,19 @@ class RSS {
 	 * @return int          number of items removed
 	 */
 	public static function clean_feed ($item, $user_id) {
+		$notOlderThan = date('Y-m-d G:i:s', time() - static::$ageLimit);
+
 		//Source::update($item->id, (object)$src);
-		$day = 86400;
-		$month = $day * 30;
-		$monthAgo = date('Y-m-d G:i:s', time() - $month);
 		$items = Item::where_user_id($user_id)->where_source_id($item->id);
-		$items = $items->where('created_at', '<', $monthAgo);
+		$items = $items->where('created_at', '<', $notOlderThan);
 		$count = count($items->get());
 		$items->delete();
 		return $count;
 	}
 
 	public static function update_feed ($item, $user_id) {
+		$notOlderThan = date('U', time() - static::$ageLimit);
+
 		$pie = new SimplePie();
 		$pie->set_cache_location(path('storage').'simplepie');
 		$pie->set_cache_duration(1800);
@@ -61,16 +68,18 @@ class RSS {
 			$feedUrl = '';
 			foreach ($feeds as $feed) {
 				$feedUrl = $feed->get_link();
-				$items += Item::add([
-					'user_id' => $user_id,
-					'source_id' => $item->id,
-					'item_id' => $feed->get_id(),
-					'datetime' => $feed->get_date('Y-m-d H:i:s'),
-					'title' => $feed->get_title(),
-					'content' => htmLawed::hl($feed->get_description(), static::$hlConf),	// get summary only
-					//'content' => htmLawed::hl($feed->get_content(), static::$hlConf),
-					'url' => $feedUrl
-				]);
+				if ($feed->get_date('U') >= $notOlderThan) {
+					$items += Item::add([
+						'user_id' => $user_id,
+						'source_id' => $item->id,
+						'item_id' => $feed->get_id(),
+						'datetime' => $feed->get_date('Y-m-d H:i:s'),
+						'title' => $feed->get_title(),
+						'content' => htmLawed::hl($feed->get_description(), static::$hlConf),	// get summary only
+						//'content' => htmLawed::hl($feed->get_content(), static::$hlConf),
+						'url' => $feedUrl
+					]);
+				}
 			}
 
 			if (empty($item->real_url)) {
