@@ -39,6 +39,9 @@ window.App = (function ($, App, window) {
 	$(function () {
 		//$.ajaxSetup({ type: 'get', dataType: 'json', mimeType: 'application/json', contentType: 'application/json' });
 		App.Publish('app/ready');
+
+		// hide addressbar
+		$('body').delay('1000').animate({ scrollTop: 0 }, 0);
 	});
 
 
