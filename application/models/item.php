@@ -27,7 +27,7 @@ class Item extends Eloquent {
 	 * @return object  { id: unreadNumber }
 	 */
 	public static function get_unread_counts ($status = 'archive', $type = 'all', $id = '') {
-		$items = Item::group_by('source_id');
+		$items = Item::group_by('source_id')->where_user_id(Auth::user()->id);
 
 		if ($type === 'tag' && isset($id)) {
 			$tag = Source::where_tag($id)->first('id');
@@ -69,7 +69,7 @@ class Item extends Eloquent {
 		else                        { $type = 'all'; $id = ''; }
 
 
-		$items = Item::with('source')->order_by('datetime', 'desc');
+		$items = Item::with('source')->order_by('datetime', 'desc')->where_user_id(Auth::user()->id);
 
 		if ($type === 'tag' && isset($id)) $ids = Source::where_tag($id)->lists('id');
 		if ($type === 'src' && isset($id)) $ids = [ $id ];
@@ -111,6 +111,7 @@ class Item extends Eloquent {
 
 		$item = Item::find($id);
 		if (!$item) return JSON::error('Item not found');
+		if ($item->user_id != Auth::user()->id) return JSON::error('Access denied!');
 
 		if (isset($input->is_unread)) $item->is_unread = $input->is_unread;
 		if (isset($input->is_starred)) $item->is_starred = $input->is_starred;
@@ -134,6 +135,7 @@ class Item extends Eloquent {
 
 		$item = Item::find($id);
 		if (!$item) return JSON::error('Item not found');
+		if ($item->user_id != Auth::user()->id) return JSON::error('Access denied!');
 
 		$item->delete();
 		return JSON::success('Item was removed');

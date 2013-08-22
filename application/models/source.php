@@ -9,13 +9,11 @@ class Source extends Eloquent {
 		'url'  => 'required|url|unique:sources,url'
 	];
 
-	public function items () {
-		return $this->has_many('Item');
-	}
+	public function items () { return $this->has_many('Item'); }
 
 
 	public static function get_tree ($status = 'archive', $type = 'all', $id = '') {
-		$sources = Source::all();
+		$sources = Source::where_user_id(Auth::user()->id)->get();
 		$unreads = Item::get_unread_counts($status);				// retreieve all items with unread counters
 
 		$tags = [];
@@ -37,8 +35,9 @@ class Source extends Eloquent {
 
 
 	public static function get ($id = null) {
-		if (isset($id)) return Source::find($id);
-		return Source::all();
+		$sources = Source::where_user_id(Auth::user()->id);
+		if (isset($id)) return $sources->find($id);
+		return $sources->get();
 	}
 
 
@@ -66,6 +65,8 @@ class Source extends Eloquent {
 
 		$item = Source::find($id);
 		if (!$item) return JSON::error('Item not found');
+		if ($item->user_id != Auth::user()->id) return JSON::error('Access denied!');
+
 
 		// VALIDATE
 		$rules = static::$rules;
@@ -94,6 +95,7 @@ class Source extends Eloquent {
 
 		$item = Source::find($id);
 		if (!$item) return JSON::error('Item not found');
+		if ($item->user_id != Auth::user()->id) return JSON::error('Access denied!');
 
 		$item->items()->delete();
 		$item->delete();
