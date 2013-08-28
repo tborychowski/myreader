@@ -14,9 +14,8 @@ Route::group(['before' => 'auth'], function () {
 });
 
 
-// both have to either pass email or be authenticated
-Route::get('/update/(:any?)', 'source@update');
-Route::get('/stats/(:any?)', 'item@stats');
+Route::get('/stats/(:any?)', 'item@stats');			// has to either pass login or be authenticated
+Route::get('/update/(:any?)', 'source@update');		// has to either pass login or update for all
 
 
 Route::get('/login', [ 'as' => 'login', 'uses' => 'home@login' ]);

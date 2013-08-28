@@ -7,11 +7,13 @@ class Source_Controller extends Base_Controller {
 	 * Update all sources
 	 */
 	public function get_update ($email = null) {
-		if (isset($email)) $user = User::where_email($email)->first();
+		if (isset($email)) {
+			$user = User::where_email($email)->first();
+			if (!$user) return Response::error('404', [ 'message' => 'User Not Found' ]);
+			//if (!$user) return JSON::error('User not found');
+		}
 		else $user = Auth::user();
-		if (!$user) return Response::error('404', [ 'message' => 'User Not Found' ]);
-		//if (!$user) return JSON::error('User not found');
-		return RSS::update($user->id);
+		return RSS::update($user ? $user->id : null);
 	}
 
 	/**

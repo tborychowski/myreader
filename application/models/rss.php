@@ -15,14 +15,22 @@ class RSS {
 	static $ageLimit = 2592000; // 86400 * 30 -> 30 days ago
 
 
+
+	/**
+	 * MAIN UPDATE
+	 * @param  int $user_id    id of the user or null
+	 * @return object          update stats
+	 */
 	public static function update ($user_id) {
-		$feeds = Source::where_user_id($user_id)->get();
+		if (!isset($user_id)) $feeds = Source::all();
+		else $feeds = Source::where_user_id($user_id)->get();
+
 		$countItems = 0;
 		$removedItems = 0;
-		@set_time_limit(5000);
+		@set_time_limit(10000);
 
-		foreach ($feeds as $feed) $countItems += self::update_feed($feed, $user_id);
-		foreach ($feeds as $feed) $removedItems += self::clean_feed($feed, $user_id);
+		foreach ($feeds as $feed) $countItems += self::update_feed($feed);
+		foreach ($feeds as $feed) $removedItems += self::clean_feed($feed);
 
 		return [
 			'result' => 'success',
@@ -32,22 +40,10 @@ class RSS {
 		];
 	}
 
-	/**
-	 * Clean-up feed - remove old items
-	 * @return int          number of items removed
-	 */
-	public static function clean_feed ($item, $user_id) {
-		$notOlderThan = date('Y-m-d G:i:s', time() - static::$ageLimit);
 
-		//Source::update($item->id, (object)$src);
-		$items = Item::where_user_id($user_id)->where_source_id($item->id);
-		$items = $items->where('created_at', '<', $notOlderThan);
-		$count = count($items->get());
-		$items->delete();
-		return $count;
-	}
 
-	public static function update_feed ($item, $user_id) {
+
+	public static function update_feed ($item) {
 		$notOlderThan = date('U', time() - static::$ageLimit);
 
 		$pie = new SimplePie();
@@ -65,12 +61,13 @@ class RSS {
 		}
 		else {
 			$feeds = $pie->get_items();
+
 			$feedUrl = '';
 			foreach ($feeds as $feed) {
 				$feedUrl = $feed->get_link();
 				if ($feed->get_date('U') >= $notOlderThan) {
 					$items += Item::add([
-						'user_id' => $user_id,
+						'user_id' => $item->user_id,
 						'source_id' => $item->id,
 						'item_id' => $feed->get_id(),
 						'datetime' => $feed->get_date('Y-m-d H:i:s'),
@@ -88,7 +85,6 @@ class RSS {
 				$item->real_url = static::get_real_url($lnk);
 				$src['real_url'] = $item->real_url;
 			}
-
 			$src['icon'] = static::get_icon($item);
 		}
 
@@ -96,6 +92,27 @@ class RSS {
 
 		return $items;
 	}
+
+
+
+	/**
+	 * Clean-up feed - remove old items
+	 * @return int          number of items removed
+	 */
+	public static function clean_feed ($item) {
+		$notOlderThan = date('Y-m-d G:i:s', time() - static::$ageLimit);
+
+		//Source::update($item->id, (object)$src);
+		$items = Item::where_user_id($item->user_id)->where_source_id($item->id);
+		$items = $items->where('created_at', '<', $notOlderThan);
+		$count = count($items->get());
+		$items->delete();
+		return $count;
+	}
+
+
+
+
 
 	//http://www.google.com/s2/favicons?domain=nettuts.com
 	//https://plus.google.com/_/favicon?domain=http://feeds.feedburner.com/CssTricks

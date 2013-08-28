@@ -64,17 +64,21 @@ class Source extends Eloquent {
 		if (!$id) return JSON::error('Item ID is missing');
 
 		$item = Source::find($id);
-		if (!$item) return JSON::error('Item not found');
-		if ($item->user_id != Auth::user()->id) return JSON::error('Access denied!');
 
+		if (!$item) return JSON::error('Item not found');
+		if (Auth::user() && $item->user_id != Auth::user()->id) {
+			return JSON::error('Access denied!');
+		}
 
 		// VALIDATE
-		$rules = static::$rules;
-		$rules['name'] .= ','.$item->id;	// ensure it's unique without the current
-		$rules['url'] .= ','.$item->id;
-		$validation = Validator::make($input, $rules);
-		if ($validation->fails()) return JSON::error($validation->errors->first());
+		if (isset($input->name) && isset($input->url)) {
+			$rules = static::$rules;
+			$rules['name'] .= ','.$item->id;	// ensure it's unique without the current
+			$rules['url'] .= ','.$item->id;
 
+			$validation = Validator::make($item, $rules);
+			if ($validation->fails()) return JSON::error($validation->errors->first());
+		}
 
 		if (isset($input->name)) $item->name = $input->name;
 		if (isset($input->url)) $item->url = $input->url;
