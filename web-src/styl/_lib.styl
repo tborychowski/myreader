@@ -15,7 +15,9 @@ padding() { padding: joinArgs(arguments) }
 mar() { margin: joinArgs(arguments) }
 margin() { margin: joinArgs(arguments) }
 size(w, h=w) { width: px(w); height: px(h); }
+w(n = 0) { width: px(n) }
 width(n = 0) { width: px(n) }
+h(n = 0) { height: px(n) }
 height(n = 0) { height: px(n) }
 z(n = 0) { z-index: n }
 /*** SHORTCUTS ******************************************************************************************************************/
@@ -38,12 +40,15 @@ text(arg)
 		text-align: arg;
 
 font()
-	if length(arguments) is 3 and type(arguments[1]) is 'literal'																// font: 12/2 -> font-size: 12px; line-height: 2
+	if length(arguments) is 3 and type(arguments[1]) is 'literal'	// font: 12/2 -> font-size: 12px; line-height: 2
 		font-size: px(arguments[0]);
 		line-height: arguments[2]
-	else if length(arguments) is 1																								// font: 13 -> font-size: 13px;
-		font-size: px(arguments[0]);
-	else																														// use native font
+	else if length(arguments) is 1									// font: 13 -> font-size: 13px;
+		if type(arguments[0]) == 'unit'
+			font-size: px(arguments[0]);
+		else
+			font: arguments;
+	else															// use native font
 		font: arguments;
 
 
@@ -102,8 +107,11 @@ ico()
 			background: setIconBg(arg[0], arg[1] || 0, arg[2] || 0, arg[3] || no-repeat)
 
 
-transition(prop = all, time = .2, eas = ease-out)
-	vendor(transition, prop time+0s eas, webkit moz o ms)
+transition(prop = all, time = .2, eas = ease-out, t = 0)
+	if t is 0
+		vendor(transition, prop time+0s eas, webkit moz o ms)
+	else
+		vendor(transition, prop time+0s eas t+0s, webkit moz o ms)
 
 
 non-selectable()
@@ -118,6 +126,9 @@ selectable()
 
 border-box()
 	vendor(box-sizing, border-box)
+
+sizing(type)
+	vendor(box-sizing, type)
 
 clip(type = padding)
 	background-clip: s('%s-box', type)
