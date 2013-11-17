@@ -12,7 +12,7 @@ class RSS {
 		'elements'       => 'div,p,ul,li,a,img,dl,dt,h1,h2,h3,h4,h5,h6,ol,br,table,tr,td,blockquote,pre,ins,del,th,thead,tbody,b,i,strong,em,tt'
 	];
 
-	static $ageLimit = 2592000; // 86400 * 30 -> 30 days ago
+	static $ageLimit = 3456000; // 86400 * 40 -> 40 days ago
 
 
 
@@ -105,6 +105,8 @@ class RSS {
 		//Source::update($item->id, (object)$src);
 		$items = Item::where_user_id($item->user_id)->where_source_id($item->id);
 		$items = $items->where('created_at', '<', $notOlderThan);
+		$items = $items->where('is_starred', '=', 0);
+		$items = $items->where('is_unread', '=', 0);
 		$count = count($items->get());
 		$items->delete();
 		return $count;

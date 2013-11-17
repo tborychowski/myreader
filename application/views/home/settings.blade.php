@@ -14,7 +14,7 @@
 		<h3>Settings</h3>
 
 		<label>Auto remove items older than (days):</label>
-		<input type="text" value="30" class="autoclean" disabled="disabled">
+		<input type="text" value="40" class="autoclean" disabled="disabled">
 
 		<label>Update all feeds</label>
 		<button class="btn btn-update" data-action="update-all">

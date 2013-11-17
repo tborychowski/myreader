@@ -87,6 +87,16 @@ class Item extends Eloquent {
 
 		return array_map(function ($item) {
 			unset($item->source->user_id, $item->source->created_at, $item->source->updated_at);
+			$time = strtotime($item->datetime);
+			$format = 'G:i';
+			if (date('Y', $time) == date('Y')) {
+				if (date('n', $time) == date('n') && date('j', $time) == date('j')) $format = 'Today, G:i';
+				if (date('W', $time) == date('W')) $format = 'D, G:i';
+				else $format = 'D, j M G:i';
+			}
+			else $format = 'D, j M Y G:i';
+
+			$item->datetime = date($format, $time);
 			return $item;
 		}, $items);
 	}
