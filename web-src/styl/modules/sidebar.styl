@@ -1,0 +1,82 @@
+@import "_lib";
+
+
+#sidebar
+	pos 0,,0,0; width sidebar-width; pad 45 0 0; border-box(); font 13; overflow hidden;
+	bg #333 'noise.png' 0 0 repeat; //-webkit-transform translate3d(0, 0, 0); transform translate3d(0, 0, 0);
+
+
+	.sidebar-wrapper
+		position absolute; top 90px; bottom toolbar-height; left 0; width (sidebar-width + 20); pad 0;
+		overflow hidden; overflow-y auto; -webkit-overflow-scrolling touch;
+
+	.nav-list
+		pad 0; list-style none; width 180;
+		&:last-child
+			margin-bottom 10px;
+
+	.nav-header
+		color #999; text-shadow 0 -1px 0 rgba(#000, .4); cursor default; show 2; font 13/20px; b 1; pad 0;
+		text-transform uppercase; overflow hidden;
+		.nav-name
+			line-height 18px;
+		.nav-name:hover
+			color #eee;
+
+	.nav-row
+		text-shadow 0 -1px 0 rgba(#000, .4); color #A4A4A4; overflow hidden; pad 4 15; margin-bottom 3px; show 2;
+		border-top 1px solid transparent; border-bottom 1px solid transparent;
+		&:hover
+			color #eee;
+
+		.badge
+		.no-badge
+		.btn-settings
+			float right; margin-left -100%; position relative;
+
+		.badge
+		.no-badge
+			vertical-align middle; font 12px/15px; padding 0 2 0 0; radius 2; show 1; white-space nowrap;
+		.badge
+			background-color #999; color #FFF; b 1; text-shadow 0 -1px 0 rgba(#000, .25); padding 2 6 1;
+
+		.icon-rss
+		.nav-icon
+		.nav-icon img
+			float left; size 16;
+		.icon-rss
+			font 16; color #888; opacity .3;
+		.nav-icon
+			margin-right 8px;
+
+		.nav-name
+			float left; height 16; vertical-align middle; white-space nowrap; max-width 120px;
+			overflow hidden; text-overflow ellipsis;
+
+		.nav-btn
+			&.nav-type
+				font 16;
+
+	.nav-tag
+		margin-top 15px;
+		.nav-name
+			b 1; text-transform uppercase; line-height 15px
+	.nav-src
+		.nav-name
+			line-height 15px
+
+	.active .nav-row
+	.nav-row:focus
+		color #C8BCBE; gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D;
+		shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F
+
+
+
+	.btn
+		gradient #eee #aaa; border #333; radius 3; color #333; font 12px/1; b 1; padding 7 12;
+		shadow 0 1 0 #fff .3; text-shadow 0 1px 0 rgba(#fff, 0.5);
+		&:hover
+			gradient #fff #bbb; border #222; text-shadow: 0 1px 0 #ddd;
+		&:active
+			gradient #999 #999; text-shadow none;
+

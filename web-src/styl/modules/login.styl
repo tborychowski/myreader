@@ -1,0 +1,19 @@
+@import "_lib";
+
+
+
+html.login
+	bg #333 'noise.png' 0 0 repeat;
+	body
+		height 100%; padding 0;
+	form
+		show 2; radius 1; pad 15 40 30; gradient #ddd #aaa; mar -80px auto 0; width 170; border #000; top 50%;
+		shadow 0 15 15 2 #fff .5 inset, 0 2 20 2 #000 .6; position relative;
+	label
+		show 2; color: #444; b 1; font 12; pad 10 0 0; mar 0; text-shadow 0 1px 0 #fff; non-selectable();
+	input[type]
+		pad 3 4; font 15; size 100% auto; border-box(); bg rgba(#fff,.6); radius 1; border #777; shadow: 0 1 0 #fff .5, 0 1 2 #000 .2 inset
+		&:focus
+			bg rgba(#fff, .9)
+	button
+		pos(); visibility hidden;

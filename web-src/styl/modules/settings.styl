@@ -1,0 +1,53 @@
+@import "_lib";
+
+
+body.settings
+	#main
+		.entry
+			input
+				pad 2 4; mar 0 5 5 0
+				&[name="url"]
+					width 400
+			.error
+				color red; mar 0;
+
+			.entry-header
+				padding 10px 15px 5px;
+				h3 img
+					mar 0 5 -1 0
+			.entry-footer
+				padding 0 6px
+			.entry-time
+				font 13; pad 7 0 0;
+			.entry-source
+				float left
+			.btn-save
+			.btn-cancel
+				show 0;
+			&.in-edit
+				.btn-edit
+				.btn-remove
+					show 0;
+				.btn-save
+				.btn-cancel
+					show 1;
+
+	#sidebar
+		h3
+			color #999; text-shadow 0 -1px 0 rgba(#000, .4); cursor default; show 2; font 19/1; pad 0; b 0;
+			text-transform uppercase; margin 0;
+		label
+			color #aaa; cursor default; show 2; font 13/1; margin 35px 0 10px; clear both; float left;
+		input
+			width 100; pad 3 7; border #000; bg #ddd; font-family inherit; font 16; radius 3; text center; transition();
+			shadow 0 1 0 #fff .3;
+			&:focus
+				bg #fff; shadow 0 1 1 1 #fff .3; border #52a8ec;
+				shadow 0 1 1 #000 0.08 inset, 0 0 4 #52a8ec .7;
+		.btn-update
+		.autoclean
+			float right; clear both;
+		.autoclean
+			width 50;
+		.sidebar-wrapper
+			top 70px; padding 0 12px; width 155;

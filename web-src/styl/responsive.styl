@@ -1,0 +1,31 @@
+@import "_lib";
+
+
+@media all and (max-width: 950px)
+	#main
+	#mainToolbar
+		width 768px; left auto;
+	#mainLogo
+		margin-left -45px;
+
+@media all and (max-width: 768px)
+	#main
+	#mainToolbar
+		width 100%; left 0;
+	#main
+		shadow none;
+	#sidebar
+		show 0;
+
+	#mainLogo
+		margin-left -96px;
+
+@media all and (max-width: 640px)
+	#mainToolbar
+		.btn
+			margin-right 10px; min-width 40px;
+		//.status-buttons
+		.btn-group .btn
+			margin-right 0;
+		.btn-mark-all-as-read
+			show 0;
