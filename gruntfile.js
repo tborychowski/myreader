@@ -16,7 +16,12 @@ module.exports = function (grunt) {
 		stylus: {
 			dev: {
 				options: { compress: true, paths: [ '<%= cfg.stylus %>' ] },
-				files: { '<%= cfg.dest %>/css/style.css' : [ '<%= cfg.src %>/styl/style.styl' ]}
+				files: {
+					'<%= cfg.dest %>/css/style.css' : [
+						'<%= cfg.src %>/styl/common.styl',
+						'<%= cfg.src %>/styl/modules/*.styl',
+						'<%= cfg.src %>/styl/responsive.styl'
+					]}
 			},
 			prod: {
 				options: { yuicompress: true, paths: '<%= stylus.dev.options.paths %>' },

@@ -18,11 +18,18 @@ Route::get('/stats/(:any?)', 'item@stats');			// has to either pass login or be 
 Route::get('/update/(:any?)', 'source@update');		// has to either pass login or update for all
 
 
+
 Route::get('/login', [ 'as' => 'login', 'uses' => 'home@login' ]);
 Route::post('/json/login', function () {
 	if (Auth::attempt(Input::json(true))) return JSON::success();
 	return JSON::error('Incorrect login or password');
 });
+
+
+// ADMIN: CRUD users
+Route::get('/admin', [ 'as' => 'admin_login', 'uses' => 'home@admin_login' ]);
+Route::post('/admin', [ 'as' => 'admin', 'uses' => 'home@admin' ]);
+
 
 
 // Route::get('/makeuser', function () {

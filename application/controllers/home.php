@@ -17,4 +17,7 @@ class Home_Controller extends Base_Controller {
 	}
 	public function action_login () { return View::make('home/login'); }
 	public function action_settings () { return View::make('home/settings'); }
+
+	public function action_admin_login () { return View::make('home/admin_login'); }
+	public function action_admin () { return View::make('home/admin'); }
 }
