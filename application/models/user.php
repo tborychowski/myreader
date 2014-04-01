@@ -24,7 +24,9 @@ class User extends Eloquent {
 		if ($validation->fails()) return JSON::error($validation->errors->first());
 
 		$user = array('email' => $input['email']);
-		if (isset($input['password'])) $user['password'] = $input['password'];      else $user['password'] = '';
+		if (isset($input['password'])) $user['password'] = $input['password'];
+		else $user['password'] = '';
+
 		$user['password'] = Hash::make($user['password']);
 
 		return User::create($user);
