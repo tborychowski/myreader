@@ -27,11 +27,21 @@ Route::post('/json/login', function () {
 
 
 /*** ADMIN SECTION ***********************************************************/
-Route::get('/admin',             'admin@index');
-Route::get('/admin/user/(:num)', 'admin@user');
-Route::get('/adminlogin',        'admin@loginForm');
-Route::post('/adminlogin',       'admin@loginCheck');
-Route::get('/adminlogout',       'admin@logout');
+Route::group(['before' => 'adminAuth'], function () {
+	Route::get('/admin',                 'admin@index');
+	Route::get('/admin/user/(:num)',     'admin@user');
+	Route::post('/admin/user/(:num)',    'admin@user_save');
+	Route::get('/admin/user/(:num)/del', 'admin@user_delete');
+});
+
+Route::get('/adminlogin',            'admin@loginForm');
+Route::post('/adminlogin',           'admin@loginCheck');
+Route::get('/adminlogout',           'admin@logout');
+
+Route::filter('adminAuth', function () {
+	if (!Session::has('isAdmin')) return Redirect::to('adminlogin');
+});
+
 /*** ADMIN SECTION ***********************************************************/
 
 

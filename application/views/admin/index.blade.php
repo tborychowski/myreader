@@ -7,8 +7,18 @@
 
 	<div class="page">
 		<h1>{{HTML::link_to_action('admin@logout', 'Logout', array(), array('class' => 'btn btn-logout'))}}MyReader Admin</h1>
-		<h2>Users</h2>
 
+		<div class="toaster">
+			@if (Session::get('success'))
+				<div class="toaster-msg toaster-success">{{ Session::get('success') }}</div>
+			@endif
+
+			@if (Session::get('error'))
+				<div class="toaster-msg toaster-error">{{ Session::get('error') }}</div>
+			@endif
+		</div>
+
+		<h2>Users</h2>
 
 		<table class="users">
 		<thead>
@@ -31,6 +41,7 @@
 		</tbody>
 		</table>
 
+		{{HTML::link('admin/user/0', '+ Add User', array('class' => 'btn btn-add'))}}
 	</div>
 
 </body>
