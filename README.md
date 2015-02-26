@@ -1,7 +1,7 @@
 ------
-~~**Project has been discontinued because I finally found a free and perfect for all my needs rss aggregator and google reader alternative: [inoreader](http://www.inoreader.com)**~~
+**Update (2014-08-26):** ~~Project has been discontinued because I finally found a free and perfect for all my needs rss aggregator and google reader alternative: [inoreader](http://www.inoreader.com)~~
 
-It seems that my alternative is going adware. This project might yet be revived...
+**Update (2015-02-26):** It seems that my alternative is going adware. This project might yet be revived...
 
 ------
 
