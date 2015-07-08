@@ -25,3 +25,7 @@ Please see the wiki: [Installation](https://github.com/tborychowski/myreader/wik
 ### Alternatives
 - [Tiny Tiny RSS](http://tt-rss.org) - extremely powerful, but huge and slow
 - [Selfoss](http://selfoss.aditu.de) - pretty powerful, but still a bit too large and too slow (at least for me)
+
+
+###Notes
+[Laravel 3.x yield fix](https://github.com/laravel/laravel/commit/3298407238fd3e212cdf8d829adc6f519b941052)
