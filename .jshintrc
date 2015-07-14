@@ -1,0 +1,21 @@
+{
+  "globals": {
+    "require": true
+  },
+  "browser": true,
+  "node": true,
+  "esnext": true,
+
+  "trailing"  : true,
+  "strict"    : false,
+  "latedef"   : "nofunc",
+  "noempty"   : true,
+  "noarg"     : true,
+  "eqeqeq"    : true,
+  "indent"    : 4,
+  "quotmark"  : "single",
+  "nonew"     : true,
+  "undef"     : true,
+  "unused"    : "strict"
+}
+

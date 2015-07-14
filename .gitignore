@@ -1,10 +1,8 @@
-# Numerous always-ignore extensions
-*.diff
-*.err
-*.log
-.cache
-node_modules
-Thumbs.db
-Desktop.ini
-.DS_Store
+/node_modules
+/vendor
+/storage
+Homestead.yaml
+.env
+.idea
 *.sublime-*
+composer.lock
