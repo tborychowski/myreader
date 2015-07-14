@@ -1,7 +1,7 @@
 <?php
 
-Route::get('/', function () { return view('home'); });
-Route::get('/settings', function () { return view('settings'); });
+Route::get('/', 'HomeController@index');
+Route::get('/settings', 'SettingsController@index');
 
 
 Route::resource('api/source', 'SourceController');

@@ -24,7 +24,7 @@
 
     <script src="assets/app.js"></script>
     @if (App::isLocal())
-    <script async src="http://localhost:35729/livereload.js"></script>
+    {{-- <script async src="http://localhost:35729/livereload.js"></script> --}}
     @endif
 </body>
 </html>

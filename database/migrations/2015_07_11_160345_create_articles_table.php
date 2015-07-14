@@ -21,8 +21,8 @@ class CreateArticlesTable extends Migration
             $table->string('url');
             $table->text('content');
 
-            $table->boolean('is_unread');
-            $table->boolean('is_starred');
+            $table->boolean('is_unread')->default(true);
+            $table->boolean('is_starred')->default(true);
 
             $table->timestamp('published_at');
             $table->timestamps();

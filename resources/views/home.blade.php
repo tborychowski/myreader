@@ -1,16 +1,16 @@
 @extends('app')
 
-
-
 @section('body-class')home @stop
 
 
 
-@section('sidebar')
 
-sources
+@section('sidebar')
+<a href="{{ url('/settings') }}">Settings<a>
+
 
 @stop
+
 
 
 
