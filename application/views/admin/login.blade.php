@@ -4,7 +4,7 @@
 <title>MyReader</title>
 {{Asset::styles()}}
 <body>
-{{Form::open()}}
+{{Form::open(null, 'POST', array('class' => 'login-form')) }}
 	{{Form::label('username', 'Username')}}
 	{{Form::text('username', null, array('autofocus'=>'true', 'autocomplete'=>'off'))}}
 	{{Form::label('password', 'Password')}}

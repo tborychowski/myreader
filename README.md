@@ -17,7 +17,7 @@ Utilizes [SimplePie](http://simplepie.org) to aggregate your feeds and presents 
 
 
 ### Features
-- extremely lightweight (takes only 3.3MB on disc (prod. version) including external libraries, excluding DB)
+- extremely lightweight (takes only 3.5MB on disc (prod. version) including external libraries, excluding DB & cache)
 - extremely fast, opens up instantly
 - easy to set-up and use
 - user friendly & minimalistic interface
@@ -35,4 +35,8 @@ Please see the wiki: [Installation](https://github.com/tborychowski/myreader/wik
 
 ### Alternatives
 - [Tiny Tiny RSS](http://tt-rss.org) - extremely powerful, but huge and slow
-- [Selfoss](http://selfoss.aditu.de) - pretty powerful, but still a bit too large and too slow (for me)
+- [Selfoss](http://selfoss.aditu.de) - pretty powerful, but still a bit too large and too slow (at least for me)
+
+
+###Notes
+[Laravel 3.x yield fix](https://github.com/laravel/laravel/commit/3298407238fd3e212cdf8d829adc6f519b941052)

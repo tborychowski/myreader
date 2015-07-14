@@ -18,7 +18,6 @@ Route::get('/stats/(:any?)', 'item@stats');			// has to either pass login or be 
 Route::get('/update/(:any?)', 'source@update');		// has to either pass login or update for all
 
 
-
 Route::get('/login', [ 'as' => 'login', 'uses' => 'home@login' ]);
 Route::post('/json/login', function () {
 	if (Auth::attempt(Input::json(true))) return JSON::success();
@@ -26,16 +25,24 @@ Route::post('/json/login', function () {
 });
 
 
-// ADMIN: CRUD users
-Route::get('/admin', [ 'as' => 'admin_login', 'uses' => 'home@admin_login' ]);
-Route::post('/admin', [ 'as' => 'admin', 'uses' => 'home@admin' ]);
 
+/*** ADMIN SECTION ***********************************************************/
+Route::group(['before' => 'adminAuth'], function () {
+	Route::get('/admin',                 'admin@index');
+	Route::get('/admin/user/(:num)',     'admin@user');
+	Route::post('/admin/user/(:num)',    'admin@user_save');
+	Route::get('/admin/user/(:num)/del', 'admin@user_delete');
+});
 
+Route::get('/adminlogin',            'admin@loginForm');
+Route::post('/adminlogin',           'admin@loginCheck');
+Route::get('/adminlogout',           'admin@logout');
 
-// Route::get('/makeuser', function () {
-// 	$u = User::create([ 'email' => '', 'password' => Hash::make('') ]);
-// 	$u->save();
-// });
+Route::filter('adminAuth', function () {
+	if (!Session::has('isAdmin')) return Redirect::to('adminlogin');
+});
+
+/*** ADMIN SECTION ***********************************************************/
 
 
 

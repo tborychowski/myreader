@@ -6,14 +6,71 @@ html.admin
 	bg #333 'noise.png' 0 0 repeat;
 	body
 		height 100%; padding 0;
-	form
+	.login-form
 		show 2; radius 1; pad 15 40 30; gradient #ddd #aaa; mar -80px auto 0; width 170; border #000; top 50%;
 		shadow 0 15 15 2 #fff .5 inset, 0 2 20 2 #000 .6; position relative;
+		button
+			pos(); visibility hidden;
+
 	label
 		show 2; color: #444; b 1; font 12; pad 10 0 0; mar 0; text-shadow 0 1px 0 #fff; non-selectable();
 	input[type]
 		pad 3 4; font 15; size 100% auto; border-box(); bg rgba(#fff,.6); radius 1; border #777; shadow: 0 1 0 #fff .5, 0 1 2 #000 .2 inset
 		&:focus
 			bg rgba(#fff, .9)
-	button
-		pos(); visibility hidden;
+
+	.btn
+		text-decoration none; show 1; font 16; min-width 80px; text center; padding 2 0 0; border-box(); radius 2;
+		&:hover
+			text-decoration underline;
+
+	.btn-add
+		padding 30 15 0; u 0;
+
+	.btn-del
+		bg #E84C3D; color #fff; padding 3 10; margin 100 5 0 0
+
+	.btn-save
+		bg #27AE61; color #fff; padding 3 10; margin 20 10 0 0; border none;
+
+
+
+	h1
+		color #333; text-shadow 0 1px 0 #fff;
+	h2
+		color #444; text-shadow 0 1px 0 #fff;
+
+	.btn-logout
+		float right; font 15;
+
+
+	.page
+		bg #eee; width 90%; margin 20 auto; shadow 0 2 5 #000 .8; radius 4; padding 10 20 40; border-box();
+
+	.users
+		width 100%; table-layout fixed; border-collapse collapse;
+		td
+			padding 7 15;
+		thead td
+			border-bottom 1 #666; b 1;
+	.td-id
+		width 30;
+	.td-date
+		width 200;
+
+
+
+
+	.toaster
+		width 300; margin 0 auto;
+
+	.toaster-msg
+		color #fff; font 12; b 1; padding 5 10; radius 2; text-shadow 0 1px 1px rgba(#000, .3); text center; margin-bottom 1px;
+
+	.toaster-success
+		bg #27AE61;
+
+	.toaster-error
+		bg #E84C3D;
+
+
