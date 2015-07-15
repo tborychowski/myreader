@@ -6,7 +6,7 @@
 
 
 @section('sidebar')
-<a href="{{ url('/settings') }}">Settings<a>
+
 
 
 @stop

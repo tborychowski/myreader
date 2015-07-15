@@ -48,11 +48,15 @@
 
 	var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
 
-	var sidebar = _interopRequire(__webpack_require__(1));
+	var toolbar = _interopRequire(__webpack_require__(1));
+
+	toolbar.init();
+
+	var sidebar = _interopRequire(__webpack_require__(9));
 
 	sidebar.init();
 
-	var main = _interopRequire(__webpack_require__(9));
+	var main = _interopRequire(__webpack_require__(10));
 
 	main.init();
 
@@ -73,7 +77,7 @@
 
 	function init() {
 		if (!isReady) {
-			el = $("#sidebar");
+			el = $("#toolbar");
 		}
 
 		load();
@@ -921,7 +925,35 @@
 
 	var $ = _interopRequire(__webpack_require__(2));
 
-	var Data = _interopRequire(__webpack_require__(10));
+	var el,
+	    isReady = false;
+
+	function load() {}
+
+	function init() {
+		if (!isReady) {
+			el = $("#sidebar");
+		}
+
+		load();
+		isReady = true;
+	}
+
+	module.exports = {
+		init: init
+	};
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
+
+	var $ = _interopRequire(__webpack_require__(2));
+
+	var Data = _interopRequire(__webpack_require__(11));
 
 	var el,
 	    isReady = false;
@@ -946,7 +978,7 @@
 	};
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

@@ -9,10 +9,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="MyReader">
     <link rel="apple-touch-icon-precomposed" href="assets/home.png">
-    <link rel="shortcut icon" href="assets/home.png">
-    <link rel="stylesheet" href="assets/app.css">
+    <link rel="shortcut icon" href="{{ url('assets/home.png') }}">
+    <link rel="stylesheet" href="{{ url('assets/app.css') }}">
 </head>
 <body class="@yield('body-class')">
+
+
+    <div id="toolbar">
+        <a href="{{ url('/') }}">home<a>
+        <a href="{{ url('/source') }}">Sources<a>
+    </div>
 
     <div id="sidebar">
         @yield('sidebar')
@@ -22,7 +28,7 @@
         @yield('main')
     </div>
 
-    <script src="assets/app.js"></script>
+    <script src="{{ url('assets/app.js') }}"></script>
     @if (App::isLocal())
     {{-- <script async src="http://localhost:35729/livereload.js"></script> --}}
     @endif

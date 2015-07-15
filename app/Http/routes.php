@@ -4,6 +4,8 @@ Route::get('/', 'HomeController@index');
 Route::get('/settings', 'SettingsController@index');
 
 
+Route::resource('/source', 'SourceViewController');
+
 Route::resource('api/source', 'SourceController');
 Route::resource('api/article', 'ArticleController');
 

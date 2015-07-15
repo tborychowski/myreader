@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('body-class')settings @stop
+@section('body-class')sources @stop
 
 
 
@@ -26,7 +26,7 @@
     @if (count($sources))
     <ul>
         @foreach ($sources as $src)
-        <li><a href="sources/{{ $src->id }}">{{ $src->name }}</a></li>
+        <li><a href="source/{{ $src->id }}/edit">{{ $src->name }}</a></li>
         @endforeach
     </ul>
 
