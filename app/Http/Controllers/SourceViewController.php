@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Source;
+use Request;
 
 class SourceViewController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -24,26 +26,6 @@ class SourceViewController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @return Response
-     */
-    public function store()
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -51,10 +33,21 @@ class SourceViewController extends Controller
      */
     public function show($id)
     {
-        $user = User::first();
-        $source = $user->sources()->find($id);
-
+        $source = User::first()->sources()->find($id);
         return view('sources/source', compact('source'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
+    public function create()
+    {
+        $source = new Source;
+        $formAction = ['method' => 'POST', 'action' => ['SourceViewController@store']];
+        $delFormAction = null;
+        return view('sources/source', compact('source', 'formAction', 'delFormAction'));
     }
 
     /**
@@ -65,10 +58,27 @@ class SourceViewController extends Controller
      */
     public function edit($id)
     {
-        $user = User::first();
-        $source = $user->sources()->find($id);
+        $source = User::first()->sources()->find($id);
+        $formAction = ['method' => 'PATCH', 'action' => ['SourceViewController@update', $source->id]];
+        $delFormAction = [
+            'method' => 'DELETE',
+            'action' => ['SourceViewController@destroy', $source->id],
+            'onSubmit' => 'return confirm("Are you sure?")'
+        ];
+        return view('sources/source', compact('source', 'formAction', 'delFormAction'));
+    }
 
-        return view('sources/source-edit', compact('source'));
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
+    public function store()
+    {
+        $user = User::first();
+        $user->sources()->create(Request::all());
+        return redirect('/source');
     }
 
     /**
@@ -79,6 +89,8 @@ class SourceViewController extends Controller
      */
     public function update($id)
     {
+        $source = Source::findOrFail($id);
+        $source->update(Request::all());
         return redirect('/source');
     }
 
@@ -90,6 +102,8 @@ class SourceViewController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $source = Source::findOrFail($id);
+        $source->delete();
+        return redirect('/source');
     }
 }

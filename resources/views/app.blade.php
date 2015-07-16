@@ -14,13 +14,8 @@
 </head>
 <body class="@yield('body-class')">
 
-
-    <div id="toolbar">
-        <a href="{{ url('/') }}">home<a>
-        <a href="{{ url('/source') }}">Sources<a>
-    </div>
-
     <div id="sidebar">
+        <span id="sideLogo"><i class="fa fa-rss"></i> myreader</span>
         @yield('sidebar')
     </div>
 
@@ -28,9 +23,15 @@
         @yield('main')
     </div>
 
+
+    <div id="toolbar">
+
+    </div>
+
+
     <script src="{{ url('assets/app.js') }}"></script>
     @if (App::isLocal())
-    {{-- <script async src="http://localhost:35729/livereload.js"></script> --}}
+    <script src="http://localhost:35729/livereload.js"></script>
     @endif
 </body>
 </html>

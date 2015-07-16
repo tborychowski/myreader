@@ -1,4 +1,39 @@
 @import "_lib";
 
 #sidebar
-	pos toolbar-h auto 0 0; width sidebar-w
+	pos 0 auto 0 0; width sidebar-w
+	padding-top 40
+
+
+
+.sidebar-toolbar
+	pos auto 0 0 0; height toolbar-h; border-top #222; padding 9 12 0;
+	shadow 0 1 0 #555 1 inset;
+
+
+
+#sideLogo
+	pos 0; left 0; font 24; color #999; cursor default; opacity .3;
+	padding 5 0 0 15; not-selectable();
+
+	.fa-rss
+		font 34; margin-right -4; vertical-align bottom; rotate 270
+
+
+
+#sidebar
+	.btn
+		bg rgba(#000, 0); color #666; border none; text-shadow 0 -1px 0 #000; u 0;
+		float left; font 16;
+
+		.fa
+			font 20/1; vertical-align text-bottom; margin-right 3;
+
+		&:hover
+			color #999;
+
+		&:active
+			color #555;
+
+	.btn-right
+		float right;
