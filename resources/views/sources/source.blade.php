@@ -21,7 +21,9 @@
     {!! Form::label('Folder') !!}{!! Form::text('folder') !!}<br>
 
     @if ($delFormAction)
-    {!! Form::label('Last Error: ') !!}{{ $source->last_error }}<br>
+        @if ($source->last_error)
+        {!! Form::label('Last Error: ') !!}{{ $source->last_error }}<br>
+        @endif
     {!! Form::label('Added: ') !!}{{ $source->created_at }}<br>
     @endif
 

@@ -81,6 +81,7 @@ class SourceViewController extends Controller
         return redirect('/source');
     }
 
+
     /**
      * Update the specified resource in storage.
      *
@@ -106,4 +107,90 @@ class SourceViewController extends Controller
         $source->delete();
         return redirect('/source');
     }
+
+
+
+    /*** IMPORT ***********************************************************************************/
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
+    public function import()
+    {
+        $formAction = [
+            'method' => 'POST',
+            'files' => true,
+            'action' => ['SourceViewController@parseImport']
+        ];
+        return view('sources/import', compact('formAction'));
+    }
+
+
+    /**
+     * Parse OPML XML file (e.g. from innoreader) to myreqder's flat array of sources
+     * @param  object $node   root node of the xml file
+     * @param  string $folder [optional] source's folder name
+     * @return array          sources' array
+     */
+    private function getSources($node, $folder = '')
+    {
+        $sources = [];
+        if ($node->outline && count($node->outline) > 0) {
+            $sources = $this->getSources($node->outline, trim($node['title']));
+        }
+        else {
+            foreach ($node as $src) {
+                $sources[] = [
+                    'name' => trim($src['title']),
+                    'url' => trim($src['xmlUrl']),
+                    'real_url' => trim($src['htmlUrl']),
+                    'folder' => $folder
+                ];
+            }
+        }
+        return $sources;
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
+    public function parseImport()
+    {
+        $user = User::first();
+
+        $file = Request::file('xml');
+        if (!$file->isValid()) return redirect('/source/import')->withErrors(['msg', 'Invalid file!']);
+
+        $xml = simplexml_load_file($file);
+        if (!$xml) return redirect('/source/import')->withErrors(['msg', 'Invalid file!']);
+
+        $items = $xml->body->outline;
+        if (!$items || count($items) === 0) return redirect('/source/import')->withErrors(['msg', 'Invalid file!']);
+
+        $sources = $this->getSources($items);
+        \Session::set('sources', $sources);
+        \Session::set('source_names', array_map(function ($s) { return $s['name']; }, $sources));
+
+        return redirect('/source/import');
+    }
+
+
+    public function confirmImport()
+    {
+        $sources = \Session::get('sources');
+        if ($sources) {
+            $user = User::first();
+            $models = [];
+            $user->sources()->createMany($sources);
+        }
+        \Session::forget('sources');
+        \Session::forget('source_names');
+
+        return redirect('/source');
+    }
+
 }

@@ -13,6 +13,7 @@
 
     <h1>Sources</h1>
     <a href="{{ url('source/create') }}" class="btn btn-add">Add</a>
+    <a href="{{ url('source/import') }}" class="btn btn-add">Import</a>
 
     @if (count($sources))
     <ul class="sources-list">
