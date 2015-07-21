@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use App\Source;
 use Request;
+use Session;
 
 class SourceViewController extends Controller
 {
@@ -21,6 +22,8 @@ class SourceViewController extends Controller
     {
         $user = User::first();
         $sources = $user->sources()->get();
+
+        $this->forgetImportedSources();
 
         return view('sources/sources', compact('sources'));
     }
@@ -134,11 +137,11 @@ class SourceViewController extends Controller
      * @param  string $folder [optional] source's folder name
      * @return array          sources' array
      */
-    private function getSources($node, $folder = '')
+    private function findSourcesRec($node, $folder = '')
     {
         $sources = [];
         if ($node->outline && count($node->outline) > 0) {
-            $sources = $this->getSources($node->outline, trim($node['title']));
+            $sources = $this->findSourcesRec($node->outline, trim($node['title']));
         }
         else {
             foreach ($node as $src) {
@@ -151,6 +154,20 @@ class SourceViewController extends Controller
             }
         }
         return $sources;
+    }
+
+
+    private function findSources($items)
+    {
+        $sources = $this->findSourcesRec($items);
+        Session::set('sources', $sources);
+        Session::set('source_names', array_map(function ($s) { return $s['name']; }, $sources));
+    }
+
+    private function forgetImportedSources ()
+    {
+        Session::forget('sources');
+        Session::forget('source_names');
     }
 
     /**
@@ -171,9 +188,7 @@ class SourceViewController extends Controller
         $items = $xml->body->outline;
         if (!$items || count($items) === 0) return redirect('/source/import')->withErrors(['msg', 'Invalid file!']);
 
-        $sources = $this->getSources($items);
-        \Session::set('sources', $sources);
-        \Session::set('source_names', array_map(function ($s) { return $s['name']; }, $sources));
+        $this->findSources($items);
 
         return redirect('/source/import');
     }
@@ -181,14 +196,13 @@ class SourceViewController extends Controller
 
     public function confirmImport()
     {
-        $sources = \Session::get('sources');
+        $sources = Session::get('sources');
         if ($sources) {
             $user = User::first();
             $models = [];
             $user->sources()->createMany($sources);
         }
-        \Session::forget('sources');
-        \Session::forget('source_names');
+        $this->forgetImportedSources();
 
         return redirect('/source');
     }

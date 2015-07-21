@@ -12,10 +12,10 @@
     "postinstall": "cp -r node_modules/font-awesome/fonts/ ./public"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
     "babel-core": "^4.6.1",
     "babel-loader": "^4.0.0",
     "font-awesome": "^4.3.0",
+    "gulp": "^3.9.0",
     "gulp-concat": "^2.4.2",
     "gulp-jshint": "^1.9.0",
     "gulp-livereload": "^3.0.2",
@@ -28,8 +28,8 @@
     "gulp-watch": "^4.1.1",
     "gulp-webpack": "^1.1.2",
     "jshint-stylish": "^1.0.0",
+    "material-design-lite": "^1.0.0-3",
     "webpack": "^1.7.3"
-
   },
   "dependencies": {
     "laravel-elixir": "^2.3.13"

@@ -3,15 +3,13 @@
 @section('body-class')sources @stop
 
 @section('sidebar')
-@include('sources/source-sidebar')
+@include('sources/sidebar')
 @stop
 
 
 
-
 @section('main')
-
-    <a href="{{ url('source') }}" class="btn btn-back">&laquo; back</a>
+<div id="main">
     <h1>{{ $delFormAction ? 'Edit source' : 'Add new source' }}</h1>
 
     {!! Form::model($source, $formAction) !!}
@@ -29,12 +27,16 @@
 
     {!! Form::submit($delFormAction ? 'Save' : 'Add', ['class' => 'btn btn-add']) !!}
     {!! Form::close() !!}
+</div>
 
+<div class="toolbar main-toolbar">
+    <a href="{{ url('source') }}" class="btn btn-back">Cancel</a>
 
     @if ($delFormAction)
     {!! Form::open($delFormAction) !!}
     {!! Form::submit('Delete', ['class' => 'btn btn-del']) !!}
     {!! Form::close() !!}
     @endif
+</div>
 
 @stop

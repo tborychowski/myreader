@@ -15,6 +15,10 @@ var gulp = require('gulp'),
 
 
 gulp.task('js', function () {
+
+	gulp.src(['node_modules/material-design-lite/material.min.js'])
+		.pipe(gulp.dest('public/assets/'));
+
 	return gulp.src(['src/app.js'])
 		.pipe(webpack(require('./webpack.conf.js'), null, wpErr))
 		.pipe(gulp.dest('public/assets/'))

@@ -1,15 +1,32 @@
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/material-design-lite/material.min.css";
 @import "_lib";
 
 
 html
 body
 	-ms-text-size-adjust 100%; -webkit-text-size-adjust 100%;
-	size 100%; overflow hidden; position fixed; // <- chrome scroll bug
+	// size 100%; overflow hidden; position fixed; // <- chrome scroll bug
 
 body
-	margin 0; font 400 15px/1 arial, sans-serif; cursor default;
-	color #fff; bg #333 'noise.png' 0 0 repeat;
+	// margin 0; font 400 15px/1 arial, sans-serif; cursor default;
+	bg #333 'noise.png' 0 0 repeat;
+	// color #fff;
 
-*
-	box-sizing border-box;
+// *
+// 	box-sizing border-box;
+
+
+
+.settings-button
+	margin 16 10 0 0; float right;
+
+.settings-back-button
+	margin-left -10;
+
+
+.mdl-layout__header-row .mdl-navigation .mdl-button
+	margin-left 25;
+
+.sources-table .table-action-cell
+	padding-top 7;
