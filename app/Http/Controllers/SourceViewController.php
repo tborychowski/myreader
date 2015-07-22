@@ -25,7 +25,7 @@ class SourceViewController extends Controller
 
         $this->forgetImportedSources();
 
-        return view('sources/sources', compact('sources'));
+        return view('sources/index', compact('sources'));
     }
 
     /**
@@ -37,7 +37,7 @@ class SourceViewController extends Controller
     public function show($id)
     {
         $source = User::first()->sources()->find($id);
-        return view('sources/source', compact('source'));
+        return view('sources/create', compact('source'));
     }
 
     /**
@@ -50,7 +50,7 @@ class SourceViewController extends Controller
         $source = new Source;
         $formAction = ['method' => 'POST', 'action' => ['SourceViewController@store']];
         $delFormAction = null;
-        return view('sources/source', compact('source', 'formAction', 'delFormAction'));
+        return view('sources/create', compact('source', 'formAction', 'delFormAction'));
     }
 
     /**
@@ -68,7 +68,7 @@ class SourceViewController extends Controller
             'action' => ['SourceViewController@destroy', $source->id],
             'onSubmit' => 'return confirm("Are you sure?")'
         ];
-        return view('sources/source', compact('source', 'formAction', 'delFormAction'));
+        return view('sources/create', compact('source', 'formAction', 'delFormAction'));
     }
 
 

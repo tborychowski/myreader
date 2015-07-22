@@ -29,7 +29,7 @@
         </div>
 
         <main class="mdl-layout__content">
-            <div class="page-content">@yield('main')</div>
+            <div class="page-content mdl-grid">@yield('main')</div>
         </main>
     </div>
 
@@ -46,7 +46,7 @@
     <script src="{{ url('assets/material.min.js') }}"></script>
     <script src="{{ url('assets/app.js') }}"></script>
     @if (App::isLocal())
-    <script src="http://localhost:35729/livereload.js"></script>
+    {{-- <script src="http://localhost:35729/livereload.js"></script> --}}
     @endif
 </body>
 </html>

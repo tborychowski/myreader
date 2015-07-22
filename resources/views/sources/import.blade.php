@@ -2,36 +2,36 @@
 
 @section('body-class')sources @stop
 
+
 @section('sidebar')
-@include('sources/sidebar')
+    @include('sources/sidebar')
+@stop
+
+
+@section('toolbar')
+<div class="mdl-layout__header-row">
+    <a href="{{ url('source') }}"
+        class="settings-back-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
+        <i class="material-icons">arrow_back</i>
+    </a>
+
+    <span class="mdl-layout-title">Import</span>
+
+    <div class="mdl-layout-spacer"></div>
+
+    <nav class="mdl-navigation"></nav>
+</div>
 @stop
 
 
 
 
 @section('main')
-<div id="main">
-
-    <h1>Import Sources</h1>
-
+<div class="mdl-card mdl-shadow--2dp demo-card-wide mdl-cell mdl-cell--12-col">
     @if (session()->has('source_names'))
-        @foreach(session('source_names') as $src)
-            {{ $src }}
-        @endforeach
-        <br>
-        <a href="{{ url('/source/confirmImport') }}" class="btn btn-add">Import these sources</a>
+        @include('sources/import-confirm')
     @else
-        {!! Form::open($formAction) !!}
-        {!! Form::file('xml', ['class' => 'btn btn-add']) !!}<br><br>
-        {!! Form::submit('Next', ['class' => 'btn btn-add']) !!}
-        {!! Form::close() !!}
+        @include('sources/import-form')
     @endif
 </div>
-
-
-<div class="toolbar main-toolbar">
-    <a href="{{ url('source') }}" class="btn btn-back">Cancel</a>
-
-</div>
-
 @stop
