@@ -23,5 +23,5 @@
 <hr/>
 
 <div class="mdl-grid">
-    <button class="mdl-button mdl-js-button mdl-button--raised">Update All</button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Update All</button>
 </div>
