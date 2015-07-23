@@ -1,6 +1,6 @@
 import util from './util';
 
-const base_url = 'api/';
+const base_url = '/';
 
 function ajax (options) {
 	if (typeof options === 'string') options = { url: options };
@@ -8,7 +8,7 @@ function ajax (options) {
 	var req = new XMLHttpRequest(), resp, data = options.data || '';
 	options.url = base_url + options.url;
 	options.method = options.method || 'GET';
-	options.type = options.type || 'json';
+	options.type = options.type || 'application/json';
 
 	if (data) {
 		if (options.method.toLowerCase() === 'get') options.url += util.serialize(data);
@@ -25,7 +25,7 @@ function ajax (options) {
 			else reject(req.statusText);
 		};
 		req.onerror = function () { reject(req.statusText); };
-		req.setRequestHeader('Content-Type', 'application/' + options.type + '; charset=UTF-8');
+		req.setRequestHeader('Content-Type', options.type + '; charset=UTF-8');
 		req.send(data);
 
 	});

@@ -7,7 +7,7 @@ var el, isReady = false;
 
 function load () {
 	Data.getUnread().then(data => {
-		console.log(data);
+		el.html(data);
 	});
 
 }

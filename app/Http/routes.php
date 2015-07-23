@@ -1,18 +1,14 @@
 <?php
 
 Route::get('/', 'HomeController@index');
-Route::get('settings', 'SettingsController@index');
 
+Route::resource('source', 'SourceController');
+Route::resource('article', 'ArticleController');
 
-Route::get('source/import', 'SourceViewController@import');
-Route::post('source/import', 'SourceViewController@parseImport');
-Route::get('source/confirmImport', 'SourceViewController@confirmImport');
+Route::get('import', 'ImportController@index');
+Route::post('import', 'ImportController@parse');
+Route::get('import-confirm', 'ImportController@confirm');
 
-Route::resource('source', 'SourceViewController');
-
-
-Route::resource('api/source', 'SourceController');
-Route::resource('api/article', 'ArticleController');
 
 
 

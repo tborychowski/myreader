@@ -502,7 +502,7 @@
 
 	var util = _interopRequire(__webpack_require__(5));
 
-	var base_url = "api/";
+	var base_url = "/";
 
 	function ajax(options) {
 		if (typeof options === "string") options = { url: options };
@@ -512,7 +512,7 @@
 		    data = options.data || "";
 		options.url = base_url + options.url;
 		options.method = options.method || "GET";
-		options.type = options.type || "json";
+		options.type = options.type || "application/json";
 
 		if (data) {
 			if (options.method.toLowerCase() === "get") options.url += util.serialize(data);else if (options.type === "json") data = JSON.stringify(data);
@@ -531,7 +531,7 @@
 			req.onerror = function () {
 				reject(req.statusText);
 			};
-			req.setRequestHeader("Content-Type", "application/" + options.type + "; charset=UTF-8");
+			req.setRequestHeader("Content-Type", options.type + "; charset=UTF-8");
 			req.send(data);
 		});
 	}
@@ -960,7 +960,7 @@
 
 	function load() {
 		Data.getUnread().then(function (data) {
-			console.log(data);
+			el.html(data);
 		});
 	}
 
@@ -987,11 +987,11 @@
 
 	var $ = _interopRequire(__webpack_require__(2));
 
-	var _url = "articles";
+	var _url = "article";
 
 	module.exports = {
 		getUnread: function (params) {
-			return $.get(_url, params || {});
+			return $.ajax({ url: _url, data: params, type: "text/html" });
 		} };
 
 /***/ }

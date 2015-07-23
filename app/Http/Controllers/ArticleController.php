@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\User;
+use App\Article;
+use Request;
 
 class ArticleController extends Controller
 {
@@ -16,7 +17,12 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $articles = Article::unread()->get();
+        if (str_contains(Request::header('Content-Type'), 'application/json')) {
+            return $articles;
+        }
+
+        return view('articles/index', compact('articles'));
     }
 
     /**

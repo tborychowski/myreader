@@ -22,7 +22,7 @@ class CreateArticlesTable extends Migration
             $table->text('content');
 
             $table->boolean('is_unread')->default(true);
-            $table->boolean('is_starred')->default(true);
+            $table->boolean('is_starred')->default(false);
 
             $table->timestamp('published_at');
             $table->timestamps();

@@ -1,1 +1,2 @@
-articles
+<div id="main">
+</div>

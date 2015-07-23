@@ -17,7 +17,7 @@
         </a>
         <div class="mdl-tooltip" for="btnAddNewSource">Add new source</div>
 
-        <a href="{{ url('source/import') }}"
+        <a href="{{ url('import') }}"
             id="btnImportSources"
             class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect">
             <i class="material-icons">backup</i>
