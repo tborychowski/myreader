@@ -1,30 +1,18 @@
 @if (count($sources))
-<table class="sources-table mdl-data-table mdl-js-data-table mdl-shadow--2dp
-    mdl-cell mdl-cell--12-col">
+<table class="sources-table">
 <thead>
     <tr>
-        <th class="mdl-data-table__cell--non-numeric">Name</th>
-        <th class="mdl-data-table__cell--non-numeric">URL</th>
         <th></th>
+        <th>Name</th>
+        <th>URL</th>
     </tr>
 </thead>
 <tbody>
     @foreach ($sources as $src)
     <tr>
-        <td class="mdl-data-table__cell--non-numeric">
-            <a href="{{ $src->real_url }}">{{ $src->name }}</a>
-        </td>
-
-        <td class="mdl-data-table__cell--non-numeric">
-            <a href="{{ $src->url }}">{{ $src->url }}</a>
-        </td>
-
-        <td class="table-action-cell">
-            <a href="{{ url('source/' . $src->id . '/edit') }}"
-                class="mdl-button mdl-js-button mdl-button--icon">
-                <i class="material-icons">arrow_forward</i>
-            </a>
-        </td>
+        <td><a href="{{ url('source/' . $src->id . '/edit') }}"><i class="fa fa-pencil"></i></a></td>
+        <td><a href="{{ $src->real_url }}">{{ $src->name }}</a></td>
+        <td><a href="{{ $src->url }}">{{ $src->url }}</a></td>
     </tr>
     @endforeach
 </tbody>

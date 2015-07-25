@@ -14,7 +14,7 @@ function load () {
 
 function init () {
 	if (!isReady) {
-		el = $('#main');
+		el = $('.home .main');
 	}
 
 	load();

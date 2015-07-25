@@ -1,51 +1,54 @@
 @import "_lib";
 
 .toolbar
-	pos 0 0 auto 0; height toolbar-h; //padding 9 12 0;
+	pos 0 0 auto 0; height toolbar-h; padding 9 12 0; z 1
 
 
-	// .btn
-	// 	bg rgba(#000, 0); color #888; border none; u 0; float left; font 16; padding 0;
-	// 	font 16/20px; font-weight 400; height 40; margin-right 20;
-	// 	transition color .2s; text-shadow 0 1px 0 #fff; shadow none; radius 0;
-	// 	&::-moz-focus-inner
-	// 		padding 0; outline none;
+	.btn
+		bg rgba(#000, 0); color #888; border none; u 0; float left; font 16; padding 0;
+		font 16/20px; font-weight 400; margin-right 20;
+		transition color .2s; text-shadow 0 1px 0 #fff; shadow none; radius 0;
+		&::-moz-focus-inner
+			padding 0; outline none;
 
-	// 	&:hover
-	// 		color #555;
+		&:hover
+			color #555;
 
-	// 	&:active
-	// 		color #000;
+		&:active
+			color #000;
 
 
-	// 	.fa
-	// 		font 20/1; vertical-align top; margin-right 3;
+		.fa
+			font 20/1; vertical-align top; margin-right 3;
 
-	// input.btn
-	// 	height auto; line-height 1;
+	input.btn
+		height auto; line-height 1;
 
-	// .btn-right
-	// 	float right; margin-right 0; margin-left 20;
+	.btn-right
+		float right; margin-right 0; margin-left 20;
+
+	.title
+		float left; font 21/22px; padding 0; margin 0; b 0; color #666;
 
 
 
 
 
 .main-toolbar
-	left sidebar-w;
-	// bg #ddd; border-top #aaa; shadow 0 1 0 #fff 1 inset;
+	left sidebar-w; bg #ddd; border-bottom #999;
+	shadow 0 1 0 #fff .5 inset, 0 1 0 #fff .6, -5 -3 5 #000 .5;
 
 
-// .sidebar-toolbar
-// 	border-top #222; shadow 0 1 0 #555 1 inset;
+.sidebar-toolbar
+	border-top #222; shadow 0 1 0 #555 1 inset;
 
-// 	.btn
-// 		color #666; text-shadow 0 -1px 0 #000; bg none; border none;
+	.btn
+		color #666; text-shadow 0 -1px 0 #000; bg none; border none;
 
-// 		&:hover
-// 			color #999;
+		&:hover
+			color #999;
 
-// 		&:active
-// 			color #555;
+		&:active
+			color #555;
 
 

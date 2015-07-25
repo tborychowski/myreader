@@ -1,28 +1,7 @@
-<div class="mdl-layout__header-row">
-    <a href="{{ url('/') }}"
-        class="settings-back-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect">
-        <i class="material-icons">arrow_back</i>
-    </a>
+<a class="btn" href="{{ url('/') }}"><i class="fa fa-arrow-left"></i></a>
 
-    <span class="mdl-layout-title">Manage Sources</span>
+<h1 class="title">Manage Sources</h1>
 
-    <div class="mdl-layout-spacer"></div>
 
-    <nav class="mdl-navigation">
-
-        <a href="{{ url('source/create') }}"
-            id="btnAddNewSource"
-            class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect">
-            <i class="material-icons">add</i>
-        </a>
-        <div class="mdl-tooltip" for="btnAddNewSource">Add new source</div>
-
-        <a href="{{ url('import') }}"
-            id="btnImportSources"
-            class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect">
-            <i class="material-icons">backup</i>
-        </a>
-        <div class="mdl-tooltip" for="btnImportSources">Import sources from OPML file</div>
-
-    </nav>
-</div>
+<a class="btn btn-right" href="{{ url('import') }}" title="Import sources from OPML file"><i class="fa fa-download"></i></a>
+<a class="btn btn-right" href="{{ url('source/create') }}" title="Add new source"><i class="fa fa-plus"></i></a>
