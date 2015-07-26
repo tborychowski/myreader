@@ -35,7 +35,6 @@ sizzle.fn.first = function () { return sizzle(this[0]); };
 sizzle.fn.last = function () { return sizzle(this[this.length - 1]); };
 sizzle.fn.eq = function (idx) { return sizzle(this[idx || 0]); };
 
-
 sizzle.fn.appendTo = function (parent) {
 	if (!this || !this.length) return this;
 	if (typeof parent === 'string') parent = sizzle(parent);
@@ -79,6 +78,36 @@ sizzle.fn.is = function (selector) {
 	if (!this || !this.length) return false;
 	return this[0].matches(selector);
 };
+
+
+// previous sibling element
+sizzle.fn.prev = function (cls) {
+	if (!this || !this.length) return false;
+	var has = false, el = this[0];
+	while (!has && el) {
+		has = el.matches(cls);
+		if (has) return sizzle(el);
+		el = el.previousElementSibling;
+		if (!el || el.tagName === 'HTML') return null;
+	}
+	return null;
+};
+
+// next sibling element
+sizzle.fn.next = function (cls) {
+	if (!this || !this.length) return false;
+	var has = false, el = this[0];
+	while (!has && el) {
+		has = el.matches(cls);
+		if (has) return sizzle(el);
+		el = el.nextElementSibling;
+		if (!el || el.tagName === 'HTML') return null;
+	}
+	return null;
+};
+
+
+
 
 /**
  * Check if target is, or is inside, a selector

@@ -17,12 +17,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = Article::unread()->get();
-        if (str_contains(Request::header('Content-Type'), 'application/json')) {
-            return $articles;
-        }
-
-        return view('articles/index', compact('articles'));
+        $unread = Article::unread()->orderBy('created_at', 'desc')->get();
+        return $unread;
     }
 
     /**

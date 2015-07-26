@@ -48,15 +48,19 @@
 
 	var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
 
-	var toolbar = _interopRequire(__webpack_require__(1));
+	var events = _interopRequire(__webpack_require__(1));
+
+	events.init();
+
+	var toolbar = _interopRequire(__webpack_require__(9));
 
 	toolbar.init();
 
-	var sidebar = _interopRequire(__webpack_require__(9));
+	var sidebar = _interopRequire(__webpack_require__(10));
 
 	sidebar.init();
 
-	var main = _interopRequire(__webpack_require__(10));
+	var main = _interopRequire(__webpack_require__(11));
 
 	main.init();
 
@@ -70,17 +74,43 @@
 
 	var $ = _interopRequire(__webpack_require__(2));
 
-	var el,
-	    isReady = false;
+	var isReady = false,
+	    resizeTimeout = null;
 
-	function load() {}
+	function keyEvent(e) {
+		var chr = String.fromCharCode(e.keyCode);
+		return {
+			event: e,
+			letter: chr,
+			key: e.keyCode,
+			shift: e.shiftKey,
+			ctrl: e.ctrlKey,
+			alt: e.altKey
+		};
+	}
+
+	function onResize() {
+		if (resizeTimeout) clearTimeout(resizeTimeout);
+		resizeTimeout = setTimeout(onResizeEnd, 300);
+	}
+
+	function onResizeEnd() {
+		$.trigger("resizeend");
+	}
+	function onKeyUp(e) {
+		$.trigger("keyup", keyEvent(e));
+	}
+	function onKeyDown(e) {
+		$.trigger("keydown", keyEvent(e));
+	}
 
 	function init() {
 		if (!isReady) {
-			el = $("#toolbar");
+			window.addEventListener("resize", onResize);
+			window.addEventListener("keyup", onKeyUp);
+			window.addEventListener("keydown", onKeyDown);
 		}
 
-		load();
 		isReady = true;
 	}
 
@@ -245,6 +275,32 @@
 	sizzle.fn.is = function (selector) {
 		if (!this || !this.length) return false;
 		return this[0].matches(selector);
+	};
+
+	sizzle.fn.prev = function (cls) {
+		if (!this || !this.length) return false;
+		var has = false,
+		    el = this[0];
+		while (!has && el) {
+			has = el.matches(cls);
+			if (has) return sizzle(el);
+			el = el.previousElementSibling;
+			if (!el || el.tagName === "HTML") return null;
+		}
+		return null;
+	};
+
+	sizzle.fn.next = function (cls) {
+		if (!this || !this.length) return false;
+		var has = false,
+		    el = this[0];
+		while (!has && el) {
+			has = el.matches(cls);
+			if (has) return sizzle(el);
+			el = el.nextElementSibling;
+			if (!el || el.tagName === "HTML") return null;
+		}
+		return null;
 	};
 
 	sizzle.fn.isIn = function () {
@@ -932,7 +988,7 @@
 
 	function init() {
 		if (!isReady) {
-			el = $("#sidebar");
+			el = $("#toolbar");
 		}
 
 		load();
@@ -953,24 +1009,59 @@
 
 	var $ = _interopRequire(__webpack_require__(2));
 
-	var Data = _interopRequire(__webpack_require__(11));
-
 	var el,
+	    tree,
 	    isReady = false;
 
-	function load() {
-		Data.getUnread().then(function (data) {
-			el.html(data);
-		});
+	function updateTree(data) {
+		var sums = {};
+		var _iteratorNormalCompletion = true;
+		var _didIteratorError = false;
+		var _iteratorError = undefined;
+
+		try {
+			for (var _iterator = data[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+				var art = _step.value;
+
+				var sid = art.source_id;
+				sums[sid] = sums[sid] ? sums[sid] + 1 : 1;
+			}
+		} catch (err) {
+			_didIteratorError = true;
+			_iteratorError = err;
+		} finally {
+			try {
+				if (!_iteratorNormalCompletion && _iterator["return"]) {
+					_iterator["return"]();
+				}
+			} finally {
+				if (_didIteratorError) {
+					throw _iteratorError;
+				}
+			}
+		}
+
+		tree.find(".visible").removeClass("visible");
+
+		for (var sid in sums) {
+			var src = tree.find(".source-" + sid);
+			var badge = src.find(".source-badge");
+			badge.html(sums[sid]);
+			src.addClass("visible");
+			src.closest(".source-list").prev(".source-folder").addClass("visible");
+		}
 	}
 
 	function init() {
 		if (!isReady) {
-			el = $(".home .main");
-		}
+			el = $(".home .sidebar");
+			tree = el.find(".source-tree");
 
-		load();
-		isReady = true;
+			$.on("data/changed", updateTree);
+		}
+		if (!el) {
+			return;
+		}isReady = true;
 	}
 
 	module.exports = {
@@ -987,11 +1078,64 @@
 
 	var $ = _interopRequire(__webpack_require__(2));
 
+	var Data = _interopRequire(__webpack_require__(12));
+
+	var main,
+	    el,
+	    filler,
+	    isReady = false;
+
+	function updateHeight() {
+		var mainH = main[0].getBoundingClientRect().height;
+		filler[0].style.height = mainH + "px";
+	}
+
+	function getArticleHtml(row) {
+		return "<div class=\"card\">\n\t\t\t<h2 class=\"card-title\">" + row.title + "</h2>\n\t\t\t<div class=\"card-body\">" + row.content + "</div>\n\t\t\t<div class=\"card-footer\"></div>\n\t\t</div>";
+	}
+
+	function load() {
+		Data.getUnread().then(function (data) {
+			el.html(data.map(getArticleHtml).join(""));
+			$.trigger("data/changed", data);
+		});
+	}
+
+	function init() {
+		if (!isReady) {
+			main = $(".home .main");
+			if (!main) {
+				return;
+			}el = main.find(".articles");
+			filler = main.find(".article-fill");
+
+			$.on("resizeend", updateHeight);
+		}
+
+		updateHeight();
+		load();
+		isReady = true;
+	}
+
+	module.exports = {
+		init: init
+	};
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
+
+	var $ = _interopRequire(__webpack_require__(2));
+
 	var _url = "article";
 
 	module.exports = {
 		getUnread: function (params) {
-			return $.ajax({ url: _url, data: params, type: "text/html" });
+			return $.ajax({ url: _url, data: params });
 		} };
 
 /***/ }

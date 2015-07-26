@@ -25,6 +25,7 @@ $factory->define(App\Source::class, function (Faker\Generator $faker) {
     return [
         'name' => str_random(10),
         'url' => $faker->url,
+        'folder' => 'Coding',
         'user_id' => 1
     ];
 });

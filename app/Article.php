@@ -15,6 +15,12 @@ class Article extends Model
      */
     protected $fillable = ['title', 'url', 'content', 'is_unread', 'is_starred', 'published_at'];
 
+    /**
+     * The attributes excluded from the model's JSON form.
+     *
+     * @var array
+     */
+    protected $hidden = ['user_id', 'created_at', 'updated_at'];
 
 
     // todo Article::unread()

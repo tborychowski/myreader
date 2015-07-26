@@ -1,20 +1,36 @@
 import $ from 'util';
-// import Data from 'data/entries';
 
-var el, isReady = false;
-
+var el, tree, isReady = false;
 
 
-function load () {
 
+function updateTree (data) {
+	var sums = {};
+	for (let art of data) {
+		let sid = art.source_id;
+		sums[sid] = sums[sid] ? sums[sid] + 1 : 1;
+	}
+
+	tree.find('.visible').removeClass('visible');
+
+	for (let sid in sums) {
+		let src = tree.find('.source-' + sid);
+		let badge = src.find('.source-badge');
+		badge.html(sums[sid]);
+		src.addClass('visible');
+		src.closest('.source-list').prev('.source-folder').addClass('visible');
+	}
 }
 
 function init () {
 	if (!isReady) {
-		el = $('#sidebar');
-	}
+		el = $('.home .sidebar');
+		tree = el.find('.source-tree');
 
-	load();
+		$.on('data/changed', updateTree);
+	}
+	if (!el) return;
+
 	isReady = true;
 }
 

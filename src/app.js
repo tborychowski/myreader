@@ -1,3 +1,6 @@
+import events from 'events';
+events.init();
+
 import toolbar from 'toolbar';
 toolbar.init();
 
