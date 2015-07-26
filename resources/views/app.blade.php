@@ -19,7 +19,10 @@
     </div>
 
     <div class="sidebar">
-        <span class="sidebar-logo"><i class="fa fa-rss"></i> myreader</span>
+        <span class="sidebar-logo">
+            {{-- <i class="fa fa-rss"></i> myreader --}}
+            <i class="icon ion-social-rss-outline"></i> myreader
+        </span>
         @yield('sidebar')
     </div>
 
@@ -31,7 +34,7 @@
 
     <script src="{{ url('assets/app.js') }}"></script>
     @if (App::isLocal())
-    {{-- <script src="http://localhost:35729/livereload.js"></script> --}}
+    <script src="http://localhost:35729/livereload.js"></script>
     @endif
 
     {{-- <script async src="{{ url('assets/device.min.js') }}"></script> --}}

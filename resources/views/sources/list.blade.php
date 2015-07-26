@@ -10,7 +10,10 @@
 <tbody>
     @foreach ($sources as $src)
     <tr>
-        <td><a href="{{ url('source/' . $src->id . '/edit') }}"><i class="fa fa-pencil"></i></a></td>
+        <td><a href="{{ url('source/' . $src->id . '/edit') }}">
+            {{-- <i class="fa fa-pencil"></i> --}}
+            <i class="icon ion-ios-more-outline"></i>
+        </a></td>
         <td><a href="{{ $src->real_url }}">{{ $src->name }}</a></td>
         <td><a href="{{ $src->url }}">{{ $src->url }}</a></td>
     </tr>

@@ -1,5 +1,21 @@
-<a href="{{ url('source') }}" class="btn btn-right"><i class="fa fa-cog"></i></a>
+<a href="{{ url('source') }}" class="btn btn-right">
+    {{-- <i class="fa fa-cog"></i> --}}
+    <i class="icon ion-ios-gear"></i>
+</a>
 
-<a href="{{ url('source') }}" class="btn btn-right" title="Next article (n)"><i class="fa fa-chevron-down"></i></a>
-<a href="{{ url('source') }}" class="btn btn-right" title="Previous article (p)"><i class="fa fa-chevron-up"></i></a>
-<a href="{{ url('source') }}" class="btn btn-right" title="Reload (r)"><i class="fa fa-repeat"></i></a>
+<a href="{{ url('source') }}" class="btn btn-right" title="Next article (n)">
+    {{-- <i class="fa fa-chevron-down"></i> --}}
+    <i class="icon ion-ios-arrow-down"></i>
+</a>
+
+<a href="{{ url('source') }}" class="btn btn-right" title="Previous article (p)">
+    {{-- <i class="fa fa-chevron-up"></i> --}}
+    <i class="icon ion-ios-arrow-up"></i>
+</a>
+
+<a href="{{ url('source') }}" class="btn btn-right" title="Reload (r)">
+    {{-- <i class="fa fa-repeat"></i> --}}
+    {{-- <i class="icon ion-ios-refresh-empty"></i> --}}
+    <i class="icon ion-ios-reload"></i>
+</a>
+
