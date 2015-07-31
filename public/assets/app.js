@@ -984,14 +984,43 @@
 	var el,
 	    isReady = false;
 
-	function load() {}
+	function eventHandler(e) {
+		var el = $(e.target);
+		var btn = el.closest(".btn");
+		if (!btn || !btn.length) {
+			return;
+		}var action = btn.data("action");
+
+		if (btn && action) {
+			e.preventDefault();
+			buttonAction(action, btn);
+		}
+	}
+
+	function nextArticle() {
+		console.log("next");
+	}
+
+	function prevArticle() {
+		console.log("prev");
+	}
+
+	function buttonAction(action) {
+		if (action === "reload") {
+			return $.trigger("main/reload");
+		}if (action === "prev") {
+			return prevArticle();
+		}if (action === "next") {
+			return nextArticle();
+		}
+	}
 
 	function init() {
 		if (!isReady) {
-			el = $("#toolbar");
+			el = $(".toolbar");
+			el.on("click", eventHandler);
 		}
 
-		load();
 		isReady = true;
 	}
 
@@ -1016,7 +1045,9 @@
 	    isReady = false;
 
 	function updateBadge(el, c) {
-		el[0].style.display = c ? "block" : "none";
+		if (!el || !el.length) {
+			return;
+		}el[0].style.display = c ? "block" : "none";
 		el.html(c);
 	}
 
@@ -1029,7 +1060,8 @@
 			var badge = src.find(".source-badge");
 			updateBadge(badge, sums[sid]);
 			src.addClass("visible");
-			src.closest(".source-list").prev(".source-folder").addClass("visible");
+			var srcList = src.closest(".source-list");
+			if (srcList) srcList.prev(".source-folder").addClass("visible");
 		}
 	}
 
@@ -1101,23 +1133,23 @@
 
 	var Data = _interopRequire(__webpack_require__(12));
 
+	var card = _interopRequire(__webpack_require__(13));
+
 	var main,
 	    el,
 	    filler,
 	    isReady = false;
 
 	function updateHeight() {
-		var mainH = main[0].getBoundingClientRect().height;
+		if (!main || !main.length) {
+			return;
+		}var mainH = main[0].getBoundingClientRect().height;
 		filler[0].style.height = mainH + "px";
-	}
-
-	function getArticleHtml(row) {
-		return "<div class=\"card\">\n\t\t\t<h2 class=\"card-title\">" + row.title + "</h2>\n\t\t\t<div class=\"card-body\">" + row.content + "</div>\n\t\t\t<div class=\"card-footer\"></div>\n\t\t</div>";
 	}
 
 	function load() {
 		Data.getUnread().then(function (data) {
-			el.html(data.map(getArticleHtml).join(""));
+			el.html(card(data));
 			$.trigger("data/changed", data);
 		});
 	}
@@ -1158,6 +1190,73 @@
 		getUnread: function (params) {
 			return $.ajax({ url: _url, data: params });
 		} };
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
+
+	var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { var _arr = []; for (var _iterator = arr[Symbol.iterator](), _step; !(_step = _iterator.next()).done;) { _arr.push(_step.value); if (i && _arr.length === i) break; } return _arr; } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } };
+
+	var $ = _interopRequire(__webpack_require__(2));
+
+	var eventsReady = false;
+
+	function cardAction(action, card) {
+		var _action$split = action.split("-");
+
+		var _action$split2 = _slicedToArray(_action$split, 2);
+
+		var mark = _action$split2[0];
+		var cls = _action$split2[1];
+
+		var add = ({ mark: "add", unmark: "remove" })[mark];
+		card[add + "Class"](cls);
+	}
+
+	function mainEventHandler(e) {
+		var el = $(e.target);
+		var card = el.closest(".card");
+		if (!card || !card.length) {
+			return;
+		}var cardId = card.data("id");
+		var btn = el.closest(".card-footer .icon");
+
+		if (btn) {
+			e.preventDefault();
+			var action = btn.data("action");
+			cardAction(action, card);
+			$.trigger("card/action", action, cardId);
+		}
+	}
+
+	function initEvents() {
+		if (eventsReady) {
+			return;
+		}$(".main").on("click", mainEventHandler);
+		eventsReady = true;
+	}
+
+	function getCardHtml(row) {
+		initEvents();
+		var cls = ["card"];
+		if (row.is_starred) cls.push("starred");
+		if (row.is_unread) cls.push("unread");
+
+		return "<div class=\"" + cls.join(" ") + "\" data-id=\"" + row.id + "\">\n\t\t\t<div class=\"card-header\">\n\t\t\t\t<span class=\"card-date\">" + row.published_at + "</span>\n\t\t\t\t<h2 class=\"card-title\"><a href=\"#\">" + row.title + "</a></h2>\n\t\t\t\t<h3 class=\"card-subtitle\">from <a href=\"#\">source name " + row.source_id + "</a></h3>\n\t\t\t</div>\n\t\t\t<div class=\"card-body\">" + row.content + "</div>\n\t\t\t<div class=\"card-footer\">\n\t\t\t\t<a href=\"#\" data-action=\"mark-expanded\" class=\"btn-expand icon ion-ios-more icon-right\" title=\"Expand\"></a>\n\t\t\t\t<a href=\"#\" data-action=\"unmark-expanded\" class=\"btn-collapse icon ion-ios-close-empty icon-right\" title=\"Collapse\"></a>\n\n\t\t\t\t<a href=\"#\" data-action=\"mark-unread\" class=\"btn-mark-unread icon ion-ios-checkmark-outline\" title=\"Mark as unread\"></a>\n\t\t\t\t<a href=\"#\" data-action=\"unmark-unread\" class=\"btn-mark-read icon ion-ios-circle-filled\" title=\"Mark as read\"></a>\n\n\t\t\t\t<a href=\"#\" data-action=\"mark-starred\" class=\"btn-mark-starred icon ion-ios-star-outline\" title=\"Star\"></a>\n\t\t\t\t<a href=\"#\" data-action=\"unmark-starred\" class=\"btn-mark-unstarred icon ion-ios-star\" title=\"Unstar\"></a>\n\t\t\t</div>\n\t\t</div>";
+	}
+
+	function card(data) {
+		if ($.type(data) === "array") {
+			return data.map(getCardHtml).join("");
+		}
+		return getCardHtml(data);
+	}
+
+	module.exports = card;
 
 /***/ }
 /******/ ]);

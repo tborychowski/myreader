@@ -1,30 +1,24 @@
 import $ from 'util';
 import Data from 'data/articles';
+import card from 'card';
 
 var main, el, filler, isReady = false;
 
 
 function updateHeight () {
+	if (!main ||  !main.length) return;
 	var mainH = main[0].getBoundingClientRect().height;
 	filler[0].style.height = mainH + 'px';
 }
 
 
-function getArticleHtml (row) {
-	return `<div class="card">
-			<h2 class="card-title">${row.title}</h2>
-			<div class="card-body">${row.content}</div>
-			<div class="card-footer"></div>
-		</div>`;
-}
-
-
 function load () {
 	Data.getUnread().then(data => {
-		el.html(data.map(getArticleHtml).join(''));
+		el.html(card(data));
 		$.trigger('data/changed', data);
 	});
 }
+
 
 function init () {
 	if (!isReady) {

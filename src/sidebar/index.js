@@ -5,6 +5,7 @@ var el, tree, unreadEl, starredEl,
 
 
 function updateBadge (el, c) {
+	if (!el || !el.length) return;
 	el[0].style.display = c ? 'block' : 'none';
 	el.html(c);
 }
@@ -18,7 +19,8 @@ function updateTree (sums) {
 		let badge = src.find('.source-badge');
 		updateBadge(badge, sums[sid]);
 		src.addClass('visible');
-		src.closest('.source-list').prev('.source-folder').addClass('visible');
+		let srcList = src.closest('.source-list');
+		if (srcList) srcList.prev('.source-folder').addClass('visible');
 	}
 }
 
