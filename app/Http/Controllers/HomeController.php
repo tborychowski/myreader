@@ -38,7 +38,13 @@ class HomeController extends Controller
         $tree = [];
         foreach ($sources as $item) {
             $f = (empty($item['folder']) ? 'Other' : $item['folder']);
-            if (!isset($tree[$f])) $tree[$f] = [ 'name' => $f, 'items' => []];
+            if (!isset($tree[$f])) {
+                $tree[$f] = [
+                    'id' => str_slug($f),
+                    'name' => $f,
+                    'items' => []
+                ];
+            }
             $tree[$f]['items'][] = $item;
         }
 

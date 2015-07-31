@@ -1,0 +1,41 @@
+@import "_lib";
+
+
+st-border-color = #ccc
+
+.sources .main
+	padding 10 10;
+
+
+.sources-table
+	width 100%; border-collapse collapse; shadow 0 1 2 #000 .3;
+
+	.st-cell
+		padding 10; text-align left; bg #eee;
+		border-left st-border-color;
+		border-bottom st-border-color;
+
+	.st-cell-header
+		border-left none;
+
+	.st-cell:first-child
+		border-left none;
+
+	&>tbody>tr:last-child .st-cell
+		border-bottom none;
+
+	.st-cell-action
+		padding 0; text-align center
+
+		a
+			size 30; show 1; text-align center;
+
+	.icon
+		font 30;
+
+	.icon-right
+		float right; margin -5 0 -10; font 22;
+
+	.ion-alert-circled
+		color #FF7F00;
+

@@ -1,8 +1,7 @@
 @import "_lib";
 
 .sidebar
-	pos 0 auto 0 0; width sidebar-w
-	padding-top 50
+	pos 0 auto 0 0; width sidebar-w; padding-top 64
 
 
 .sidebar-logo
@@ -16,21 +15,54 @@
 
 
 .source-tree
-	pos 120 0 0 0; padding 0 10 10;
+	pos 200 0 0 0; padding 0 0 10; border-top #444
+	overflow hidden; overflow-y auto; -webkit-overflow-scrolling touch;
+
 	.source-folder
 		b 0; padding 0; margin 30 0 10;
 		&:first-of-type
 			margin-top 0;
 
+
+
 .source-list
 	list-style none; margin 0; padding 0
 
 
-.source-folder
-.source-item
+h3.sidebar-row
+	margin 0 0 5; b 0;
+
+.sidebar-row
 	// show 0;
+	&>a
+		show 2; u 0; padding 6 15 4; margin-bottom 3;
+		text-shadow 0 -1px 0 rgba(#000, .4); color #A4A4A4; not-selectable();
+		border-top transparent; border-bottom transparent;
+
+		&:hover
+			color #eee;
 
 	&.visible
-		// show 2;
 		color #fff;
+		// show 2;
+
+.source-badge
+	float right; padding 4 6 3; margin -3 0 0; border-radius 2;
+	font 12/1; text-shadow 0 -1px 0 rgba(#000, .25);
+	background-color rgba(#fff, .1); color #ccc; b 1;
+
+.source-folder
+	padding-bottom 5;
+	.source-badge
+		margin-top -2;
+
+
+.sidebar-row
+	a:focus
+	&.active a
+		color #C8BCBE; gradient #492527 #3B1017; border-bottom #29060D; border-top #5D393D;
+		shadow 0 -1 0 #2F2F2F, 0 1 1 #2F2F2F;
+
+		.source-badge
+			background-color rgba(#fff, .15); color #FFF;
 
