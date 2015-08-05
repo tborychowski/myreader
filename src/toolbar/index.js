@@ -1,7 +1,6 @@
 import $ from 'util';
 
-var el, isReady = false;
-
+var el, loadingBtn, isReady = false;
 
 
 function eventHandler (e) {
@@ -18,27 +17,26 @@ function eventHandler (e) {
 }
 
 
-function nextArticle () {
-	console.log('next');
-}
-
-function prevArticle () {
-	console.log('prev');
-}
-
-
-
 function buttonAction (action) {
-	if (action === 'reload') return $.trigger('main/reload');
-	if (action === 'prev') return prevArticle();
-	if (action === 'next') return nextArticle();
+	if (action === 'reload') return $.trigger('data/reload');
+	if (action === 'prev') return $.trigger('nav/prev');
+	if (action === 'next') return $.trigger('nav/next');
+}
+
+
+function handleLoading (loaded) {
+	loadingBtn.toggleClass('spin', !loaded);
 }
 
 
 function init () {
 	if (!isReady) {
 		el = $('.toolbar');
+		loadingBtn = el.find('.btn-loading');
+
 		el.on('click', eventHandler);
+		$.on('data/reload', handleLoading);
+		$.on('data/changed', handleLoading);
 	}
 
 	isReady = true;

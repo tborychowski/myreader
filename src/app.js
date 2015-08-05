@@ -1,3 +1,6 @@
+import nav from 'nav';
+nav.init();
+
 import events from 'events';
 events.init();
 

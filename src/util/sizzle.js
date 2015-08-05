@@ -84,6 +84,8 @@ sizzle.fn.is = function (selector) {
 sizzle.fn.prev = function (cls) {
 	if (!this || !this.length) return false;
 	var has = false, el = this[0];
+	if (!el) return null;
+	el = el.previousElementSibling;
 	while (!has && el) {
 		has = el.matches(cls);
 		if (has) return sizzle(el);
@@ -97,6 +99,8 @@ sizzle.fn.prev = function (cls) {
 sizzle.fn.next = function (cls) {
 	if (!this || !this.length) return false;
 	var has = false, el = this[0];
+	if (!el) return null;
+	el = el.nextElementSibling;
 	while (!has && el) {
 		has = el.matches(cls);
 		if (has) return sizzle(el);
@@ -107,7 +111,13 @@ sizzle.fn.next = function (cls) {
 };
 
 
-
+// find all siblings of an element
+sizzle.fn.siblings = function (selector) {
+	if (!this || !this.length) return false;
+	var elems = sizzle(this[0].parentNode.children);
+	if (selector) return elems.filter(selector);
+	return elems;
+};
 
 /**
  * Check if target is, or is inside, a selector
@@ -158,6 +168,20 @@ sizzle.fn.hasClass = function (cls) {
 	if (!this || !this.length) return false;
 	return this[0].classList.contains(cls);
 };
+
+sizzle.fn.style = function (prop) {
+	if (!this || !this.length) return this;
+	var style = this[0].currentStyle || window.getComputedStyle(this[0]);
+	if (!prop) return style;
+	var nums = {
+		margin: 1, marginTop: 1, marginLeft: 1, marginBottom: 1, marginRight: 1,
+		padding: 1, paddingTop: 1, paddingLeft: 1, paddingBottom: 1, paddingRight: 1,
+		width: 1, height: 1
+	};
+	if (prop in nums) return parseFloat(style[prop]);
+	return style[prop];
+};
+
 
 sizzle.fn.html = function (html) {
 	if (!this || !this.length) return this;

@@ -13,7 +13,7 @@
     <i class="icon ion-ios-arrow-up"></i>
 </a>
 
-<a href="#" class="btn btn-right" data-action="reload" title="Reload (r)">
+<a href="#" class="btn btn-right btn-loading" data-action="reload" title="Reload (r)">
     {{-- <i class="fa fa-repeat"></i> --}}
     {{-- <i class="icon ion-ios-refresh-empty"></i> --}}
     <i class="icon ion-ios-reload"></i>

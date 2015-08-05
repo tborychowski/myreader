@@ -1,9 +1,11 @@
 @import "_lib";
 
 card-padding = 20px;
+card-shadow = 0 1 2 #000 .3;
 
 .card
-	bg #fff; padding card-padding card-padding 0; margin 10; position relative; shadow 0 1 2 #000 .3;
+	bg #fff; padding card-padding card-padding 0; margin 10; position relative;
+	shadow card-shadow;
 
 	a
 		u 0; color #08c;
@@ -72,3 +74,8 @@ card-padding = 20px;
 	&.starred .btn-mark-unstarred
 		show 1;
 
+
+.card.active
+	&:before
+		content ''; pos 0 auto 0 0; width 4; border-radius 0 2 2 0;
+		bg #08c; shadow 2 1 1 #000 .2 inset;

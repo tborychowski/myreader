@@ -2,25 +2,28 @@ import $ from 'util';
 
 var eventsReady = false;
 
-
+/**
+ * Add correct classes (starred | unread) to a card
+ * @param  {string} action action name - from data-action attr. of an icon
+ * @param  {object} card   dom
+ */
 function cardAction (action, card) {
 	let [mark, cls] = action.split('-');
 	let add = { mark: 'add', unmark: 'remove' }[mark];
 	card[add + 'Class'](cls);
+	$.trigger('card/action', action, card);
 }
 
 function mainEventHandler (e) {
 	let el = $(e.target);
 	let card = el.closest('.card');
 	if (!card || !card.length) return;
-	let cardId = card.data('id');
 	let btn = el.closest('.card-footer .icon');
 
 	if (btn) {
 		e.preventDefault();
 		let action = btn.data('action');
 		cardAction(action, card);
-		$.trigger('card/action', action, cardId);
 	}
 }
 
@@ -66,4 +69,5 @@ function card (data) {
 	return getCardHtml(data);
 }
 
-export default card;
+
+export default { cardAction, card };
