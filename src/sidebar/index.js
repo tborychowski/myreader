@@ -1,5 +1,5 @@
 import $ from 'util';
-import {Hash} from 'nav';
+import Hash from 'hash';
 
 var el, tree, unreadEl, starredEl,
 	isReady = false;
@@ -18,15 +18,16 @@ function clickHandler (e) {
 
 function linkHandler (link) {
 	var _hash = link[0].hash.substr(1),
+		data = link.data(),
 		big = { starred: 1, archive: 1, unread: 1 },
 		wrapper = el;
 
+	console.log('navigate to: ', data);
 
 	if (!(_hash in big)) wrapper = link.closest('.source-tree');
 
-
 	wrapper.find('.sidebar-link.active').removeClass('active');
-	Hash.set(link[0].hash);
+	Hash.hash = link[0].hash;
 }
 
 function updateBadge (el, c) {
@@ -37,11 +38,11 @@ function updateBadge (el, c) {
 
 function updateTree (sums) {
 	tree.find('.visible').removeClass('visible');
-	tree.find('.source-badge').html(0);
+	tree.find('.badge').html(0);
 
 	for (let sid in sums) {
-		let src = tree.find('.source-' + sid);
-		let badge = src.find('.source-badge');
+		let src = tree.find('.feed-' + sid);
+		let badge = src.find('.badge');
 		updateBadge(badge, sums[sid]);
 		src.addClass('visible');
 		let srcList = src.closest('.source-list');
@@ -68,11 +69,15 @@ function calcSums (data) {
 }
 
 function selectRows (hash) {
-	el.find('.label-' + hash.big + ' .sidebar-link').addClass('active');
-	if (hash.type && hash.id) {
-		el.find('.' + hash.type + '-' + hash.id + ' .sidebar-link').addClass('active');
+	el.find('.label-' + hash.section + ' .sidebar-link').addClass('active');
 
+	if (hash.folder) {
+		el.find('.folder-' + hash.folder + ' .sidebar-link').addClass('active');
 	}
+	if (hash.id) {
+		el.find('.feed-' + hash.id + ' .sidebar-link').addClass('active');
+	}
+
 }
 /*** HELPERS **************************************************************************************/
 
@@ -85,8 +90,8 @@ function init () {
 	if (!isReady) {
 		el = $('.home .sidebar');
 		tree = el.find('.source-tree');
-		unreadEl = el.find('.label-unread .source-badge');
-		starredEl = el.find('.label-starred .source-badge');
+		unreadEl = el.find('.label-unread .badge');
+		starredEl = el.find('.label-starred .badge');
 
 		el.on('click', clickHandler);
 		$.on('data/changed', calcSums);

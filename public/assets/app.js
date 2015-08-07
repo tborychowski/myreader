@@ -52,19 +52,19 @@
 
 	nav.init();
 
-	var events = _interopRequire(__webpack_require__(9));
+	var events = _interopRequire(__webpack_require__(10));
 
 	events.init();
 
-	var toolbar = _interopRequire(__webpack_require__(10));
+	var toolbar = _interopRequire(__webpack_require__(11));
 
 	toolbar.init();
 
-	var sidebar = _interopRequire(__webpack_require__(11));
+	var sidebar = _interopRequire(__webpack_require__(12));
 
 	sidebar.init();
 
-	var main = _interopRequire(__webpack_require__(12));
+	var main = _interopRequire(__webpack_require__(13));
 
 	main.init();
 
@@ -76,80 +76,21 @@
 
 	var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
 
-	var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { var _arr = []; for (var _iterator = arr[Symbol.iterator](), _step; !(_step = _iterator.next()).done;) { _arr.push(_step.value); if (i && _arr.length === i) break; } return _arr; } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } };
-
 	var $ = _interopRequire(__webpack_require__(2));
 
-	var isReady = false,
-	    _originalHash = {
-		big: "unread",
-		type: null,
-		id: null
-	},
-	    big = { starred: 1, archive: 1, unread: 1 },
-	    Hash = { hash: {} };
+	var Hash = _interopRequire(__webpack_require__(9));
 
-	Hash.set = function (obj) {
-		obj = obj || {};
-		if (typeof obj === "string") {
-			if (obj.indexOf("#") === 0) obj = obj.substr(1);
-			if (obj in big) obj = { big: obj };else {
-				var _obj$split = obj.split("-");
-
-				var _obj$split2 = _slicedToArray(_obj$split, 2);
-
-				var type = _obj$split2[0];
-				var id = _obj$split2[1];
-
-				obj = { big: this.hash.big, type: type, id: id };
-			}
-		}
-
-		if (!obj.big || obj.big && this.hash.big !== obj.big) this.reset();
-		Object.assign(this.hash, obj);
-
-		return this.toUrl();
-	};
-
-	Hash.reset = function () {
-		this.hash = Object.assign({}, _originalHash);
-		return this;
-	};
-
-	Hash.toUrl = function () {
-		var url = [this.hash.big];
-		if (this.hash.type) url.push(this.hash.type);
-		if (this.hash.id) url.push(this.hash.id);
-		location.hash = url.join(",");
-
-		return this;
-	};
-
-	Hash.parse = function (hash) {
-		hash = hash || location.hash;
-		if (hash.indexOf("#") === 0) hash = hash.substr(1);
-
-		var _hash$split = hash.split(",");
-
-		var _hash$split2 = _slicedToArray(_hash$split, 3);
-
-		var big = _hash$split2[0];
-		var type = _hash$split2[1];
-		var id = _hash$split2[2];
-
-		this.hash = { big: big, type: type, id: id };
-		return this;
-	};
+	var isReady = false;
 
 	function _init() {
-		if (!isReady) {
-			Hash.parse();
-			if (Hash.hash.big) $.trigger("nav/changed", Hash.hash);else Hash.set();
 
-			window.onhashchange = function () {
-				Hash.parse();
-				$.trigger("nav/changed", Hash.hash);
-			};
+		if (!isReady) {
+
+			Hash.init(function () {
+				$.trigger("nav/changed", this);
+			});
+
+			if (Hash.section) $.trigger("nav/changed", Hash);else Hash.hash = "unread";
 		}
 
 		isReady = true;
@@ -158,8 +99,7 @@
 	module.exports = {
 		init: function init() {
 			setTimeout(_init, 100);
-		},
-		Hash: Hash
+		}
 	};
 
 /***/ },
@@ -1041,6 +981,112 @@
 
 /***/ },
 /* 9 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	var Hash = {},
+	    _hash = [],
+	    _section = "",
+	    _folder = "",
+	    _id = "",
+	    _cb = function _cb() {};
+
+	Object.defineProperties(Hash, {
+		init: {
+			value: function value(cb) {
+				window.onhashchange = this.parse.bind(this);
+				this.parse(true);
+				if (typeof cb === "function") _cb = cb;
+			}
+		},
+
+		getHash: {
+			value: function value() {
+				var hash = [];
+				if (_section) hash.push(_section);
+				if (_folder) hash.push(_folder);
+				if (_id) hash.push(_id);
+				return hash.join("/");
+			}
+		},
+
+		setHash: {
+			value: function value(h) {
+				h = (h || "").split("/");
+				_section = h[0] || null;
+				_folder = h[1] || null;
+				_id = h[2] || null;
+				return this;
+			}
+		},
+		apply: {
+			value: function value(h) {
+				if (h) this.hash = h;
+				location.hash = this.getHash();
+				return this;
+			}
+		},
+		parse: {
+			value: function value(initial) {
+				this.hash = location.hash.replace(/^#/, "");
+
+				if (initial !== true) _cb.call(this);
+
+				return this;
+			}
+		},
+		hash: {
+			enumerable: true,
+			get: function get() {
+				_hash = this.getHash();return _hash;
+			},
+			set: function set(h) {
+				return this.setHash(h).apply();
+			}
+		},
+
+		section: {
+			enumerable: true,
+			get: function get() {
+				return _section;
+			},
+			set: function set(s) {
+				_section = s;this.apply();
+			}
+		},
+		folder: {
+			enumerable: true,
+			get: function get() {
+				return _folder;
+			},
+			set: function set(s) {
+				_folder = s;this.apply();
+			}
+		},
+		id: {
+			enumerable: true,
+			get: function get() {
+				return _id;
+			},
+			set: function set(s) {
+				_id = s;this.apply();
+			}
+		},
+
+		toString: {
+			value: function value() {
+				return this.hash;
+			}
+		}
+	});
+
+	Object.freeze(Hash);
+
+	module.exports = Hash;
+
+/***/ },
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1094,7 +1140,7 @@
 	};
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1152,7 +1198,7 @@
 	};
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1161,7 +1207,7 @@
 
 	var $ = _interopRequire(__webpack_require__(2));
 
-	var Hash = __webpack_require__(1).Hash;
+	var Hash = _interopRequire(__webpack_require__(9));
 
 	var el,
 	    tree,
@@ -1180,13 +1226,16 @@
 
 	function linkHandler(link) {
 		var _hash = link[0].hash.substr(1),
+		    data = link.data(),
 		    big = { starred: 1, archive: 1, unread: 1 },
 		    wrapper = el;
+
+		console.log("navigate to: ", data);
 
 		if (!(_hash in big)) wrapper = link.closest(".source-tree");
 
 		wrapper.find(".sidebar-link.active").removeClass("active");
-		Hash.set(link[0].hash);
+		Hash.hash = link[0].hash;
 	}
 
 	function updateBadge(el, c) {
@@ -1198,11 +1247,11 @@
 
 	function updateTree(sums) {
 		tree.find(".visible").removeClass("visible");
-		tree.find(".source-badge").html(0);
+		tree.find(".badge").html(0);
 
 		for (var sid in sums) {
-			var src = tree.find(".source-" + sid);
-			var badge = src.find(".source-badge");
+			var src = tree.find(".feed-" + sid);
+			var badge = src.find(".badge");
 			updateBadge(badge, sums[sid]);
 			src.addClass("visible");
 			var srcList = src.closest(".source-list");
@@ -1249,9 +1298,13 @@
 	}
 
 	function selectRows(hash) {
-		el.find(".label-" + hash.big + " .sidebar-link").addClass("active");
-		if (hash.type && hash.id) {
-			el.find("." + hash.type + "-" + hash.id + " .sidebar-link").addClass("active");
+		el.find(".label-" + hash.section + " .sidebar-link").addClass("active");
+
+		if (hash.folder) {
+			el.find(".folder-" + hash.folder + " .sidebar-link").addClass("active");
+		}
+		if (hash.id) {
+			el.find(".feed-" + hash.id + " .sidebar-link").addClass("active");
 		}
 	}
 
@@ -1259,8 +1312,8 @@
 		if (!isReady) {
 			el = $(".home .sidebar");
 			tree = el.find(".source-tree");
-			unreadEl = el.find(".label-unread .source-badge");
-			starredEl = el.find(".label-starred .source-badge");
+			unreadEl = el.find(".label-unread .badge");
+			starredEl = el.find(".label-starred .badge");
 
 			el.on("click", clickHandler);
 			$.on("data/changed", calcSums);
@@ -1276,7 +1329,7 @@
 	};
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1285,9 +1338,9 @@
 
 	var $ = _interopRequire(__webpack_require__(2));
 
-	var Data = _interopRequire(__webpack_require__(13));
+	var Data = _interopRequire(__webpack_require__(14));
 
-	var Card = _interopRequire(__webpack_require__(14));
+	var Card = _interopRequire(__webpack_require__(15));
 
 	var main,
 	    el,
@@ -1374,7 +1427,7 @@
 	};
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1391,7 +1444,7 @@
 		} };
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

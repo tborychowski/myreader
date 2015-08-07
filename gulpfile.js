@@ -11,7 +11,8 @@ var gulp = require('gulp'),
 		if (err) notify.onError('Error: ' + err);
 		err = stats.compilation.errors;
 		if (err.length) notify.onError('Error: ' + err[0].message);
-	};
+	},
+	mocha = require('gulp-mocha');
 
 
 gulp.task('lib', function () {
@@ -43,11 +44,20 @@ gulp.task('styl', function () {
 		.pipe(live());
 });
 
+
+gulp.task('test', function () {
+	require('babel/register');
+
+	return gulp.src('src/**/*.spec.js', { read: false }).pipe(mocha());
+});
+
+
 gulp.task('watch', ['js', 'styl'], function () {
 	live.listen();
 	gulp.watch('src/**/*.styl', ['styl']);
 	gulp.watch(['src/**/*.js'], ['js']);
 });
+
 
 gulp.task('default', [
 	'lib',
