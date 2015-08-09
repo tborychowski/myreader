@@ -1425,8 +1425,10 @@
 			main = $(".home .main");
 			if (!main) {
 				return;
-			}el = main.find(".articles");
-			filler = main.find(".article-fill");
+			}el = main.find(".home .articles");
+			if (!el || !el.length) {
+				return;
+			}filler = main.find(".article-fill");
 
 			$.on("resizeend", updateHeight);
 			$.on("keyup", onKeyUp);

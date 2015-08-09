@@ -1,23 +1,26 @@
-<!-- resources/views/auth/login.blade.php -->
+@extends('app')
 
-<form method="POST" action="/auth/login">
-    {!! csrf_field() !!}
+@section('body-class')login @stop
 
-    <div>
-        Email
-        <input type="email" name="email" value="{{ old('email') }}">
-    </div>
+@section('main')
 
-    <div>
-        Password
-        <input type="password" name="password" id="password">
-    </div>
+<div class="login-form">
+    <form method="POST" action="/auth/login">
+        {!! csrf_field() !!}
+        <input type="hidden" name="remember" value="true">
 
-    <div>
-        <input type="checkbox" name="remember"> Remember Me
-    </div>
+        <div class="form-row">
+            <input type="text" name="email" value="{{ old('email') }}" autofocus="true">
+        </div>
 
-    <div>
-        <button type="submit">Login</button>
-    </div>
-</form>
+        <div class="form-row">
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div class="form-row">
+            <button type="submit" class="success">Login</button>
+        </div>
+    </form>
+</div>
+
+@stop

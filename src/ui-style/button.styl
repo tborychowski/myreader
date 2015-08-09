@@ -1,0 +1,57 @@
+@import "_lib";
+
+button
+	font inherit;
+	font 14/16px;
+	box-sizing border-box;
+	padding 0 15;
+	border-radius 5;
+	vertical-align top;
+	height 34;
+	transition background-color .2s, border-color .2s;
+	border 1 form-color;
+	color form-color;
+	bg rgba(form-color-dark, 0.5);
+	shadow 0 16 5 #fff .1 inset;
+
+	&:active
+		shadow none; background-color rgba(form-color-dark, 1); color rgba(form-color, .2)
+
+	&:focus
+		border-color orange; outline none;
+
+
+
+	&:disabled
+	&.disabled
+		bg #eaeaea; color #bebebe; cursor not-allowed;
+
+	&.primary
+		bg #16499a; color #fff;
+		&:active
+			background-color rgba(#16499a, 0.3); color rgba(#fff, .5)
+
+	&.info
+		bg #4390df; color #fff;
+		&:active
+			background-color rgba(#4390df, 0.3); color rgba(#fff, .5)
+
+	&.success
+		bg #57901D; color #fff;
+		&:active
+			background-color rgba(#57901D, 0.3); color rgba(#fff, .5)
+
+	&.warning
+		bg #fa6800; color #fff;
+		&:active
+			background-color rgba(#fa6800, 0.3); color rgba(#fff, .5)
+
+	&.danger
+		bg #9a1616; color #fff;
+		&:active
+			background-color rgba(#9a1616, 0.3); color rgba(#fff, .5)
+
+	&.link
+		bg transparent; color #fff;
+		&:active
+			background-color transparent; color rgba(#fff, .5)

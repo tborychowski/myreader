@@ -23,13 +23,13 @@ class Article extends Model
     protected $hidden = ['user_id', 'created_at', 'updated_at'];
 
 
-    // todo Article::unread()
+    // Article::unread()
     public function scopeUnread ($query)
     {
         $query->where('is_unread', '=', 1);
     }
 
-    // todo Article::starred()
+    // Article::starred()
     public function scopeStarred ($query)
     {
         $query->where('is_starred', '=', 1);
