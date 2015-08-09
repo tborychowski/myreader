@@ -17,8 +17,30 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $unread = Article::unread()->orderBy('created_at', 'desc')->get();
-        return $unread;
+        // TODO: get articles per user
+
+        $unread = Article::unread();
+        $starred = Article::starred();
+
+        $section = Request::get('section');
+        if (empty($section)) $section = 'unread';
+
+        if ($section === 'unread') {
+            $items = $unread->orderBy('created_at', 'desc')->get();
+        }
+
+        if ($section === 'starred') {
+            $items = $starred->orderBy('created_at', 'desc')->get();
+        }
+
+        $items = Article::orderBy('created_at', 'desc')->get();
+
+        return [
+            'unread' => $unread->count(),
+            'starred' => $starred->count(),
+            'items' => $items
+        ];
+
     }
 
     /**

@@ -29,7 +29,7 @@ class Article extends Model
         $query->where('is_unread', '=', 1);
     }
 
-    // todo Article::unread()
+    // todo Article::starred()
     public function scopeStarred ($query)
     {
         $query->where('is_starred', '=', 1);

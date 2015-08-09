@@ -12,8 +12,8 @@
     </a>
 </h3>
 
-<h3 class="sidebar-row source-folder label-archive">
-    <a href="#archive" class="sidebar-link" data-section="archive">Archive</a>
+<h3 class="sidebar-row source-folder label-archived">
+    <a href="#archived" class="sidebar-link" data-section="archived">Archived</a>
 </h3>
 
 <div class="source-tree">
@@ -22,7 +22,10 @@
         @if (count($group['items']))
 
             <h3 class="sidebar-row source-folder folder-{{ $group['id'] }}">
-                <a href="#unread/{{ $group['id'] }}" class="sidebar-link" data-folder="{{ $group['id'] }}">
+                <a class="sidebar-link"
+                    href="#/{{ $group['id'] }}"
+                    data-folder="{{ $group['id'] }}">
+
                     {{ $group['name'] }}
                 </a>
             </h3>
@@ -30,7 +33,8 @@
             <ul class="source-list">
                 @foreach ($group['items'] as $item)
                     <li class="sidebar-row feed-{{ $item['id'] }}">
-                        <a href="#unread/{{ $item['folder'] }}/{{ $item['id'] }}" class="sidebar-link"
+                        <a class="sidebar-link"
+                            href="#/{{ $item['folder'] }}/{{ $item['id'] }}"
                             data-folder="{{ $item['folder'] }}"
                             data-id="{{ $item['id'] }}">
 

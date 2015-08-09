@@ -44,7 +44,7 @@ function getCardHtml (row) {
 	return `<div class="${cls.join(' ')}" data-id="${row.id}">
 			<div class="card-header">
 				<span class="card-date">${row.published_at}</span>
-				<h2 class="card-title"><a href="#">${row.title}</a></h2>
+				<h2 class="card-title"><a href="${row.url}" target="_blank">${row.title}</a></h2>
 				<h3 class="card-subtitle">from <a href="#">source name ${row.source_id}</a></h3>
 			</div>
 			<div class="card-body">${row.content}</div>

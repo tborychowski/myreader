@@ -1249,22 +1249,18 @@
 	}
 
 	function calcSums(data) {
-		var sums = {},
-		    unread = 0,
-		    starred = 0;
+		var sums = {};
 
 		var _iteratorNormalCompletion = true;
 		var _didIteratorError = false;
 		var _iteratorError = undefined;
 
 		try {
-			for (var _iterator = data[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+			for (var _iterator = data.items[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
 				var art = _step.value;
 
 				var sid = art.source_id;
 				sums[sid] = sums[sid] ? sums[sid] + 1 : 1;
-				unread += +art.is_unread;
-				starred += +art.is_starred;
 			}
 		} catch (err) {
 			_didIteratorError = true;
@@ -1281,8 +1277,8 @@
 			}
 		}
 
-		updateBadge(unreadEl, unread);
-		updateBadge(starredEl, starred);
+		updateBadge(unreadEl, data.unread);
+		updateBadge(starredEl, data.starred);
 		updateTree(sums);
 	}
 
@@ -1350,9 +1346,12 @@
 
 	var Card = _interopRequire(__webpack_require__(15));
 
+	var Hash = _interopRequire(__webpack_require__(9));
+
 	var main,
 	    el,
 	    activeArticle,
+	    currentSection,
 	    filler,
 	    isReady = false;
 
@@ -1385,18 +1384,31 @@
 		}
 	}
 
+	function openArticle() {
+		var l = activeArticle.find(".card-title>a");
+		if (l && l.length) l[0].click();
+	}
+
 	function markAsRead(article) {
 		setTimeout(function () {
 			Card.cardAction("unmark-unread", article);
 		}, 300);
 	}
 
-	function load(hash) {
+	function onKeyUp(e) {
+		if (e.letter === "P") $.trigger("nav/prev");else if (e.letter === "N") $.trigger("nav/next");else if (e.letter === "R") $.trigger("data/reload");else if (e.key === 13) $.trigger("nav/open");
+	}
 
-		Data.getUnread().then(function (data) {
-			el.html(Card.card(data));
-			activeArticle = el.find(".card").first().addClass("active");
+	function load() {
+		if (currentSection === Hash.section) {
+			return;
+		}Data.get({ section: Hash.section }).then(function (data) {
+			el.html(Card.card(data.items));
+
+			var cards = el.find(".card");
+			if (cards && cards.length) activeArticle = cards.first().addClass("active");
 			scrollTo();
+			currentSection = Hash.section;
 			$.trigger("data/changed", data);
 		});
 	}
@@ -1417,11 +1429,15 @@
 			filler = main.find(".article-fill");
 
 			$.on("resizeend", updateHeight);
+			$.on("keyup", onKeyUp);
+
 			$.on("nav/prev", scrollToPrev);
 			$.on("nav/next", scrollToNext);
+			$.on("nav/open", openArticle);
+			$.on("nav/changed", load);
+
 			$.on("card/action", cardAction);
 			$.on("data/reload", load);
-			$.on("nav/changed", load);
 		}
 
 		updateHeight();
@@ -1446,7 +1462,8 @@
 	var _url = "article";
 
 	module.exports = {
-		getUnread: function (params) {
+
+		get: function (params) {
 			return $.ajax({ url: _url, data: params });
 		} };
 
@@ -1504,7 +1521,7 @@
 		if (row.is_starred) cls.push("starred");
 		if (row.is_unread) cls.push("unread");
 
-		return "<div class=\"" + cls.join(" ") + "\" data-id=\"" + row.id + "\">\n\t\t\t<div class=\"card-header\">\n\t\t\t\t<span class=\"card-date\">" + row.published_at + "</span>\n\t\t\t\t<h2 class=\"card-title\"><a href=\"#\">" + row.title + "</a></h2>\n\t\t\t\t<h3 class=\"card-subtitle\">from <a href=\"#\">source name " + row.source_id + "</a></h3>\n\t\t\t</div>\n\t\t\t<div class=\"card-body\">" + row.content + "</div>\n\t\t\t<div class=\"card-footer\">\n\t\t\t\t<a href=\"#\" data-action=\"mark-expanded\" class=\"btn-expand icon ion-ios-more icon-right\" title=\"Expand\"></a>\n\t\t\t\t<a href=\"#\" data-action=\"unmark-expanded\" class=\"btn-collapse icon ion-ios-close-empty icon-right\" title=\"Collapse\"></a>\n\n\t\t\t\t<a href=\"#\" data-action=\"mark-unread\" class=\"btn-mark-unread icon ion-ios-checkmark-outline\" title=\"Mark as unread\"></a>\n\t\t\t\t<a href=\"#\" data-action=\"unmark-unread\" class=\"btn-mark-read icon ion-ios-circle-filled\" title=\"Mark as read\"></a>\n\n\t\t\t\t<a href=\"#\" data-action=\"mark-starred\" class=\"btn-mark-starred icon ion-ios-star-outline\" title=\"Star\"></a>\n\t\t\t\t<a href=\"#\" data-action=\"unmark-starred\" class=\"btn-mark-unstarred icon ion-ios-star\" title=\"Unstar\"></a>\n\t\t\t</div>\n\t\t</div>";
+		return "<div class=\"" + cls.join(" ") + "\" data-id=\"" + row.id + "\">\n\t\t\t<div class=\"card-header\">\n\t\t\t\t<span class=\"card-date\">" + row.published_at + "</span>\n\t\t\t\t<h2 class=\"card-title\"><a href=\"" + row.url + "\" target=\"_blank\">" + row.title + "</a></h2>\n\t\t\t\t<h3 class=\"card-subtitle\">from <a href=\"#\">source name " + row.source_id + "</a></h3>\n\t\t\t</div>\n\t\t\t<div class=\"card-body\">" + row.content + "</div>\n\t\t\t<div class=\"card-footer\">\n\t\t\t\t<a href=\"#\" data-action=\"mark-expanded\" class=\"btn-expand icon ion-ios-more icon-right\" title=\"Expand\"></a>\n\t\t\t\t<a href=\"#\" data-action=\"unmark-expanded\" class=\"btn-collapse icon ion-ios-close-empty icon-right\" title=\"Collapse\"></a>\n\n\t\t\t\t<a href=\"#\" data-action=\"mark-unread\" class=\"btn-mark-unread icon ion-ios-checkmark-outline\" title=\"Mark as unread\"></a>\n\t\t\t\t<a href=\"#\" data-action=\"unmark-unread\" class=\"btn-mark-read icon ion-ios-circle-filled\" title=\"Mark as read\"></a>\n\n\t\t\t\t<a href=\"#\" data-action=\"mark-starred\" class=\"btn-mark-starred icon ion-ios-star-outline\" title=\"Star\"></a>\n\t\t\t\t<a href=\"#\" data-action=\"unmark-starred\" class=\"btn-mark-unstarred icon ion-ios-star\" title=\"Unstar\"></a>\n\t\t\t</div>\n\t\t</div>";
 	}
 
 	function card(data) {

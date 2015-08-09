@@ -1,8 +1,9 @@
 import $ from 'util';
 import Data from 'data/articles';
 import Card from 'card';
+import Hash from 'hash';
 
-var main, el, activeArticle, filler, isReady = false;
+var main, el, activeArticle, currentSection, filler, isReady = false;
 
 
 
@@ -34,23 +35,39 @@ function scrollToNext  () {
 	}
 }
 
+function openArticle () {
+	var l = activeArticle.find('.card-title>a');
+	if (l && l.length) l[0].click();
+}
+
 function markAsRead (article) {
 	setTimeout(function () { Card.cardAction('unmark-unread', article); }, 300);
+}
+
+function onKeyUp (e) {
+	if (e.letter === 'P') $.trigger('nav/prev');
+	else if (e.letter === 'N') $.trigger('nav/next');
+	else if (e.letter === 'R') $.trigger('data/reload');
+	else if (e.key === 13) $.trigger('nav/open');
 }
 /*** HELPERS **************************************************************************************/
 
 
 
 
-function load (hash) {
-	// console.log('loading', hash);
+function load () {
+	if (currentSection === Hash.section) return;
+	Data
+		.get({ section: Hash.section })
+		.then(data => {
+			el.html(Card.card(data.items));
 
-	Data.getUnread().then(data => {
-		el.html(Card.card(data));
-		activeArticle = el.find('.card').first().addClass('active');
-		scrollTo();
-		$.trigger('data/changed', data);
-	});
+			let cards = el.find('.card');
+			if (cards && cards.length) activeArticle = cards.first().addClass('active');
+			scrollTo();
+			currentSection = Hash.section;
+			$.trigger('data/changed', data);
+		});
 }
 
 
@@ -72,11 +89,15 @@ function init () {
 		filler = main.find('.article-fill');
 
 		$.on('resizeend', updateHeight);
+		$.on('keyup', onKeyUp);
+
 		$.on('nav/prev', scrollToPrev);
 		$.on('nav/next', scrollToNext);
+		$.on('nav/open', openArticle);
+		$.on('nav/changed', load);
+
 		$.on('card/action', cardAction);
 		$.on('data/reload', load);
-		$.on('nav/changed', load);
 	}
 
 	updateHeight();

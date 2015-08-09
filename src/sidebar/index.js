@@ -31,17 +31,15 @@ function updateTree (sums) {
  * Calculate and update sums for badges
  */
 function calcSums (data) {
-	let sums = {}, unread = 0, starred = 0;
+	let sums = {};
 
-	for (let art of data) {
+	for (let art of data.items) {
 		let sid = art.source_id;
 		sums[sid] = sums[sid] ? sums[sid] + 1 : 1;
-		unread += +art.is_unread;
-		starred += +art.is_starred;
 	}
 
-	updateBadge(unreadEl, unread);
-	updateBadge(starredEl, starred);
+	updateBadge(unreadEl, data.unread);
+	updateBadge(starredEl, data.starred);
 	updateTree(sums);
 }
 

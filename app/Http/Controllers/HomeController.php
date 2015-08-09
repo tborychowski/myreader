@@ -37,7 +37,9 @@ class HomeController extends Controller
         // process to tree
         $tree = [];
         foreach ($sources as $item) {
-            $f = (empty($item['folder']) ? 'Other' : $item['folder']);
+            if (empty($item['folder'])) $item['folder'] = 'Other';
+            $f = $item['folder'];
+
             if (!isset($tree[$f])) {
                 $tree[$f] = [
                     'id' => str_slug($f),
