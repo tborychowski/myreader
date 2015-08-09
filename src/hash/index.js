@@ -31,10 +31,13 @@ Object.defineProperties(Hash, {
 
 	setHash: {
 		value: function (h) {
-			h = (h || '').split('/');
-			_section = h[0] || null;
-			_folder = h[1] || null;
-			_id = h[2] || null;
+			if (typeof h === 'string') {
+				let [section, folder, id] = (h || '').split('/');
+				h = { section, folder, id };
+			}
+			if (h.section) _section = h.section;
+			_folder = h.folder || null;
+			_id = h.id || null;
 			return this;
 		}
 	},

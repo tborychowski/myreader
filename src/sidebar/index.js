@@ -7,29 +7,6 @@ var el, tree, unreadEl, starredEl,
 
 
 /*** HELPERS **************************************************************************************/
-
-function clickHandler (e) {
-	var target = $(e.target), link = target.closest('.sidebar-link');
-	if (link && link.length) {
-		linkHandler(link);
-		e.preventDefault();
-	}
-}
-
-function linkHandler (link) {
-	var _hash = link[0].hash.substr(1),
-		data = link.data(),
-		big = { starred: 1, archive: 1, unread: 1 },
-		wrapper = el;
-
-	console.log('navigate to: ', data);
-
-	if (!(_hash in big)) wrapper = link.closest('.source-tree');
-
-	wrapper.find('.sidebar-link.active').removeClass('active');
-	Hash.hash = link[0].hash;
-}
-
 function updateBadge (el, c) {
 	if (!el || !el.length) return;
 	el[0].style.display = c ? 'block' : 'none';
@@ -66,6 +43,25 @@ function calcSums (data) {
 	updateBadge(unreadEl, unread);
 	updateBadge(starredEl, starred);
 	updateTree(sums);
+}
+
+
+function clickHandler (e) {
+	var target = $(e.target), link = target.closest('.sidebar-link');
+	if (link && link.length) {
+		linkHandler(link);
+		e.preventDefault();
+	}
+}
+
+function linkHandler (link) {
+	var data = link.data(),
+		oldHash = Hash.hash,
+		wrapper = data.section ? el : link.closest('.source-tree');
+
+	wrapper.find('.sidebar-link.active').removeClass('active');
+	Hash.hash = data;
+	if (Hash.hash === oldHash) selectRows(Hash);
 }
 
 function selectRows (hash) {

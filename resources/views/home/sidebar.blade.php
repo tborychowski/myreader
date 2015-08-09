@@ -1,19 +1,19 @@
 <h3 class="sidebar-row source-folder label-unread">
-    <a href="#unread" class="sidebar-link">
+    <a href="#unread" class="sidebar-link" data-section="unread">
         <span class="badge">0</span>
         Unread
     </a>
 </h3>
 
 <h3 class="sidebar-row source-folder label-starred">
-    <a href="#starred" class="sidebar-link">
+    <a href="#starred" class="sidebar-link" data-section="starred">
         <span class="badge">0</span>
         Starred
     </a>
 </h3>
 
 <h3 class="sidebar-row source-folder label-archive">
-    <a href="#archive" class="sidebar-link">Archive</a>
+    <a href="#archive" class="sidebar-link" data-section="archive">Archive</a>
 </h3>
 
 <div class="source-tree">

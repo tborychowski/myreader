@@ -16,7 +16,7 @@ function updateHeight () {
 function scrollTo (card) {
 	card = card || activeArticle || null;
 	if (!card) return;
-	main[0].scrollTop = card[0].offsetTop - card.style('marginTop');
+	main[0].scrollTop = card[0].offsetTop - card.style('marginTop') + 2;
 	activeArticle.removeClass('active');
 	activeArticle = card.addClass('active');
 }
@@ -43,7 +43,7 @@ function markAsRead (article) {
 
 
 function load (hash) {
-	console.log('loading', hash);
+	// console.log('loading', hash);
 
 	Data.getUnread().then(data => {
 		el.html(Card.card(data));

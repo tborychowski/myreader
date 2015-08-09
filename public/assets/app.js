@@ -985,6 +985,8 @@
 
 	"use strict";
 
+	var _slicedToArray = function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { var _arr = []; for (var _iterator = arr[Symbol.iterator](), _step; !(_step = _iterator.next()).done;) { _arr.push(_step.value); if (i && _arr.length === i) break; } return _arr; } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } };
+
 	var Hash = {},
 	    _hash = [],
 	    _section = "",
@@ -1013,10 +1015,20 @@
 
 		setHash: {
 			value: function value(h) {
-				h = (h || "").split("/");
-				_section = h[0] || null;
-				_folder = h[1] || null;
-				_id = h[2] || null;
+				if (typeof h === "string") {
+					var _split = (h || "").split("/");
+
+					var _split2 = _slicedToArray(_split, 3);
+
+					var section = _split2[0];
+					var folder = _split2[1];
+					var id = _split2[2];
+
+					h = { section: section, folder: folder, id: id };
+				}
+				if (h.section) _section = h.section;
+				_folder = h.folder || null;
+				_id = h.id || null;
 				return this;
 			}
 		},
@@ -1215,29 +1227,6 @@
 	    starredEl,
 	    isReady = false;
 
-	function clickHandler(e) {
-		var target = $(e.target),
-		    link = target.closest(".sidebar-link");
-		if (link && link.length) {
-			linkHandler(link);
-			e.preventDefault();
-		}
-	}
-
-	function linkHandler(link) {
-		var _hash = link[0].hash.substr(1),
-		    data = link.data(),
-		    big = { starred: 1, archive: 1, unread: 1 },
-		    wrapper = el;
-
-		console.log("navigate to: ", data);
-
-		if (!(_hash in big)) wrapper = link.closest(".source-tree");
-
-		wrapper.find(".sidebar-link.active").removeClass("active");
-		Hash.hash = link[0].hash;
-	}
-
 	function updateBadge(el, c) {
 		if (!el || !el.length) {
 			return;
@@ -1295,6 +1284,25 @@
 		updateBadge(unreadEl, unread);
 		updateBadge(starredEl, starred);
 		updateTree(sums);
+	}
+
+	function clickHandler(e) {
+		var target = $(e.target),
+		    link = target.closest(".sidebar-link");
+		if (link && link.length) {
+			linkHandler(link);
+			e.preventDefault();
+		}
+	}
+
+	function linkHandler(link) {
+		var data = link.data(),
+		    oldHash = Hash.hash,
+		    wrapper = data.section ? el : link.closest(".source-tree");
+
+		wrapper.find(".sidebar-link.active").removeClass("active");
+		Hash.hash = data;
+		if (Hash.hash === oldHash) selectRows(Hash);
 	}
 
 	function selectRows(hash) {
@@ -1359,7 +1367,7 @@
 		card = card || activeArticle || null;
 		if (!card) {
 			return;
-		}main[0].scrollTop = card[0].offsetTop - card.style("marginTop");
+		}main[0].scrollTop = card[0].offsetTop - card.style("marginTop") + 2;
 		activeArticle.removeClass("active");
 		activeArticle = card.addClass("active");
 	}
@@ -1384,7 +1392,6 @@
 	}
 
 	function load(hash) {
-		console.log("loading", hash);
 
 		Data.getUnread().then(function (data) {
 			el.html(Card.card(data));
