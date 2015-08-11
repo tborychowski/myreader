@@ -5,7 +5,7 @@
 @section('main')
 
 <div class="login-form">
-    <form method="POST" action="/auth/login">
+    <form method="POST" action="/login">
         {!! csrf_field() !!}
         <input type="hidden" name="remember" value="true">
 

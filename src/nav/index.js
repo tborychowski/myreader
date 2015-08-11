@@ -10,6 +10,8 @@ function _init () {
 
 	if (!isReady) {
 
+		if (!$('body').hasClass('home')) return;
+
 		Hash.init(function () {
 			$.trigger('nav/changed', this);
 		});

@@ -86,7 +86,9 @@
 
 		if (!isReady) {
 
-			Hash.init(function () {
+			if (!$("body").hasClass("home")) {
+				return;
+			}Hash.init(function () {
 				$.trigger("nav/changed", this);
 			});
 
@@ -1399,8 +1401,8 @@
 		if (e.letter === "P") $.trigger("nav/prev");else if (e.letter === "N") $.trigger("nav/next");else if (e.letter === "R") $.trigger("data/reload");else if (e.key === 13) $.trigger("nav/open");
 	}
 
-	function load() {
-		if (currentSection === Hash.section) {
+	function load(hash) {
+		if (hash && currentSection === Hash.section) {
 			return;
 		}Data.get({ section: Hash.section }).then(function (data) {
 			el.html(Card.card(data.items));

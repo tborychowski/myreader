@@ -55,8 +55,8 @@ function onKeyUp (e) {
 
 
 
-function load () {
-	if (currentSection === Hash.section) return;
+function load (hash) {
+	if (hash && currentSection === Hash.section) return;
 	Data
 		.get({ section: Hash.section })
 		.then(data => {

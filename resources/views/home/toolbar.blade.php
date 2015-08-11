@@ -15,7 +15,12 @@
 
 <a href="#" class="btn btn-right btn-loading" data-action="reload" title="Reload (r)">
     {{-- <i class="fa fa-repeat"></i> --}}
-    {{-- <i class="icon ion-ios-refresh-empty"></i> --}}
-    <i class="icon ion-ios-reload"></i>
+    <i class="icon ion-ios-loop-strong"></i>
+</a>
+
+
+<a href="/logout" class="btn" title="Logout">
+    {{-- <i class="fa fa-repeat"></i> --}}
+    <i class="icon ion-log-out"></i>
 </a>
 
