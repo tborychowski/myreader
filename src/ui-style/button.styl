@@ -1,25 +1,39 @@
 @import "_lib";
 
+.btn::-moz-focus-inner
+input::-moz-focus-inner
+button::-moz-focus-inner
+	padding 0; border 0; outline none;
+
+
+
+.btn
 button
 	font inherit;
-	font 14/16px;
+	font 14/1;
+	show 1;
 	box-sizing border-box;
-	padding 0 15;
+	padding 8 15;
 	border-radius 5;
 	vertical-align top;
-	height 34;
+	height 32;
 	transition background-color .2s, border-color .2s;
 	border 1 form-color;
-	color form-color;
+	color form-text-color;
 	bg rgba(form-color-dark, 0.5);
 	shadow 0 16 5 #fff .1 inset;
+	color #444;
+	u 0;
+
 
 	&:active
-		shadow none; background-color rgba(form-color-dark, 1); color rgba(form-color, .2)
+		shadow none; background-color rgba(form-color-dark, 1); color rgba(form-text-color, .2)
 
 	&:focus
 		border-color orange; outline none;
 
+	&:hover
+		u 0;
 
 
 	&:disabled
@@ -52,6 +66,9 @@ button
 			background-color rgba(#9a1616, 0.3); color rgba(#fff, .5)
 
 	&.link
-		bg transparent; color #fff;
+		bg transparent; border none; color #08c;
+		&:hover
+			u 1;
 		&:active
 			background-color transparent; color rgba(#fff, .5)
+

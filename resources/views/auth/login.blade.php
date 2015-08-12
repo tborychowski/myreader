@@ -10,11 +10,17 @@
         <input type="hidden" name="remember" value="true">
 
         <div class="form-row">
-            <input type="text" name="email" value="{{ old('email') }}" autofocus="true">
+            <input type="text"
+                name="email"
+                placeholder="Username"
+                value="{{ old('email') }}"
+                autofocus="true">
         </div>
 
         <div class="form-row">
-            <input type="password" name="password" id="password">
+            <input type="password"
+                name="password"
+                placeholder="Password">
         </div>
 
         <div class="form-row">

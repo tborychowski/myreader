@@ -15,6 +15,7 @@ input
 	color form-color-light;
 	bg rgba(form-color-dark, 0.1);
 
+button
 select
 input
 	&:focus
@@ -23,7 +24,7 @@ input
 		padding 0; border 0; outline none;
 
 label
-	display inline-block; margin-top 2; vertical-align top;
+	display inline-block; margin-top 2; vertical-align top; line-height 1;
 
 .select-wrap
 	position relative; overflow hidden; display inline-block; vertical-align top;
@@ -38,11 +39,15 @@ label
 	option
 		padding 3 10; margin 0;
 
-
+.long-input
+	width 80%;
 
 
 .form-row
 	clear both; overflow hidden; padding 2 2 20;
+
+	label
+		width 15%; padding 8;
 
 
 

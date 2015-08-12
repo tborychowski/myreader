@@ -37,6 +37,7 @@
 
     <div class="card-footer">
         <a href="{{ url('/import-confirm') }}" class="btn">Import these sources</a>
+        <a href="{{ url('source ') }}" class="btn link">Cancel</a>
     </div>
 
 </div>

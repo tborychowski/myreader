@@ -25,6 +25,7 @@
 
     <div class="card-footer">
         {!! Form::submit('Next', ['class' => 'btn']) !!}
+        <a href="{{ url('source ') }}" class="btn link">Cancel</a>
     </div>
 
     {!! Form::close() !!}
