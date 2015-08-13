@@ -37,7 +37,8 @@ $factory->define(App\Article::class, function (Faker\Generator $faker) {
         'source_id' => 1,
         'title' => str_random(10),
         'url' => $faker->url,
-        'content' => $faker->realText(),
+        'content' => '<img src="http://placehold.it/350x150">' .
+            $faker->realText($faker->numberBetween(3000, 6000)),
         'is_unread' => 1,
         'is_starred' => 0,
         'published_at' => $faker->dateTime(),

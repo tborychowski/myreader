@@ -112,6 +112,17 @@ bg()
 			background: setBg(arg[0], arg[1] || 0, arg[2] || 0, arg[3] || no-repeat)
 
 
+smooth-scroll()
+	overflow hidden;
+	overflow-y auto;
+	-webkit-overflow-scrolling touch;
+	scroll-behavior smooth;	// https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
+	transform translateZ(0);
+	backface-visibility hidden;
+	perspective 1000;
+	will-change scroll-position;
+
+
 not-selectable()
 	-webkit-touch-callout: none;
 	vendor(user-select, none, webkit khtml moz ms)
