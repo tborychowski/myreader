@@ -17,18 +17,18 @@
 <div class="card">
 
     <div class="card-body">
-        <table>
+        <table class="sources-table">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>URL</th>
+                    <th class="st-cell st-cell-header">Name</th>
+                    <th class="st-cell st-cell-header">URL</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach($sources as $src)
                 <tr>
-                    <td><a href="{{ $src['real_url'] }}">{{ $src['name'] }}</a></td>
-                    <td><a href="{{ $src['url'] }}">{{ $src['url'] }}</a></td>
+                    <td class="st-cell"><a href="{{ $src['real_url'] }}">{{ $src['name'] }}</a></td>
+                    <td class="st-cell"><a href="{{ $src['url'] }}">{{ $src['url'] }}</a></td>
                 </tr>
                 @endforeach
             </tbody>
