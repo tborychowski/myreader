@@ -40,5 +40,5 @@ Please see the wiki: [Installation](https://github.com/tborychowski/myreader/wik
 - [Selfoss](http://selfoss.aditu.de) - pretty powerful, but still a bit too large and too slow (at least for me)
 
 
-###Notes
+### Notes
 [Laravel 3.x yield fix](https://github.com/laravel/laravel/commit/3298407238fd3e212cdf8d829adc6f519b941052)
