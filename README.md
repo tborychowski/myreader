@@ -5,6 +5,9 @@
 
 **Update (2015-10-07):** The alternative seems good and cheap enough for my needs. Due to the lack of free time this is now discontinued.
 
+**Update (2019-01-01):** The best alternative is [miniflux](https://miniflux.app).
+
+
 ------
 
 
